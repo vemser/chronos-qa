@@ -1,5 +1,6 @@
-package br.com.dbccompany.chronos.testes.aceitacao.pages;
-import br.com.dbccompany.chronos.testes.aceitacao.utils.Elements;
+package br.com.dbccompany.chronos.testes.frontend.pages;
+import br.com.dbccompany.chronos.testes.frontend.utils.Browser;
+import br.com.dbccompany.chronos.testes.frontend.utils.Elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
@@ -10,7 +11,7 @@ public class BasePage extends Elements {
         element(by).click();
     }
     public static void scrollBy(String pxQnt){
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) Browser.driver;
         js.executeScript("window.scrollBy(0,"+pxQnt+")", "");
 
     }
@@ -26,14 +27,14 @@ public class BasePage extends Elements {
 
     public static void moveToElement(By by){
         waitElement(by);
-        Actions action = new Actions(driver);
+        Actions action = new Actions(Browser.driver);
         action.moveToElement(element(by));
         action.build().perform();
     }
 
     public static void moveToElementAndClick(By by){
         waitElement(by);
-        Actions action = new Actions(driver);
+        Actions action = new Actions(Browser.driver);
         action.moveToElement(element(by));
         action.click().build().perform();
     }
@@ -56,6 +57,6 @@ public class BasePage extends Elements {
         return element(by).getAttribute("value");
     }
     public static String getPageUrl(){
-        return driver.getCurrentUrl();
+        return Browser.driver.getCurrentUrl();
     }
 }

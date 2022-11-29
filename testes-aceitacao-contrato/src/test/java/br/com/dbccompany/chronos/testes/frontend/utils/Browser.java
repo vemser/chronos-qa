@@ -1,4 +1,4 @@
-package br.com.dbccompany.chronos.testes.aceitacao.utils;
+package br.com.dbccompany.chronos.testes.frontend.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

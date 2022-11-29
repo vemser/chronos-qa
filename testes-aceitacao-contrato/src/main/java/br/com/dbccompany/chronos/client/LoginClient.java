@@ -9,8 +9,10 @@ import static io.restassured.RestAssured.given;
 public class LoginClient {
     public static Response fazerLogin(String json) {
           return given()
+                  .log().all()
                   .spec(LoginSpecs.requestSpec())
+                  .body(json)
                   .when()
-                  .post(LoginData.SERVICE,json);
+                  .post(LoginData.SERVICE);
     }
 }

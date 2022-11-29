@@ -1,13 +1,13 @@
-package br.com.dbccompany.chronos.testes.aceitacao.steps;
+package br.com.dbccompany.chronos.testes.frontend.steps;
 
-import br.com.dbccompany.chronos.testes.aceitacao.utils.Browser;
+import br.com.dbccompany.chronos.testes.frontend.utils.Browser;
 import org.junit.After;
 import org.junit.Before;
 
 public class BaseSteps extends Browser {
     @Before
     public void abrirNavegador(){
-        browserUp("");
+        browserUp("https://chronos-vemser.vercel.app/");
     }
     @After
     public void fecharNavegador(){

@@ -1,6 +1,6 @@
-package br.com.dbccompany.chronos.testes.aceitacao.utils;
+package br.com.dbccompany.chronos.testes.frontend.utils;
 
-import br.com.dbccompany.chronos.testes.aceitacao.steps.BaseSteps;
+import br.com.dbccompany.chronos.testes.frontend.steps.BaseSteps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;

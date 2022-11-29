@@ -2,46 +2,59 @@ package br.com.dbccompany.chronos.data.factory;
 
 import br.com.dbccompany.chronos.model.Login;
 import br.com.dbccompany.chronos.model.LoginBuilder;
+import br.com.dbccompany.chronos.utils.ConfigManipulation;
 import br.com.dbccompany.chronos.utils.Utils;
-import org.apache.commons.lang3.StringUtils;
 
 public class LoginDataFactory {
 
         private LoginDataFactory() {}
 
-        public static String emailInexistente() {
+        private static String emailInexistente() {
             return Utils.faker.internet().emailAddress();
         }
-        public static String senhaInexistente() {
+        private static String senhaInexistente() {
             return Utils.faker.internet().password();
         }
 
-        public static Login loginInvalidoCompleto(){
+        private static Login novoLogin(){
+        return new LoginBuilder()
+                .email(Utils.faker.internet().emailAddress())
+                .senha(Utils.faker.internet().password())
+                .build();
+        }
+
+        public static Login loginInexistente(){
             return novoLogin();
         }
 
         public static Login loginSemEmail(){
             Login loginSemEmail = novoLogin();
-            loginSemEmail.setEmail(StringUtils.EMPTY);
+            loginSemEmail.setEmail(null);
             return  loginSemEmail;
         }
 
         public static Login loginSemSenha(){
             Login loginSemSenha = novoLogin();
-            loginSemSenha.setSenha(StringUtils.EMPTY);
+            loginSemSenha.setSenha(null);
             return  loginSemSenha;
         }
 
-        public static Login novoLogin(){
-            return new LoginBuilder()
-                .email(Utils.faker.internet().emailAddress())
-                .senha(Utils.faker.internet().password())
-                .build();
+        public static Login loginEmailFormatoInvalido(){
+            Login loginFormatoInvalido = novoLogin();
+            loginFormatoInvalido.setEmail("teste121213");
+            return  loginFormatoInvalido;
         }
+
+        public static Login loginEmailValidoSenhaInvalida(){
+            Login loginEmailValidoSenhaInvalida = novoLogin();
+            loginEmailValidoSenhaInvalida.setEmail(ConfigManipulation.getProp().getProperty("email"));
+            return loginEmailValidoSenhaInvalida;
+        }
+
         public static Login loginValido() {
             return new LoginBuilder()
-                .email("teste@gmail.com")
-                .senha("123456")
+                .email(ConfigManipulation.getProp().getProperty("email"))
+                .senha(ConfigManipulation.getProp().getProperty("senha"))
                 .build();
     }
 }

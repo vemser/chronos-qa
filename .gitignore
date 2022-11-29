@@ -16,6 +16,8 @@ node_modules/
 .sts4-cache
 
 ### IntelliJ IDEA ###
+**/*.result.json
+**/*.container.json
 .idea
 *.iws
 *.iml
