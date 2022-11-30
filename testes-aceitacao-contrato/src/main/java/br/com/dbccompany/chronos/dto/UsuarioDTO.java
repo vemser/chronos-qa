@@ -5,7 +5,11 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties
-public class ResponseErrorForbidenDTO extends ResponseErrorDTO {
-    private String error;
-    private String path;
+public class UsuarioDTO<T> {
+    String nome;
+    String email;
+    String status;
+    Integer idUsuario;
+    T imagem;
+    CargoDTO[] cargos;
 }

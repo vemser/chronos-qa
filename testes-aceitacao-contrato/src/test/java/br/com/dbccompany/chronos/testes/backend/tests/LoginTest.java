@@ -20,7 +20,6 @@ public class LoginTest extends BaseTest {
 
     @Test
     @Tag("todos")
-    @Tag("backend")
     @Tag("login")
     @Description("Deve falhar fazer login sem dados")
     public void deveFalharFazerLoginComEmailFormatoInvalido() {
@@ -40,7 +39,6 @@ public class LoginTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("login")
-    @Tag("backend")
     @Description("Deve falhar fazer login com email valido senha invalida")
     public void deveFalharFazerLoginComEmailValidoSenhaInvalida() {
         Login login = LoginDataFactory.loginEmailValidoSenhaInvalida();
@@ -54,7 +52,6 @@ public class LoginTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("login")
-    @Tag("backend")
     @Description("Deve falhar fazer login com dados inválidos")
     public void deveFalharFazerLoginComDadosInvalidos() {
         Login login = LoginDataFactory.loginInexistente();
@@ -68,7 +65,6 @@ public class LoginTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("login")
-    @Tag("backend")
     @Description("Deve falhar fazer login sem preencher o campo senha")
     public void deveFalharFazerLoginSemSenha() {
         Login login = LoginDataFactory.loginSemSenha();
@@ -88,7 +84,6 @@ public class LoginTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("login")
-    @Tag("backend")
     @Description("Deve falhar fazer login sem preencher o campo email")
     public void deveFalharFazerLoginSemEmail() {
         Login login = LoginDataFactory.loginSemEmail();
@@ -107,7 +102,6 @@ public class LoginTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("login")
-    @Tag("backend")
     @Description("Deve fazer login com sucesso")
     public void deveFazerLoginComSucesso() {
         Login login = LoginDataFactory.loginValido();
