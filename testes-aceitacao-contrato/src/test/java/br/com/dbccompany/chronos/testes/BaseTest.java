@@ -1,4 +1,4 @@
-package br.com.dbccompany.chronos.testes.backend.base;
+package br.com.dbccompany.chronos.testes;
 
 import io.restassured.RestAssured;
 import io.restassured.parsing.Parser;

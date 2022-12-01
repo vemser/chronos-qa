@@ -7,8 +7,7 @@ import org.junit.platform.suite.api.SelectPackages;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
-@SelectPackages("br.com.dbccompany.chronos.testes")
+@SelectPackages("br.com.dbccompany.chronos.testes.usuario")
 @IncludeTags("usuario")
 public class TestesUsuarioRunner {
-
 }

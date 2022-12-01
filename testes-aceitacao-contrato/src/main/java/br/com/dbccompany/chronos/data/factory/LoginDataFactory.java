@@ -18,8 +18,8 @@ public class LoginDataFactory {
 
         private static Login novoLogin(){
         return new LoginBuilder()
-                .email(Utils.faker.internet().emailAddress())
-                .senha(Utils.faker.internet().password())
+                .email(emailInexistente())
+                .senha(senhaInexistente())
                 .build();
         }
 
@@ -53,8 +53,8 @@ public class LoginDataFactory {
 
         public static Login loginValido() {
             return new LoginBuilder()
-                .email(ConfigManipulation.getProp().getProperty("email"))
-                .senha(ConfigManipulation.getProp().getProperty("senha"))
+                .email(ConfigManipulation.getProp().getProperty("emailAdm"))
+                .senha(ConfigManipulation.getProp().getProperty("senhaAdm"))
                 .build();
     }
 }

@@ -1,10 +1,9 @@
-package br.com.dbccompany.chronos.testes.backend.tests;
+package br.com.dbccompany.chronos.testes;
 
 import br.com.dbccompany.chronos.client.LoginClient;
 import br.com.dbccompany.chronos.data.factory.LoginDataFactory;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.Login;
-import br.com.dbccompany.chronos.testes.backend.base.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;

@@ -1,7 +1,7 @@
 package br.com.dbccompany.chronos.client;
 
 import br.com.dbccompany.chronos.data.changeless.UsuarioData;
-import br.com.dbccompany.chronos.specs.UsuarioSpecs;
+import br.com.dbccompany.chronos.specs.RequestSpec;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class UsuarioClient {
 
     public static Response listarUsuarios(boolean auth) {
-        RequestSpecification spec = auth ? UsuarioSpecs.requestSpec() : UsuarioSpecs.requestSpecNoAuth();
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -19,7 +19,7 @@ public class UsuarioClient {
         }
 
     public static Response cadastrarUsuario(String json,boolean auth){
-        RequestSpecification spec = auth ? UsuarioSpecs.requestSpec() : UsuarioSpecs.requestSpecNoAuth();
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -28,7 +28,7 @@ public class UsuarioClient {
             ;
     }
     public static Response atualizarPerfil(String json,boolean auth){
-        RequestSpecification spec = auth ? UsuarioSpecs.requestSpec() : UsuarioSpecs.requestSpecNoAuth();
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -37,7 +37,7 @@ public class UsuarioClient {
             ;
     }
     public static Response atualizarCadastro(String json,String id,boolean auth){
-        RequestSpecification spec = auth ? UsuarioSpecs.requestSpec() : UsuarioSpecs.requestSpecNoAuth();
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -46,7 +46,7 @@ public class UsuarioClient {
             ;
     }
     public static Response mudarStatusUsuario(String id,boolean auth){
-        RequestSpecification spec = auth ? UsuarioSpecs.requestSpec() : UsuarioSpecs.requestSpecNoAuth();
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -54,7 +54,7 @@ public class UsuarioClient {
             ;
     }
     public static Response uploadImagem(String json,String id,boolean auth){
-        RequestSpecification spec = auth ? UsuarioSpecs.requestSpec() : UsuarioSpecs.requestSpecNoAuth();
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -63,7 +63,7 @@ public class UsuarioClient {
             ;
     }
     public static Response deletarUsuario(String id,boolean auth){
-        RequestSpecification spec = auth ? UsuarioSpecs.requestSpec() : UsuarioSpecs.requestSpecNoAuth();
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()

@@ -9,6 +9,7 @@ public class UserDataFactory {
 
         private UserDataFactory() {}
 
+        private static String[] cargosVazio = new String[0];
         private static String emailValido() {
             return Utils.faker.internet().emailAddress();
         }
@@ -18,15 +19,13 @@ public class UserDataFactory {
         private static String nomeValido(){
             return Utils.faker.name().fullName();
         }
-        private static String nomeInvalido() {
-            return Utils.faker.number().digits(8);
-        }
         private static String[] cargosInvalidos(){
             return new String[]{Utils.faker.job().title()};
         }
         private static String[] cargosValidos(){
             return new String[]{"ROLE_ADMIN"};
         }
+
 
         private static User novoUsuario() {
             return new UserBuilder()
@@ -51,15 +50,15 @@ public class UserDataFactory {
             cadastroSemNome.setNome(null);
             return cadastroSemNome;
         }
+        public static User cadastroComCargoVazio(){
+            User cadastroComCargoVazio = novoCadastro();
+            cadastroComCargoVazio.setCargos(cargosVazio);
+            return cadastroComCargoVazio;
+        }
         public static User cadastroSemCargo(){
             User cadastroSemCargo = novoCadastro();
             cadastroSemCargo.setCargos(null);
             return cadastroSemCargo;
-        }
-        public static User cadastroComNomeInvalido(){
-            User cadastroComNomeInvalido = novoCadastro();
-            cadastroComNomeInvalido.setNome(nomeInvalido());
-            return cadastroComNomeInvalido;
         }
         public static User cadastroComCargoInvalido(){
             User cadastroComCargoInvalido = novoCadastro();
@@ -85,10 +84,10 @@ public class UserDataFactory {
             userSemCargo.setCargos(null);
             return userSemCargo;
         }
-        public static User userComNomeInvalido(){
-            User userComNomeInvalido = novoUsuario();
-            userComNomeInvalido.setNome(nomeInvalido());
-            return userComNomeInvalido;
+        public static User userComCargoVazio(){
+            User userComCargoVazio = novoUsuario();
+            userComCargoVazio.setCargos(cargosVazio);
+            return userComCargoVazio;
         }
         public static User userComEmailInvalido(){
             User userComEmailInvalido = novoUsuario();
@@ -102,7 +101,7 @@ public class UserDataFactory {
         }
         public static User userComEmailDuplicado() {
             User userComEmailDuplicado = novoUsuario();
-            userComEmailDuplicado.setEmail(ConfigManipulation.getProp().getProperty("email"));
+            userComEmailDuplicado.setEmail(ConfigManipulation.getProp().getProperty("emailAdm"));
             return userComEmailDuplicado;
         }
 }
