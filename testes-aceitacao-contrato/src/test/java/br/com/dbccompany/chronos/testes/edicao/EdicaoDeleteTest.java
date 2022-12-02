@@ -4,6 +4,7 @@ import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
+import br.com.dbccompany.chronos.testes.BaseTest;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -11,10 +12,10 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class EdicaoDeleteTest {
+public class EdicaoDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
-    @Tag("edicao-delete")
+    @Tag("edicao")
     @Description("Deve deletar uma edição com sucesso")
     public void deveDeletarUmaEdicaoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -32,7 +33,7 @@ public class EdicaoDeleteTest {
     }
     @Test
     @Tag("todos")
-    @Tag("edicao-delete")
+    @Tag("edicao")
     @Description("Deve falhar ao deletar uma edição sem auth")
     public void deveFalharAoDeletarUmaEdicaoSemAuth() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -50,7 +51,7 @@ public class EdicaoDeleteTest {
     }
     @Test
     @Tag("todos")
-    @Tag("edicao-delete")
+    @Tag("edicao")
     @Description("Deve falhar ao deletar uma edição inexistente")
     public void deveFalharAoTentarDeletarEdicaoComIdInvalido(){
         ResponseErrorBadDTO response = EdicaoClient.deletarEdicao("0",true)

@@ -3,7 +3,7 @@ package br.com.dbccompany.chronos.model;
 public class UserBuilder {
     private String email;
     private String nome;
-    private String[] cargos;
+    private Cargo[] cargos;
 
     public UserBuilder email(String email) {
         this.email = email;
@@ -13,7 +13,7 @@ public class UserBuilder {
         this.nome = nome;
         return this;
     }
-    public UserBuilder cargos(String[] cargos) {
+    public UserBuilder cargos(Cargo[] cargos) {
         this.cargos = cargos;
         return this;
     }

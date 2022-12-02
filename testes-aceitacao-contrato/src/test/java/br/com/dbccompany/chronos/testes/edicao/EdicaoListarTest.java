@@ -2,6 +2,7 @@ package br.com.dbccompany.chronos.testes.edicao;
 
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.dto.EdicaoListDTO;
+import br.com.dbccompany.chronos.testes.BaseTest;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -9,10 +10,10 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class EdicaoListarTest {
+public class EdicaoListarTest extends BaseTest {
     @Test
     @Tag("todos")
-    @Tag("edicao-listar")
+    @Tag("edicao")
     @Description("Deve falhar ao listar edições sem Auth")
     public void deveFalharListarEdicoesSemAuth(){
         Response response = EdicaoClient.listarEdicoes(false)
@@ -24,7 +25,7 @@ public class EdicaoListarTest {
     }
     @Test
     @Tag("todos")
-    @Tag("edicao-listar")
+    @Tag("edicao")
     @Description("Deve listar edições com sucesso")
     public void deveListarEdicoesComSucesso(){
         EdicaoListDTO response = EdicaoClient.listarEdicoes(true)

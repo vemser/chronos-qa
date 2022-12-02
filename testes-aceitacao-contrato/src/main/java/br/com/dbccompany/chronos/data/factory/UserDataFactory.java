@@ -1,5 +1,7 @@
 package br.com.dbccompany.chronos.data.factory;
 
+import br.com.dbccompany.chronos.model.Cargo;
+import br.com.dbccompany.chronos.model.CargoBuilder;
 import br.com.dbccompany.chronos.model.User;
 import br.com.dbccompany.chronos.model.UserBuilder;
 import br.com.dbccompany.chronos.utils.ConfigManipulation;
@@ -9,7 +11,7 @@ public class UserDataFactory {
 
         private UserDataFactory() {}
 
-        private static String[] cargosVazio = new String[0];
+        private static Cargo[] cargosVazio = new Cargo[0];
         private static String emailValido() {
             return Utils.faker.internet().emailAddress();
         }
@@ -19,13 +21,12 @@ public class UserDataFactory {
         private static String nomeValido(){
             return Utils.faker.name().fullName();
         }
-        private static String[] cargosInvalidos(){
-            return new String[]{Utils.faker.job().title()};
+        private static Cargo[] cargosInvalidos(){
+            return new Cargo[]{new CargoBuilder().idCargo(1).descricao("Cargo 1").nome("Teste").build()};
         }
-        private static String[] cargosValidos(){
-            return new String[]{"ROLE_ADMIN"};
+        private static Cargo[] cargosValidos(){
+            return new Cargo[]{new CargoBuilder().idCargo(1).descricao("Admin").nome("ROLE_ADMIN").build()};
         }
-
 
         private static User novoUsuario() {
             return new UserBuilder()

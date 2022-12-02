@@ -8,6 +8,7 @@ import io.restassured.specification.RequestSpecification;
 public class RequestSpec {
     private static String tokenAdm = new Auth().autenticacaoAdmin();
     private static String tokenTeste = new Auth().autenticacaoUserTeste();
+    private static String tokenGestao = new Auth().autenticacaoGestaoDePessoas();
 
     public static RequestSpecification noAuth() {
         return new RequestSpecBuilder()
@@ -28,5 +29,12 @@ public class RequestSpec {
             .setContentType(ContentType.JSON)
             .build();
     }
+    public static RequestSpecification gestao(){
+        return new RequestSpecBuilder()
+            .addHeader("Authorization",tokenGestao)
+            .setContentType(ContentType.JSON)
+            .build();
+    }
+
 
 }

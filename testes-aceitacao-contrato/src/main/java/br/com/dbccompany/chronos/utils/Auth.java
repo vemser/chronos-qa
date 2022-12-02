@@ -37,4 +37,18 @@ public class Auth {
                 .extract().asString()
             ;
     }
+    public String autenticacaoGestaoDePessoas(){
+        Login login = new Login();
+        login.setEmail(ConfigManipulation.getProp().getProperty("emailGestao"));
+        login.setSenha(ConfigManipulation.getProp().getProperty("senhaGestao"));
+        return
+            given()
+                .contentType(ContentType.JSON)
+                .body(new Gson().toJson(login))
+            .when()
+                .post(LoginData.SERVICE)
+                .then()
+                .extract().asString()
+            ;
+    }
 }

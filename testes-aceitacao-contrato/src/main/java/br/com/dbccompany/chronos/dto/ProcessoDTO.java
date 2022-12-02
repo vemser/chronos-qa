@@ -10,5 +10,5 @@ public class ProcessoDTO {
     Integer diasUteis;
     Integer ordemExecucao;
     AreaEnvolvidaDTO[] areasEnvolvidas;
-    ResponsaveisDTO[] responsaveis;
+    ResponsavelDTO[] responsaveis;
 }

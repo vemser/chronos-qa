@@ -4,6 +4,7 @@ import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
+import br.com.dbccompany.chronos.testes.BaseTest;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -11,10 +12,10 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class EdicaoStatusTest {
+public class EdicaoStatusTest extends BaseTest {
     @Test
     @Tag("todos")
-    @Tag("edicao-status")
+    @Tag("edicao")
     @Description("Deve alterar o status de uma edição com sucesso")
     public void deveAlterarStatusDeUmaEdicaoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -32,7 +33,7 @@ public class EdicaoStatusTest {
     }
     @Test
     @Tag("todos")
-    @Tag("edicao-status")
+    @Tag("edicao")
     @Description("Deve falhar alterar status de uma edição com id inválido")
     public void deveFalharAoAlterarStatusDeUmaEdicaoComIdInvalido() {
         ResponseErrorBadDTO response = EdicaoClient.alterarStatusEdicao("0",true)
@@ -40,11 +41,11 @@ public class EdicaoStatusTest {
                 .log().all()
                 .extract().as(ResponseErrorBadDTO.class)
             ;
-        Assert.assertEquals(HttpStatus.SC_NOT_FOUND, response.getStatus().intValue());
+        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
     }
     @Test
     @Tag("todos")
-    @Tag("edicao-status")
+    @Tag("edicao")
     @Description("Deve falhar alterar status de uma edição sem auth")
     public void deveFalharAoAlterarStatusDeUmaEdicaoSemAuth(){
         Response response = EdicaoClient.alterarStatusEdicao("0",false)
