@@ -9,7 +9,7 @@ import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ProcessoDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -20,6 +20,10 @@ public class ProcessoDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Deletar Processo")
     @Description("Deve deletar um processo com sucesso")
     public void deveDeletarUmProcessoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -42,6 +46,10 @@ public class ProcessoDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Deletar Processo")
     @Description("Deve falhar ao deletar um processo sem auth")
     public void deveFalharAoDeletarUmProcessoSemAuth() {
         Response response = ProcessoClient.deletarProcesso("0",false)
@@ -49,6 +57,6 @@ public class ProcessoDeleteTest extends BaseTest {
                 .log().all()
                 .extract().response()
             ;
-        Assert.assertEquals(HttpStatus.SC_UNAUTHORIZED, response.statusCode());
+        Assert.assertEquals(HttpStatus.SC_FORBIDDEN, response.statusCode());
     }
 }

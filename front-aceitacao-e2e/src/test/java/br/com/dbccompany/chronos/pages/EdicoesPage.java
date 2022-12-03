@@ -29,13 +29,6 @@ public class EdicoesPage extends BasePage {
         click(btnEditarUltima);
     }
 
-    public static boolean validarToastSucesso() {
-        return getText(toastMessage).contains("sucesso");
-    }
-    public static boolean validarToastErro() {
-        return getText(toastMessage).contains("erro");
-    }
-
     public static void clicarBotaoExcluirUltima() {
         scrollBy("200");
         click(btnExcluirUltima);

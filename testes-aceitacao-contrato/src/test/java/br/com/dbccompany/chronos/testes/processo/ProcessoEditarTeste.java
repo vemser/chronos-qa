@@ -11,7 +11,7 @@ import br.com.dbccompany.chronos.model.Processo;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
@@ -22,6 +22,10 @@ public class ProcessoEditarTeste extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Editar Processo")
     @Description("Deve editar um processo com sucesso")
     public void deveEditarUmProcessoComSucesso() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -44,6 +48,10 @@ public class ProcessoEditarTeste extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Editar Processo")
     @Description("Deve falhar editar processo sem nome")
     public void deveFalharEditarProcessoSemNome() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -66,6 +74,10 @@ public class ProcessoEditarTeste extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Editar Processo")
     @Description("Deve falhar editar processo sem ordem de execução")
     public void deveFalharEditarProcessoSemOrdem() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -88,6 +100,10 @@ public class ProcessoEditarTeste extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Editar Processo")
     @Description("Deve falhar editar processo sem responsável")
     public void deveFalharEditarProcessoSemResponsavel() {
         EdicaoDTO edicao = PreloadData.edicao();

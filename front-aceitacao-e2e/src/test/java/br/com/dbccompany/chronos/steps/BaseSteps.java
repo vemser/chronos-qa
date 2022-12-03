@@ -25,6 +25,11 @@ public class BaseSteps extends Browser {
         LoginPage.preencherSenha(ConfigManipulation.getProp().getProperty("senhaAdm"));
         LoginPage.clicarEntrar();
     }
+    public void fazerLoginTeste(){
+        LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailTeste"));
+        LoginPage.preencherSenha(ConfigManipulation.getProp().getProperty("senhaTeste"));
+        LoginPage.clicarEntrar();
+    }
 
 }
 

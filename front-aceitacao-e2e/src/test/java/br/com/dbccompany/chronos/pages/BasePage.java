@@ -69,4 +69,12 @@ public class BasePage extends Elements {
         waitElement(by);
         return element(by).getText().contains(text);
     }
+
+    public static boolean validarToastSucesso() {
+        return checkElementTextContains(toastMessage,"sucesso");
+    }
+    public static boolean validarToastErro() {
+        return checkElementTextContains(toastMessage,"erro");
+    }
+
 }

@@ -8,7 +8,7 @@ import br.com.dbccompany.chronos.dto.UsuarioDTO;
 import br.com.dbccompany.chronos.model.Perfil;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -20,6 +20,10 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Perfil Usuário")
     @Description("Deve atualizar perfil com sucesso")
     public void deveAtualizarPerfilComSucesso(){
         Perfil perfil = PerfilDataFactory.perfilValido();
@@ -38,6 +42,10 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Perfil Usuário")
     @Description("Deve retornar erro ao tentar mudar perfil sem auth")
     public void deveFalharAtualizarPerfilSemAuth(){
         Perfil perfil = PerfilDataFactory.perfilValido();
@@ -50,6 +58,10 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Perfil Usuário")
     @Description("Deve retornar erro ao tentar atualizar perfil sem nome")
     public void deveFalharAtualizarPerfilSemNome(){
         Perfil perfil = PerfilDataFactory.perfilSemNome();
@@ -62,6 +74,10 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Perfil Usuário")
     @Description("Deve retornar erro ao tentar atualizar perfil sem senhaAtual")
     public void deveFalharAtualizarPerfilSemSenhaAtual(){
         Perfil perfil = PerfilDataFactory.perfilSemSenhaAtual();
@@ -74,6 +90,10 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Perfil Usuário")
     @Description("Deve retornar erro ao tentar atualizar perfil sem novaSenha")
     public void deveFalharAtualizarPerfilSemNovaSenha(){
         Perfil perfil = PerfilDataFactory.perfilSemNovaSenha();
@@ -86,6 +106,10 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Perfil Usuário")
     @Description("Deve retornar erro ao tentar atualizar perfil sem confirmacaoNovaSenha")
     public void deveFalharAtualizarPerfilSemConfirmacaoNovaSenha(){
         Perfil perfil = PerfilDataFactory.perfilSemConfirmacaoNovaSenha();
@@ -98,6 +122,10 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Perfil Usuário")
     @Description("Deve retornar erro ao tentar atualizar perfil com senhas diferentes")
     public void deveFalharAtualizarPerfilComSenhasDiferentes(){
         Perfil perfil = PerfilDataFactory.perfilComSenhasDiferentes();

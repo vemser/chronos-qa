@@ -12,7 +12,7 @@ import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.Processo;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -23,6 +23,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Criar Processo")
     @Description("Deve criar um novo processo com sucesso")
     public void deveCriarUmNovoProcessoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -43,6 +47,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Criar Processo")
     @Description("Deve falhar ao tentar criar um processo com idEtapa inexistente")
     public void deveFalharAoTentarCriarUmProcessoComIdEtapaInexistente() {
         Processo processo = ProcessoDataFactory.processoValido();
@@ -56,6 +64,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Criar Processo")
     @Description("Deve falhar criar um novo processo sem nome")
     public void deveFalharCriarUmNovoProcessoSemNome() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -76,6 +88,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Criar Processo")
     @Description("Deve falhar criar um novo processo sem auth")
     public void deveFalharCriarUmNovoProcessoSemAuth() {
         Processo processo = ProcessoDataFactory.processoValido();
@@ -88,6 +104,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Criar Processo")
     @Description("Deve falhar criar um novo processo sem duracaoProcesso")
     public void deveFalharCriarUmNovoProcessoSemDuracaoProcesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -108,6 +128,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Criar Processo")
     @Description("Deve falhar criar um novo processo sem dias uteis")
     public void deveFalharCriarUmNovoProcessoSemDiasUteis() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();

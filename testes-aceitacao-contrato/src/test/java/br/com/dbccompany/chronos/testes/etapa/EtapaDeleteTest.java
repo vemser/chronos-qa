@@ -8,7 +8,7 @@ import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -19,6 +19,10 @@ public class EtapaDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Deletar Etapa")
     @Description("Deve deletar etapa com sucesso")
     public void deveDeletarEtapaComSucesso(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -39,6 +43,10 @@ public class EtapaDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Deletar Etapa")
     @Description("Deve falhar ao deletar etapa sem Auth")
     public void deveFalharDeletarEtapaSemAuth(){
         Response response = EtapaClient.deletarEtapa("0", false)
@@ -50,6 +58,10 @@ public class EtapaDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Deletar Etapa")
     @Description("Deve falhar ao deletar etapa inexistente")
     public void deveFalharDeletarEtapaInexistente(){
         ResponseErrorBadDTO response = EtapaClient.deletarEtapa("0", true)

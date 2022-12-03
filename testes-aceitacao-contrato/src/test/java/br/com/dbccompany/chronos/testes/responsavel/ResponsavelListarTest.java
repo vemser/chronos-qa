@@ -3,7 +3,7 @@ package br.com.dbccompany.chronos.testes.responsavel;
 import br.com.dbccompany.chronos.client.ResponsavelClient;
 import br.com.dbccompany.chronos.dto.ResponsavelDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -15,6 +15,10 @@ public class ResponsavelListarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Responsavel")
+    @Feature("Listar Responsaveis")
     @Description("Deve listar todos os responsáveis com sucesso")
     public void deveListarTodosOsResponsaveisComSucesso() {
         ResponsavelDTO[] response = ResponsavelClient.listarResponsavel(true)
@@ -26,6 +30,10 @@ public class ResponsavelListarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Responsavel")
+    @Feature("Listar Responsaveis")
     @Description("Deve falhar listar todos os responsáveis sem Auth")
     public void deveFalharListarTodosOsResponsaveisSemAuth() {
         Response response = ResponsavelClient.listarResponsavel(false)

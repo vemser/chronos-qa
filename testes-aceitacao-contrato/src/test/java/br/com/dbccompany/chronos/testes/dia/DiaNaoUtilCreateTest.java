@@ -59,7 +59,7 @@ public class DiaNaoUtilCreateTest extends BaseTest {
     @Story("Dia não útil")
     @Feature("Criar dia não útil")
     @Severity(SeverityLevel.MINOR)
-    @Description("Deve falhar criar um dia não útil sem descrição")
+    @Description("Deve retornar erro ao criar um dia não útil sem descrição")
     public void deveFalharCriarUmDiaNaoUtilSemDescricao() {
         DiaNaoUtil diaNaoUtil = DiaNaoUtilDataFactory.diaNaoUtilSemDescricao();
         ResponseErrorBadDTO response = DiaNaoUtilClient.criarDiaNaoUtil(Utils.converterParaJson(diaNaoUtil),true)
@@ -76,7 +76,7 @@ public class DiaNaoUtilCreateTest extends BaseTest {
     @Story("Dia não útil")
     @Feature("Criar dia não útil")
     @Severity(SeverityLevel.MINOR)
-    @Description("Deve falhar criar um dia não útil sem data inicial")
+    @Description("Deve retornar erro ao criar um dia não útil sem data inicial")
     public void deveFalharCriarUmDiaNaoUtilSemDataInicial() {
         DiaNaoUtil diaNaoUtil = DiaNaoUtilDataFactory.diaNaoUtilSemDataInicial();
         ResponseErrorBadDTO response = DiaNaoUtilClient.criarDiaNaoUtil(Utils.converterParaJson(diaNaoUtil),true)
@@ -94,7 +94,7 @@ public class DiaNaoUtilCreateTest extends BaseTest {
     @Story("Dia não útil")
     @Feature("Criar dia não útil")
     @Severity(SeverityLevel.MINOR)
-    @Description("Deve falhar criar um dia não útil sem repeticao anual")
+    @Description("Deve retornar erro ao criar um dia não útil sem repeticao anual")
     public void deveFalharCriarUmDiaNaoUtilSemRepeticaoAnual() {
         DiaNaoUtil diaNaoUtil = DiaNaoUtilDataFactory.diaNaoUtilSemRepeticaoAnual();
         ResponseErrorBadDTO response = DiaNaoUtilClient.criarDiaNaoUtil(Utils.converterParaJson(diaNaoUtil),true)
@@ -112,7 +112,7 @@ public class DiaNaoUtilCreateTest extends BaseTest {
     @Story("Dia não útil")
     @Feature("Criar dia não útil")
     @Severity(SeverityLevel.MINOR)
-    @Description("Deve falhar criar um dia não útil sem data final")
+    @Description("Deve retornar erro ao criar um dia não útil sem data final")
     public void deveFalharCriarUmDiaNaoUtilSemDataFinal() {
         DiaNaoUtil diaNaoUtil = DiaNaoUtilDataFactory.diaNaoUtilSemDataFinal();
         ResponseErrorBadDTO response = DiaNaoUtilClient.criarDiaNaoUtil(Utils.converterParaJson(diaNaoUtil),true)

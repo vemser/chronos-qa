@@ -8,7 +8,7 @@ import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -23,6 +23,10 @@ public class EtapaListarPorIdTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Listar Etapa por Id")
     @Description("Deve listar etapa por id com sucesso")
     public void deveListarEtapaPorIdComSucesso(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -44,6 +48,10 @@ public class EtapaListarPorIdTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Listar Etapa por Id")
     @Description("Deve falhar ao listar etapa por id inexistente")
     public void deveFalharListarEtapaPorIdInexistente(){
         ResponseErrorBadDTO response = EtapaClient.listarEtapaPorId("0", true)
@@ -55,6 +63,10 @@ public class EtapaListarPorIdTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Listar Etapa por Id")
     @Description("Deve falhar ao listar etapa por id sem autenticação")
     public void deveFalharListarEtapaPorIdSemAutenticacao(){
             Response response = EtapaClient.listarEtapaPorId("0", false)

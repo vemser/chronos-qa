@@ -7,7 +7,7 @@ import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ProcessoDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
@@ -17,6 +17,10 @@ public class ProcessoListarPorIdTeste extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Listar Processo por Id")
     @Description("Deve listar um processo por id com sucesso")
     public void deveListarUmProcessoPorIdComSucesso() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -38,6 +42,10 @@ public class ProcessoListarPorIdTeste extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Listar Processo por Id")
     @Description("Deve falhar ao listar um processo por id sem auth")
     public void deveFalharAoListarUmProcessoPorIdSemAuth() {
             ProcessoClient.listarProcessoPorId("0",false)
@@ -48,6 +56,10 @@ public class ProcessoListarPorIdTeste extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Processo")
+    @Feature("Listar Processo por Id")
     @Description("Deve falhar ao listar um processo por id inexistente")
     public void deveFalharAoListarUmProcessoPorIdInexistente() {
         ProcessoClient.listarProcessoPorId("0",true)

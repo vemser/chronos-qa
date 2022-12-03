@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
 import br.com.dbccompany.chronos.dto.ResponsavelDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -16,6 +16,10 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Epic("Backend")
+    @Owner("Kevin Aryel")
+    @Story("Responsavel")
+    @Feature("Deletar Responsavel")
     @Description("Deve deletar um responsável com sucesso")
     public void deveDeletarResponsavelComSucesso(){
         ResponsavelDTO responsavel = PreloadData.responsavel();
@@ -29,6 +33,10 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Responsavel")
+    @Feature("Deletar Responsavel")
     @Description("Deve falhar deletar um responsável sem Auth")
     public void deveFalharDeletarResponsavelSemAuth(){
          Response response = ResponsavelClient.deletarResponsavel("0", false)
@@ -40,6 +48,10 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Epic("Backend")
+    @Owner("Kevin Aryel")
+    @Story("Responsavel")
+    @Feature("Deletar Responsavel")
     @Description("Deve falhar deletar um responsável com id inválido")
     public void deveFalharDeletarResponsavelComIdInvalido(){
         ResponseErrorBadDTO response = ResponsavelClient.deletarResponsavel("0", true)

@@ -199,4 +199,5 @@ public class TesteEdicoesSteps extends BaseSteps{
             EdicoesPage.clicarBotaoExcluirUltima();
         }
     }
+
 }

@@ -7,7 +7,7 @@ import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.model.Edicao;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -19,6 +19,10 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
     @Description("Deve editar uma edição com sucesso")
     public void deveEditarUmaEdicaoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -38,7 +42,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição sem auth")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição sem auth")
     public void deveFalharAoEditarUmaEdicaoSemAuth() {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoValida();
             Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),"1", false)
@@ -51,7 +59,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição com id inválido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição com id inválido")
     public void deveFalharAoEditarUmaEdicaoComIdInvalido() {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoValida();
             Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),"0", true)
@@ -64,7 +76,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição sem nome")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição sem nome")
     public void deveFalharAoEditarUmaEdicaoSemNome() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -84,7 +100,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição sem dataInicial")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve fretornar erro ao editar uma edição sem dataInicial")
     public void deveFalharAoEditarUmaEdicaoSemDataInicial() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -104,7 +124,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição sem dataFinal")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição sem dataFinal")
     public void deveFalharAoEditarUmaEdicaoSemDataFinal() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -125,7 +149,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição com dataFinal menor que dataInicial")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição com dataFinal menor que dataInicial")
     public void deveFalharAoEditarUmaEdicaoComDataFinalMenorQueDataInicial() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -144,7 +172,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição com dataFinal igual a dataInicial")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição com dataFinal igual a dataInicial")
     public void deveFalharAoEditarUmaEdicaoComDataFinalIgualADataInicial() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -163,7 +195,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição com dataFinal no formato Inválido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição com dataFinal no formato Inválido")
     public void deveFalharAoEditarUmaEdicaoComDataFinalNoFormatoInvalido() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -182,7 +218,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição com dataInicial no formato invalido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição com dataInicial no formato invalido")
     public void deveFalharAoEditarUmaEdicaoComDataInicialNoFormatoInvalido() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -201,7 +241,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição com data inicial tipo invalido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição com data inicial tipo invalido")
     public void deveFalharAoEditarUmaEdicaoComDataInicialTipoInvalido() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -220,7 +264,11 @@ public class EdicaoEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao editar uma edição com data final tipo invalido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Editar Edição")
+    @Description("Deve retornar erro ao editar uma edição com data final tipo invalido")
     public void deveFalharAoEditarUmaEdicaoComDataFinalTipoInvalido() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();

@@ -7,7 +7,7 @@ import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.Responsavel;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -18,6 +18,10 @@ public class ResponsavelCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Responsavel")
+    @Feature("Criar Responsavel")
     @Description("Criar um responsável com sucesso")
     public void criarResponsavelComSucesso(){
         Responsavel responsavel = ResponsavelDataFactory.responsavelValido();
@@ -32,6 +36,10 @@ public class ResponsavelCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Responsavel")
+    @Feature("Criar Responsavel")
     @Description("Deve falhar criar um responsável sem Auth")
     public void deveFalharCriarResponsavelSemAuth(){
         Responsavel responsavel = ResponsavelDataFactory.responsavelValido();
@@ -44,6 +52,10 @@ public class ResponsavelCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Responsavel")
+    @Feature("Criar Responsavel")
     @Description("Deve falhar criar um responsável sem nome inválido")
     public void deveFalharCriarResponsavelSemNome(){
         Responsavel responsavel = ResponsavelDataFactory.responsavelSemNome();

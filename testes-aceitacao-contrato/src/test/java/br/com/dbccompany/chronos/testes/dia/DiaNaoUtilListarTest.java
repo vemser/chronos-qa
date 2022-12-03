@@ -35,7 +35,7 @@ public class DiaNaoUtilListarTest extends BaseTest {
     @Story("Dia não útil")
     @Feature("Listar dia não útil")
     @Severity(SeverityLevel.MINOR)
-    @Description("Deve falhar listar todos os dias não úteis sem auth")
+    @Description("Deve retornar erro ao listar todos os dias não úteis sem auth")
     public void deveFalharListarTodosOsDiasNaoUteisSemAuth() {
         DiaNaoUtilClient.listarDiaNaoUtil(false)
                 .then()

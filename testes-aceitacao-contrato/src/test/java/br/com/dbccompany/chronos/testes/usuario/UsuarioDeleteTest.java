@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.dto.UsuarioDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -17,6 +17,10 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Deletar Usuário")
     @Description("Deve deletar usuario com sucesso")
     public void deveDeletarUsuarioComSucesso(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -30,6 +34,10 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Deletar Usuário")
     @Description("Deve retornar erro ao tentar deletar usuario sem auth")
     public void deveFalharDeletarUsuarioSemAuth(){
         Response response = UsuarioClient.deletarUsuario("1",false)
@@ -42,6 +50,10 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Deletar Usuário")
     @Description("Deve retornar erro ao tentar deletar usuario com id inválido")
     public void deveFalharDeletarUsuarioComIdInvalido(){
         ResponseErrorBadDTO response = UsuarioClient.deletarUsuario("0",true)

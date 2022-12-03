@@ -3,7 +3,7 @@ package br.com.dbccompany.chronos.testes.usuario;
 import br.com.dbccompany.chronos.client.UsuarioClient;
 import br.com.dbccompany.chronos.dto.ResponseListUserDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -17,6 +17,10 @@ public class UsuarioGetTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Listar Usuários")
     @Description("Deve listar todos usuarios com auth de  sem dados")
     public void deveListarUsuarioComSucesso() {
         ResponseListUserDTO response = UsuarioClient.listarUsuarios(true)
@@ -31,6 +35,10 @@ public class UsuarioGetTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Listar Usuários")
     @Description("Deve retornar erro ao tentar listar todos usuarios sem auth")
     public void deveFalharListarUsuarioSemAuth() {
         Response response = UsuarioClient.listarUsuarios(false)

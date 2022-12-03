@@ -23,7 +23,7 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Story("Area Envolvida")
     @Feature("Criar Area Envolvida")
     @Severity(SeverityLevel.CRITICAL)
-    @Description("Criar uma área envolvida com sucesso")
+    @Description("Deve criar uma área envolvida com sucesso")
     public void criarAreaEnvolvidaComSucesso() {
         AreaEnvolvida areaEnvolvida = AreaEnvolvidaDataFactory.areaEnvolvidaValida();
         AreaEnvolvidaDTO response = AreaEnvolvidaClient.criarAreaEnvolvida(Utils.converterParaJson(areaEnvolvida), true)
@@ -41,7 +41,7 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Story("Area Envolvida")
     @Feature("Criar Area Envolvida")
     @Severity(SeverityLevel.NORMAL)
-    @Description("Deve falhar criar uma área envolvida sem auth")
+    @Description("Deve retornar erro ao criar uma área envolvida sem auth")
     public void criarAreaEnvolvidaSemAuth() {
         AreaEnvolvida areaEnvolvida = AreaEnvolvidaDataFactory.areaEnvolvidaValida();
         Response response = AreaEnvolvidaClient.criarAreaEnvolvida(Utils.converterParaJson(areaEnvolvida), false)
@@ -58,7 +58,7 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Story("Area Envolvida")
     @Feature("Criar Area Envolvida")
     @Severity(SeverityLevel.MINOR)
-    @Description("Deve falhar criar uma área envolvida sem nome")
+    @Description("Deve retornar erro ao criar uma área envolvida sem nome")
     public void criarAreaEnvolvidaSemNome() {
         AreaEnvolvida areaEnvolvida = AreaEnvolvidaDataFactory.areaEnvolvidaSemNome();
         ResponseErrorBadDTO response = AreaEnvolvidaClient.criarAreaEnvolvida(Utils.converterParaJson(areaEnvolvida), true)

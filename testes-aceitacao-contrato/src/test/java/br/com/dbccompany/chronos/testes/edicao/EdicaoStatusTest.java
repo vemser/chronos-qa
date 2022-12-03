@@ -34,7 +34,7 @@ public class EdicaoStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar alterar status de uma edição com id inválido")
+    @Description("Deve retornar erro ao tentar alterar status de uma edição com id inválido")
     public void deveFalharAoAlterarStatusDeUmaEdicaoComIdInvalido() {
         ResponseErrorBadDTO response = EdicaoClient.alterarStatusEdicao("0",true)
             .then()
@@ -46,7 +46,7 @@ public class EdicaoStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar alterar status de uma edição sem auth")
+    @Description("Deve retornar erro ao alterar status de uma edição sem auth")
     public void deveFalharAoAlterarStatusDeUmaEdicaoSemAuth(){
         Response response = EdicaoClient.alterarStatusEdicao("0",false)
                 .then()

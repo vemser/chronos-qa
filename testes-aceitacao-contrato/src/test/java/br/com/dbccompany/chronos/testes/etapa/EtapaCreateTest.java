@@ -11,7 +11,7 @@ import br.com.dbccompany.chronos.model.Etapa;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -22,6 +22,10 @@ public class EtapaCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Criar Etapa")
     @Description("Deve criar etapa com sucesso")
     public void deveCriarEtapaComSucesso(){
         EdicaoDTO edicao = PreloadData.edicao();
@@ -40,7 +44,11 @@ public class EtapaCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
-    @Description("Deve falhar ao criar etapa sem nome")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Criar Etapa")
+    @Description("Deve retornar erro ao criar etapa sem nome")
     public void deveFalharCriarEtapaSemNome(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String idEdicao = edicao.getIdEdicao().toString();
@@ -58,7 +66,11 @@ public class EtapaCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
-    @Description("Deve falhar ao criar etapa sem ordem de execução")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Criar Etapa")
+    @Description("Deve retornar erro ao criar etapa sem ordem de execução")
     public void deveFalharCriarEtapaSemOrdemExecucao(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String idEdicao = edicao.getIdEdicao().toString();
@@ -77,7 +89,11 @@ public class EtapaCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
-    @Description("Deve falhar ao criar etapa sem auth")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Criar Etapa")
+    @Description("Deve retornar erro ao criar etapa sem auth")
     public void deveFalharCriarEtapaSemAuth(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String idEdicao = edicao.getIdEdicao().toString();

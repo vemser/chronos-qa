@@ -7,7 +7,7 @@ import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.Edicao;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -18,6 +18,10 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
     @Description("Deve criar uma edição com sucesso")
     public void deveCriarUmaEdicaoComSucesso() {
         Edicao edicao = EdicaoDataFactory.edicaoValida();
@@ -35,7 +39,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição sem auth")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição sem auth")
     public void deveFalharAoCriarUmaEdicaoSemAuth() {
         Edicao edicao = EdicaoDataFactory.edicaoValida();
         Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),false)
@@ -48,7 +56,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição sem nome")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição sem nome")
     public void deveFalharAoCriarUmaEdicaoSemNome() {
         Edicao edicao = EdicaoDataFactory.edicaoSemNome();
         ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -61,7 +73,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição sem dataInicial")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição sem dataInicial")
     public void deveFalharAoCriarUmaEdicaoSemDataInicial() {
         Edicao edicao = EdicaoDataFactory.edicaoSemDataInicial();
         ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -73,7 +89,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição sem dataFinal")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição sem dataFinal")
     public void deveFalharAoCriarUmaEdicaoSemDataFinal() {
         Edicao edicao = EdicaoDataFactory.edicaoSemDataFinal();
         ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -86,7 +106,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição com dataFinal menor que Inicial")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição com dataFinal menor que Inicial")
     public void deveFalharAoCriarUmaEdicaoComDataInicialMaiorQueDataFinal() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalMenorQueDataInicial();
         ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -99,7 +123,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição com dataFinal igual a Inicial")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição com dataFinal igual a Inicial")
     public void deveFalharAoCriarUmaEdicaoComDataInicialIgualADataFinal() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalIgualADataInicial();
         ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -112,7 +140,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição com dataInicial no formato invalido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição com dataInicial no formato invalido")
     public void deveFalharAoCriarUmaEdicaoComDataInicialNoFormatoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataInicialFormatoInvalido();
         Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -124,7 +156,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição com dataFinal no formato invalido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição com dataFinal no formato invalido")
     public void deveFalharAoCriarUmaEdicaoComDataFinalNoFormatoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalFormatoInvalido();
         Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -136,7 +172,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição com dataInicial com tipo inválido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição com dataInicial com tipo inválido")
     public void deveFalharAoCriarUmaEdicaoComDataInicialComTipoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataInicialTipoInvalido();
         Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
@@ -148,7 +188,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao criar uma edição com dataFinal com tipo inválido")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Criar Edição")
+    @Description("Deve retornar erro ao criar uma edição com dataFinal com tipo inválido")
     public void deveFalharAoCriarUmaEdicaoComDataFinalComTipoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalTipoInvalido();
         Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)

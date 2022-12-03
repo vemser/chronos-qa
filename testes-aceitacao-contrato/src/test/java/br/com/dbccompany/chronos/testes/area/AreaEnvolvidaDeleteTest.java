@@ -51,7 +51,7 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Tag("todos")
     @Tag("area-envolvida")
     @Severity(SeverityLevel.MINOR)
-    @Description("Deve falhar deletar uma área envolvida com id inválido")
+    @Description("Deve retornar erro ao deletar uma área envolvida com id inválido")
     public void deletarAreaEnvolvidaComIdInvalido() {
         ResponseErrorBadDTO response = AreaEnvolvidaClient.deletarAreaEnvolvida("0", true)
                 .then()

@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.data.factory.EtapaDataFactory;
 import br.com.dbccompany.chronos.dto.EtapaListDTO;
 import br.com.dbccompany.chronos.model.Etapa;
 import br.com.dbccompany.chronos.testes.BaseTest;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,6 +14,10 @@ public class EtapaListarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Listar Etapa")
     @Description("Deve listar etapas com sucesso")
     public void deveListarEtapasComSucesso(){
         EtapaListDTO response = EtapaClient.listarEtapa(true)
@@ -26,6 +30,10 @@ public class EtapaListarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Listar Etapa")
     @Description("Deve falhar ao listar etapas sem Auth")
     public void deveFalharListarEtapasSemAuth(){
         EtapaClient.listarEtapa(false)

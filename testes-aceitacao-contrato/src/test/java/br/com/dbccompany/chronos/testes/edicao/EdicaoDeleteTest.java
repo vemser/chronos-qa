@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -16,6 +16,10 @@ public class EdicaoDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Deletar Edição")
     @Description("Deve deletar uma edição com sucesso")
     public void deveDeletarUmaEdicaoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -34,7 +38,11 @@ public class EdicaoDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao deletar uma edição sem auth")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Deletar Edição")
+    @Description("Deve retornar erro ao deletar uma edição sem auth")
     public void deveFalharAoDeletarUmaEdicaoSemAuth() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String edicaoId = edicao.getIdEdicao().toString();
@@ -52,7 +60,11 @@ public class EdicaoDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
-    @Description("Deve falhar ao deletar uma edição inexistente")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Edição")
+    @Feature("Deletar Edição")
+    @Description("Deve retornar erro ao deletar uma edição inexistente")
     public void deveFalharAoTentarDeletarEdicaoComIdInvalido(){
         ResponseErrorBadDTO response = EdicaoClient.deletarEdicao("0",true)
             .then()

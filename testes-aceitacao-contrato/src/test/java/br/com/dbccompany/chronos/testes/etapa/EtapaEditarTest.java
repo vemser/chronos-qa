@@ -11,7 +11,7 @@ import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.Etapa;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -23,6 +23,10 @@ public class EtapaEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Editar Etapa")
     @Description("Deve editar uma etapa com sucesso")
     public void deveEditarEtapaComSucesso(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -45,6 +49,10 @@ public class EtapaEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem Auth")
     public void deveFalharEditarEtapaSemAuth(){
         Etapa etapa = EtapaDataFactory.etapaValida();
@@ -57,6 +65,10 @@ public class EtapaEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa com id inválido")
     public void deveFalharEditarEtapaComIdInvalido(){
         Etapa etapa = EtapaDataFactory.etapaValida();
@@ -69,6 +81,10 @@ public class EtapaEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem nome")
     public void deveFalharEditarEtapaSemNome(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -90,6 +106,10 @@ public class EtapaEditarTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("etapa")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Etapa")
+    @Feature("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem ordemExecucao")
     public void deveFalharEditarEtapaSemOrdemExecucao(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();

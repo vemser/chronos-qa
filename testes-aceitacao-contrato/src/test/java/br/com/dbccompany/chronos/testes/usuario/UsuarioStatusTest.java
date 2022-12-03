@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.dto.UsuarioDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -17,6 +17,10 @@ public class UsuarioStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Status Usuário")
     @Description("Deve mudar status com sucesso")
     public void deveMudarStatusComSucesso(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -32,6 +36,10 @@ public class UsuarioStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Status Usuário")
     @Description("Deve retornar erro ao tentar mudar status sem auth")
     public void deveFalharMudarStatusSemAuth(){
         Response response = UsuarioClient.mudarStatusUsuario("1",false)
@@ -44,6 +52,10 @@ public class UsuarioStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Editar Status Usuário")
     @Description("Deve retornar erro ao tentar mudar status com id inválido")
     public void deveFalharMudarStatusComIdInvalido(){
         ResponseErrorBadDTO response = UsuarioClient.mudarStatusUsuario("0",true)
@@ -52,6 +64,4 @@ public class UsuarioStatusTest extends BaseTest {
                 .extract().as(ResponseErrorBadDTO.class);
         Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
     }
-
-
 }

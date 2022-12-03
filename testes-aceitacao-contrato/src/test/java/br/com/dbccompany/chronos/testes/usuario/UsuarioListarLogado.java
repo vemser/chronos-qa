@@ -4,6 +4,7 @@ import br.com.dbccompany.chronos.client.UsuarioClient;
 import br.com.dbccompany.chronos.dto.UsuarioDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.ConfigManipulation;
+import io.qameta.allure.*;
 import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,11 @@ public class UsuarioListarLogado extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Usuário")
+    @Feature("Listar Usuário Logado")
+    @Description("Deve listar usuario logado com sucesso")
     public void deveListarUsuarioLogadoComSucesso() {
         UsuarioDTO response = UsuarioClient.listarUsuarioLogado(true)
                 .then()
