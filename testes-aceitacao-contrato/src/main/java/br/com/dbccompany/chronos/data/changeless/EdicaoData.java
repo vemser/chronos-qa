@@ -6,4 +6,6 @@ public class EdicaoData {
     public static final String SERVICE_ENABLE_DISABLE = String.format("%s/enable-disable", SERVICE);
 
     public static final String SERVICE_LISTAR = String.format("%s/listar", SERVICE);
+
+    public static final String SERVICE_CLONAR = String.format("%s/clone", SERVICE);
 }
