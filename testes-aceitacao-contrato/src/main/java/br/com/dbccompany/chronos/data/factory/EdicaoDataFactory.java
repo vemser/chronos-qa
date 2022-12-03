@@ -49,11 +49,6 @@ public class EdicaoDataFactory {
         return edicaoSemDataFinal;
     }
 
-    public static Edicao edicaoComDataInicialInvalida(){
-        Edicao edicaoComdataInicialInvalida = novaEdicao();
-        edicaoComdataInicialInvalida.setDataInicial(dataInicialInvalida);
-        return edicaoComdataInicialInvalida;
-    }
     public static Edicao edicaoComDataFinalMenorQueDataInicial(){
         Edicao edicaoComDataFinalMenorQueDataInicial = novaEdicao();
         edicaoComDataFinalMenorQueDataInicial.setDataFinal(dataFinalInvalida);

@@ -47,7 +47,7 @@ public class LoginDataFactory {
 
         public static Login loginEmailValidoSenhaInvalida(){
             Login loginEmailValidoSenhaInvalida = novoLogin();
-            loginEmailValidoSenhaInvalida.setEmail(ConfigManipulation.getProp().getProperty("email"));
+            loginEmailValidoSenhaInvalida.setEmail(ConfigManipulation.getProp().getProperty("emailAdm"));
             return loginEmailValidoSenhaInvalida;
         }
 
