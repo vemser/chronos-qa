@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -16,6 +16,10 @@ public class EdicaoStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Feature("Edição")
+    @Story("Editar Status Edição")
     @Description("Deve alterar o status de uma edição com sucesso")
     public void deveAlterarStatusDeUmaEdicaoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -34,6 +38,10 @@ public class EdicaoStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Feature("Edição")
+    @Story("Editar Status Edição")
     @Description("Deve retornar erro ao tentar alterar status de uma edição com id inválido")
     public void deveFalharAoAlterarStatusDeUmaEdicaoComIdInvalido() {
         ResponseErrorBadDTO response = EdicaoClient.alterarStatusEdicao("0",true)
@@ -46,6 +54,10 @@ public class EdicaoStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("edicao")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Feature("Edição")
+    @Story("Editar Status Edição")
     @Description("Deve retornar erro ao alterar status de uma edição sem auth")
     public void deveFalharAoAlterarStatusDeUmaEdicaoSemAuth(){
         Response response = EdicaoClient.alterarStatusEdicao("0",false)

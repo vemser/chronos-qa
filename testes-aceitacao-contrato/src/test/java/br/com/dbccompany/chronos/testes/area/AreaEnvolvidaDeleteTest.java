@@ -50,6 +50,10 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("area-envolvida")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Feature("Area Envolvida")
+    @Story("Deletar Area Envolvida")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao deletar uma área envolvida com id inválido")
     public void deletarAreaEnvolvidaComIdInvalido() {
