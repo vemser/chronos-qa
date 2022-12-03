@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages("br.com.dbccompany.chronos.testes")
-@IncludeTags("area-envolvida")
-public class TestesAreaRunner {
+@IncludeTags("dia-nao-util")
+public class TestesDiaNaoUtilRunner {
 }
