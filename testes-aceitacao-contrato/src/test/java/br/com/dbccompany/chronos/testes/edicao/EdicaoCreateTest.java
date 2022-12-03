@@ -108,29 +108,18 @@ public class EdicaoCreateTest extends BaseTest {
             .extract().as(ResponseErrorBadDTO.class);
         Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
     }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Description("Deve falahr ao criar edição com dataInicial inválida")
-    public void deveFalharAoCriarUmaEdicaoComDataInicialInvalida() {
-        Edicao edicao = EdicaoDataFactory.edicaoComDataInicialInvalida();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
-            .then()
-            .log().all()
-            .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
-    }
+
     @Test
     @Tag("todos")
     @Tag("edicao")
     @Description("Deve falhar ao criar uma edição com dataInicial no formato invalido")
     public void deveFalharAoCriarUmaEdicaoComDataInicialNoFormatoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataInicialFormatoInvalido();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
+        Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
                 .then()
                 .log().all()
-                .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
+                .extract().response();
+        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST,response.statusCode());
     }
     @Test
     @Tag("todos")
@@ -138,11 +127,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Description("Deve falhar ao criar uma edição com dataFinal no formato invalido")
     public void deveFalharAoCriarUmaEdicaoComDataFinalNoFormatoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalFormatoInvalido();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
+        Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
             .then()
             .log().all()
-            .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
+            .extract().response();
+        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.statusCode() );
     }
     @Test
     @Tag("todos")
@@ -150,11 +139,11 @@ public class EdicaoCreateTest extends BaseTest {
     @Description("Deve falhar ao criar uma edição com dataInicial com tipo inválido")
     public void deveFalharAoCriarUmaEdicaoComDataInicialComTipoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataInicialTipoInvalido();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
+        Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
             .then()
             .log().all()
-            .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
+            .extract().response();
+        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.statusCode());
     }
     @Test
     @Tag("todos")
@@ -162,10 +151,10 @@ public class EdicaoCreateTest extends BaseTest {
     @Description("Deve falhar ao criar uma edição com dataFinal com tipo inválido")
     public void deveFalharAoCriarUmaEdicaoComDataFinalComTipoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalTipoInvalido();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
+        Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
             .then()
             .log().all()
-            .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
+            .extract().response();
+        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.statusCode());
     }
 }

@@ -121,26 +121,7 @@ public class EdicaoEditarTest extends BaseTest {
             EdicaoClient.deletarEdicao(edicaoId, true);
         }
     }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Tag("atual")
-    @Description("Deve falhar ao editar uma edição com dataInicial inválida")
-    public void deveFalharAoEditarUmaEdicaoComDataInicialInvalida() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
-        String edicaoId = edicao.getIdEdicao().toString();
-        try {
-            Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataInicialInvalida();
-            Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),edicaoId, true)
-                    .then()
-                    .log().all()
-                    .extract().response()
-                    ;
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatusCode());
-        } finally {
-            EdicaoClient.deletarEdicao(edicaoId, true);
-        }
-    }
+
     @Test
     @Tag("todos")
     @Tag("edicao")
