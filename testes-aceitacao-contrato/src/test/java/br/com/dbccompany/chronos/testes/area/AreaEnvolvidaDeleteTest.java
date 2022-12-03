@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.dto.AreaEnvolvidaDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -16,6 +16,11 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("area-envolvida")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Area Envolvida")
+    @Feature("Deletar Area Envolvida")
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Deve deletar uma área envolvida com sucesso")
     public void deletarAreaEnvolvidaComSucesso() {
         AreaEnvolvidaDTO areaEnvolvida = PreloadData.areaEnvolvida();
@@ -29,7 +34,12 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("area-envolvida")
-    @Description("Deve falhar deletar uma área envolvida sem auth")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Area Envolvida")
+    @Feature("Deletar Area Envolvida")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Deve retornar erro ao deletar uma área envolvida sem auth")
     public void deletarAreaEnvolvidaSemAuth() {
         Response response = AreaEnvolvidaClient.deletarAreaEnvolvida("0", false)
                 .then()
@@ -40,6 +50,7 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("area-envolvida")
+    @Severity(SeverityLevel.MINOR)
     @Description("Deve falhar deletar uma área envolvida com id inválido")
     public void deletarAreaEnvolvidaComIdInvalido() {
         ResponseErrorBadDTO response = AreaEnvolvidaClient.deletarAreaEnvolvida("0", true)

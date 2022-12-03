@@ -7,7 +7,7 @@ import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.AreaEnvolvida;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.Utils;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
@@ -18,6 +18,11 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("area-envolvida")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Area Envolvida")
+    @Feature("Criar Area Envolvida")
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Criar uma área envolvida com sucesso")
     public void criarAreaEnvolvidaComSucesso() {
         AreaEnvolvida areaEnvolvida = AreaEnvolvidaDataFactory.areaEnvolvidaValida();
@@ -25,12 +30,17 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
                 .then()
                 .log().all()
                 .extract().as(AreaEnvolvidaDTO.class);
-        Assert.assertEquals(areaEnvolvida.getNome(), response.getNome());
+        Assert.assertEquals(areaEnvolvida.getNome().toUpperCase(), response.getNome().toUpperCase());
         AreaEnvolvidaClient.deletarAreaEnvolvida(response.getIdAreaEnvolvida().toString(), true);
     }
     @Test
     @Tag("todos")
     @Tag("area-envolvida")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Area Envolvida")
+    @Feature("Criar Area Envolvida")
+    @Severity(SeverityLevel.NORMAL)
     @Description("Deve falhar criar uma área envolvida sem auth")
     public void criarAreaEnvolvidaSemAuth() {
         AreaEnvolvida areaEnvolvida = AreaEnvolvidaDataFactory.areaEnvolvidaValida();
@@ -43,6 +53,11 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("area-envolvida")
+    @Owner("Kevin Aryel")
+    @Epic("Backend")
+    @Story("Area Envolvida")
+    @Feature("Criar Area Envolvida")
+    @Severity(SeverityLevel.MINOR)
     @Description("Deve falhar criar uma área envolvida sem nome")
     public void criarAreaEnvolvidaSemNome() {
         AreaEnvolvida areaEnvolvida = AreaEnvolvidaDataFactory.areaEnvolvidaSemNome();
