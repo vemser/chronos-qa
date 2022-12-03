@@ -22,10 +22,10 @@ public class UserDataFactory {
             return Utils.faker.name().fullName();
         }
         private static Cargo[] cargosInvalidos(){
-            return new Cargo[]{new CargoBuilder().idCargo(1).descricao("Cargo 1").nome("Teste").build()};
+            return new Cargo[]{new CargoBuilder().idCargo(10).descricao("Cargo 1").nome("Teste").build()};
         }
         private static Cargo[] cargosValidos(){
-            return new Cargo[]{new CargoBuilder().idCargo(1).descricao("Admin").nome("ROLE_ADMIN").build()};
+            return new Cargo[]{new CargoBuilder().idCargo(1).descricao("Administrador").nome("ROLE_ADMIN").build()};
         }
 
         private static User novoUsuario() {

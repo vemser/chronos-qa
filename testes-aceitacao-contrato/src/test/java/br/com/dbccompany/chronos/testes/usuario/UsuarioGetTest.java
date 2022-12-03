@@ -31,7 +31,7 @@ public class UsuarioGetTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar listar todos usuarios sem auth")
+    @Description("Deve retornar erro ao tentar listar todos usuarios sem auth")
     public void deveFalharListarUsuarioSemAuth() {
         Response response = UsuarioClient.listarUsuarios(false)
                 .then()

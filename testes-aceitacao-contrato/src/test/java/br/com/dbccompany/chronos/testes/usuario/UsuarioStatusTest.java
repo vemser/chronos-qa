@@ -1,10 +1,10 @@
 package br.com.dbccompany.chronos.testes.usuario;
 
 import br.com.dbccompany.chronos.client.UsuarioClient;
-import br.com.dbccompany.chronos.data.preloadAndRestore.UserPreloadData;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.dto.UsuarioDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -17,7 +17,22 @@ public class UsuarioStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar mudar status sem auth")
+    @Description("Deve mudar status com sucesso")
+    public void deveMudarStatusComSucesso(){
+        UsuarioDTO usuario = PreloadData.userAdmin();
+        String idUsuario = usuario.getIdUsuario().toString();
+        Response response = UsuarioClient.mudarStatusUsuario(idUsuario,true)
+                .then()
+                .log().all()
+                .statusCode(HttpStatus.SC_NO_CONTENT).extract().response();
+        Assert.assertEquals(response.statusCode(), HttpStatus.SC_NO_CONTENT);
+        UsuarioClient.deletarUsuario(idUsuario,true);
+    }
+
+    @Test
+    @Tag("todos")
+    @Tag("usuario")
+    @Description("Deve retornar erro ao tentar mudar status sem auth")
     public void deveFalharMudarStatusSemAuth(){
         Response response = UsuarioClient.mudarStatusUsuario("1",false)
                 .then()
@@ -29,29 +44,14 @@ public class UsuarioStatusTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar mudar status com id inválido")
+    @Description("Deve retornar erro ao tentar mudar status com id inválido")
     public void deveFalharMudarStatusComIdInvalido(){
         ResponseErrorBadDTO response = UsuarioClient.mudarStatusUsuario("0",true)
                 .then()
                 .log().all()
-                .statusCode(HttpStatus.SC_BAD_REQUEST).extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_NOT_FOUND);
-        Assert.assertTrue(response.getErrors()[0].contains("id:"));
+                .extract().as(ResponseErrorBadDTO.class);
+        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
     }
 
-    @Test
-    @Tag("todos")
-    @Tag("usuario")
-    @Description("Deve mudar status com sucesso")
-    public void deveMudarStatusComSucesso(){
-        UsuarioDTO usuario = UserPreloadData.userAdmin();
-        String idUsuario = usuario.getIdUsuario().toString();
-        Response response = UsuarioClient.mudarStatusUsuario(idUsuario,true)
-                .then()
-                .log().all()
-                .statusCode(HttpStatus.SC_NO_CONTENT).extract().response();
-        Assert.assertEquals(response.statusCode(), HttpStatus.SC_NO_CONTENT);
-        UsuarioClient.deletarUsuario(idUsuario,true);
-    }
 
 }

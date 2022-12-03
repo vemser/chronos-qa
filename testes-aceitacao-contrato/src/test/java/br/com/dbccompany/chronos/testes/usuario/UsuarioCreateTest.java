@@ -39,7 +39,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario sem nome")
+    @Description("Deve retornar erro ao tentar criar usuario sem nome")
     public void deveFalharCriarUsuarioSemNome(){
         User user = UserDataFactory.userSemNome();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
@@ -53,7 +53,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario sem email")
+    @Description("Deve retornar erro ao tentar criar usuario sem email")
     public void deveFalharCriarUsuarioSemEmail(){
         User user = UserDataFactory.userSemEmail();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
@@ -66,7 +66,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario sem cargo")
+    @Description("Deve retornar erro ao tentar criar usuario sem cargo")
     public void deveFalharCriarUsuarioSemCargo(){
         User user = UserDataFactory.userSemCargo();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
@@ -80,7 +80,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario com cargos vazio")
+    @Description("Deve retornar erro ao tentar criar usuario com cargos vazio")
     public void deveFalharCriarUsuarioCargoVazio(){
         User user = UserDataFactory.userComCargoVazio();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
@@ -93,7 +93,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario com cargo invalido")
+    @Description("Deve retornar erro ao tentar criar usuario com cargo invalido")
     public void deveFalharCriarUsuarioCargosInvalido(){
         User user = UserDataFactory.userComCargoInvalido();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
@@ -106,7 +106,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario com email invalido")
+    @Description("Deve retornar erro ao tentar criar usuario com email invalido")
     public void deveFalharCriarUsuarioEmailInvalido(){
         User user = UserDataFactory.userComEmailInvalido();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
@@ -119,7 +119,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario sem auth")
+    @Description("Deve retornar erro ao tentar criar usuario sem auth")
     public void deveFalharCriarUsuarioSemAuth() {
         User user = UserDataFactory.usuarioValido();
         Response response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),false)
@@ -132,7 +132,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar criar usuario com email duplicado")
+    @Description("Deve retornar erro ao tentar criar usuario com email duplicado")
     public void deveFalharCriarUsuarioEmailDuplicado(){
         User user = UserDataFactory.userComEmailDuplicado();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)

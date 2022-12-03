@@ -16,8 +16,15 @@ public class UsuarioClient {
             .when()
                 .get(UsuarioData.SERVICE+"?pagina=0&tamanho=10")
             ;
-        }
-
+    }
+    public static Response listarUsuarioLogado(boolean auth){
+        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
+        return given()
+                .spec(spec)
+            .when()
+                .get(UsuarioData.SERVICE_LOGADO)
+            ;
+    }
     public static Response cadastrarUsuario(String json,boolean auth){
         RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
@@ -37,7 +44,7 @@ public class UsuarioClient {
             ;
     }
     public static Response atualizarCadastro(String json,String id,boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.teste() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -51,15 +58,6 @@ public class UsuarioClient {
                 .spec(spec)
             .when()
                 .put(UsuarioData.SERVICE_ENABLE_DISABLE+"/"+id)
-            ;
-    }
-    public static Response uploadImagem(String json,String id,boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
-        return given()
-                .spec(spec)
-                .body(json)
-            .when()
-                .post(UsuarioData.SERVICE_UPLOAD+'/'+id)
             ;
     }
     public static Response deletarUsuario(String id,boolean auth){

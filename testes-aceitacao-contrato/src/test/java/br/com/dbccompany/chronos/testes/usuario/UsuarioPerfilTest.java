@@ -38,7 +38,7 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar mudar perfil sem auth")
+    @Description("Deve retornar erro ao tentar mudar perfil sem auth")
     public void deveFalharAtualizarPerfilSemAuth(){
         Perfil perfil = PerfilDataFactory.perfilValido();
         Response response = UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),false)
@@ -50,7 +50,7 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar atualizar perfil sem nome")
+    @Description("Deve retornar erro ao tentar atualizar perfil sem nome")
     public void deveFalharAtualizarPerfilSemNome(){
         Perfil perfil = PerfilDataFactory.perfilSemNome();
         ResponseErrorBadDTO response = UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),true)
@@ -62,7 +62,7 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar atualizar perfil sem senhaAtual")
+    @Description("Deve retornar erro ao tentar atualizar perfil sem senhaAtual")
     public void deveFalharAtualizarPerfilSemSenhaAtual(){
         Perfil perfil = PerfilDataFactory.perfilSemSenhaAtual();
         ResponseErrorBadDTO response = UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),true)
@@ -74,7 +74,7 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar atualizar perfil sem novaSenha")
+    @Description("Deve retornar erro ao tentar atualizar perfil sem novaSenha")
     public void deveFalharAtualizarPerfilSemNovaSenha(){
         Perfil perfil = PerfilDataFactory.perfilSemNovaSenha();
         ResponseErrorBadDTO response = UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),true)
@@ -86,7 +86,7 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar atualizar perfil sem confirmacaoNovaSenha")
+    @Description("Deve retornar erro ao tentar atualizar perfil sem confirmacaoNovaSenha")
     public void deveFalharAtualizarPerfilSemConfirmacaoNovaSenha(){
         Perfil perfil = PerfilDataFactory.perfilSemConfirmacaoNovaSenha();
         ResponseErrorBadDTO response = UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),true)
@@ -98,7 +98,7 @@ public class UsuarioPerfilTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("usuario")
-    @Description("Deve falhar atualizar perfil com senhas diferentes")
+    @Description("Deve retornar erro ao tentar atualizar perfil com senhas diferentes")
     public void deveFalharAtualizarPerfilComSenhasDiferentes(){
         Perfil perfil = PerfilDataFactory.perfilComSenhasDiferentes();
         ResponseErrorBadDTO response = UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),true)
