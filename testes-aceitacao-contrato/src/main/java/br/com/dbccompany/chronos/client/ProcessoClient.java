@@ -1,65 +1,55 @@
 package br.com.dbccompany.chronos.client;
 
-import br.com.dbccompany.chronos.data.changeless.EdicaoData;
+import br.com.dbccompany.chronos.data.changeless.ProcessoData;
 import br.com.dbccompany.chronos.specs.RequestSpec;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.given;
 
-public class EdicaoClient {
+public class ProcessoClient {
 
-    public static Response clonarEdicao(String idEdicao, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
-        return given()
-                .spec(spec)
-                .when()
-                .post(EdicaoData.SERVICE_CLONAR+"/"+idEdicao)
-                ;
-    }
-
-    public static Response listarEdicoes (boolean auth) {
+    public static Response listarProcessos (boolean auth) {
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
-                .get(EdicaoData.SERVICE_LISTAR+"?pagina=0&tamanho=10")
+                .get(ProcessoData.SERVICE+"?pagina=0&tamanho=10")
             ;
     }
-
-    public static Response deletarEdicao (String id, boolean auth) {
+    public static Response deletarProcesso (String idProcesso, boolean auth) {
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
-                .delete(EdicaoData.SERVICE+"/"+id)
+                .delete(ProcessoData.SERVICE+"/"+idProcesso)
             ;
     }
-    public static Response alterarStatusEdicao (String id, boolean auth) {
+    public static Response listarProcessoPorId (String idProcesso, boolean auth) {
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
-                .put(EdicaoData.SERVICE_ENABLE_DISABLE+"/"+id)
+                .get(ProcessoData.SERVICE+"/"+idProcesso)
             ;
     }
-    public static Response cadastrarEdicao (String json, boolean auth) {
+    public static Response cadastrarProcesso (String json,String idEtapa, boolean auth) {
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()
                 .log().all()
                 .spec(spec)
                 .body(json)
             .when()
-                .post(EdicaoData.SERVICE)
+                .post(ProcessoData.SERVICE+"/"+idEtapa)
             ;
     }
-    public static Response atualizarEdicao (String json, String id, boolean auth) {
+    public static Response atualizarProcesso (String json, String idProcesso, boolean auth) {
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
             .when()
-                .put(EdicaoData.SERVICE+"/"+id)
+                .put(ProcessoData.SERVICE+"/"+idProcesso)
             ;
     }
 }

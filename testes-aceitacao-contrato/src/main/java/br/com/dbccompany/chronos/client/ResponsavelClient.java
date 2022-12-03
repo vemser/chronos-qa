@@ -8,6 +8,14 @@ import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.given;
 
 public class ResponsavelClient {
+    public static Response listarResponsavel(boolean auth){
+        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        return given()
+                .spec(spec)
+            .when()
+                .get(ResponsavelData.SERVICE)
+            ;
+    }
     public static Response criarResponsavel(String json, boolean auth){
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()

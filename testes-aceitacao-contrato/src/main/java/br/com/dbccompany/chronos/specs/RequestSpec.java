@@ -9,24 +9,27 @@ public class RequestSpec {
     private static String tokenAdm = new Auth().autenticacaoAdmin();
     private static String tokenTeste = new Auth().autenticacaoUserTeste();
     private static String tokenGestao = new Auth().autenticacaoGestaoDePessoas();
-
     public static RequestSpecification noAuth() {
         return new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .build();
     }
-
     public static RequestSpecification adm() {
         return new RequestSpecBuilder()
                 .addHeader("Authorization", tokenAdm)
                 .setContentType(ContentType.JSON)
                 .build();
     }
-
     public static  RequestSpecification teste(){
         return new RequestSpecBuilder()
             .addHeader("Authorization", tokenTeste)
             .setContentType(ContentType.JSON)
+            .build();
+    }
+    public static RequestSpecification testeMultipart(){
+        return new RequestSpecBuilder()
+            .addHeader("Authorization", tokenTeste)
+            .setContentType(ContentType.MULTIPART)
             .build();
     }
     public static RequestSpecification gestao(){
@@ -35,6 +38,4 @@ public class RequestSpec {
             .setContentType(ContentType.JSON)
             .build();
     }
-
-
 }
