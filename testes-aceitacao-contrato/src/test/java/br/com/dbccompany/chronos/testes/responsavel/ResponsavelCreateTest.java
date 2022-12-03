@@ -25,7 +25,7 @@ public class ResponsavelCreateTest extends BaseTest {
                 .then()
                 .log().all()
                 .extract().as(ResponsavelDTO.class);
-        Assert.assertEquals(responsavel.getNome(), response.getNome());
+        Assert.assertEquals(responsavel.getNome().toUpperCase(), response.getNome().toUpperCase());
         ResponsavelClient.deletarResponsavel(response.getIdResponsavel().toString(), true);
     }
 

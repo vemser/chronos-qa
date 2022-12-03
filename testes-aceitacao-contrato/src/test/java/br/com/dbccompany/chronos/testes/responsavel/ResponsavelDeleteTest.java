@@ -20,7 +20,6 @@ public class ResponsavelDeleteTest extends BaseTest {
     public void deveDeletarResponsavelComSucesso(){
         ResponsavelDTO responsavel = PreloadData.responsavel();
         String idResponsavel = responsavel.getIdResponsavel().toString();
-
         Response response = ResponsavelClient.deletarResponsavel(idResponsavel, true)
                 .then()
                 .log().all()
