@@ -18,8 +18,8 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Tag("area-envolvida")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Area Envolvida")
-    @Feature("Deletar Area Envolvida")
+    @Feature("Area Envolvida")
+    @Story("Deletar Area Envolvida")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Deve deletar uma área envolvida com sucesso")
     public void deletarAreaEnvolvidaComSucesso() {
@@ -36,8 +36,8 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Tag("area-envolvida")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Area Envolvida")
-    @Feature("Deletar Area Envolvida")
+    @Feature("Area Envolvida")
+    @Story("Deletar Area Envolvida")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao deletar uma área envolvida sem auth")
     public void deletarAreaEnvolvidaSemAuth() {

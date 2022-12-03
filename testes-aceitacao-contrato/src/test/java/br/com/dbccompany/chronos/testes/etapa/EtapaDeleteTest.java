@@ -21,8 +21,8 @@ public class EtapaDeleteTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Deletar Etapa")
+    @Feature("Etapa")
+    @Story("Deletar Etapa")
     @Description("Deve deletar etapa com sucesso")
     public void deveDeletarEtapaComSucesso(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -45,8 +45,8 @@ public class EtapaDeleteTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Deletar Etapa")
+    @Feature("Etapa")
+    @Story("Deletar Etapa")
     @Description("Deve falhar ao deletar etapa sem Auth")
     public void deveFalharDeletarEtapaSemAuth(){
         Response response = EtapaClient.deletarEtapa("0", false)
@@ -60,8 +60,8 @@ public class EtapaDeleteTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Deletar Etapa")
+    @Feature("Etapa")
+    @Story("Deletar Etapa")
     @Description("Deve falhar ao deletar etapa inexistente")
     public void deveFalharDeletarEtapaInexistente(){
         ResponseErrorBadDTO response = EtapaClient.deletarEtapa("0", true)

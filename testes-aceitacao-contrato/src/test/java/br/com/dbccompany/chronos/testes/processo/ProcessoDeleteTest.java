@@ -22,8 +22,8 @@ public class ProcessoDeleteTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Deletar Processo")
+    @Feature("Processo")
+    @Story("Deletar Processo")
     @Description("Deve deletar um processo com sucesso")
     public void deveDeletarUmProcessoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -48,8 +48,8 @@ public class ProcessoDeleteTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Deletar Processo")
+    @Feature("Processo")
+    @Story("Deletar Processo")
     @Description("Deve falhar ao deletar um processo sem auth")
     public void deveFalharAoDeletarUmProcessoSemAuth() {
         Response response = ProcessoClient.deletarProcesso("0",false)

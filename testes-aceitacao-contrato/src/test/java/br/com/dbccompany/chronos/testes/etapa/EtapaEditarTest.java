@@ -25,8 +25,8 @@ public class EtapaEditarTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Editar Etapa")
+    @Feature("Etapa")
+    @Story("Editar Etapa")
     @Description("Deve editar uma etapa com sucesso")
     public void deveEditarEtapaComSucesso(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -51,8 +51,8 @@ public class EtapaEditarTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Editar Etapa")
+    @Feature("Etapa")
+    @Story("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem Auth")
     public void deveFalharEditarEtapaSemAuth(){
         Etapa etapa = EtapaDataFactory.etapaValida();
@@ -67,8 +67,8 @@ public class EtapaEditarTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Editar Etapa")
+    @Feature("Etapa")
+    @Story("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa com id inválido")
     public void deveFalharEditarEtapaComIdInvalido(){
         Etapa etapa = EtapaDataFactory.etapaValida();
@@ -83,8 +83,8 @@ public class EtapaEditarTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Editar Etapa")
+    @Feature("Etapa")
+    @Story("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem nome")
     public void deveFalharEditarEtapaSemNome(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -108,8 +108,8 @@ public class EtapaEditarTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Editar Etapa")
+    @Feature("Etapa")
+    @Story("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem ordemExecucao")
     public void deveFalharEditarEtapaSemOrdemExecucao(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();

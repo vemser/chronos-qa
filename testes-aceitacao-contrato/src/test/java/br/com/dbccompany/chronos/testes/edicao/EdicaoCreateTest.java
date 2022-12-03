@@ -20,8 +20,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve criar uma edição com sucesso")
     public void deveCriarUmaEdicaoComSucesso() {
         Edicao edicao = EdicaoDataFactory.edicaoValida();
@@ -41,8 +41,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição sem auth")
     public void deveFalharAoCriarUmaEdicaoSemAuth() {
         Edicao edicao = EdicaoDataFactory.edicaoValida();
@@ -58,8 +58,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição sem nome")
     public void deveFalharAoCriarUmaEdicaoSemNome() {
         Edicao edicao = EdicaoDataFactory.edicaoSemNome();
@@ -75,8 +75,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição sem dataInicial")
     public void deveFalharAoCriarUmaEdicaoSemDataInicial() {
         Edicao edicao = EdicaoDataFactory.edicaoSemDataInicial();
@@ -91,8 +91,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição sem dataFinal")
     public void deveFalharAoCriarUmaEdicaoSemDataFinal() {
         Edicao edicao = EdicaoDataFactory.edicaoSemDataFinal();
@@ -108,8 +108,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição com dataFinal menor que Inicial")
     public void deveFalharAoCriarUmaEdicaoComDataInicialMaiorQueDataFinal() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalMenorQueDataInicial();
@@ -125,8 +125,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição com dataFinal igual a Inicial")
     public void deveFalharAoCriarUmaEdicaoComDataInicialIgualADataFinal() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalIgualADataInicial();
@@ -142,8 +142,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição com dataInicial no formato invalido")
     public void deveFalharAoCriarUmaEdicaoComDataInicialNoFormatoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataInicialFormatoInvalido();
@@ -158,8 +158,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição com dataFinal no formato invalido")
     public void deveFalharAoCriarUmaEdicaoComDataFinalNoFormatoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalFormatoInvalido();
@@ -174,8 +174,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição com dataInicial com tipo inválido")
     public void deveFalharAoCriarUmaEdicaoComDataInicialComTipoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataInicialTipoInvalido();
@@ -190,8 +190,8 @@ public class EdicaoCreateTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Criar Edição")
+    @Feature("Edição")
+    @Story("Criar Edição")
     @Description("Deve retornar erro ao criar uma edição com dataFinal com tipo inválido")
     public void deveFalharAoCriarUmaEdicaoComDataFinalComTipoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataFinalTipoInvalido();

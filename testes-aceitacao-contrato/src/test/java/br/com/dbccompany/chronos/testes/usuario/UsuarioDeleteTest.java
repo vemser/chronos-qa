@@ -19,8 +19,8 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Deletar Usuário")
+    @Feature("Usuário")
+    @Story("Deletar Usuário")
     @Description("Deve deletar usuario com sucesso")
     public void deveDeletarUsuarioComSucesso(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -36,8 +36,8 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Deletar Usuário")
+    @Feature("Usuário")
+    @Story("Deletar Usuário")
     @Description("Deve retornar erro ao tentar deletar usuario sem auth")
     public void deveFalharDeletarUsuarioSemAuth(){
         Response response = UsuarioClient.deletarUsuario("1",false)
@@ -52,8 +52,8 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Deletar Usuário")
+    @Feature("Usuário")
+    @Story("Deletar Usuário")
     @Description("Deve retornar erro ao tentar deletar usuario com id inválido")
     public void deveFalharDeletarUsuarioComIdInvalido(){
         ResponseErrorBadDTO response = UsuarioClient.deletarUsuario("0",true)

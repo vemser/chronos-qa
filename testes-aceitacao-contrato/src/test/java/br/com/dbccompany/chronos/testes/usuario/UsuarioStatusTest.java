@@ -19,8 +19,8 @@ public class UsuarioStatusTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Status Usuário")
+    @Feature("Usuário")
+    @Story("Editar Status Usuário")
     @Description("Deve mudar status com sucesso")
     public void deveMudarStatusComSucesso(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -38,8 +38,8 @@ public class UsuarioStatusTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Status Usuário")
+    @Feature("Usuário")
+    @Story("Editar Status Usuário")
     @Description("Deve retornar erro ao tentar mudar status sem auth")
     public void deveFalharMudarStatusSemAuth(){
         Response response = UsuarioClient.mudarStatusUsuario("1",false)
@@ -54,8 +54,8 @@ public class UsuarioStatusTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Status Usuário")
+    @Feature("Usuário")
+    @Story("Editar Status Usuário")
     @Description("Deve retornar erro ao tentar mudar status com id inválido")
     public void deveFalharMudarStatusComIdInvalido(){
         ResponseErrorBadDTO response = UsuarioClient.mudarStatusUsuario("0",true)

@@ -19,8 +19,8 @@ public class UsuarioGetTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Listar Usuários")
+    @Feature("Usuário")
+    @Story("Listar Usuários")
     @Description("Deve listar todos usuarios com auth de  sem dados")
     public void deveListarUsuarioComSucesso() {
         ResponseListUserDTO response = UsuarioClient.listarUsuarios(true)
@@ -37,8 +37,8 @@ public class UsuarioGetTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Listar Usuários")
+    @Feature("Usuário")
+    @Story("Listar Usuários")
     @Description("Deve retornar erro ao tentar listar todos usuarios sem auth")
     public void deveFalharListarUsuarioSemAuth() {
         Response response = UsuarioClient.listarUsuarios(false)

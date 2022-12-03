@@ -23,8 +23,8 @@ public class LoginTest extends BaseTest {
     @Tag("login")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Login")
-    @Feature("Fazer Login")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve fazer login com sucesso")
     public void deveFazerLoginComSucesso() {
         Login login = LoginDataFactory.loginValido();
@@ -40,8 +40,8 @@ public class LoginTest extends BaseTest {
     @Tag("login")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Login")
-    @Feature("Fazer Login")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve retornar erro ao fazer login sem dados")
     public void deveFalharFazerLoginComEmailFormatoInvalido() {
         Login login = LoginDataFactory.loginEmailFormatoInvalido();
@@ -62,8 +62,8 @@ public class LoginTest extends BaseTest {
     @Tag("login")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Login")
-    @Feature("Fazer Login")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve retornar erro ao fazer login com email valido e senha invalida")
     public void deveFalharFazerLoginComEmailValidoSenhaInvalida() {
         Login login = LoginDataFactory.loginEmailValidoSenhaInvalida();
@@ -79,8 +79,8 @@ public class LoginTest extends BaseTest {
     @Tag("login")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Login")
-    @Feature("Fazer Login")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve falhar fazer login com dados inválidos")
     public void deveFalharFazerLoginComDadosInvalidos() {
         Login login = LoginDataFactory.loginInexistente();
@@ -96,8 +96,8 @@ public class LoginTest extends BaseTest {
     @Tag("login")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Login")
-    @Feature("Fazer Login")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve falhar fazer login sem preencher o campo senha")
     public void deveFalharFazerLoginSemSenha() {
         Login login = LoginDataFactory.loginSemSenha();
@@ -119,8 +119,8 @@ public class LoginTest extends BaseTest {
     @Tag("login")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Login")
-    @Feature("Fazer Login")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve falhar fazer login sem preencher o campo email")
     public void deveFalharFazerLoginSemEmail() {
         Login login = LoginDataFactory.loginSemEmail();

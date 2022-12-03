@@ -23,8 +23,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve criar usuario com sucesso")
     public void deveCriarUsuarioComSucesso(){
         User user = UserDataFactory.usuarioValido();
@@ -45,8 +45,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario sem nome")
     public void deveFalharCriarUsuarioSemNome(){
         User user = UserDataFactory.userSemNome();
@@ -63,8 +63,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario sem email")
     public void deveFalharCriarUsuarioSemEmail(){
         User user = UserDataFactory.userSemEmail();
@@ -80,8 +80,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario sem cargo")
     public void deveFalharCriarUsuarioSemCargo(){
         User user = UserDataFactory.userSemCargo();
@@ -98,8 +98,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario com cargos vazio")
     public void deveFalharCriarUsuarioCargoVazio(){
         User user = UserDataFactory.userComCargoVazio();
@@ -115,8 +115,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario com cargo invalido")
     public void deveFalharCriarUsuarioCargosInvalido(){
         User user = UserDataFactory.userComCargoInvalido();
@@ -132,8 +132,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario com email invalido")
     public void deveFalharCriarUsuarioEmailInvalido(){
         User user = UserDataFactory.userComEmailInvalido();
@@ -149,8 +149,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario sem auth")
     public void deveFalharCriarUsuarioSemAuth() {
         User user = UserDataFactory.usuarioValido();
@@ -166,8 +166,8 @@ public class UsuarioCreateTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Criar Usuário")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario com email duplicado")
     public void deveFalharCriarUsuarioEmailDuplicado(){
         User user = UserDataFactory.userComEmailDuplicado();

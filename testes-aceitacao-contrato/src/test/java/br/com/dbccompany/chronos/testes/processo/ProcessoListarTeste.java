@@ -15,8 +15,8 @@ public class ProcessoListarTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Listar Processos")
+    @Feature("Processo")
+    @Story("Listar Processos")
     @Description("Deve listar todos os processos com sucesso")
     public void deveListarTodosOsProcessosComSucesso() {
         ProcessoListDTO response = ProcessoClient.listarProcessos(true)
@@ -30,8 +30,8 @@ public class ProcessoListarTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Listar Processos")
+    @Feature("Processo")
+    @Story("Listar Processos")
     @Description("Deve falhar ao listar todos os processos sem auth")
     public void deveFalharAoListarTodosOsProcessosSemAuth() {
         ProcessoClient.listarProcessos(false)

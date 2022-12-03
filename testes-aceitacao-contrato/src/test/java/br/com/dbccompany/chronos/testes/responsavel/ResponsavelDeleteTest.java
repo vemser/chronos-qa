@@ -18,8 +18,8 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Tag("responsavel")
     @Epic("Backend")
     @Owner("Kevin Aryel")
-    @Story("Responsavel")
-    @Feature("Deletar Responsavel")
+    @Feature("Responsavel")
+    @Story("Deletar Responsavel")
     @Description("Deve deletar um responsável com sucesso")
     public void deveDeletarResponsavelComSucesso(){
         ResponsavelDTO responsavel = PreloadData.responsavel();
@@ -35,8 +35,8 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Tag("responsavel")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Responsavel")
-    @Feature("Deletar Responsavel")
+    @Feature("Responsavel")
+    @Story("Deletar Responsavel")
     @Description("Deve falhar deletar um responsável sem Auth")
     public void deveFalharDeletarResponsavelSemAuth(){
          Response response = ResponsavelClient.deletarResponsavel("0", false)
@@ -50,8 +50,8 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Tag("responsavel")
     @Epic("Backend")
     @Owner("Kevin Aryel")
-    @Story("Responsavel")
-    @Feature("Deletar Responsavel")
+    @Feature("Responsavel")
+    @Story("Deletar Responsavel")
     @Description("Deve falhar deletar um responsável com id inválido")
     public void deveFalharDeletarResponsavelComIdInvalido(){
         ResponseErrorBadDTO response = ResponsavelClient.deletarResponsavel("0", true)

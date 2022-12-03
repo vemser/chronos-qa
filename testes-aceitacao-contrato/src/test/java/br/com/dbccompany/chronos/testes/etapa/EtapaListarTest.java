@@ -16,8 +16,8 @@ public class EtapaListarTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Listar Etapa")
+    @Feature("Etapa")
+    @Story("Listar Etapa")
     @Description("Deve listar etapas com sucesso")
     public void deveListarEtapasComSucesso(){
         EtapaListDTO response = EtapaClient.listarEtapa(true)
@@ -32,8 +32,8 @@ public class EtapaListarTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Listar Etapa")
+    @Feature("Etapa")
+    @Story("Listar Etapa")
     @Description("Deve falhar ao listar etapas sem Auth")
     public void deveFalharListarEtapasSemAuth(){
         EtapaClient.listarEtapa(false)

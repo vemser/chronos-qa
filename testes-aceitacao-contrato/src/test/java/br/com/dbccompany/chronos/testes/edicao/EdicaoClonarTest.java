@@ -16,8 +16,8 @@ public class EdicaoClonarTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Clonar Edição")
+    @Feature("Edição")
+    @Story("Clonar Edição")
     @Description("Deve clonar uma edição com sucesso")
     public void deveClonarUmaEdicaoComSucesso() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -39,8 +39,8 @@ public class EdicaoClonarTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Clonar Edição")
+    @Feature("Edição")
+    @Story("Clonar Edição")
     @Description("Deve retornar erro ao tentar clonar uma edição com id inexistente")
     public void deveFalharClonarUmaEdicaoComIdInvalido() {
         EdicaoClient.clonarEdicao("0",true)
@@ -54,8 +54,8 @@ public class EdicaoClonarTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Clonar Edição")
+    @Feature("Edição")
+    @Story("Clonar Edição")
     @Description("Deve retornar erro ao tentar clonar uma edição sem auth")
     public void deveFalharClonarUmaEdicaoSemAuth(){
         EdicaoClient.clonarEdicao("0",false)

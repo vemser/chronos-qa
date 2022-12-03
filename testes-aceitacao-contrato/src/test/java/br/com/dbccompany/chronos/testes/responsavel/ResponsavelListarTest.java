@@ -17,8 +17,8 @@ public class ResponsavelListarTest extends BaseTest {
     @Tag("responsavel")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Responsavel")
-    @Feature("Listar Responsaveis")
+    @Feature("Responsavel")
+    @Story("Listar Responsaveis")
     @Description("Deve listar todos os responsáveis com sucesso")
     public void deveListarTodosOsResponsaveisComSucesso() {
         ResponsavelDTO[] response = ResponsavelClient.listarResponsavel(true)
@@ -32,8 +32,8 @@ public class ResponsavelListarTest extends BaseTest {
     @Tag("responsavel")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Responsavel")
-    @Feature("Listar Responsaveis")
+    @Feature("Responsavel")
+    @Story("Listar Responsaveis")
     @Description("Deve falhar listar todos os responsáveis sem Auth")
     public void deveFalharListarTodosOsResponsaveisSemAuth() {
         Response response = ResponsavelClient.listarResponsavel(false)

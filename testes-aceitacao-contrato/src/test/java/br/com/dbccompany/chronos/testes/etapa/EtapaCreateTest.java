@@ -24,8 +24,8 @@ public class EtapaCreateTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Criar Etapa")
+    @Feature("Etapa")
+    @Story("Criar Etapa")
     @Description("Deve criar etapa com sucesso")
     public void deveCriarEtapaComSucesso(){
         EdicaoDTO edicao = PreloadData.edicao();
@@ -46,8 +46,8 @@ public class EtapaCreateTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Criar Etapa")
+    @Feature("Etapa")
+    @Story("Criar Etapa")
     @Description("Deve retornar erro ao criar etapa sem nome")
     public void deveFalharCriarEtapaSemNome(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -68,8 +68,8 @@ public class EtapaCreateTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Criar Etapa")
+    @Feature("Etapa")
+    @Story("Criar Etapa")
     @Description("Deve retornar erro ao criar etapa sem ordem de execução")
     public void deveFalharCriarEtapaSemOrdemExecucao(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -91,8 +91,8 @@ public class EtapaCreateTest extends BaseTest {
     @Tag("etapa")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Etapa")
-    @Feature("Criar Etapa")
+    @Feature("Etapa")
+    @Story("Criar Etapa")
     @Description("Deve retornar erro ao criar etapa sem auth")
     public void deveFalharCriarEtapaSemAuth(){
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();

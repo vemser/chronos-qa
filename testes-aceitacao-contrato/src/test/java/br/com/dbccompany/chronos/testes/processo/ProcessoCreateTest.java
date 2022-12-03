@@ -25,8 +25,8 @@ public class ProcessoCreateTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Criar Processo")
+    @Feature("Processo")
+    @Story("Criar Processo")
     @Description("Deve criar um novo processo com sucesso")
     public void deveCriarUmNovoProcessoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -49,8 +49,8 @@ public class ProcessoCreateTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Criar Processo")
+    @Feature("Processo")
+    @Story("Criar Processo")
     @Description("Deve falhar ao tentar criar um processo com idEtapa inexistente")
     public void deveFalharAoTentarCriarUmProcessoComIdEtapaInexistente() {
         Processo processo = ProcessoDataFactory.processoValido();
@@ -66,8 +66,8 @@ public class ProcessoCreateTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Criar Processo")
+    @Feature("Processo")
+    @Story("Criar Processo")
     @Description("Deve falhar criar um novo processo sem nome")
     public void deveFalharCriarUmNovoProcessoSemNome() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -90,8 +90,8 @@ public class ProcessoCreateTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Criar Processo")
+    @Feature("Processo")
+    @Story("Criar Processo")
     @Description("Deve falhar criar um novo processo sem auth")
     public void deveFalharCriarUmNovoProcessoSemAuth() {
         Processo processo = ProcessoDataFactory.processoValido();
@@ -106,8 +106,8 @@ public class ProcessoCreateTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Criar Processo")
+    @Feature("Processo")
+    @Story("Criar Processo")
     @Description("Deve falhar criar um novo processo sem duracaoProcesso")
     public void deveFalharCriarUmNovoProcessoSemDuracaoProcesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -130,8 +130,8 @@ public class ProcessoCreateTest extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Criar Processo")
+    @Feature("Processo")
+    @Story("Criar Processo")
     @Description("Deve falhar criar um novo processo sem dias uteis")
     public void deveFalharCriarUmNovoProcessoSemDiasUteis() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();

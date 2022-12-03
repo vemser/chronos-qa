@@ -24,8 +24,8 @@ public class ProcessoEditarTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Editar Processo")
+    @Feature("Processo")
+    @Story("Editar Processo")
     @Description("Deve editar um processo com sucesso")
     public void deveEditarUmProcessoComSucesso() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -50,8 +50,8 @@ public class ProcessoEditarTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Editar Processo")
+    @Feature("Processo")
+    @Story("Editar Processo")
     @Description("Deve falhar editar processo sem nome")
     public void deveFalharEditarProcessoSemNome() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -76,8 +76,8 @@ public class ProcessoEditarTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Editar Processo")
+    @Feature("Processo")
+    @Story("Editar Processo")
     @Description("Deve falhar editar processo sem ordem de execução")
     public void deveFalharEditarProcessoSemOrdem() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -102,8 +102,8 @@ public class ProcessoEditarTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Editar Processo")
+    @Feature("Processo")
+    @Story("Editar Processo")
     @Description("Deve falhar editar processo sem responsável")
     public void deveFalharEditarProcessoSemResponsavel() {
         EdicaoDTO edicao = PreloadData.edicao();

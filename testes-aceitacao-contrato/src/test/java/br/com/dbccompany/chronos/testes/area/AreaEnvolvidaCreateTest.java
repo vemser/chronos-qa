@@ -20,8 +20,8 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Tag("area-envolvida")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Area Envolvida")
-    @Feature("Criar Area Envolvida")
+    @Feature("Area Envolvida")
+    @Story("Criar Area Envolvida")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Deve criar uma área envolvida com sucesso")
     public void criarAreaEnvolvidaComSucesso() {
@@ -38,8 +38,8 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Tag("area-envolvida")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Area Envolvida")
-    @Feature("Criar Area Envolvida")
+    @Feature("Area Envolvida")
+    @Story("Criar Area Envolvida")
     @Severity(SeverityLevel.NORMAL)
     @Description("Deve retornar erro ao criar uma área envolvida sem auth")
     public void criarAreaEnvolvidaSemAuth() {
@@ -55,8 +55,8 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Tag("area-envolvida")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Area Envolvida")
-    @Feature("Criar Area Envolvida")
+    @Feature("Area Envolvida")
+    @Story("Criar Area Envolvida")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao criar uma área envolvida sem nome")
     public void criarAreaEnvolvidaSemNome() {

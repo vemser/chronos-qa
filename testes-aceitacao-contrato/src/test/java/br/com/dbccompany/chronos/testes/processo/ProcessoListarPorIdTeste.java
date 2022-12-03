@@ -19,8 +19,8 @@ public class ProcessoListarPorIdTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Listar Processo por Id")
+    @Feature("Processo")
+    @Story("Listar Processo por Id")
     @Description("Deve listar um processo por id com sucesso")
     public void deveListarUmProcessoPorIdComSucesso() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -44,8 +44,8 @@ public class ProcessoListarPorIdTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Listar Processo por Id")
+    @Feature("Processo")
+    @Story("Listar Processo por Id")
     @Description("Deve falhar ao listar um processo por id sem auth")
     public void deveFalharAoListarUmProcessoPorIdSemAuth() {
             ProcessoClient.listarProcessoPorId("0",false)
@@ -58,8 +58,8 @@ public class ProcessoListarPorIdTeste extends BaseTest {
     @Tag("processo")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Processo")
-    @Feature("Listar Processo por Id")
+    @Feature("Processo")
+    @Story("Listar Processo por Id")
     @Description("Deve falhar ao listar um processo por id inexistente")
     public void deveFalharAoListarUmProcessoPorIdInexistente() {
         ProcessoClient.listarProcessoPorId("0",true)

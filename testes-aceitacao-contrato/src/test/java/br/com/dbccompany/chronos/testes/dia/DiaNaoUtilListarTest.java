@@ -16,8 +16,8 @@ public class DiaNaoUtilListarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Listar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Listar dia não útil")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Deve listar todos os dias não úteis com sucesso")
     public void deveListarTodosOsDiasNaoUteisComSucesso() {
@@ -32,8 +32,8 @@ public class DiaNaoUtilListarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Listar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Listar dia não útil")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao listar todos os dias não úteis sem auth")
     public void deveFalharListarTodosOsDiasNaoUteisSemAuth() {

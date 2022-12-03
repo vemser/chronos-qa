@@ -18,8 +18,8 @@ public class DiaNaoUtilEditarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Editar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Editar dia não útil")
     @Description("Deve editar um dia não útil com sucesso")
     public void deveEditarUmDiaNaoUtilComSucesso() {
         DiaNaoUtilDTO diaNaoUtil = PreloadData.diaNaoUtil();
@@ -40,8 +40,8 @@ public class DiaNaoUtilEditarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Editar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Editar dia não útil")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Deve editar um dia não útil com data inicial igual a data final com sucesso")
     public void deveEditarUmDiaNaoUtilComDataInicialIgualADataFinalComSucesso() {
@@ -64,8 +64,8 @@ public class DiaNaoUtilEditarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Editar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Editar dia não útil")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao tentar editar um dia não útil sem data inicial")
     public void deveFalharEditarUmDiaNaoUtilSemDataInicial() {
@@ -87,8 +87,8 @@ public class DiaNaoUtilEditarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Editar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Editar dia não útil")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao tenatr editar um dia não útil sem data final")
     public void deveFalharEditarUmDiaNaoUtilSemDataFinal() {
@@ -109,8 +109,8 @@ public class DiaNaoUtilEditarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Editar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Editar dia não útil")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao tentar editar um dia não útil com sem descrição")
     public void deveFalharEditarUmDiaNaoUtilSemDescricao() {
@@ -131,8 +131,8 @@ public class DiaNaoUtilEditarTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Editar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Editar dia não útil")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao tentar editar um dia não útil com id inválido")
     public void deveFalharEditarUmDiaNaoUtilComIdInvalido() {

@@ -17,8 +17,8 @@ public class AreaEnvolvidaListarTest extends BaseTest {
     @Tag("area-envolvida")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Area Envolvida")
-    @Feature("Listar Area Envolvida")
+    @Feature("Area Envolvida")
+    @Story("Listar Area Envolvida")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Deve listar todas as áreas envolvidas com sucesso")
     public void deveListarTodasAsAreasEnvolvidasComSucesso() {
@@ -33,8 +33,8 @@ public class AreaEnvolvidaListarTest extends BaseTest {
     @Tag("area-envolvida")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Area Envolvida")
-    @Feature("Listar Area Envolvida")
+    @Feature("Area Envolvida")
+    @Story("Listar Area Envolvida")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao listar todas as áreas envolvidas sem auth")
     public void deveFalharListarTodasAsAreasEnvolvidas(){

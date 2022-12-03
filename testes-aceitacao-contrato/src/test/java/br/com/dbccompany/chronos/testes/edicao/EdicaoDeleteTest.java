@@ -18,8 +18,8 @@ public class EdicaoDeleteTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Deletar Edição")
+    @Feature("Edição")
+    @Story("Deletar Edição")
     @Description("Deve deletar uma edição com sucesso")
     public void deveDeletarUmaEdicaoComSucesso() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -40,8 +40,8 @@ public class EdicaoDeleteTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Deletar Edição")
+    @Feature("Edição")
+    @Story("Deletar Edição")
     @Description("Deve retornar erro ao deletar uma edição sem auth")
     public void deveFalharAoDeletarUmaEdicaoSemAuth() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
@@ -62,8 +62,8 @@ public class EdicaoDeleteTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Deletar Edição")
+    @Feature("Edição")
+    @Story("Deletar Edição")
     @Description("Deve retornar erro ao deletar uma edição inexistente")
     public void deveFalharAoTentarDeletarEdicaoComIdInvalido(){
         ResponseErrorBadDTO response = EdicaoClient.deletarEdicao("0",true)

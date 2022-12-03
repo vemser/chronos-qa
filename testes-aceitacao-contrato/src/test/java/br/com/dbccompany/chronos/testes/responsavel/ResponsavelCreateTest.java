@@ -20,8 +20,8 @@ public class ResponsavelCreateTest extends BaseTest {
     @Tag("responsavel")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Responsavel")
-    @Feature("Criar Responsavel")
+    @Feature("Responsavel")
+    @Story("Criar Responsavel")
     @Description("Criar um responsável com sucesso")
     public void criarResponsavelComSucesso(){
         Responsavel responsavel = ResponsavelDataFactory.responsavelValido();
@@ -38,8 +38,8 @@ public class ResponsavelCreateTest extends BaseTest {
     @Tag("responsavel")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Responsavel")
-    @Feature("Criar Responsavel")
+    @Feature("Responsavel")
+    @Story("Criar Responsavel")
     @Description("Deve falhar criar um responsável sem Auth")
     public void deveFalharCriarResponsavelSemAuth(){
         Responsavel responsavel = ResponsavelDataFactory.responsavelValido();
@@ -54,8 +54,8 @@ public class ResponsavelCreateTest extends BaseTest {
     @Tag("responsavel")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Responsavel")
-    @Feature("Criar Responsavel")
+    @Feature("Responsavel")
+    @Story("Criar Responsavel")
     @Description("Deve falhar criar um responsável sem nome inválido")
     public void deveFalharCriarResponsavelSemNome(){
         Responsavel responsavel = ResponsavelDataFactory.responsavelSemNome();

@@ -23,8 +23,8 @@ public class UsuarioCadastroTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Cadastro Usuário")
+    @Feature("Usuário")
+    @Story("Editar Cadastro Usuário")
     @Description("Deve atualizar cadastro com sucesso")
     public void deveAtualizarCadastroComSucesso(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -46,8 +46,8 @@ public class UsuarioCadastroTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Cadastro Usuário")
+    @Feature("Usuário")
+    @Story("Editar Cadastro Usuário")
     @Description("Deve falhar atualizar cadastro sem auth")
     public void deveFalharAtualizarCadastroSemAuth(){
         User cadastro = UserDataFactory.cadastroValido();
@@ -62,8 +62,8 @@ public class UsuarioCadastroTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Cadastro Usuário")
+    @Feature("Usuário")
+    @Story("Editar Cadastro Usuário")
     @Description("Deve falhar atualizar cadastro com id inválido")
     public void deveFalharAtualizarCadastroComIdInvalido(){
         User cadastro = UserDataFactory.cadastroValido();
@@ -79,8 +79,8 @@ public class UsuarioCadastroTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Cadastro Usuário")
+    @Feature("Usuário")
+    @Story("Editar Cadastro Usuário")
     @Description("Deve falhar atualizar cadastro com cargos inválidos")
     public void deveFalharAtualizarCadastroComCargosInvalidos(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -103,8 +103,8 @@ public class UsuarioCadastroTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Cadastro Usuário")
+    @Feature("Usuário")
+    @Story("Editar Cadastro Usuário")
     @Description("Deve falhar atualizar cadastro com cargo vazio")
     public void deveFalharAtualizarCadastroComCargoVazio(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -127,8 +127,8 @@ public class UsuarioCadastroTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Cadastro Usuário")
+    @Feature("Usuário")
+    @Story("Editar Cadastro Usuário")
     @Description("Deve falhar atualizar cadastro sem cargos")
     public void deveFalharAtualizarCadastroSemCargos(){
         UsuarioDTO usuario = PreloadData.userAdmin();
@@ -151,8 +151,8 @@ public class UsuarioCadastroTest extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Editar Cadastro Usuário")
+    @Feature("Usuário")
+    @Story("Editar Cadastro Usuário")
     @Description("Deve falhar atualizar cadastro sem nome")
     public void deveFalharAtualizarCadastroSemNome(){
         UsuarioDTO usuario = PreloadData.userAdmin();

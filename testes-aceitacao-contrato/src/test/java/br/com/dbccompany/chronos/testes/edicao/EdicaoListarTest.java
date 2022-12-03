@@ -16,8 +16,8 @@ public class EdicaoListarTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Listar Edição")
+    @Feature("Edição")
+    @Story("Listar Edição")
     @Description("Deve listar edições com sucesso")
     public void deveListarEdicoesComSucesso(){
         EdicaoListDTO response = EdicaoClient.listarEdicoes(true)
@@ -32,8 +32,8 @@ public class EdicaoListarTest extends BaseTest {
     @Tag("edicao")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Edição")
-    @Feature("Listar Edição")
+    @Feature("Edição")
+    @Story("Listar Edição")
     @Description("Deve retornar erro ao listar edições sem Auth")
     public void deveFalharListarEdicoesSemAuth(){
         Response response = EdicaoClient.listarEdicoes(false)

@@ -17,8 +17,8 @@ public class DiaNaoUtilDeleteTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Deletar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Deletar dia não útil")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Deve deletar um dia não útil com sucesso")
     public void deveDeletarUmDiaNaoUtilComSucesso() {
@@ -35,8 +35,8 @@ public class DiaNaoUtilDeleteTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Deletar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Deletar dia não útil")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao tentar deletar um dia não útil sem auth")
     public void deveFalharDeletarUmDiaNaoUtilSemAuth() {
@@ -51,8 +51,8 @@ public class DiaNaoUtilDeleteTest extends BaseTest {
     @Tag("dia-nao-util")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Dia não útil")
-    @Feature("Deletar dia não útil")
+    @Feature("Dia não útil")
+    @Story("Deletar dia não útil")
     @Severity(SeverityLevel.MINOR)
     @Description("Deve retornar erro ao tentar deletar um dia não útil com id inválido")
     public void deveFalharDeletarUmDiaNaoUtilComIdInvalido() {

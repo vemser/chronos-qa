@@ -15,8 +15,8 @@ public class UsuarioListarLogado extends BaseTest {
     @Tag("usuario")
     @Owner("Kevin Aryel")
     @Epic("Backend")
-    @Story("Usuário")
-    @Feature("Listar Usuário Logado")
+    @Feature("Usuário")
+    @Story("Listar Usuário Logado")
     @Description("Deve listar usuario logado com sucesso")
     public void deveListarUsuarioLogadoComSucesso() {
         UsuarioDTO response = UsuarioClient.listarUsuarioLogado(true)
