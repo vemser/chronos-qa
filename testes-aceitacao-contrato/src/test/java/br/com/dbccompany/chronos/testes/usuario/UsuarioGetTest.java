@@ -21,7 +21,7 @@ public class UsuarioGetTest extends BaseTest {
     @Epic("Backend")
     @Feature("Usuário")
     @Story("Listar Usuários")
-    @Description("Deve listar todos usuarios com auth de  sem dados")
+    @Description("Deve listar todos usuarios com sucesso")
     public void deveListarUsuarioComSucesso() {
         ResponseListUserDTO response = UsuarioClient.listarUsuarios(true)
                 .then()
