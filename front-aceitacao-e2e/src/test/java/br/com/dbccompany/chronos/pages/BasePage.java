@@ -3,6 +3,7 @@ import br.com.dbccompany.chronos.utils.Browser;
 import br.com.dbccompany.chronos.utils.Elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
 public class BasePage extends Elements {
@@ -11,6 +12,10 @@ public class BasePage extends Elements {
     public static void click(By by){
         waitElement(by);
         element(by).click();
+    }
+    public static void clickLast(By by){
+        waitElement(by);
+        lastElement(by).click();
     }
     public static void scrollBy(String pxQnt){
         JavascriptExecutor js = (JavascriptExecutor) Browser.driver;
@@ -21,6 +26,11 @@ public class BasePage extends Elements {
         waitElement(by);
         element(by).clear();
         element(by).sendKeys(texto);
+    }
+    public static void sendKeysLast(By by, String texto){
+        waitElement(by);
+        lastElement(by).clear();
+        lastElement(by).sendKeys(texto);
     }
 
     public static String getText(By by){
@@ -55,12 +65,17 @@ public class BasePage extends Elements {
         return element(by).isDisplayed();
     }
 
+
     public static boolean checkElementExist(By by){
         return Browser.driver.findElements(by).size() > 0;
     }
     public static boolean checkElementIsEnable(By by){
         waitElement(by);
         return element(by).isEnabled();
+    }
+    public static void sendEscapeKey(By by){
+        waitElement(by);
+        element(by).sendKeys(Keys.ESCAPE);
     }
     public static boolean checkElementIsSelected(By by){
         waitElement(by);
