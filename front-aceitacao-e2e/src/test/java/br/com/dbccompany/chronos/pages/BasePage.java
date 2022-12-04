@@ -19,6 +19,7 @@ public class BasePage extends Elements {
     }
     public static void sendKeys(By by, String texto){
         waitElement(by);
+        element(by).clear();
         element(by).sendKeys(texto);
     }
 
@@ -43,7 +44,8 @@ public class BasePage extends Elements {
         action.moveToElement(element(by));
         action.click().build().perform();
     }
-
+    public static final By btnUltimaPagina=
+            By.id("ultimaPagina");
     public static void clearElement(By by){
         element(by).clear();
     }
@@ -53,9 +55,16 @@ public class BasePage extends Elements {
         return element(by).isDisplayed();
     }
 
+    public static boolean checkElementExist(By by){
+        return Browser.driver.findElements(by).size() > 0;
+    }
     public static boolean checkElementIsEnable(By by){
         waitElement(by);
         return element(by).isEnabled();
+    }
+    public static boolean checkElementIsSelected(By by){
+        waitElement(by);
+        return element(by).isSelected();
     }
     public static String getElementValue(By by){
         waitElement(by);

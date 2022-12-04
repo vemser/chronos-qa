@@ -37,11 +37,23 @@ public class ColaboradorCreateEditPage extends BasePage {
     public static void clicarBotaoEnviar(){
         click(btnEnviar);
     }
+    public static void clearInputNome(){
+        clearElement(inputNome);
+    }
     public static void checarErroEmail(String erro){
         checkElementTextContains(spanErroEmail, erro);
     }
     public static void checarErroNome(String erro){
         checkElementTextContains(spanErroNome, erro);
+    }
+    public static boolean checarCheckboxAdmin(){
+        return checkElementIsEnable(checkboxAdmin);
+    }
+    public static  boolean checarCheckboxGestao(){
+        return checkElementIsEnable(checkboxGestao);
+    }
+    public static boolean checarCheckboxInstrutor(){
+        return checkElementIsEnable(checkboxInstrutor);
     }
 
 }

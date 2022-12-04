@@ -18,29 +18,49 @@ public class EdicoesPage extends BasePage {
             By.cssSelector("tbody > tr:last-child >td:nth-child(4)");
     private static final By btnStatusUltima =
             By.cssSelector("tbody > tr:last-child >td:nth-child(3)");
-
     public static void clicarBotaoCriarEdicao(){
         click(btnAdicionarEdicoes);
     }
-    public static void clicarBotaoStatusUltima(){
+    public static void clicarBotaoStatusUltima() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         click(btnStatusUltima);
     }
-    public static void clicarBotaoEditarUltima(){
+    public static void clicarBotaoEditarUltima() throws InterruptedException {
+        click(btnUltimaPagina);
+        Thread.sleep(1000);
         click(btnEditarUltima);
     }
-
-    public static void clicarBotaoExcluirUltima() {
+    public static void clicarBotaoExcluirUltima() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         scrollBy("200");
         click(btnExcluirUltima);
     }
-    public static String nomeUltimaEdicao() {
+    public static String nomeUltimaEdicao() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         return getText(nomeUltimaEdicao);
     }
 
-    public static boolean validarNomeUltimaEdicao(String nome) {
+    public static boolean validarNomeUltimaEdicao(String nome) throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         return getText(nomeUltimaEdicao).contains(nome);
     }
-    public static void clicarBotaoClonarUltima() {
+    public static void clicarBotaoClonarUltima() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         scrollBy("200");
         click(btnClonarEdicaoUltima);
     }

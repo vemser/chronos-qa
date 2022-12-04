@@ -14,13 +14,25 @@ public class ColaboradoresPage extends BasePage {
     public static void clicarBotaoCriarColaborador(){
         click(btnAdicionarColaborador);
     }
-    public static void clicarBotaoStatusUltimo(){
+    public static void clicarBotaoStatusUltimo() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         click(btnStatusUltimo);
     }
-    public static void clicarBotaoEditarUltimo(){
+    public static void clicarBotaoEditarUltimo() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         click(btnEditarUltimo);
     }
-    public static void clicarBotaoExcluirUltimo() {
+    public static void clicarBotaoExcluirUltimo() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         click(btnExcluirUltimo);
     }
 }

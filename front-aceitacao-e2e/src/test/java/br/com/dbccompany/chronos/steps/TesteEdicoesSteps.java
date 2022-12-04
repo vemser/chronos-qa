@@ -79,7 +79,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         CadastrarEdicaoPage.enviarNomeEdicao(Utils.faker.lorem().characters(10));
         CadastrarEdicaoPage.enviarDataInicio("12122022");
         CadastrarEdicaoPage.enviarDataFim("10122022");
-    //    EdicoesPage.validarToastErro();
+         EdicoesPage.validarToastErro();
     }
     @Test
     public void testarCriarEdicoesComDataInicialIgualDataFinal(){
@@ -93,7 +93,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         EdicoesPage.validarToastErro();
     }
     @Test
-    public void testarClonarEdicoes(){
+    public void testarClonarEdicoes() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         String nomeEdicao = EdicoesPage.nomeUltimaEdicao();
@@ -103,7 +103,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         EdicoesPage.clicarBotaoExcluirUltima();
     }
     @Test
-    public void testarMudarStatusEdicoes(){
+    public void testarMudarStatusEdicoes() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         EdicoesPage.clicarBotaoStatusUltima();
@@ -111,7 +111,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         EdicoesPage.clicarBotaoStatusUltima();
     }
     @Test
-    public void testarEditarEdicaoComSucesso(){
+    public void testarEditarEdicaoComSucesso() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
@@ -123,7 +123,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         EdicoesPage.validarToastSucesso();
     }
     @Test
-    public void testarEditarEdicaoSemNome(){
+    public void testarEditarEdicaoSemNome() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
@@ -138,7 +138,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         }
     }
     @Test
-    public void testarEditarEdicaoSemDataInicio(){
+    public void testarEditarEdicaoSemDataInicio() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
@@ -153,7 +153,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         }
     }
     @Test
-    public void testarEditarEdicaoSemDataFim(){
+    public void testarEditarEdicaoSemDataFim() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
@@ -168,7 +168,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         }
     }
     @Test
-    public void testarEditarEdicaoComDataInicialIncompleta(){
+    public void testarEditarEdicaoComDataInicialIncompleta() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
@@ -184,7 +184,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         }
     }
     @Test
-    public void testarEditarEdicaoComDataFinalIncompleta(){
+    public void testarEditarEdicaoComDataFinalIncompleta() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
