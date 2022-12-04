@@ -13,10 +13,10 @@ public class UserDataFactory {
 
         private static Cargo[] cargosVazio = new Cargo[0];
         private static String emailValido() {
-            return Utils.faker.internet().emailAddress();
+            return Utils.faker.name().fullName().toLowerCase().replaceAll("[^a-z]", "")+"@dbccompany.com.br";
         }
         private static String emailInvalido() {
-            return "teste121213";
+            return Utils.faker.internet().emailAddress();
         }
         private static String nomeValido(){
             return Utils.faker.name().fullName();
