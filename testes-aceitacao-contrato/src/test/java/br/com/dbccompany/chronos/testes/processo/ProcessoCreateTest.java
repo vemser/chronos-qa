@@ -68,7 +68,7 @@ public class ProcessoCreateTest extends BaseTest {
     @Epic("Backend")
     @Feature("Processo")
     @Story("Criar Processo")
-    @Description("Deve falhar criar um novo processo sem nome")
+    @Description("Deve retornar erro ao tentar criar um novo processo sem nome")
     public void deveFalharCriarUmNovoProcessoSemNome() {
         EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
         String idEdicao = edicao.getIdEdicao().toString();

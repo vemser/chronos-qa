@@ -6,6 +6,7 @@ import br.com.dbccompany.chronos.dto.EtapaListDTO;
 import br.com.dbccompany.chronos.model.Etapa;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import io.qameta.allure.*;
+import org.apache.http.HttpStatus;
 import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -39,6 +40,7 @@ public class EtapaListarTest extends BaseTest {
         EtapaClient.listarEtapa(false)
                 .then()
                 .log().all()
+                .statusCode(HttpStatus.SC_FORBIDDEN)
         ;
     }
 }

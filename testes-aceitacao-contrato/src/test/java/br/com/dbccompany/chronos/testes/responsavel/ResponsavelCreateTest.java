@@ -56,7 +56,7 @@ public class ResponsavelCreateTest extends BaseTest {
     @Epic("Backend")
     @Feature("Responsavel")
     @Story("Criar Responsavel")
-    @Description("Deve falhar criar um responsável sem nome inválido")
+    @Description("Deve retornar um erro criar um responsável sem nome")
     public void deveFalharCriarResponsavelSemNome(){
         Responsavel responsavel = ResponsavelDataFactory.responsavelSemNome();
         ResponseErrorBadDTO response = ResponsavelClient.criarResponsavel(Utils.converterParaJson(responsavel), true)
