@@ -1,5 +1,6 @@
 package br.com.dbccompany.chronos.steps;
 
+import br.com.dbccompany.chronos.pages.GestorPage;
 import br.com.dbccompany.chronos.pages.LoginPage;
 import br.com.dbccompany.chronos.utils.Browser;
 import br.com.dbccompany.chronos.utils.ConfigManipulation;
@@ -15,17 +16,20 @@ public class BaseSteps extends Browser {
     public void fecharNavegador(){
         browserDown();
     }
-    public void fazerLoginGestor(){
+    public static void fazerLoginGestor(){
         LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailGestao"));
         LoginPage.preencherSenha(ConfigManipulation.getProp().getProperty("senhaGestao"));
         LoginPage.clicarEntrar();
     }
-    public void fazerLoginAdm(){
+    public static void entrarNaPaginaDeEdicoes(){
+        GestorPage.clicarBotaoEdicoes();
+    }
+    public static void fazerLoginAdm(){
         LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailAdm"));
         LoginPage.preencherSenha(ConfigManipulation.getProp().getProperty("senhaAdm"));
         LoginPage.clicarEntrar();
     }
-    public void fazerLoginTeste(){
+    public static void fazerLoginTeste(){
         LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailTeste"));
         LoginPage.preencherSenha(ConfigManipulation.getProp().getProperty("senhaTeste"));
         LoginPage.clicarEntrar();

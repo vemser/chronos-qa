@@ -2,13 +2,17 @@ package br.com.dbccompany.chronos.steps;
 
 import br.com.dbccompany.chronos.pages.LoginPage;
 import br.com.dbccompany.chronos.utils.ConfigManipulation;
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import org.junit.Assert;
 import org.junit.Test;
 import static br.com.dbccompany.chronos.utils.Utils.faker;
 
 public class TesteLoginSteps extends BaseSteps {
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve falhar fazer login sem preencher o campo email")
     public void deveFalharFazerLoginSemEmail() {
         LoginPage.preencherSenha(faker.internet().password(8,15,true,true,true));
@@ -17,6 +21,10 @@ public class TesteLoginSteps extends BaseSteps {
     }
 
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve falhar fazer login sem preencher o campo senha")
     public void deveFalharFazerLoginSemSenha() {
         LoginPage.preencherEmail(faker.internet().emailAddress());
@@ -25,6 +33,10 @@ public class TesteLoginSteps extends BaseSteps {
     }
 
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve falhar fazer login com dados inválidos")
     public void deveFalharFazerLoginComDadosInvalidos() {
         LoginPage.preencherEmail(faker.internet().emailAddress());
@@ -32,6 +44,10 @@ public class TesteLoginSteps extends BaseSteps {
         LoginPage.clicarEntrar();
     }
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve fazer login com senha pequena inválido")
     public void deveFazerLoginComSenhaFormatoInvalido() {
         LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailAdm"));
@@ -40,6 +56,10 @@ public class TesteLoginSteps extends BaseSteps {
         Assert.assertTrue(LoginPage.validarMensagemErroSenha("A senha deve ter no mínimo 6 caracteres"));
     }
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve falhar fazer login sem dados")
     public void deveFalharFazerLoginComDadosVazios() {
         LoginPage.clicarEntrar();
@@ -48,6 +68,10 @@ public class TesteLoginSteps extends BaseSteps {
     }
 
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve fazer login como admin com sucesso")
     public void deveFazerLoginComSucesso() throws InterruptedException {
         LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailAdm"));
@@ -57,6 +81,10 @@ public class TesteLoginSteps extends BaseSteps {
         Assert.assertTrue(LoginPage.validarUrlAdmin());
     }
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve fazer login como instrutor com sucesso")
     public void deveFazerLoginComoInstrutorComSucesso() throws InterruptedException {
         LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailInstrutor"));
@@ -66,6 +94,10 @@ public class TesteLoginSteps extends BaseSteps {
         Assert.assertTrue(LoginPage.validarUrlInstrutor());
     }
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve fazer login como gestor com sucesso")
     public void deveFazerLoginComoGestorComSucesso() throws InterruptedException {
         LoginPage.preencherEmail(ConfigManipulation.getProp().getProperty("emailGestao"));
@@ -76,6 +108,10 @@ public class TesteLoginSteps extends BaseSteps {
     }
 
     @Test
+    @Owner("Kevin Aryel")
+    @Epic("Frontend")
+    @Feature("Login")
+    @Story("Fazer Login")
     @Description("Deve fazer login com email inválido")
     public void deveFazerLoginComEmailInvalido() throws InterruptedException {
         LoginPage.preencherEmail("emailinvalido");
