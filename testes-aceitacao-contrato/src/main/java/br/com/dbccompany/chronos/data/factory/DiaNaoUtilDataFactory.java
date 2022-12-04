@@ -40,11 +40,6 @@ public class DiaNaoUtilDataFactory {
         diaNaoUtilSemDataFinal.setDataFinal(null);
         return diaNaoUtilSemDataFinal;
     }
-    public static DiaNaoUtil diaNaoUtilSemRepeticaoAnual(){
-        DiaNaoUtil diaNaoUtilSemRepeticaoAnual = novoDiaNaoUtil();
-        diaNaoUtilSemRepeticaoAnual.setRepeticaoAnual(null);
-        return diaNaoUtilSemRepeticaoAnual;
-    }
     public static DiaNaoUtil diaNaoUtilComDataIncialIgualDataFinal(){
         DiaNaoUtil diaNaoUtilComDataIncialIgualDataFinal = novoDiaNaoUtil();
         String data = dataInicialValida;
