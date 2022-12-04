@@ -176,6 +176,5 @@ public class UsuarioCreateTest extends BaseTest {
                 .log().all()
                 .statusCode(HttpStatus.SC_BAD_REQUEST).extract().as(ResponseErrorBadDTO.class);
         Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST);
-        Assert.assertTrue(response.getErrors()[0].contains("email:"));
     }
 }
