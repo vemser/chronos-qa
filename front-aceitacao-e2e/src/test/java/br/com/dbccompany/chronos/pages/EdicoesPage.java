@@ -18,6 +18,8 @@ public class EdicoesPage extends BasePage {
             By.cssSelector("tbody > tr:last-child >td:nth-child(4)");
     private static final By btnStatusUltima =
             By.cssSelector("tbody > tr:last-child >td:nth-child(3)");
+    private static final By btnDetalhesUltimo =
+            By.cssSelector("tbody > tr:last-child >th:nth-child(2)");
     public static void clicarBotaoCriarEdicao(){
         click(btnAdicionarEdicoes);
     }
@@ -29,8 +31,10 @@ public class EdicoesPage extends BasePage {
         click(btnStatusUltima);
     }
     public static void clicarBotaoEditarUltima() throws InterruptedException {
-        click(btnUltimaPagina);
-        Thread.sleep(1000);
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
         click(btnEditarUltima);
     }
     public static void clicarBotaoExcluirUltima() throws InterruptedException {
@@ -40,6 +44,7 @@ public class EdicoesPage extends BasePage {
         }
         scrollBy("200");
         click(btnExcluirUltima);
+        Thread.sleep(1000);
     }
     public static String nomeUltimaEdicao() throws InterruptedException {
         if (checkElementExist(btnUltimaPagina)){
@@ -63,5 +68,12 @@ public class EdicoesPage extends BasePage {
         }
         scrollBy("200");
         click(btnClonarEdicaoUltima);
+    }
+    public static void clicarBotaoDetalhesUltima() throws InterruptedException {
+        if (checkElementExist(btnUltimaPagina)){
+            click(btnUltimaPagina);
+            Thread.sleep(1000);
+        }
+        click(btnDetalhesUltimo);
     }
 }
