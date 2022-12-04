@@ -34,5 +34,6 @@ public class ColaboradoresPage extends BasePage {
             Thread.sleep(1000);
         }
         click(btnExcluirUltimo);
+        Thread.sleep(1000);
     }
 }

@@ -17,6 +17,7 @@ public class DiaNaoUtilPage extends BasePage {
             Thread.sleep(1000);
         }
         click(botaoExcluirUltimo);
+        Thread.sleep(1000);
     }
     public static void clicarBotaoEditarUltimoDiaNaoUtil() throws InterruptedException {
         if (checkElementExist(btnUltimaPagina)){
@@ -24,6 +25,7 @@ public class DiaNaoUtilPage extends BasePage {
             Thread.sleep(1000);
         }
         click(botaoEditarUltimo);
+        Thread.sleep(1000);
     }
 
 }
