@@ -11,7 +11,7 @@ public class Browser {
     public void browserUp(String url){
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 15);
         driver.get(url);
         driver.manage().window().maximize();
     }
