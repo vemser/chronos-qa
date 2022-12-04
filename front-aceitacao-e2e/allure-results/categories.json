@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Testes Passados",
+        "matchedStatuses":["passed"]
+    },
+    {
+        "name": "Testes com erro desconhecido",
+        "matchedStatuses":["unknown"]
+    },
+    {
+      "name": "Testes Ignorados", 
+      "matchedStatuses": ["skipped"] 
+    },
+    {
+      "name": "Problemas de Infraestrutura",
+      "matchedStatuses": ["broken", "failed"],
+      "messageRegex": ".*bye-bye.*" 
+    },
+    {
+      "name": "Testes não Encontrados",
+      "matchedStatuses": ["broken"],
+      "traceRegex": ".*FileNotFoundException.*" 
+    },
+    {
+      "name": "Testes Falhados",
+      "matchedStatuses": ["failed"]
+    },
+    {
+      "name": "Testes Quebrados",
+      "matchedStatuses": ["broken"]
+    }
+  ]
