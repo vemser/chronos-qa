@@ -1,4 +1,15 @@
 [ {
+  "buildOrder" : 2,
+  "reportName" : "Allure report deploy #2",
+  "data" : {
+    "failed" : 1,
+    "broken" : 5,
+    "skipped" : 0,
+    "passed" : 122,
+    "unknown" : 0,
+    "total" : 128
+  }
+}, {
   "buildOrder" : 1,
   "reportName" : "Allure report deploy #1",
   "data" : {
