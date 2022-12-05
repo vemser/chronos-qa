@@ -2,11 +2,11 @@ package br.com.dbccompany.chronos.testes.usuario;
 
 import br.com.dbccompany.chronos.client.UsuarioClient;
 import br.com.dbccompany.chronos.data.factory.PerfilDataFactory;
-import br.com.dbccompany.chronos.data.preloadAndRestore.PerfilRestoreData;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.dto.UsuarioDTO;
 import br.com.dbccompany.chronos.model.Perfil;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import br.com.dbccompany.chronos.utils.Utils;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
@@ -35,7 +35,7 @@ public class UsuarioPerfilTest extends BaseTest {
             Assert.assertEquals(perfil.getNome(), response.getNome());
 
         }finally {
-            PerfilRestoreData.restaurarPerfil(perfil.getNovaSenha());
+            PreloadData.restaurarPerfil(perfil.getNovaSenha());
         }
     }
 

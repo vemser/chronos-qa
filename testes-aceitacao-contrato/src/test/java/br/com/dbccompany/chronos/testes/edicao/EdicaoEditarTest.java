@@ -2,10 +2,10 @@ package br.com.dbccompany.chronos.testes.edicao;
 
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.data.factory.EdicaoDataFactory;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.model.Edicao;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import br.com.dbccompany.chronos.utils.Utils;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
@@ -25,7 +25,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve editar uma edição com sucesso")
     public void deveEditarUmaEdicaoComSucesso() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoValida();
@@ -82,7 +82,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição sem nome")
     public void deveFalharAoEditarUmaEdicaoSemNome() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoSemNome();
@@ -106,7 +106,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve fretornar erro ao editar uma edição sem dataInicial")
     public void deveFalharAoEditarUmaEdicaoSemDataInicial() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoSemDataInicial();
@@ -130,7 +130,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição sem dataFinal")
     public void deveFalharAoEditarUmaEdicaoSemDataFinal() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoSemDataFinal();
@@ -155,7 +155,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição com dataFinal menor que dataInicial")
     public void deveFalharAoEditarUmaEdicaoComDataFinalMenorQueDataInicial() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao =PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalMenorQueDataInicial();
@@ -178,7 +178,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição com dataFinal igual a dataInicial")
     public void deveFalharAoEditarUmaEdicaoComDataFinalIgualADataInicial() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalIgualADataInicial();
@@ -201,7 +201,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição com dataFinal no formato Inválido")
     public void deveFalharAoEditarUmaEdicaoComDataFinalNoFormatoInvalido() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalFormatoInvalido();
@@ -224,7 +224,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição com dataInicial no formato invalido")
     public void deveFalharAoEditarUmaEdicaoComDataInicialNoFormatoInvalido() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataInicialFormatoInvalido();
@@ -247,7 +247,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição com data inicial tipo invalido")
     public void deveFalharAoEditarUmaEdicaoComDataInicialTipoInvalido() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataInicialTipoInvalido();
@@ -270,7 +270,7 @@ public class EdicaoEditarTest extends BaseTest {
     @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição com data final tipo invalido")
     public void deveFalharAoEditarUmaEdicaoComDataFinalTipoInvalido() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalTipoInvalido();

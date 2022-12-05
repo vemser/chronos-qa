@@ -23,6 +23,7 @@ public class AreaEnvolvidaCreateTest extends BaseTest {
     @Feature("Area Envolvida")
     @Story("Criar Area Envolvida")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("atual")
     @Description("Deve criar uma área envolvida com sucesso")
     public void criarAreaEnvolvidaComSucesso() {
         AreaEnvolvida areaEnvolvida = AreaEnvolvidaDataFactory.areaEnvolvidaValida();

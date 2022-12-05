@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties
 public class CargoDTO {
-    String idCargo;
+    Integer idCargo;
     String nome;
     String descricao;
 }

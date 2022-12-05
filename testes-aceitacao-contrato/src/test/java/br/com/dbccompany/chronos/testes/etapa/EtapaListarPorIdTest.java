@@ -2,20 +2,17 @@ package br.com.dbccompany.chronos.testes.etapa;
 
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.client.EtapaClient;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EtapaPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 
@@ -29,10 +26,10 @@ public class EtapaListarPorIdTest extends BaseTest {
     @Story("Listar Etapa por Id")
     @Description("Deve listar etapa por id com sucesso")
     public void deveListarEtapaPorIdComSucesso(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try {
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             EtapaDTO[] response = EtapaClient.listarEtapaPorId(idEdicao, true)
                     .then()
                     .log().all()

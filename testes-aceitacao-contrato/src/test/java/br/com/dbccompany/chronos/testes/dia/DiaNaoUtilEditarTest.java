@@ -81,29 +81,6 @@ public class DiaNaoUtilEditarTest extends BaseTest {
             DiaNaoUtilClient.deletarDiaNaoUtil(idDiaNaoUtil,true);
         }
     }
-
-    @Test
-    @Tag("todos")
-    @Tag("dia-nao-util")
-    @Owner("Kevin Aryel")
-    @Epic("Backend")
-    @Feature("Dia não útil")
-    @Story("Editar dia não útil")
-    @Severity(SeverityLevel.MINOR)
-    @Description("Deve retornar erro ao tenatr editar um dia não útil sem data final")
-    public void deveFalharEditarUmDiaNaoUtilSemDataFinal() {
-        DiaNaoUtilDTO diaNaoUtil = PreloadData.diaNaoUtil();
-        String idDiaNaoUtil = diaNaoUtil.getIdDiaNaoUtil().toString();
-        try{
-            DiaNaoUtil diaNaoUtilEditado = DiaNaoUtilDataFactory.diaNaoUtilSemDataFinal();
-            DiaNaoUtilClient.editarDiaNaoUtil(Utils.converterParaJson(diaNaoUtilEditado),idDiaNaoUtil,true)
-                    .then()
-                    .log().all()
-                    .statusCode(400);
-        } finally {
-            DiaNaoUtilClient.deletarDiaNaoUtil(idDiaNaoUtil,true);
-        }
-    }
     @Test
     @Tag("todos")
     @Tag("dia-nao-util")

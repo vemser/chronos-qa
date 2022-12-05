@@ -20,6 +20,7 @@ public class ColaboradoresPage extends BasePage {
             Thread.sleep(1000);
         }
         click(btnStatusUltimo);
+        Thread.sleep(1000);
     }
     public static void clicarBotaoEditarUltimo() throws InterruptedException {
         if (checkElementExist(btnUltimaPagina)){

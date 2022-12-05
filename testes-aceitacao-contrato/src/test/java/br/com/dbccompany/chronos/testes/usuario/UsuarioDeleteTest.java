@@ -21,6 +21,7 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Epic("Backend")
     @Feature("Usuário")
     @Story("Deletar Usuário")
+    @Tag("atual")
     @Description("Deve deletar usuario com sucesso")
     public void deveDeletarUsuarioComSucesso(){
         UsuarioDTO usuario = PreloadData.userAdmin();

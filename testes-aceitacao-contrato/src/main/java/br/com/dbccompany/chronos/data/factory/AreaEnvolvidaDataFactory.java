@@ -5,7 +5,7 @@ import br.com.dbccompany.chronos.model.AreaEnvolvidaBuilder;
 import br.com.dbccompany.chronos.utils.Utils;
 
 public class AreaEnvolvidaDataFactory {
-    private static String nomeValido = Utils.faker.job().position();
+    private static String nomeValido = Utils.faker.lorem().characters(10, 15);
 
     private static AreaEnvolvida novaAreaEnvolvida(){
         return  new AreaEnvolvidaBuilder()

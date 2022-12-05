@@ -21,6 +21,7 @@ public class AreaEnvolvidaClient {
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
+                .log().all()
                 .body(json)
             .when()
                 .post(AreaEnvolvidaData.SERVICE)
@@ -30,6 +31,7 @@ public class AreaEnvolvidaClient {
         RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
+                .log().all()
             .when()
                 .delete(AreaEnvolvidaData.SERVICE+"/"+id)
             ;

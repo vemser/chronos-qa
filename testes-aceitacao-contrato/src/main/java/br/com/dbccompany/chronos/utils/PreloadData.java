@@ -5,12 +5,14 @@ import br.com.dbccompany.chronos.data.factory.*;
 import br.com.dbccompany.chronos.dto.*;
 import br.com.dbccompany.chronos.model.*;
 import br.com.dbccompany.chronos.utils.Utils;
+import io.restassured.response.Response;
 
 public class PreloadData {
     public static UsuarioDTO userAdmin(){
         User usuario = UserDataFactory.usuarioValido();
         UsuarioDTO userAdmin = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(usuario),true)
             .then()
+                .log().all()
             .extract().as(UsuarioDTO.class);
         return userAdmin;
     }
@@ -51,5 +53,9 @@ public class PreloadData {
         return DiaNaoUtilClient.criarDiaNaoUtil(Utils.converterParaJson(diaNaoUtil),true)
                 .then()
                 .extract().as(DiaNaoUtilDTO.class);
+    }
+    public static Response restaurarPerfil(String senhaAtual){
+        Perfil perfil = PerfilDataFactory.perfilRestore(senhaAtual);
+        return UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),true);
     }
 }

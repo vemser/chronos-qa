@@ -1,10 +1,10 @@
 package br.com.dbccompany.chronos.testes.edicao;
 
 import br.com.dbccompany.chronos.client.EdicaoClient;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -22,7 +22,7 @@ public class EdicaoStatusTest extends BaseTest {
     @Story("Editar Status Edição")
     @Description("Deve alterar o status de uma edição com sucesso")
     public void deveAlterarStatusDeUmaEdicaoComSucesso() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String edicaoId = edicao.getIdEdicao().toString();
         try{
             Response response = EdicaoClient.alterarStatusEdicao(edicaoId,true)

@@ -3,7 +3,6 @@ package br.com.dbccompany.chronos.testes.etapa;
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.client.EtapaClient;
 import br.com.dbccompany.chronos.data.factory.EtapaDataFactory;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
@@ -50,7 +49,7 @@ public class EtapaCreateTest extends BaseTest {
     @Story("Criar Etapa")
     @Description("Deve retornar erro ao criar etapa sem nome")
     public void deveFalharCriarEtapaSemNome(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
             Etapa etapa = EtapaDataFactory.etapaSemNome();
@@ -72,7 +71,7 @@ public class EtapaCreateTest extends BaseTest {
     @Story("Criar Etapa")
     @Description("Deve retornar erro ao criar etapa sem ordem de execução")
     public void deveFalharCriarEtapaSemOrdemExecucao(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
             Etapa etapa = EtapaDataFactory.etapaSemOrdemExecucao();
@@ -95,7 +94,7 @@ public class EtapaCreateTest extends BaseTest {
     @Story("Criar Etapa")
     @Description("Deve retornar erro ao criar etapa sem auth")
     public void deveFalharCriarEtapaSemAuth(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
             Etapa etapa = EtapaDataFactory.etapaValida();

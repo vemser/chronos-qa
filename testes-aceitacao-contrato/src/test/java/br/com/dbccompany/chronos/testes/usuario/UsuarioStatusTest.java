@@ -21,6 +21,7 @@ public class UsuarioStatusTest extends BaseTest {
     @Epic("Backend")
     @Feature("Usuário")
     @Story("Editar Status Usuário")
+    @Tag("atual")
     @Description("Deve mudar status com sucesso")
     public void deveMudarStatusComSucesso(){
         UsuarioDTO usuario = PreloadData.userAdmin();

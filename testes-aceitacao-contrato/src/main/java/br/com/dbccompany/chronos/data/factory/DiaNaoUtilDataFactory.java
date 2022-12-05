@@ -35,11 +35,6 @@ public class DiaNaoUtilDataFactory {
         diaNaoUtilSemDataInicial.setDataInicial(null);
         return diaNaoUtilSemDataInicial;
     }
-    public static DiaNaoUtil diaNaoUtilSemDataFinal(){
-        DiaNaoUtil diaNaoUtilSemDataFinal = novoDiaNaoUtil();
-        diaNaoUtilSemDataFinal.setDataFinal(null);
-        return diaNaoUtilSemDataFinal;
-    }
     public static DiaNaoUtil diaNaoUtilComDataIncialIgualDataFinal(){
         DiaNaoUtil diaNaoUtilComDataIncialIgualDataFinal = novoDiaNaoUtil();
         String data = dataInicialValida;

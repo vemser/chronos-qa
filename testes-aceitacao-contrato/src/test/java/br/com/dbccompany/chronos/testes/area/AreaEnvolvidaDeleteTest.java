@@ -21,6 +21,7 @@ public class AreaEnvolvidaDeleteTest extends BaseTest {
     @Feature("Area Envolvida")
     @Story("Deletar Area Envolvida")
     @Severity(SeverityLevel.CRITICAL)
+    @Tag("atual")
     @Description("Deve deletar uma área envolvida com sucesso")
     public void deletarAreaEnvolvidaComSucesso() {
         AreaEnvolvidaDTO areaEnvolvida = PreloadData.areaEnvolvida();

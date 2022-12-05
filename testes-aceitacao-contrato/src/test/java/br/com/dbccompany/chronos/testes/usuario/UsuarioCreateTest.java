@@ -25,6 +25,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Epic("Backend")
     @Feature("Usuário")
     @Story("Criar Usuário")
+    @Tag("atual")
     @Description("Deve criar usuario com sucesso")
     public void deveCriarUsuarioComSucesso(){
         User user = UserDataFactory.usuarioValido();

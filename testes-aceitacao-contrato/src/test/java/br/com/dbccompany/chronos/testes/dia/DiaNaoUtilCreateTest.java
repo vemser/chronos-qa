@@ -85,22 +85,4 @@ public class DiaNaoUtilCreateTest extends BaseTest {
                 .extract().as(ResponseErrorBadDTO.class);
         Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
     }
-
-    @Test
-    @Tag("todos")
-    @Tag("dia-nao-util")
-    @Owner("Kevin Aryel")
-    @Epic("Backend")
-    @Feature("Dia não útil")
-    @Story("Criar dia não útil")
-    @Severity(SeverityLevel.MINOR)
-    @Description("Deve retornar erro ao criar um dia não útil sem data final")
-    public void deveFalharCriarUmDiaNaoUtilSemDataFinal() {
-        DiaNaoUtil diaNaoUtil = DiaNaoUtilDataFactory.diaNaoUtilSemDataFinal();
-        ResponseErrorBadDTO response = DiaNaoUtilClient.criarDiaNaoUtil(Utils.converterParaJson(diaNaoUtil),true)
-                .then()
-                .log().all()
-                .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
-    }
 }

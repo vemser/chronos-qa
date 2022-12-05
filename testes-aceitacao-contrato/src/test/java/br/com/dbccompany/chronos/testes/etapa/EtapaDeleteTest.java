@@ -2,12 +2,11 @@ package br.com.dbccompany.chronos.testes.etapa;
 
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.client.EtapaClient;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EtapaPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -25,10 +24,10 @@ public class EtapaDeleteTest extends BaseTest {
     @Story("Deletar Etapa")
     @Description("Deve deletar etapa com sucesso")
     public void deveDeletarEtapaComSucesso(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try {
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Response response = EtapaClient.deletarEtapa(idEtapa, true)
                     .then()

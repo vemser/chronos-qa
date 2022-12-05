@@ -3,14 +3,13 @@ package br.com.dbccompany.chronos.testes.processo;
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.client.ProcessoClient;
 import br.com.dbccompany.chronos.data.factory.ProcessoDataFactory;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EtapaPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ProcessoDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.Processo;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import br.com.dbccompany.chronos.utils.Utils;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
@@ -29,10 +28,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Story("Criar Processo")
     @Description("Deve criar um novo processo com sucesso")
     public void deveCriarUmNovoProcessoComSucesso() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Processo processo = ProcessoDataFactory.processoValido();
             ProcessoDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
@@ -70,10 +69,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Story("Criar Processo")
     @Description("Deve retornar erro ao tentar criar um novo processo sem nome")
     public void deveFalharCriarUmNovoProcessoSemNome() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Processo processo = ProcessoDataFactory.processoSemNome();
             ResponseErrorBadDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
@@ -110,10 +109,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Story("Criar Processo")
     @Description("Deve falhar criar um novo processo sem duracaoProcesso")
     public void deveFalharCriarUmNovoProcessoSemDuracaoProcesso() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Processo processo = ProcessoDataFactory.processoSemDuracaoProcesso();
             ResponseErrorBadDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
@@ -134,10 +133,10 @@ public class ProcessoCreateTest extends BaseTest {
     @Story("Criar Processo")
     @Description("Deve falhar criar um novo processo sem dias uteis")
     public void deveFalharCriarUmNovoProcessoSemDiasUteis() {
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Processo processo = ProcessoDataFactory.processoSemDiasUteis();
             ResponseErrorBadDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)

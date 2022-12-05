@@ -3,13 +3,12 @@ package br.com.dbccompany.chronos.testes.etapa;
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.client.EtapaClient;
 import br.com.dbccompany.chronos.data.factory.EtapaDataFactory;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EdicaoPreloadData;
-import br.com.dbccompany.chronos.data.preloadAndRestore.EtapaPreloadData;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
 import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.model.Etapa;
 import br.com.dbccompany.chronos.testes.BaseTest;
+import br.com.dbccompany.chronos.utils.PreloadData;
 import br.com.dbccompany.chronos.utils.Utils;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
@@ -29,10 +28,10 @@ public class EtapaEditarTest extends BaseTest {
     @Story("Editar Etapa")
     @Description("Deve editar uma etapa com sucesso")
     public void deveEditarEtapaComSucesso(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Etapa etapaEditar = EtapaDataFactory.etapaValida();
             EtapaDTO response = EtapaClient.atualizarEtapa(Utils.converterParaJson(etapaEditar),idEtapa,true)
@@ -87,10 +86,10 @@ public class EtapaEditarTest extends BaseTest {
     @Story("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem nome")
     public void deveFalharEditarEtapaSemNome(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try {
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Etapa etapaEditar = EtapaDataFactory.etapaSemNome();
             Response response = EtapaClient.atualizarEtapa(Utils.converterParaJson(etapaEditar), idEtapa, true)
@@ -112,10 +111,10 @@ public class EtapaEditarTest extends BaseTest {
     @Story("Editar Etapa")
     @Description("Deve falhar ao editar uma etapa sem ordemExecucao")
     public void deveFalharEditarEtapaSemOrdemExecucao(){
-        EdicaoDTO edicao = EdicaoPreloadData.edicaoValida();
+        EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try {
-            EtapaDTO etapa = EtapaPreloadData.etapaValida(idEdicao);
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Etapa etapaEditar = EtapaDataFactory.etapaSemOrdemExecucao();
             Response response = EtapaClient.atualizarEtapa(Utils.converterParaJson(etapaEditar), idEtapa, true)

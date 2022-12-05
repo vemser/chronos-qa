@@ -28,6 +28,7 @@ public class UsuarioClient {
     public static Response cadastrarUsuario(String json,boolean auth){
         RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
+                .log().all()
                 .spec(spec)
                 .body(json)
             .when()
@@ -47,6 +48,7 @@ public class UsuarioClient {
         RequestSpecification spec = auth ? RequestSpec.teste() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
+                .log().all()
                 .body(json)
             .when()
                 .put(UsuarioData.SERVICE_UPDATE_CADASTRO+"/"+id)
@@ -56,6 +58,7 @@ public class UsuarioClient {
         RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
+                .log().all()
             .when()
                 .put(UsuarioData.SERVICE_ENABLE_DISABLE+"/"+id)
             ;
@@ -64,6 +67,7 @@ public class UsuarioClient {
         RequestSpecification spec = auth ? RequestSpec.adm() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
+                .log().all()
             .when()
                 .delete(UsuarioData.SERVICE+'/'+id)
             ;
