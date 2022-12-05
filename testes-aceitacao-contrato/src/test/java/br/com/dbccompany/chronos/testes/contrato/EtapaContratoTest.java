@@ -19,7 +19,7 @@ public class EtapaContratoTest extends BaseTest {
     @Feature("Etapa")
     @Story("Listar Etapas")
     @Description("Deve listar as etapas de acordo com o schema")
-    public void deveListarCalendarioGeralDeAcordoAoSchema() {
+    public void deveListarEtapasDeAcordoAoSchema() {
         EtapaClient.listarEtapa(true)
                 .then()
                 .assertThat()

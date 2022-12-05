@@ -21,7 +21,7 @@ public class UsuarioContratoTest extends BaseTest {
     @Feature("Usuário")
     @Story("Listar Usuários")
     @Description("Deve listar os usuarios de acordo com o schema")
-    public void deveListarCalendarioGeralDeAcordoAoSchema() {
+    public void deveListarUsuarioDeAcordoAoSchema() {
         EdicaoClient.listarCalendarioGeral(true)
                 .then()
                 .assertThat()
