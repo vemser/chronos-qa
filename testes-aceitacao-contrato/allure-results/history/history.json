@@ -39,11 +39,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6281bfa6497f576c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216020316,
+        "stop" : 1670216020476,
+        "duration" : 160
+      }
+    }, {
       "uid" : "c50cd7c0f669cfd",
       "status" : "passed",
       "time" : {
@@ -163,11 +171,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8b1b1846b02f20a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216015721,
+        "stop" : 1670216016524,
+        "duration" : 803
+      }
+    }, {
       "uid" : "730c9fa474e2c7ca",
       "status" : "passed",
       "time" : {
@@ -182,11 +198,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "53ad17c3bbde4f3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216021236,
+        "stop" : 1670216021700,
+        "duration" : 464
+      }
+    }, {
       "uid" : "4dde9ffc852eceb2",
       "status" : "passed",
       "time" : {
@@ -236,11 +260,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2c7526a033c69f33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215984156,
+        "stop" : 1670215984287,
+        "duration" : 131
+      }
+    }, {
       "uid" : "e26fb1ad3859a5c1",
       "status" : "passed",
       "time" : {
@@ -255,11 +287,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "446763f141b486c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215991380,
+        "stop" : 1670215991507,
+        "duration" : 127
+      }
+    }, {
       "uid" : "93bd410e03d79c76",
       "status" : "passed",
       "time" : {
@@ -449,11 +489,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "25c200e174e92978",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216004496,
+        "stop" : 1670216004610,
+        "duration" : 114
+      }
+    }, {
       "uid" : "64bc32ffaa4f9b13",
       "status" : "passed",
       "time" : {
@@ -539,11 +587,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8b83bb983ea915ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216014394,
+        "stop" : 1670216015280,
+        "duration" : 886
+      }
+    }, {
       "uid" : "1da0f2af0cf7165c",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.UsuarioDTO), not marked as ignorable (6 known properties: \"status\", \"idUsuario\", \"cargos\", \"nome\", \"email\", \"imagem\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:11:05.694+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/usuario\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.UsuarioDTO[\"timestamp\"])",
@@ -699,11 +755,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8edc2b464bb0eec8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215995479,
+        "stop" : 1670215995685,
+        "duration" : 206
+      }
+    }, {
       "uid" : "bf85c60a63199431",
       "status" : "passed",
       "time" : {
@@ -718,11 +782,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ea33a03df1d16a72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215984294,
+        "stop" : 1670215984417,
+        "duration" : 123
+      }
+    }, {
       "uid" : "10d0a8bf05b03368",
       "status" : "passed",
       "time" : {
@@ -737,11 +809,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6fb891f89a365fd5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216007212,
+        "stop" : 1670216008332,
+        "duration" : 1120
+      }
+    }, {
       "uid" : "68d8a515ca14af1",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.UsuarioDTO), not marked as ignorable (6 known properties: \"status\", \"idUsuario\", \"cargos\", \"nome\", \"email\", \"imagem\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:11:00.014+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/usuario\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.UsuarioDTO[\"timestamp\"])",
@@ -757,11 +837,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "85f76d4fc57ecd4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215977166,
+        "stop" : 1670215977310,
+        "duration" : 144
+      }
+    }, {
       "uid" : "54b8a1524eddf70",
       "status" : "passed",
       "time" : {
@@ -884,11 +972,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "b9abba5c4c38301e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216008336,
+        "stop" : 1670216008452,
+        "duration" : 116
+      }
+    }, {
       "uid" : "3a8bf3c8f2b2cf21",
       "status" : "passed",
       "time" : {
@@ -903,11 +999,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d00bcffdc8a1c726",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215992082,
+        "stop" : 1670215992573,
+        "duration" : 491
+      }
+    }, {
       "uid" : "8aae0d0ce34f1758",
       "status" : "passed",
       "time" : {
@@ -957,11 +1061,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "79e2ff0de446a3d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215987628,
+        "stop" : 1670215988025,
+        "duration" : 397
+      }
+    }, {
       "uid" : "d51926c3ed1b40e6",
       "status" : "passed",
       "time" : {
@@ -1011,11 +1123,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d59e9789a82486dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216015413,
+        "stop" : 1670216015522,
+        "duration" : 109
+      }
+    }, {
       "uid" : "4c9da0fa05a143cb",
       "status" : "passed",
       "time" : {
@@ -1065,11 +1185,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "661dbf34556e8f24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215998532,
+        "stop" : 1670215998674,
+        "duration" : 142
+      }
+    }, {
       "uid" : "3627483aef1a3806",
       "status" : "passed",
       "time" : {
@@ -1154,11 +1282,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "955a9ce613b3e391",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215991086,
+        "stop" : 1670215991237,
+        "duration" : 151
+      }
+    }, {
       "uid" : "5c7dbea8ca545c4f",
       "status" : "passed",
       "time" : {
@@ -1173,11 +1309,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "19747a8564a13624",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215994911,
+        "stop" : 1670215995475,
+        "duration" : 564
+      }
+    }, {
       "uid" : "e74c9587b496783d",
       "status" : "passed",
       "time" : {
@@ -1227,11 +1371,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "30932b7d0189b8a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215990533,
+        "stop" : 1670215991063,
+        "duration" : 530
+      }
+    }, {
       "uid" : "b16cd2366200a451",
       "status" : "passed",
       "time" : {
@@ -1246,11 +1398,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2988b3adb253da5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215999246,
+        "stop" : 1670215999365,
+        "duration" : 119
+      }
+    }, {
       "uid" : "a00b53ac61a87898",
       "status" : "passed",
       "time" : {
@@ -1265,11 +1425,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f07a56aa5a16c162",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216002604,
+        "stop" : 1670216002724,
+        "duration" : 120
+      }
+    }, {
       "uid" : "b13e74452361f12d",
       "status" : "passed",
       "time" : {
@@ -1284,11 +1452,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "cc7d77db1d25c11a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216016769,
+        "stop" : 1670216016886,
+        "duration" : 117
+      }
+    }, {
       "uid" : "6c5fd48f6a8b68e9",
       "status" : "passed",
       "time" : {
@@ -1338,11 +1514,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8859cc76ad2c3211",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215987195,
+        "stop" : 1670215987616,
+        "duration" : 421
+      }
+    }, {
       "uid" : "a0eb08be7d07557f",
       "status" : "passed",
       "time" : {
@@ -1392,11 +1576,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bf6f49f2ee3c25d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215986353,
+        "stop" : 1670215986751,
+        "duration" : 398
+      }
+    }, {
       "uid" : "49ca93802239de46",
       "status" : "passed",
       "time" : {
@@ -1553,11 +1745,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "690733ce85decaa9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215998684,
+        "stop" : 1670215998824,
+        "duration" : 140
+      }
+    }, {
       "uid" : "821cdc2a2882aa29",
       "status" : "passed",
       "time" : {
@@ -1607,11 +1807,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ef2d7f2d816f7dda",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215980460,
+        "stop" : 1670215980577,
+        "duration" : 117
+      }
+    }, {
       "uid" : "9496bf5e13c0bddc",
       "status" : "passed",
       "time" : {
@@ -1661,11 +1869,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "1c58eecc0b1a43af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215984427,
+        "stop" : 1670215984561,
+        "duration" : 134
+      }
+    }, {
       "uid" : "c3a58904e3a0402c",
       "status" : "passed",
       "time" : {
@@ -1680,11 +1896,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f95f6a656ae59c86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215975578,
+        "stop" : 1670215975805,
+        "duration" : 227
+      }
+    }, {
       "uid" : "684cf8e2cf157de5",
       "status" : "passed",
       "time" : {
@@ -1699,11 +1923,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "826d0f58602968c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216016901,
+        "stop" : 1670216017037,
+        "duration" : 136
+      }
+    }, {
       "uid" : "199a435997ff31a5",
       "status" : "passed",
       "time" : {
@@ -1718,11 +1950,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5f9aac4b59da46af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216015285,
+        "stop" : 1670216015401,
+        "duration" : 116
+      }
+    }, {
       "uid" : "fa2b3b756a7c4e5c",
       "status" : "passed",
       "time" : {
@@ -1737,11 +1977,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bb92a1abe4eb3dc6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215978499,
+        "stop" : 1670215978983,
+        "duration" : 484
+      }
+    }, {
       "uid" : "5cf51a0e532a29e3",
       "status" : "passed",
       "time" : {
@@ -1791,11 +2039,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f818fa9f956c348d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216002047,
+        "stop" : 1670216002590,
+        "duration" : 543
+      }
+    }, {
       "uid" : "843c8e8ef026188",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error\" (class br.com.dbccompany.chronos.dto.ResponseErrorBadDTO), not marked as ignorable (3 known properties: \"status\", \"errors\", \"timestamp\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:10:55.722+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/processo/334\"}\"; line: 1, column: 68] (through reference chain: br.com.dbccompany.chronos.dto.ResponseErrorBadDTO[\"error\"])",
@@ -1811,11 +2067,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "a121dde1dce6796f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216016652,
+        "stop" : 1670216016765,
+        "duration" : 113
+      }
+    }, {
       "uid" : "399f76f8eb681ba4",
       "status" : "passed",
       "time" : {
@@ -1830,11 +2094,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "cdd519ebd4a1f03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215975230,
+        "stop" : 1670215975400,
+        "duration" : 170
+      }
+    }, {
       "uid" : "75bb2235497fbf48",
       "status" : "passed",
       "time" : {
@@ -1919,11 +2191,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "538f41628721da19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216016529,
+        "stop" : 1670216016647,
+        "duration" : 118
+      }
+    }, {
       "uid" : "821849bd995b5f63",
       "status" : "passed",
       "time" : {
@@ -1938,11 +2218,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "16e4ff4c8ccf472c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215964710,
+        "stop" : 1670215974305,
+        "duration" : 9595
+      }
+    }, {
       "uid" : "474e72ab8960cc5f",
       "status" : "passed",
       "time" : {
@@ -2012,11 +2300,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "b060b3608c90e1d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215985501,
+        "stop" : 1670215985915,
+        "duration" : 414
+      }
+    }, {
       "uid" : "937484dca1c3d66f",
       "status" : "passed",
       "time" : {
@@ -2066,11 +2362,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5aa907df4cea2f6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215976723,
+        "stop" : 1670215976905,
+        "duration" : 182
+      }
+    }, {
       "uid" : "ce59b1771d2ea641",
       "status" : "passed",
       "time" : {
@@ -2085,11 +2389,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6b25d26c8e1926f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215996466,
+        "stop" : 1670215997032,
+        "duration" : 566
+      }
+    }, {
       "uid" : "fb051872d3b9adad",
       "status" : "passed",
       "time" : {
@@ -2104,11 +2416,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "99ac0c93d6b89e00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216004620,
+        "stop" : 1670216004758,
+        "duration" : 138
+      }
+    }, {
       "uid" : "d40864b7ac6cc955",
       "status" : "passed",
       "time" : {
@@ -2123,11 +2443,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "7ee5baf8e1e900cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216017354,
+        "stop" : 1670216017474,
+        "duration" : 120
+      }
+    }, {
       "uid" : "2c5ff6b14105ad4a",
       "status" : "passed",
       "time" : {
@@ -2177,11 +2505,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "b49aea7e9bffa5e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216020492,
+        "stop" : 1670216020783,
+        "duration" : 291
+      }
+    }, {
       "uid" : "a9bd5de67acfcab0",
       "status" : "passed",
       "time" : {
@@ -2307,11 +2643,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "a77cab53094ff02e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215990406,
+        "stop" : 1670215990524,
+        "duration" : 118
+      }
+    }, {
       "uid" : "51852489d4205062",
       "status" : "passed",
       "time" : {
@@ -2361,11 +2705,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "eea9b4fe6bf5c2df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215978054,
+        "stop" : 1670215978487,
+        "duration" : 433
+      }
+    }, {
       "uid" : "2c5b9de35471857",
       "status" : "passed",
       "time" : {
@@ -2380,11 +2732,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "edde0d0da63e4dc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215983414,
+        "stop" : 1670215983544,
+        "duration" : 130
+      }
+    }, {
       "uid" : "3bcae4ab1c09473e",
       "status" : "passed",
       "time" : {
@@ -2399,11 +2759,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "1c5e4776110b19a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215998835,
+        "stop" : 1670215999081,
+        "duration" : 246
+      }
+    }, {
       "uid" : "8d61cd6c11d09efa",
       "status" : "passed",
       "time" : {
@@ -2418,11 +2786,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5637bbdceb513c5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216001926,
+        "stop" : 1670216002039,
+        "duration" : 113
+      }
+    }, {
       "uid" : "f6511575e471f1e4",
       "status" : "passed",
       "time" : {
@@ -2437,11 +2813,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "47f29851a310a466",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215984876,
+        "stop" : 1670215985062,
+        "duration" : 186
+      }
+    }, {
       "uid" : "5237e7075f40c72e",
       "status" : "passed",
       "time" : {
@@ -2456,11 +2840,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "307b5fcfda62bf07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215982772,
+        "stop" : 1670215983404,
+        "duration" : 632
+      }
+    }, {
       "uid" : "692a0f0dcb269fa9",
       "status" : "passed",
       "time" : {
@@ -2475,11 +2867,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "7fa3de9d0e86073b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215999096,
+        "stop" : 1670215999241,
+        "duration" : 145
+      }
+    }, {
       "uid" : "e10a4fadbd07ac74",
       "status" : "passed",
       "time" : {
@@ -2494,11 +2894,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5ed5ef21b518ebe0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215994795,
+        "stop" : 1670215994905,
+        "duration" : 110
+      }
+    }, {
       "uid" : "c477de3f0ab2a499",
       "status" : "passed",
       "time" : {
@@ -2543,16 +2951,44 @@
       }
     } ]
   },
+  "72a8920e15d8c3f3961638e406338c80" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eda83e7a898ef9a4",
+      "status" : "broken",
+      "statusDetails" : "Cannot deserialize instance of `[Lbr.com.dbccompany.chronos.dto.CalendarioEdicaoItemDTO;` out of START_OBJECT token\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T04:49:24.214+00:00\",\"status\":400,\"errors\":[\"A edição selecionada não possui etapas e processos!\"]}\"; line: 1, column: 1]",
+      "time" : {
+        "start" : 1670215980600,
+        "stop" : 1670215981356,
+        "duration" : 756
+      }
+    } ]
+  },
   "9873f668abd841d60500ea1344d6e6c" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "43b4fd96a3e3062",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215998023,
+        "stop" : 1670215998524,
+        "duration" : 501
+      }
+    }, {
       "uid" : "a7b49d575a6358e2",
       "status" : "passed",
       "time" : {
@@ -2567,11 +3003,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "7b925886b3bb7c38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215999380,
+        "stop" : 1670215999618,
+        "duration" : 238
+      }
+    }, {
       "uid" : "97fd3d22f04c6ffd",
       "status" : "passed",
       "time" : {
@@ -2586,11 +3030,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ffbb2512f6f899e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215988895,
+        "stop" : 1670215989300,
+        "duration" : 405
+      }
+    }, {
       "uid" : "ca950f623fb45b89",
       "status" : "passed",
       "time" : {
@@ -2640,11 +3092,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "51fbccb315d890f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216012111,
+        "stop" : 1670216012233,
+        "duration" : 122
+      }
+    }, {
       "uid" : "9a50e25b50bb7285",
       "status" : "passed",
       "time" : {
@@ -2694,11 +3154,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8ec3e4e5a822ea1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216021080,
+        "stop" : 1670216021228,
+        "duration" : 148
+      }
+    }, {
       "uid" : "d2aa0a2df23f7fd9",
       "status" : "passed",
       "time" : {
@@ -2748,11 +3216,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "a16c120743772b29",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215979440,
+        "stop" : 1670215979855,
+        "duration" : 415
+      }
+    }, {
       "uid" : "1230a07152bb1d3d",
       "status" : "passed",
       "time" : {
@@ -2767,11 +3243,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3af1fcca65a26635",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216010020,
+        "stop" : 1670216011049,
+        "duration" : 1029
+      }
+    }, {
       "uid" : "159d6bffe25b6346",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.UsuarioDTO), not marked as ignorable (6 known properties: \"status\", \"idUsuario\", \"cargos\", \"nome\", \"email\", \"imagem\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:11:01.431+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/usuario\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.UsuarioDTO[\"timestamp\"])",
@@ -2787,11 +3271,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bf84dfafb1418992",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216005097,
+        "stop" : 1670216007206,
+        "duration" : 2109
+      }
+    }, {
       "uid" : "e77e21f0347efd81",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.UsuarioDTO), not marked as ignorable (6 known properties: \"status\", \"idUsuario\", \"cargos\", \"nome\", \"email\", \"imagem\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:10:59.310+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/usuario\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.UsuarioDTO[\"timestamp\"])",
@@ -2982,11 +3474,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c11a49c3723bfd0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215981415,
+        "stop" : 1670215982271,
+        "duration" : 856
+      }
+    }, {
       "uid" : "98e839f659b52ffb",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"dia\" (class br.com.dbccompany.chronos.dto.CalendarioGeralItemDTO), not marked as ignorable (0 known properties: ])\n at [Source: (StringReader); line: 1, column: 10] (through reference chain: java.lang.Object[][0]->br.com.dbccompany.chronos.dto.CalendarioGeralItemDTO[\"dia\"])",
@@ -3002,11 +3502,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "38b56569abf5c527",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215991523,
+        "stop" : 1670215991650,
+        "duration" : 127
+      }
+    }, {
       "uid" : "59a59c688f967ff2",
       "status" : "passed",
       "time" : {
@@ -3091,11 +3599,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "34415d01cbd26d24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215977761,
+        "stop" : 1670215977887,
+        "duration" : 126
+      }
+    }, {
       "uid" : "5690cc4865cca7e4",
       "status" : "passed",
       "time" : {
@@ -3180,11 +3696,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "684b98821fb6722a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216013173,
+        "stop" : 1670216013326,
+        "duration" : 153
+      }
+    }, {
       "uid" : "846702105f972b2b",
       "status" : "passed",
       "time" : {
@@ -3199,11 +3723,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "fe223554be53ff80",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215989314,
+        "stop" : 1670215989440,
+        "duration" : 126
+      }
+    }, {
       "uid" : "49646d9822b53174",
       "status" : "passed",
       "time" : {
@@ -3288,11 +3820,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c9a18bb1dd7f4257",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215979862,
+        "stop" : 1670215980111,
+        "duration" : 249
+      }
+    }, {
       "uid" : "54ed69a238d85c32",
       "status" : "passed",
       "time" : {
@@ -3307,11 +3847,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5dc3279df12640ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215986759,
+        "stop" : 1670215987187,
+        "duration" : 428
+      }
+    }, {
       "uid" : "be80fd92e45f0e1e",
       "status" : "passed",
       "time" : {
@@ -3326,11 +3874,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "38d2b6890c361079",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215991657,
+        "stop" : 1670215992058,
+        "duration" : 401
+      }
+    }, {
       "uid" : "a8136c3ca7d7a163",
       "status" : "passed",
       "time" : {
@@ -3415,11 +3971,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c9fd17d6c3761b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215983863,
+        "stop" : 1670215983997,
+        "duration" : 134
+      }
+    }, {
       "uid" : "5bf10fbb9256a908",
       "status" : "passed",
       "time" : {
@@ -3469,11 +4033,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f7a3a7974ebb22d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215977894,
+        "stop" : 1670215978025,
+        "duration" : 131
+      }
+    }, {
       "uid" : "22b22f923340803",
       "status" : "passed",
       "time" : {
@@ -3488,11 +4060,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "cf280b3b3ea2f207",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216018808,
+        "stop" : 1670216019849,
+        "duration" : 1041
+      }
+    }, {
       "uid" : "6ce71b3e62d5435a",
       "status" : "passed",
       "time" : {
@@ -3507,11 +4087,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "117f8145e340df9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215976031,
+        "stop" : 1670215976707,
+        "duration" : 676
+      }
+    }, {
       "uid" : "15bfce5bebe2e826",
       "status" : "passed",
       "time" : {
@@ -3561,11 +4149,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6f39e4ba505c4567",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215978994,
+        "stop" : 1670215979429,
+        "duration" : 435
+      }
+    }, {
       "uid" : "cfb07b8d23247cab",
       "status" : "passed",
       "time" : {
@@ -3580,11 +4176,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f9cd430ab06dcf86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215985352,
+        "stop" : 1670215985495,
+        "duration" : 143
+      }
+    }, {
       "uid" : "bde4dfac2b9b64b1",
       "status" : "passed",
       "time" : {
@@ -3632,14 +4236,23 @@
   },
   "232cd16df5f3e983770bb9463937114e" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5540cb84f8a73c66",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nResponse body doesn't match expectation.\nExpected: The content to match the given JSON schema.\nerror: object has missing required properties ([\"elementos\",\"pagina\",\"quantidadePaginas\",\"tamanho\",\"totalElementos\"])\n    level: \"error\"\n    schema: {\"loadingURI\":\"#\",\"pointer\":\"\"}\n    instance: {\"pointer\":\"\"}\n    domain: \"validation\"\n    keyword: \"required\"\n    required: [\"elementos\",\"pagina\",\"quantidadePaginas\",\"tamanho\",\"totalElementos\"]\n    missing: [\"elementos\",\"pagina\",\"quantidadePaginas\",\"tamanho\",\"totalElementos\"]\n\n  Actual: {\"timestamp\":\"2022-12-05T04:50:04.015+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/processo\"}\n",
+      "time" : {
+        "start" : 1670216020840,
+        "stop" : 1670216021037,
+        "duration" : 197
+      }
+    }, {
       "uid" : "c8a516fc4781ddbe",
       "status" : "passed",
       "time" : {
@@ -3654,11 +4267,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "869e7c1d3c24a356",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215977340,
+        "stop" : 1670215977748,
+        "duration" : 408
+      }
+    }, {
       "uid" : "56bc6fd031ceb317",
       "status" : "passed",
       "time" : {
@@ -3743,11 +4364,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5be8e62ed63b64d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216013481,
+        "stop" : 1670216013599,
+        "duration" : 118
+      }
+    }, {
       "uid" : "589667cd27f22f9b",
       "status" : "passed",
       "time" : {
@@ -3818,11 +4447,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6d3b0a335be16330",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216003280,
+        "stop" : 1670216003844,
+        "duration" : 564
+      }
+    }, {
       "uid" : "4fd77c273b9cbc82",
       "status" : "passed",
       "time" : {
@@ -3837,11 +4474,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "fd6e88897498af4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216000822,
+        "stop" : 1670216001357,
+        "duration" : 535
+      }
+    }, {
       "uid" : "51c289d6ac6ec6b3",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error\" (class br.com.dbccompany.chronos.dto.ResponseErrorBadDTO), not marked as ignorable (3 known properties: \"status\", \"errors\", \"timestamp\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:10:54.105+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/processo/332\"}\"; line: 1, column: 68] (through reference chain: br.com.dbccompany.chronos.dto.ResponseErrorBadDTO[\"error\"])",
@@ -3857,11 +4502,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5a64265ceb97dcc6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215994047,
+        "stop" : 1670215994650,
+        "duration" : 603
+      }
+    }, {
       "uid" : "7030b982876241c3",
       "status" : "passed",
       "time" : {
@@ -3946,11 +4599,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8e0372fd7bf86149",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215993485,
+        "stop" : 1670215993895,
+        "duration" : 410
+      }
+    }, {
       "uid" : "ff46f1bd2e97a074",
       "status" : "passed",
       "time" : {
@@ -4175,11 +4836,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "33e9af607c405d6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215992581,
+        "stop" : 1670215992980,
+        "duration" : 399
+      }
+    }, {
       "uid" : "bda7dcc3b0f695cc",
       "status" : "passed",
       "time" : {
@@ -4194,11 +4863,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2564c5499ed41ab3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216017804,
+        "stop" : 1670216018795,
+        "duration" : 991
+      }
+    }, {
       "uid" : "3e6eb287eac3214b",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.UsuarioDTO), not marked as ignorable (6 known properties: \"status\", \"idUsuario\", \"cargos\", \"nome\", \"email\", \"imagem\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:11:11.837+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/usuario\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.UsuarioDTO[\"timestamp\"])",
@@ -4214,11 +4891,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d20f6aa20ffc4ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215997868,
+        "stop" : 1670215998000,
+        "duration" : 132
+      }
+    }, {
       "uid" : "5aa791ad06c8b1d1",
       "status" : "passed",
       "time" : {
@@ -4233,11 +4918,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "eda382f34e8587aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216013737,
+        "stop" : 1670216013858,
+        "duration" : 121
+      }
+    }, {
       "uid" : "e326c1ec1d7db996",
       "status" : "passed",
       "time" : {
@@ -4252,11 +4945,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "13f95818adbab7eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215985934,
+        "stop" : 1670215986334,
+        "duration" : 400
+      }
+    }, {
       "uid" : "6d13bd469b328721",
       "status" : "passed",
       "time" : {
@@ -4307,11 +5008,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3614457387d600a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215994656,
+        "stop" : 1670215994777,
+        "duration" : 121
+      }
+    }, {
       "uid" : "5c9c5a87587208a1",
       "status" : "passed",
       "time" : {
@@ -4326,11 +5035,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2269504268b8bdad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215975871,
+        "stop" : 1670215976003,
+        "duration" : 132
+      }
+    }, {
       "uid" : "6416ba1dc947cf4f",
       "status" : "passed",
       "time" : {
@@ -4343,13 +5060,22 @@
   "fc5947f04773fd4d075905051065fa67" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f0f431a973af37db",
+      "status" : "broken",
+      "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.ProcessoDTO), not marked as ignorable (7 known properties: \"duracaoProcesso\", \"ordemExecucao\", \"nome\", \"idProcesso\", \"areasEnvolvidas\", \"responsaveis\", \"diasUteis\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T04:49:46.168+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/processo/370\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.ProcessoDTO[\"timestamp\"])",
+      "time" : {
+        "start" : 1670216002731,
+        "stop" : 1670216003268,
+        "duration" : 537
+      }
+    }, {
       "uid" : "acddc6195678360d",
       "status" : "passed",
       "time" : {
@@ -4505,11 +5231,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6a03b49ea8416bdb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216014271,
+        "stop" : 1670216014380,
+        "duration" : 109
+      }
+    }, {
       "uid" : "9794f0b594a8ae28",
       "status" : "passed",
       "time" : {
@@ -4559,11 +5293,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3a51af09657c85c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215975410,
+        "stop" : 1670215975565,
+        "duration" : 155
+      }
+    }, {
       "uid" : "9cb982a0da3dd2bc",
       "status" : "passed",
       "time" : {
@@ -4613,11 +5355,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "dd5bb8d1f6025a0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215974599,
+        "stop" : 1670215974829,
+        "duration" : 230
+      }
+    }, {
       "uid" : "20e4cfc9630afb2f",
       "status" : "passed",
       "time" : {
@@ -4667,11 +5417,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4831d4a8c31e817b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215982371,
+        "stop" : 1670215982559,
+        "duration" : 188
+      }
+    }, {
       "uid" : "7d1d60519627854c",
       "status" : "passed",
       "time" : {
@@ -4791,11 +5549,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "86a5945f1322c79f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216004979,
+        "stop" : 1670216005088,
+        "duration" : 109
+      }
+    }, {
       "uid" : "69d3eee12d7e6834",
       "status" : "passed",
       "time" : {
@@ -4810,11 +5576,19 @@
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2d1724f6b5cdf5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216012250,
+        "stop" : 1670216013158,
+        "duration" : 908
+      }
+    }, {
       "uid" : "24518c966414c1ed",
       "status" : "failed",
       "statusDetails" : "1 expectation failed.\nExpected status code <200> but was <500>.\n",
@@ -4830,11 +5604,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "67a0675b92e56c56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216019868,
+        "stop" : 1670216020111,
+        "duration" : 243
+      }
+    }, {
       "uid" : "123cfc7f49f0f610",
       "status" : "passed",
       "time" : {
@@ -4849,11 +5631,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ae4e677ffc7d40f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216003859,
+        "stop" : 1670216003982,
+        "duration" : 123
+      }
+    }, {
       "uid" : "5c107ec45ca473e9",
       "status" : "passed",
       "time" : {
@@ -4868,11 +5658,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3cf383addf5c478b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216017498,
+        "stop" : 1670216017616,
+        "duration" : 118
+      }
+    }, {
       "uid" : "149f1e09d9ab2320",
       "status" : "passed",
       "time" : {
@@ -4887,11 +5685,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8b992c8eaf654a75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216017636,
+        "stop" : 1670216017783,
+        "duration" : 147
+      }
+    }, {
       "uid" : "5dbab63812b75e8e",
       "status" : "passed",
       "time" : {
@@ -4939,13 +5745,22 @@
   "b9325a40eae55e9c3b6df84d8c38c48e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "92ea1a0d2634f11d",
+      "status" : "broken",
+      "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.ProcessoDTO), not marked as ignorable (7 known properties: \"duracaoProcesso\", \"ordemExecucao\", \"nome\", \"idProcesso\", \"areasEnvolvidas\", \"responsaveis\", \"diasUteis\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T04:49:44.810+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/processo/368\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.ProcessoDTO[\"timestamp\"])",
+      "time" : {
+        "start" : 1670216001364,
+        "stop" : 1670216001916,
+        "duration" : 552
+      }
+    }, {
       "uid" : "824191a038c548b7",
       "status" : "passed",
       "time" : {
@@ -5030,11 +5845,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e7fb5af386b747a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215985071,
+        "stop" : 1670215985206,
+        "duration" : 135
+      }
+    }, {
       "uid" : "b9a183d32c819617",
       "status" : "passed",
       "time" : {
@@ -5085,11 +5908,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2aa08a26113edd0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215980128,
+        "stop" : 1670215980426,
+        "duration" : 298
+      }
+    }, {
       "uid" : "1aab375712f9e8c7",
       "status" : "passed",
       "time" : {
@@ -5177,11 +6008,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ea4bbf85a442788f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216020134,
+        "stop" : 1670216020304,
+        "duration" : 170
+      }
+    }, {
       "uid" : "abf12e1b09e32655",
       "status" : "passed",
       "time" : {
@@ -5266,11 +6105,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4eba6cbb9d8efcce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216017069,
+        "stop" : 1670216017347,
+        "duration" : 278
+      }
+    }, {
       "uid" : "ae5da502ef213a95",
       "status" : "passed",
       "time" : {
@@ -5285,11 +6132,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "656316d5ca3a4f0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215999628,
+        "stop" : 1670215999856,
+        "duration" : 228
+      }
+    }, {
       "uid" : "13c98fc18d9e925d",
       "status" : "passed",
       "time" : {
@@ -5301,14 +6156,23 @@
   },
   "fd0be4e5f21108fa71425fb48c2bb542" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "18dca5a69658a3df",
+      "status" : "failed",
+      "statusDetails" : "expected:<400> but was:<500>",
+      "time" : {
+        "start" : 1670215999878,
+        "stop" : 1670216000121,
+        "duration" : 243
+      }
+    }, {
       "uid" : "1ea0df35257d4ae3",
       "status" : "passed",
       "time" : {
@@ -5323,11 +6187,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4f4531564d0febfb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216008480,
+        "stop" : 1670216010013,
+        "duration" : 1533
+      }
+    }, {
       "uid" : "6169344a252f575a",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.UsuarioDTO), not marked as ignorable (6 known properties: \"status\", \"idUsuario\", \"cargos\", \"nome\", \"email\", \"imagem\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:11:00.841+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/usuario\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.UsuarioDTO[\"timestamp\"])",
@@ -5343,11 +6215,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c31b7de7289c1764",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216004118,
+        "stop" : 1670216004490,
+        "duration" : 372
+      }
+    }, {
       "uid" : "70b1280d9349e47f",
       "status" : "passed",
       "time" : {
@@ -5467,11 +6347,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2af650ce52eeba9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215985212,
+        "stop" : 1670215985338,
+        "duration" : 126
+      }
+    }, {
       "uid" : "8e1aef86fcbefccb",
       "status" : "passed",
       "time" : {
@@ -5630,11 +6518,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "276bb74ef12e1d5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215992984,
+        "stop" : 1670215993479,
+        "duration" : 495
+      }
+    }, {
       "uid" : "464b2cd950a48a7a",
       "status" : "passed",
       "time" : {
@@ -5649,11 +6545,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "cd8ada4685ba639c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215989979,
+        "stop" : 1670215990401,
+        "duration" : 422
+      }
+    }, {
       "uid" : "d3e79187c43e74f2",
       "status" : "passed",
       "time" : {
@@ -5668,11 +6572,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "7ad9675b5e8244e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216000222,
+        "stop" : 1670216000813,
+        "duration" : 591
+      }
+    }, {
       "uid" : "a5ea377510399d21",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error\" (class br.com.dbccompany.chronos.dto.ResponseErrorBadDTO), not marked as ignorable (3 known properties: \"status\", \"errors\", \"timestamp\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:10:53.447+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/processo/331\"}\"; line: 1, column: 68] (through reference chain: br.com.dbccompany.chronos.dto.ResponseErrorBadDTO[\"error\"])",
@@ -5793,11 +6705,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "46e21bf34eca8e12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215997053,
+        "stop" : 1670215997171,
+        "duration" : 118
+      }
+    }, {
       "uid" : "5959570cd8f9e2fa",
       "status" : "passed",
       "time" : {
@@ -5847,11 +6767,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "36dc12923fe00763",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215997186,
+        "stop" : 1670215997857,
+        "duration" : 671
+      }
+    }, {
       "uid" : "3f9548271f794689",
       "status" : "passed",
       "time" : {
@@ -5866,11 +6794,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e7946b591f6dc3e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215988469,
+        "stop" : 1670215988890,
+        "duration" : 421
+      }
+    }, {
       "uid" : "365a926d46491da",
       "status" : "passed",
       "time" : {
@@ -5885,11 +6821,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "709707808b657b80",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216013343,
+        "stop" : 1670216013468,
+        "duration" : 125
+      }
+    }, {
       "uid" : "1c7bb829c4ee2176",
       "status" : "passed",
       "time" : {
@@ -5974,11 +6918,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d2191e7ddf15fae2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215993914,
+        "stop" : 1670215994031,
+        "duration" : 117
+      }
+    }, {
       "uid" : "f2e55d86a680b197",
       "status" : "passed",
       "time" : {
@@ -6168,11 +7120,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "40ec714ce42e5ba3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216014141,
+        "stop" : 1670216014262,
+        "duration" : 121
+      }
+    }, {
       "uid" : "650a434567b813ab",
       "status" : "passed",
       "time" : {
@@ -6222,11 +7182,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e06ad7ff30c2ba36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215976917,
+        "stop" : 1670215977153,
+        "duration" : 236
+      }
+    }, {
       "uid" : "3d89d64e3a67b444",
       "status" : "passed",
       "time" : {
@@ -6276,11 +7244,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6ea727c3af713244",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215989449,
+        "stop" : 1670215989970,
+        "duration" : 521
+      }
+    }, {
       "uid" : "7ff44024203aad2e",
       "status" : "passed",
       "time" : {
@@ -6366,11 +7342,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "91b29725e9b8ceb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216013867,
+        "stop" : 1670216013990,
+        "duration" : 123
+      }
+    }, {
       "uid" : "2c616791ba50bc13",
       "status" : "passed",
       "time" : {
@@ -6385,11 +7369,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "fa125349cf29dfbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216014010,
+        "stop" : 1670216014132,
+        "duration" : 122
+      }
+    }, {
       "uid" : "e9ce3018086bca48",
       "status" : "passed",
       "time" : {
@@ -6474,11 +7466,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "98250cb904bb5ac7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215984573,
+        "stop" : 1670215984871,
+        "duration" : 298
+      }
+    }, {
       "uid" : "48af5c69d1d7f918",
       "status" : "passed",
       "time" : {
@@ -6493,11 +7493,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "554b6fbc1ed18525",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216003989,
+        "stop" : 1670216004108,
+        "duration" : 119
+      }
+    }, {
       "uid" : "ff3c95d769e98997",
       "status" : "passed",
       "time" : {
@@ -6550,11 +7558,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "42ea81fda26029ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215982605,
+        "stop" : 1670215982759,
+        "duration" : 154
+      }
+    }, {
       "uid" : "1114e20b53e9c937",
       "status" : "passed",
       "time" : {
@@ -6604,11 +7620,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "57288d9d4cdaeb50",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215983574,
+        "stop" : 1670215983696,
+        "duration" : 122
+      }
+    }, {
       "uid" : "72a208077282d7e3",
       "status" : "passed",
       "time" : {
@@ -6623,11 +7647,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "9ab8698028910396",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216004777,
+        "stop" : 1670216004965,
+        "duration" : 188
+      }
+    }, {
       "uid" : "a5c4377806976e72",
       "status" : "passed",
       "time" : {
@@ -6677,11 +7709,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "b7966e14755b455",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216015528,
+        "stop" : 1670216015712,
+        "duration" : 184
+      }
+    }, {
       "uid" : "715bb42f444d5e8d",
       "status" : "passed",
       "time" : {
@@ -6696,11 +7736,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "1111ff760bf84444",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216013611,
+        "stop" : 1670216013730,
+        "duration" : 119
+      }
+    }, {
       "uid" : "6b8af858efde3b06",
       "status" : "passed",
       "time" : {
@@ -6715,11 +7763,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f96e5d7881dace8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215995694,
+        "stop" : 1670215996460,
+        "duration" : 766
+      }
+    }, {
       "uid" : "155d159094ea7bbb",
       "status" : "passed",
       "time" : {
@@ -6909,11 +7965,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e203755c6c769f71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215974417,
+        "stop" : 1670215974578,
+        "duration" : 161
+      }
+    }, {
       "uid" : "5a0519e20f2f9c33",
       "status" : "passed",
       "time" : {
@@ -6928,11 +7992,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d5c2b472156b3231",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670216011055,
+        "stop" : 1670216012106,
+        "duration" : 1051
+      }
+    }, {
       "uid" : "c9f04fe4105a4f4d",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.UsuarioDTO), not marked as ignorable (6 known properties: \"status\", \"idUsuario\", \"cargos\", \"nome\", \"email\", \"imagem\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:11:02.047+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/usuario\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.UsuarioDTO[\"timestamp\"])",
@@ -6948,11 +8020,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d6bcaa4d97b7e66",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215974854,
+        "stop" : 1670215975212,
+        "duration" : 358
+      }
+    }, {
       "uid" : "30fbf2332a0a1871",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.AreaEnvolvidaDTO), not marked as ignorable (2 known properties: \"nome\", \"idAreaEnvolvida\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:10:21.023+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/area-envolvida\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.AreaEnvolvidaDTO[\"timestamp\"])",
@@ -6968,11 +8048,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e1f17cc61f1eb334",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215991251,
+        "stop" : 1670215991368,
+        "duration" : 117
+      }
+    }, {
       "uid" : "e27990704c792982",
       "status" : "passed",
       "time" : {
@@ -7093,11 +8181,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3f2c0386bcfba2f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215984009,
+        "stop" : 1670215984134,
+        "duration" : 125
+      }
+    }, {
       "uid" : "a54a4a65aab1aa21",
       "status" : "passed",
       "time" : {
@@ -7112,11 +8208,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bf0b7ad5c282dda9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215983711,
+        "stop" : 1670215983841,
+        "duration" : 130
+      }
+    }, {
       "uid" : "72f1377f963d4916",
       "status" : "passed",
       "time" : {
@@ -7131,11 +8235,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "42d98d8521797d54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670215988041,
+        "stop" : 1670215988464,
+        "duration" : 423
+      }
+    }, {
       "uid" : "889ee276787a15be",
       "status" : "passed",
       "time" : {

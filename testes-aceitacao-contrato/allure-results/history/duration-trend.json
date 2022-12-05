@@ -1,4 +1,10 @@
 [ {
+  "buildOrder" : 5,
+  "reportName" : "Allure report deploy #5",
+  "data" : {
+    "duration" : 56990
+  }
+}, {
   "buildOrder" : 4,
   "reportName" : "Allure report deploy #4",
   "data" : {

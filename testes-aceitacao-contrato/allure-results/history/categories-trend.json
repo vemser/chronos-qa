@@ -1,4 +1,12 @@
 [ {
+  "buildOrder" : 5,
+  "reportName" : "Allure report deploy #5",
+  "data" : {
+    "Testes Passados" : 132,
+    "Testes Quebrados" : 3,
+    "Testes Falhados" : 2
+  }
+}, {
   "buildOrder" : 4,
   "reportName" : "Allure report deploy #4",
   "data" : {
