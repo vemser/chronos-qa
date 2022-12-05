@@ -12,7 +12,7 @@ public class UserDataFactory {
         private UserDataFactory() {}
         private static Cargo[] cargosVazio = new Cargo[0];
         private static String emailValido() {
-            return "kevin.silva@dbccompany.com.br";
+            return nomeValido().toLowerCase().replaceAll("[^a-z]", "")+"@dbccompany.com.br";
         }
         private static String emailInvalido() {
             return Utils.faker.internet().emailAddress();

@@ -65,7 +65,7 @@
             }
           },
           "imagem": {
-            "type": "null"
+            "type": ["null","string"]
           },
           "idUsuario": {
             "type": "integer"

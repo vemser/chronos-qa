@@ -39,7 +39,7 @@
             "type": "string"
           },
           "dataFinal": {
-            "type": "string"
+            "type": ["string","null"]
           },
           "repeticaoAnual": {
             "type": "string"

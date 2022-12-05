@@ -20,22 +20,22 @@
         "type": "string"
       },
       "idEtapa": {
-        "type": "null"
+        "type": ["null","integer"]
       },
       "etapa": {
-        "type": "null"
+        "type": ["null","string"]
       },
       "idProcesso": {
-        "type": "null"
+        "type": ["null","integer"]
       },
       "processo": {
-        "type": "null"
+        "type": ["null","string"]
       },
       "cor": {
-        "type": "null"
+        "type": ["null","string"]
       },
       "feriado": {
-        "type": "string"
+        "type": ["string","null"]
       }
     }
   }
