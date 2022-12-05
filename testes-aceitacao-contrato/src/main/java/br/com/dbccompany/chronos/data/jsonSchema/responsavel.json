@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "nome",
+      "idResponsavel"
+    ],
+    "properties": {
+      "nome": {
+        "type": "string"
+      },
+      "idResponsavel": {
+        "type": "integer"
+      }
+    }
+  }
+}

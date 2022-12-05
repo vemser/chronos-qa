@@ -62,4 +62,20 @@ public class EdicaoClient {
                 .put(EdicaoData.SERVICE+"/"+id)
             ;
     }
+    public static Response listarCalendarioGeral (boolean auth) {
+        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        return given()
+                .spec(spec)
+            .when()
+                .get(EdicaoData.SERVICE_CALENDARIO_GERAL)
+            ;
+    }
+    public static Response listarCalendarioEdicao (String id, boolean auth) {
+        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        return given()
+                .spec(spec)
+            .when()
+                .get(EdicaoData.SERVICE_CALENDARIO_EDICAO+"/"+id)
+            ;
+    }
 }

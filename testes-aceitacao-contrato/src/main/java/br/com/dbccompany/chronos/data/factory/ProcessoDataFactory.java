@@ -47,11 +47,6 @@ public class ProcessoDataFactory {
         processoSemOrdemExecucao.setOrdemExecucao(null);
         return processoSemOrdemExecucao;
     }
-    public static Processo processoSemAreaEnvolvida(){
-        Processo processoSemAreaEnvolvida = novoProcesso();
-        processoSemAreaEnvolvida.setAreasEnvolvidas(areaEnvolvidaVazia);
-        return processoSemAreaEnvolvida;
-    }
     public static Processo processoSemResponsavel(){
         Processo processoSemResponsavel = novoProcesso();
         processoSemResponsavel.setResponsaveis(responsavelVazio);

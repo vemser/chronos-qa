@@ -10,10 +10,9 @@ import br.com.dbccompany.chronos.utils.Utils;
 public class UserDataFactory {
 
         private UserDataFactory() {}
-
         private static Cargo[] cargosVazio = new Cargo[0];
         private static String emailValido() {
-            return Utils.faker.name().fullName().toLowerCase().replaceAll("[^a-z]", "")+"@dbccompany.com.br";
+            return "kevin.silva@dbccompany.com.br";
         }
         private static String emailInvalido() {
             return Utils.faker.internet().emailAddress();

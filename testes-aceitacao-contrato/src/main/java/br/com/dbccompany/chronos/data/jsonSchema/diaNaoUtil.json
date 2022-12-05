@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "required": [
+    "totalElementos",
+    "quantidadePaginas",
+    "pagina",
+    "tamanho",
+    "elementos"
+  ],
+  "properties": {
+    "totalElementos": {
+      "type": "integer"
+    },
+    "quantidadePaginas": {
+      "type": "integer"
+    },
+    "pagina": {
+      "type": "integer"
+    },
+    "tamanho": {
+      "type": "integer"
+    },
+    "elementos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "descricao",
+          "dataInicial",
+          "dataFinal",
+          "repeticaoAnual",
+          "idDiaNaoUtil"
+        ],
+        "properties": {
+          "descricao": {
+            "type": "string"
+          },
+          "dataInicial": {
+            "type": "string"
+          },
+          "dataFinal": {
+            "type": "string"
+          },
+          "repeticaoAnual": {
+            "type": "string"
+          },
+          "idDiaNaoUtil": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

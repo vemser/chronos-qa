@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "nome",
+      "idAreaEnvolvida"
+    ],
+    "properties": {
+      "nome": {
+        "type": "string"
+      },
+      "idAreaEnvolvida": {
+        "type": "integer"
+      }
+    }
+  }
+}

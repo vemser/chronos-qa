@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "required": [
+    "totalElementos",
+    "quantidadePaginas",
+    "pagina",
+    "tamanho",
+    "elementos"
+  ],
+  "properties": {
+    "totalElementos": {
+      "type": "integer"
+    },
+    "quantidadePaginas": {
+      "type": "integer"
+    },
+    "pagina": {
+      "type": "integer"
+    },
+    "tamanho": {
+      "type": "integer"
+    },
+    "elementos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nome",
+          "email",
+          "status",
+          "cargos",
+          "imagem",
+          "idUsuario"
+        ],
+        "properties": {
+          "nome": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "cargos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "idCargo",
+                "nome",
+                "descricao"
+              ],
+              "properties": {
+                "idCargo": {
+                  "type": "integer"
+                },
+                "nome": {
+                  "type": "string"
+                },
+                "descricao": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "imagem": {
+            "type": "null"
+          },
+          "idUsuario": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

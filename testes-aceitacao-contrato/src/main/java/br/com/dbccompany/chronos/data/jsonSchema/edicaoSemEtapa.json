@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "required": [
+    "totalElementos",
+    "quantidadePaginas",
+    "pagina",
+    "tamanho",
+    "elementos"
+  ],
+  "properties": {
+    "totalElementos": {
+      "type": "integer"
+    },
+    "quantidadePaginas": {
+      "type": "integer"
+    },
+    "pagina": {
+      "type": "integer"
+    },
+    "tamanho": {
+      "type": "integer"
+    },
+    "elementos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nome",
+          "dataInicial",
+          "dataFinal",
+          "idEdicao",
+          "status",
+          "etapas"
+        ],
+        "properties": {
+          "nome": {
+            "type": "string"
+          },
+          "dataInicial": {
+            "type": "string"
+          },
+          "dataFinal": {
+            "type": "string"
+          },
+          "idEdicao": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string"
+          },
+          "etapas": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  }
+}

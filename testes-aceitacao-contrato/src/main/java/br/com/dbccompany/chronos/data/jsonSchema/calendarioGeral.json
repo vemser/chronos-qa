@@ -1,0 +1,42 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "dia",
+      "edicao",
+      "idEtapa",
+      "etapa",
+      "idProcesso",
+      "processo",
+      "cor",
+      "feriado"
+    ],
+    "properties": {
+      "dia": {
+        "type": "string"
+      },
+      "edicao": {
+        "type": "string"
+      },
+      "idEtapa": {
+        "type": "null"
+      },
+      "etapa": {
+        "type": "null"
+      },
+      "idProcesso": {
+        "type": "null"
+      },
+      "processo": {
+        "type": "null"
+      },
+      "cor": {
+        "type": "null"
+      },
+      "feriado": {
+        "type": "string"
+      }
+    }
+  }
+}
