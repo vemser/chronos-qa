@@ -1,7 +1,6 @@
 package br.com.dbccompany.chronos.testes.contrato;
 
 import br.com.dbccompany.chronos.client.EdicaoClient;
-import br.com.dbccompany.chronos.client.EtapaClient;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

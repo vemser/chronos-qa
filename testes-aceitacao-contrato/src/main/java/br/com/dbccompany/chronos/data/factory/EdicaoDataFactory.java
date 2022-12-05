@@ -4,8 +4,6 @@ import br.com.dbccompany.chronos.model.Edicao;
 import br.com.dbccompany.chronos.model.EdicaoBuilder;
 import br.com.dbccompany.chronos.utils.Utils;
 import java.util.concurrent.TimeUnit;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class EdicaoDataFactory {
     private static String nomeValido = Utils.faker.bossaNova().song();

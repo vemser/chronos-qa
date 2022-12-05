@@ -4,7 +4,6 @@ import br.com.dbccompany.chronos.client.*;
 import br.com.dbccompany.chronos.data.factory.*;
 import br.com.dbccompany.chronos.dto.*;
 import br.com.dbccompany.chronos.model.*;
-import br.com.dbccompany.chronos.utils.Utils;
 import io.restassured.response.Response;
 
 public class PreloadData {

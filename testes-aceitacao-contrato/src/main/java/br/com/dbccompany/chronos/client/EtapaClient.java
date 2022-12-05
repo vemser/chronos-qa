@@ -4,7 +4,6 @@ import br.com.dbccompany.chronos.data.changeless.EtapaData;
 import br.com.dbccompany.chronos.specs.RequestSpec;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import javafx.beans.binding.When;
 
 import static io.restassured.RestAssured.given;
 

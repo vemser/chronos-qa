@@ -1,9 +1,7 @@
 package br.com.dbccompany.chronos.testes.aceitacao.etapa;
 
 import br.com.dbccompany.chronos.client.EtapaClient;
-import br.com.dbccompany.chronos.data.factory.EtapaDataFactory;
 import br.com.dbccompany.chronos.dto.EtapaListDTO;
-import br.com.dbccompany.chronos.model.Etapa;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import io.qameta.allure.*;
 import org.apache.http.HttpStatus;

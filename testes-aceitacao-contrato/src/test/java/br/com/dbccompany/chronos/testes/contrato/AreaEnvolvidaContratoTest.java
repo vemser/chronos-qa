@@ -1,7 +1,6 @@
 package br.com.dbccompany.chronos.testes.contrato;
 
 import br.com.dbccompany.chronos.client.AreaEnvolvidaClient;
-import br.com.dbccompany.chronos.client.UsuarioClient;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.Tag;
