@@ -14,7 +14,7 @@ public class EdicaoCalendarioEdicaoTest {
     @Tag("todos")
     @Tag("edicao")
     @Owner("Kevin Aryel")
-    @Epic("Backend")
+    @Epic("Aceitação")
     @Feature("Calendário")
     @Story("Listar Calendario Geral Edição")
     @Description("Deve listar calendario da edição com sucesso")

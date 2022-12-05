@@ -16,7 +16,7 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
-    @Epic("Backend")
+    @Epic("Aceitação")
     @Owner("Kevin Aryel")
     @Feature("Responsavel")
     @Story("Deletar Responsavel")
@@ -34,7 +34,7 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Tag("todos")
     @Tag("responsavel")
     @Owner("Kevin Aryel")
-    @Epic("Backend")
+    @Epic("Aceitação")
     @Feature("Responsavel")
     @Story("Deletar Responsavel")
     @Description("Deve falhar deletar um responsável sem Auth")
@@ -48,7 +48,7 @@ public class ResponsavelDeleteTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("responsavel")
-    @Epic("Backend")
+    @Epic("Aceitação")
     @Owner("Kevin Aryel")
     @Feature("Responsavel")
     @Story("Deletar Responsavel")

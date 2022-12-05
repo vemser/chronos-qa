@@ -14,7 +14,7 @@ public class UsuarioListarLogado extends BaseTest {
     @Tag("todos")
     @Tag("usuario")
     @Owner("Kevin Aryel")
-    @Epic("Backend")
+    @Epic("Aceitação")
     @Feature("Usuário")
     @Story("Listar Usuário Logado")
     @Description("Deve listar usuario logado com sucesso")
