@@ -18,14 +18,13 @@ public class EdicaoCalendarioEdicaoTest {
     @Feature("Calendário")
     @Story("Listar Calendario Geral Edição")
     @Description("Deve listar calendario da edição com sucesso")
-    public void deveFalharListarCalendarioDaEdicaoSemAuth(){
+    public void deveListarCalendarioDaEdicaoComSucesso(){
         EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
         try{
             CalendarioEdicaoItemDTO[] response = EdicaoClient.listarCalendarioEdicao(idEdicao,true)
                 .then()
                     .log().all()
-                    .statusCode(200)
                     .extract().as(CalendarioEdicaoItemDTO[].class)
                 ;
         } finally {

@@ -21,7 +21,7 @@ public class EditarPerfilPage extends BasePage{
     private static final By spanErroConfirmarNovaSenha =
             By.id("confirmacao-error");
     private static final By btnSubmit =
-            By.cssSelector("button[type='submit']");
+            By.cssSelector("input[type='submit']");
     public static void preencherNome(String nome){
         sendKeys(inputNome, nome);
     }
