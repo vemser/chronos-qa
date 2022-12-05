@@ -3,12 +3,13 @@ package br.com.dbccompany.chronos.testes.aceitacao.edicao;
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.dto.CalendarioEdicaoItemDTO;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
+import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class EdicaoCalendarioEdicaoTest {
+public class EdicaoCalendarioEdicaoTest extends BaseTest {
 
     @Test
     @Tag("todos")
