@@ -3,6 +3,7 @@ package br.com.dbccompany.chronos.testes.aceitacao.edicao;
 import br.com.dbccompany.chronos.client.EdicaoClient;
 import br.com.dbccompany.chronos.dto.CalendarioEdicaoItemDTO;
 import br.com.dbccompany.chronos.dto.EdicaoDTO;
+import br.com.dbccompany.chronos.dto.EtapaDTO;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
 import io.qameta.allure.*;
@@ -22,6 +23,8 @@ public class EdicaoCalendarioEdicaoTest extends BaseTest {
     public void deveListarCalendarioDaEdicaoComSucesso(){
         EdicaoDTO edicao = PreloadData.edicao();
         String idEdicao = edicao.getIdEdicao().toString();
+        EtapaDTO etapa = PreloadData.etapa(idEdicao);
+        PreloadData.processo(etapa.getIdEtapa().toString());
         try{
             CalendarioEdicaoItemDTO[] response = EdicaoClient.listarCalendarioEdicao(idEdicao,true)
                 .then()
