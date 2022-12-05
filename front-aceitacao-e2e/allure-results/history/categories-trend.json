@@ -1,0 +1,9 @@
+[ {
+  "buildOrder" : 1,
+  "reportName" : "Allure report deploy #1",
+  "data" : {
+    "Testes Passados" : 44,
+    "Testes Quebrados" : 9,
+    "Testes Falhados" : 2
+  }
+} ]

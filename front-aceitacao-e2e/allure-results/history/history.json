@@ -1,0 +1,1058 @@
+{
+  "590de28d206a86058f67d796bea70967" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "21017f3418a60d4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253763799,
+        "stop" : 1670253782470,
+        "duration" : 18671
+      }
+    } ]
+  },
+  "4b25b134220e2c9371c46d1a11d83d53" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a09879cbc1551c12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253490083,
+        "stop" : 1670253502669,
+        "duration" : 12586
+      }
+    } ]
+  },
+  "1494d20bf4e3bda6b4216b6231446ef1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d5aa7472d3e2944",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253081127,
+        "stop" : 1670253094142,
+        "duration" : 13015
+      }
+    } ]
+  },
+  "1dd580016cde2387844e2ac1f55b073f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "60776ea123f0dd90",
+      "status" : "failed",
+      "statusDetails" : "java.lang.AssertionError",
+      "time" : {
+        "start" : 1670253136254,
+        "stop" : 1670253143196,
+        "duration" : 6942
+      }
+    } ]
+  },
+  "3ad133577bd93dece091783e0b48a82b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "81876d8c5393002e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253600449,
+        "stop" : 1670253605670,
+        "duration" : 5221
+      }
+    } ]
+  },
+  "55c30a6a8700cf243a4654b296ecc9cc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9d4261ef48148fbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253347706,
+        "stop" : 1670253352954,
+        "duration" : 5248
+      }
+    } ]
+  },
+  "37fc325ad97720daedb861a1625304f1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "50be33b4046476fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253808157,
+        "stop" : 1670253819487,
+        "duration" : 11330
+      }
+    } ]
+  },
+  "4b52d40ba4ba68d3871db02227ab1ddd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c50321b9ec92830",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-nome (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253143213,
+        "stop" : 1670253165864,
+        "duration" : 22651
+      }
+    } ]
+  },
+  "67a235656ea1a77b43a42d8f5102d217" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c725766170667435",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253545310,
+        "stop" : 1670253550984,
+        "duration" : 5674
+      }
+    } ]
+  },
+  "e6cb51f653d4d57a703a1cf3f0b107b9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3496198f0e53d9c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253130785,
+        "stop" : 1670253136228,
+        "duration" : 5443
+      }
+    } ]
+  },
+  "74e3b9d61b6042344ad73409d6e058ba" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c934475129466f2e",
+      "status" : "failed",
+      "statusDetails" : "java.lang.AssertionError",
+      "time" : {
+        "start" : 1670253186315,
+        "stop" : 1670253192674,
+        "duration" : 6359
+      }
+    } ]
+  },
+  "2b2b5673eb4ed0860f7074532129b454" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bbd6102edfbf5634",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253502672,
+        "stop" : 1670253512866,
+        "duration" : 10194
+      }
+    } ]
+  },
+  "a2f65379a78a27788dda22aabe35d521" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "37c070596fdedf1f",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-nome (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253408964,
+        "stop" : 1670253433119,
+        "duration" : 24155
+      }
+    } ]
+  },
+  "9474aedfce1c2672be2c4d7def3f9658" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3cda66245c2a5598",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253512872,
+        "stop" : 1670253526073,
+        "duration" : 13201
+      }
+    } ]
+  },
+  "f4d8441162c5435bb0cf1062293dbd2b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2a14caa71da1e1a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253564100,
+        "stop" : 1670253568009,
+        "duration" : 3909
+      }
+    } ]
+  },
+  "f63217fd11458a308dbb60a2e355db0b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee3180ad418b9ca0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253399612,
+        "stop" : 1670253408958,
+        "duration" : 9346
+      }
+    } ]
+  },
+  "4cbda2c425cdb7201d28c6d3b27f27ce" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1f1fb36ff560a764",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253378612,
+        "stop" : 1670253389438,
+        "duration" : 10826
+      }
+    } ]
+  },
+  "195f4d5143f8f71f10515b096eee0c39" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e01062cc9907da0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253556848,
+        "stop" : 1670253560130,
+        "duration" : 3282
+      }
+    } ]
+  },
+  "c976e2e861e9c84cc00171744875367f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5d5009e9e43db5e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253192693,
+        "stop" : 1670253202383,
+        "duration" : 9690
+      }
+    } ]
+  },
+  "67b70bc51cde06cfa27ee83e65930788" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee594198fd77248b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253539266,
+        "stop" : 1670253545307,
+        "duration" : 6041
+      }
+    } ]
+  },
+  "cd244f4b215d2e49e0313ce970eb8dc5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fede55dad444d748",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253309333,
+        "stop" : 1670253318613,
+        "duration" : 9280
+      }
+    } ]
+  },
+  "11f063db25277f6dd6573a1da1f33693" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b06007cded32a780",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=107.0.5304.123)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DBC-000482', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\KEVIN~1.SIL\\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 19bd02dc26ca6c528e1ec5c968ba0a5a",
+      "time" : {
+        "start" : 1670253526077,
+        "stop" : 1670253533651,
+        "duration" : 7574
+      }
+    } ]
+  },
+  "7a100da2c796c137592c999ec3728b41" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5837bc186061a5a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253258511,
+        "stop" : 1670253270571,
+        "duration" : 12060
+      }
+    } ]
+  },
+  "9fe1ba80116aab1984d68e097353bf0a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7276f91960b7239d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253479811,
+        "stop" : 1670253490080,
+        "duration" : 10269
+      }
+    } ]
+  },
+  "403c2694c99722d391be208de716ec7c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "184a4f104014b329",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253225708,
+        "stop" : 1670253234164,
+        "duration" : 8456
+      }
+    } ]
+  },
+  "9760c130d3b40498564c58026f55ad93" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2e122be827859f17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253318616,
+        "stop" : 1670253324417,
+        "duration" : 5801
+      }
+    } ]
+  },
+  "4737bd540b9deb88ab1e59f96040b967" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c94789663dc12397",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253324421,
+        "stop" : 1670253332835,
+        "duration" : 8414
+      }
+    } ]
+  },
+  "59aa4708f6e254a6c55660e36786392a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "54c84e78a3a06dd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253560137,
+        "stop" : 1670253564095,
+        "duration" : 3958
+      }
+    } ]
+  },
+  "c1aa0346c8d8e829b9a9c4134a1013eb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d13c1a5b9d480202",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: nova-senha-error (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253721821,
+        "stop" : 1670253742747,
+        "duration" : 20926
+      }
+    } ]
+  },
+  "2cd3e1f667ecf50f37706bfb51d7286b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9d354be59ade51b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253340483,
+        "stop" : 1670253347704,
+        "duration" : 7221
+      }
+    } ]
+  },
+  "2d096d987c20e16eb1ef07fb017f8e42" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "46d73240686feea8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253270578,
+        "stop" : 1670253276413,
+        "duration" : 5835
+      }
+    } ]
+  },
+  "845c3da4b30ee1f07c1abed9bf7b15f5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68f06e283811c03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253014727,
+        "stop" : 1670253028489,
+        "duration" : 13762
+      }
+    } ]
+  },
+  "3a416b6a1298d42419fbd31141724c94" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "89fd36fdaddce505",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253782473,
+        "stop" : 1670253798389,
+        "duration" : 15916
+      }
+    } ]
+  },
+  "67682c2f86d355a219e863e6c7d2bead" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "492f7f6abd14e5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253208811,
+        "stop" : 1670253219352,
+        "duration" : 10541
+      }
+    } ]
+  },
+  "bcaa73f0ce70ea314b27a7884b60cfa6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9af7a646ab6efd84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253300933,
+        "stop" : 1670253309331,
+        "duration" : 8398
+      }
+    } ]
+  },
+  "fd63c1b13cff339cca842d7578325afc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b495772350d58b23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253648660,
+        "stop" : 1670253655754,
+        "duration" : 7094
+      }
+    } ]
+  },
+  "b30dd41356d0559f8d97a02dbc452623" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e38c4e7c1db4bb17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253028634,
+        "stop" : 1670253045124,
+        "duration" : 16490
+      }
+    } ]
+  },
+  "a475a9aac3fc6d3debf08a087a4b061c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "82fa65833d06276e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253248240,
+        "stop" : 1670253258507,
+        "duration" : 10267
+      }
+    } ]
+  },
+  "dbcbb414a9960dc1d8c1b8c7e6076f5f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4832ee984f425e6e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253242477,
+        "stop" : 1670253248235,
+        "duration" : 5758
+      }
+    } ]
+  },
+  "dc8e9a7f1e3cc638b9a9b77a884e8bd4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5bf5a748f9a3f4ba",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-email (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253165876,
+        "stop" : 1670253186311,
+        "duration" : 20435
+      }
+    } ]
+  },
+  "7d21e890524aab112140919a585c0ba4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2c8a36c5bc5f8dd4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253234168,
+        "stop" : 1670253242473,
+        "duration" : 8305
+      }
+    } ]
+  },
+  "6af58063842a91b92bff4f8c1253f1de" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bad78be329111270",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253332838,
+        "stop" : 1670253340479,
+        "duration" : 7641
+      }
+    } ]
+  },
+  "c80656e3e629eed479e324a705e2c5ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "35382449734e7db2",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.cssSelector: div.Toastify__toast-body > div:nth-child(2) (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253742751,
+        "stop" : 1670253763791,
+        "duration" : 21040
+      }
+    } ]
+  },
+  "c595b296c4612311717256b7ce08b669" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "527d44de3d460d57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253202389,
+        "stop" : 1670253208804,
+        "duration" : 6415
+      }
+    } ]
+  },
+  "df124a2570b0161f12ed25a1aab5ec2b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4628e5cae69a262a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253533658,
+        "stop" : 1670253539263,
+        "duration" : 5605
+      }
+    } ]
+  },
+  "e67981370d1fc66e8cda63177adbb267" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de3879c4221a07b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253219355,
+        "stop" : 1670253225705,
+        "duration" : 6350
+      }
+    } ]
+  },
+  "1a32104a0fb87d2fb06df6f5ddd5fb67" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8698903fae22e1a3",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-data-inicial (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253433124,
+        "stop" : 1670253457454,
+        "duration" : 24330
+      }
+    } ]
+  },
+  "4dd7987587c1373ada4c1a4f13166485" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b5650fa05cd1482b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253819491,
+        "stop" : 1670253832011,
+        "duration" : 12520
+      }
+    } ]
+  },
+  "781a9170dba826a9393561cca391ae0e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4915ee5111fca59d",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: nome-error (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253679159,
+        "stop" : 1670253700050,
+        "duration" : 20891
+      }
+    } ]
+  },
+  "4d8c4c732a483212d46133ebf8b7fdde" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cdedf52eae7b86f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253045130,
+        "stop" : 1670253053851,
+        "duration" : 8721
+      }
+    } ]
+  },
+  "1560a52c8d406fb0cb891e32107286e9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3810e02bbd2a238e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253568012,
+        "stop" : 1670253571117,
+        "duration" : 3105
+      }
+    } ]
+  },
+  "abbb02ffbcf230d047e73620fe2b60a7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e90b38eae98d6c1c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253550987,
+        "stop" : 1670253556845,
+        "duration" : 5858
+      }
+    } ]
+  },
+  "503a80cabd424e44a5daf1acd48dbaec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8d7e46e48b0de0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253117144,
+        "stop" : 1670253124387,
+        "duration" : 7243
+      }
+    } ]
+  },
+  "c49336f723ac9433d56bc505f6be845c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "545486af3ccffce8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670253571121,
+        "stop" : 1670253577542,
+        "duration" : 6421
+      }
+    } ]
+  },
+  "c6b97ba5c2d57353c622e126e89d527d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "979d54041d1c94c3",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: nova-senha-error (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670253700053,
+        "stop" : 1670253721817,
+        "duration" : 21764
+      }
+    } ]
+  }
+}
