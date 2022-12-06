@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2dc9ce85f62a6c7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287829662,
+        "stop" : 1670287843274,
+        "duration" : 13612
+      }
+    }, {
       "uid" : "21017f3418a60d4e",
       "status" : "passed",
       "time" : {
@@ -23,11 +31,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8aaec885034ba449",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287623458,
+        "stop" : 1670287634726,
+        "duration" : 11268
+      }
+    }, {
       "uid" : "a09879cbc1551c12",
       "status" : "passed",
       "time" : {
@@ -42,11 +58,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "7b7c19be0207f0bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287204586,
+        "stop" : 1670287216284,
+        "duration" : 11698
+      }
+    }, {
       "uid" : "7d5aa7472d3e2944",
       "status" : "passed",
       "time" : {
@@ -58,14 +82,23 @@
   },
   "1dd580016cde2387844e2ac1f55b073f" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "89abde0ed29373e8",
+      "status" : "failed",
+      "statusDetails" : "java.lang.AssertionError",
+      "time" : {
+        "start" : 1670287285025,
+        "stop" : 1670287292036,
+        "duration" : 7011
+      }
+    }, {
       "uid" : "60776ea123f0dd90",
       "status" : "failed",
       "statusDetails" : "java.lang.AssertionError",
@@ -81,11 +114,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "47287f3171c485db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287717382,
+        "stop" : 1670287724397,
+        "duration" : 7015
+      }
+    }, {
       "uid" : "81876d8c5393002e",
       "status" : "passed",
       "time" : {
@@ -100,11 +141,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "18043b53ba850513",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287490870,
+        "stop" : 1670287498913,
+        "duration" : 8043
+      }
+    }, {
       "uid" : "9d4261ef48148fbc",
       "status" : "passed",
       "time" : {
@@ -119,11 +168,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8031d5600e0135cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287871056,
+        "stop" : 1670287885666,
+        "duration" : 14610
+      }
+    }, {
       "uid" : "50be33b4046476fb",
       "status" : "passed",
       "time" : {
@@ -136,13 +193,22 @@
   "4b52d40ba4ba68d3871db02227ab1ddd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "a1097876fa2b8f87",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-nome (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670287292042,
+        "stop" : 1670287315968,
+        "duration" : 23926
+      }
+    }, {
       "uid" : "7c50321b9ec92830",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-nome (tried for 15 second(s) with 500 milliseconds interval)",
@@ -158,11 +224,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ae6c93d993a965ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287669540,
+        "stop" : 1670287674539,
+        "duration" : 4999
+      }
+    }, {
       "uid" : "c725766170667435",
       "status" : "passed",
       "time" : {
@@ -177,11 +251,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2efd7b3894c3454a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287255750,
+        "stop" : 1670287262843,
+        "duration" : 7093
+      }
+    }, {
       "uid" : "3496198f0e53d9c9",
       "status" : "passed",
       "time" : {
@@ -196,11 +278,19 @@
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "572f19b8ac9a8ba0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287249082,
+        "stop" : 1670287255746,
+        "duration" : 6664
+      }
+    }, {
       "uid" : "c934475129466f2e",
       "status" : "failed",
       "statusDetails" : "java.lang.AssertionError",
@@ -216,11 +306,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3dc68a32eba62e13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287634730,
+        "stop" : 1670287645106,
+        "duration" : 10376
+      }
+    }, {
       "uid" : "bbd6102edfbf5634",
       "status" : "passed",
       "time" : {
@@ -233,13 +331,22 @@
   "a2f65379a78a27788dda22aabe35d521" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "746b769ffab5e9c9",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-nome (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670287550079,
+        "stop" : 1670287575891,
+        "duration" : 25812
+      }
+    }, {
       "uid" : "37c070596fdedf1f",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-nome (tried for 15 second(s) with 500 milliseconds interval)",
@@ -255,11 +362,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "30e0de549509a46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287645109,
+        "stop" : 1670287654807,
+        "duration" : 9698
+      }
+    }, {
       "uid" : "3cda66245c2a5598",
       "status" : "passed",
       "time" : {
@@ -274,11 +389,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6b2d0c24dc682477",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287692835,
+        "stop" : 1670287698337,
+        "duration" : 5502
+      }
+    }, {
       "uid" : "2a14caa71da1e1a7",
       "status" : "passed",
       "time" : {
@@ -293,11 +416,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "85f164c253e4312a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287538302,
+        "stop" : 1670287550073,
+        "duration" : 11771
+      }
+    }, {
       "uid" : "ee3180ad418b9ca0",
       "status" : "passed",
       "time" : {
@@ -312,11 +443,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "fe3f10f396de22fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287525885,
+        "stop" : 1670287538292,
+        "duration" : 12407
+      }
+    }, {
       "uid" : "1f1fb36ff560a764",
       "status" : "passed",
       "time" : {
@@ -331,11 +470,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c79749fb316a2cf8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287681487,
+        "stop" : 1670287687120,
+        "duration" : 5633
+      }
+    }, {
       "uid" : "e01062cc9907da0f",
       "status" : "passed",
       "time" : {
@@ -350,11 +497,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "9b830c11a8fc4244",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287315976,
+        "stop" : 1670287327612,
+        "duration" : 11636
+      }
+    }, {
       "uid" : "5d5009e9e43db5e9",
       "status" : "passed",
       "time" : {
@@ -369,11 +524,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "7f9eefca67e58956",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287662056,
+        "stop" : 1670287669537,
+        "duration" : 7481
+      }
+    }, {
       "uid" : "ee594198fd77248b",
       "status" : "passed",
       "time" : {
@@ -388,11 +551,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e04bae8fcb53943b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287446240,
+        "stop" : 1670287457570,
+        "duration" : 11330
+      }
+    }, {
       "uid" : "fede55dad444d748",
       "status" : "passed",
       "time" : {
@@ -407,11 +578,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4755e48e21c8aeb2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287602243,
+        "stop" : 1670287612987,
+        "duration" : 10744
+      }
+    }, {
       "uid" : "b06007cded32a780",
       "status" : "broken",
       "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=107.0.5304.123)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DBC-000482', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\KEVIN~1.SIL\\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 19bd02dc26ca6c528e1ec5c968ba0a5a",
@@ -427,11 +606,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5b6e329411adf4ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287392917,
+        "stop" : 1670287403714,
+        "duration" : 10797
+      }
+    }, {
       "uid" : "5837bc186061a5a3",
       "status" : "passed",
       "time" : {
@@ -446,11 +633,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "27e2e9fe63f4ac07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287612990,
+        "stop" : 1670287623455,
+        "duration" : 10465
+      }
+    }, {
       "uid" : "7276f91960b7239d",
       "status" : "passed",
       "time" : {
@@ -465,11 +660,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d52decae5c641461",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287354430,
+        "stop" : 1670287364380,
+        "duration" : 9950
+      }
+    }, {
       "uid" : "184a4f104014b329",
       "status" : "passed",
       "time" : {
@@ -484,11 +687,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ac18d3e987721825",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287457575,
+        "stop" : 1670287465215,
+        "duration" : 7640
+      }
+    }, {
       "uid" : "2e122be827859f17",
       "status" : "passed",
       "time" : {
@@ -503,11 +714,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3b60fd82899f3a49",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287465219,
+        "stop" : 1670287473777,
+        "duration" : 8558
+      }
+    }, {
       "uid" : "c94789663dc12397",
       "status" : "passed",
       "time" : {
@@ -522,11 +741,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "1126c4fc342f5d8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287687126,
+        "stop" : 1670287692832,
+        "duration" : 5706
+      }
+    }, {
       "uid" : "54c84e78a3a06dd1",
       "status" : "passed",
       "time" : {
@@ -541,11 +768,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5646a9e300b6e1c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287724400,
+        "stop" : 1670287731741,
+        "duration" : 7341
+      }
+    }, {
       "uid" : "d13c1a5b9d480202",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: nova-senha-error (tried for 15 second(s) with 500 milliseconds interval)",
@@ -561,11 +796,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "414bfc719191743a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287483436,
+        "stop" : 1670287490866,
+        "duration" : 7430
+      }
+    }, {
       "uid" : "c9d354be59ade51b",
       "status" : "passed",
       "time" : {
@@ -580,11 +823,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "121d36dc6fd6da94",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287403720,
+        "stop" : 1670287411770,
+        "duration" : 8050
+      }
+    }, {
       "uid" : "46d73240686feea8",
       "status" : "passed",
       "time" : {
@@ -599,11 +850,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e233c5b9359ca38b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287144627,
+        "stop" : 1670287155376,
+        "duration" : 10749
+      }
+    }, {
       "uid" : "68f06e283811c03e",
       "status" : "passed",
       "time" : {
@@ -618,11 +877,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "14d50ddeb479e8b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287843280,
+        "stop" : 1670287857666,
+        "duration" : 14386
+      }
+    }, {
       "uid" : "89fd36fdaddce505",
       "status" : "passed",
       "time" : {
@@ -637,11 +904,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3a3e053242819794",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287335752,
+        "stop" : 1670287346086,
+        "duration" : 10334
+      }
+    }, {
       "uid" : "492f7f6abd14e5e",
       "status" : "passed",
       "time" : {
@@ -656,11 +931,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "a1da137eae95a593",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287437694,
+        "stop" : 1670287446225,
+        "duration" : 8531
+      }
+    }, {
       "uid" : "9af7a646ab6efd84",
       "status" : "passed",
       "time" : {
@@ -675,11 +958,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "48edffec88c0e881",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287754510,
+        "stop" : 1670287762155,
+        "duration" : 7645
+      }
+    }, {
       "uid" : "b495772350d58b23",
       "status" : "passed",
       "time" : {
@@ -694,11 +985,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "6c02bac0cec1ea17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287155580,
+        "stop" : 1670287165913,
+        "duration" : 10333
+      }
+    }, {
       "uid" : "e38c4e7c1db4bb17",
       "status" : "passed",
       "time" : {
@@ -713,11 +1012,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "68f6dcad33f3013e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287381156,
+        "stop" : 1670287392910,
+        "duration" : 11754
+      }
+    }, {
       "uid" : "82fa65833d06276e",
       "status" : "passed",
       "time" : {
@@ -732,11 +1039,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "31d142a52a4b5634",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287374236,
+        "stop" : 1670287381153,
+        "duration" : 6917
+      }
+    }, {
       "uid" : "4832ee984f425e6e",
       "status" : "passed",
       "time" : {
@@ -749,13 +1064,22 @@
   "dc8e9a7f1e3cc638b9a9b77a884e8bd4" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8f1d09e474253a50",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-email (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670287262855,
+        "stop" : 1670287285019,
+        "duration" : 22164
+      }
+    }, {
       "uid" : "5bf5a748f9a3f4ba",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-email (tried for 15 second(s) with 500 milliseconds interval)",
@@ -771,11 +1095,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "928dd0ec77d2f0c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287364385,
+        "stop" : 1670287374220,
+        "duration" : 9835
+      }
+    }, {
       "uid" : "2c8a36c5bc5f8dd4",
       "status" : "passed",
       "time" : {
@@ -790,11 +1122,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "82bbf07b233fd4fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287473791,
+        "stop" : 1670287483432,
+        "duration" : 9641
+      }
+    }, {
       "uid" : "bad78be329111270",
       "status" : "passed",
       "time" : {
@@ -807,13 +1147,22 @@
   "c80656e3e629eed479e324a705e2c5ba" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "97987689242a860f",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.cssSelector: div.Toastify__toast-body > div:nth-child(2) (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670287784943,
+        "stop" : 1670287807581,
+        "duration" : 22638
+      }
+    }, {
       "uid" : "35382449734e7db2",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.cssSelector: div.Toastify__toast-body > div:nth-child(2) (tried for 15 second(s) with 500 milliseconds interval)",
@@ -829,11 +1178,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "15362c12aa3d9d65",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287327615,
+        "stop" : 1670287335744,
+        "duration" : 8129
+      }
+    }, {
       "uid" : "527d44de3d460d57",
       "status" : "passed",
       "time" : {
@@ -848,11 +1205,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2fcca317a705c7c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287654814,
+        "stop" : 1670287662053,
+        "duration" : 7239
+      }
+    }, {
       "uid" : "4628e5cae69a262a",
       "status" : "passed",
       "time" : {
@@ -867,11 +1232,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3ca26e20c15fdd84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287346092,
+        "stop" : 1670287354419,
+        "duration" : 8327
+      }
+    }, {
       "uid" : "de3879c4221a07b0",
       "status" : "passed",
       "time" : {
@@ -884,13 +1257,22 @@
   "1a32104a0fb87d2fb06df6f5ddd5fb67" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "33b07ba1fedffc82",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-data-inicial (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670287575905,
+        "stop" : 1670287602235,
+        "duration" : 26330
+      }
+    }, {
       "uid" : "8698903fae22e1a3",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-data-inicial (tried for 15 second(s) with 500 milliseconds interval)",
@@ -906,11 +1288,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "df5818b87cc94429",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287857669,
+        "stop" : 1670287871049,
+        "duration" : 13380
+      }
+    }, {
       "uid" : "b5650fa05cd1482b",
       "status" : "passed",
       "time" : {
@@ -923,13 +1313,22 @@
   "781a9170dba826a9393561cca391ae0e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "82dd6b7e6e02ae70",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: nome-error (tried for 15 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1670287807585,
+        "stop" : 1670287829655,
+        "duration" : 22070
+      }
+    }, {
       "uid" : "4915ee5111fca59d",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: nome-error (tried for 15 second(s) with 500 milliseconds interval)",
@@ -945,11 +1344,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bb4ad0b3001a37d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287165921,
+        "stop" : 1670287173876,
+        "duration" : 7955
+      }
+    }, {
       "uid" : "cdedf52eae7b86f9",
       "status" : "passed",
       "time" : {
@@ -964,11 +1371,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4d2daab00d25a5c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287698346,
+        "stop" : 1670287703231,
+        "duration" : 4885
+      }
+    }, {
       "uid" : "3810e02bbd2a238e",
       "status" : "passed",
       "time" : {
@@ -983,11 +1398,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f55927f6c40af8af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287674542,
+        "stop" : 1670287681483,
+        "duration" : 6941
+      }
+    }, {
       "uid" : "e90b38eae98d6c1c",
       "status" : "passed",
       "time" : {
@@ -1002,11 +1425,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "db7969ef0e156a53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287240391,
+        "stop" : 1670287249078,
+        "duration" : 8687
+      }
+    }, {
       "uid" : "8d7e46e48b0de0a",
       "status" : "passed",
       "time" : {
@@ -1021,11 +1452,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3e42c82b174b4264",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287703233,
+        "stop" : 1670287710334,
+        "duration" : 7101
+      }
+    }, {
       "uid" : "545486af3ccffce8",
       "status" : "passed",
       "time" : {
@@ -1040,11 +1479,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5523f04647f1947d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1670287710339,
+        "stop" : 1670287717379,
+        "duration" : 7040
+      }
+    }, {
       "uid" : "979d54041d1c94c3",
       "status" : "broken",
       "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: nova-senha-error (tried for 15 second(s) with 500 milliseconds interval)",
