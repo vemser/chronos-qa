@@ -1,4 +1,11 @@
 [ {
+  "buildOrder" : 3,
+  "reportName" : "Allure report deploy #3",
+  "data" : {
+    "run" : 55,
+    "retry" : 8
+  }
+}, {
   "buildOrder" : 2,
   "reportName" : "Allure report deploy #2",
   "data" : {
