@@ -30,7 +30,7 @@ public class TestePerfilSteps extends BaseSteps {
         EditarPerfilPage.preencherNovaSenha(novaSenha);
         EditarPerfilPage.preencherConfirmarNovaSenha(novaSenha);
         EditarPerfilPage.clicarBotaoSubmit();
-        EditarPerfilPage.validarErroNome();
+        EditarPerfilPage.validarErroSenhaAtual();
     }
 
     @Test

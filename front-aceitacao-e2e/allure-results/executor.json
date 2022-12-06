@@ -1,7 +1,7 @@
 {
   "name": "Kevin Aryel",
   "type": "jenkins",
-  "buildOrder": 1,
-  "buildName": "allure-report_deploy#1",
-  "reportName": "Allure report deploy #1"
+  "buildOrder": 2,
+  "buildName": "allure-report_deploy#2",
+  "reportName": "Allure report deploy #2"
 }

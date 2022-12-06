@@ -26,8 +26,8 @@ public class TesteEdicoesSteps extends BaseSteps{
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
-        EdicoesPage.clicarBotaoExcluirUltima();
         EdicoesPage.validarToastSucesso();
+        EdicoesPage.clicarBotaoExcluirUltima();
     }
 
     @Test
@@ -90,7 +90,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         CadastrarEdicaoPage.enviarDataInicio("12122022");
         CadastrarEdicaoPage.enviarDataFim("10122022");
         CadastrarEdicaoPage.clicarBotaoSubmit();
-         EdicoesPage.validarToastErro();
+        EdicoesPage.validarToastErro();
     }
     @Test
     @Owner("Kevin Aryel")
@@ -171,6 +171,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         criarEdicaoValida();
         try {
             EdicoesPage.clicarBotaoEditarUltima();
+            CadastrarEdicaoPage.enviarNomeEdicao("");
             CadastrarEdicaoPage.enviarDataInicio("20122023");
             CadastrarEdicaoPage.enviarDataFim("30122023");
             CadastrarEdicaoPage.clicarBotaoSubmit();
@@ -193,6 +194,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         try {
             EdicoesPage.clicarBotaoEditarUltima();
             CadastrarEdicaoPage.enviarNomeEdicao(Utils.faker.lorem().characters(12));
+            CadastrarEdicaoPage.enviarDataInicio("");
             CadastrarEdicaoPage.enviarDataFim("30122023");
             CadastrarEdicaoPage.clicarBotaoSubmit();
             CadastrarEdicaoPage.validarErroDataInicio();
