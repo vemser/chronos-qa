@@ -117,11 +117,16 @@ public class TesteEdicoesSteps extends BaseSteps{
     public void testarClonarEdicoes() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
-        String nomeEdicao = EdicoesPage.nomeUltimaEdicao();
-        EdicoesPage.clicarBotaoClonarUltima();
-        EdicoesPage.validarToastSucesso();
-        EdicoesPage.validarNomeUltimaEdicao(nomeEdicao);
-        EdicoesPage.clicarBotaoExcluirUltima();
+        criarEdicaoValida();
+        try{
+            String nomeEdicao = EdicoesPage.nomeUltimaEdicao();
+            EdicoesPage.clicarBotaoClonarUltima();
+            EdicoesPage.validarToastSucesso();
+            EdicoesPage.validarNomeUltimaEdicao(nomeEdicao);
+            EdicoesPage.clicarBotaoExcluirUltima();
+        }finally {
+            EdicoesPage.clicarBotaoExcluirUltima();
+        }
     }
     @Test
     @Owner("Kevin Aryel")
@@ -132,9 +137,14 @@ public class TesteEdicoesSteps extends BaseSteps{
     public void testarMudarStatusEdicoes() throws InterruptedException {
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
-        EdicoesPage.clicarBotaoStatusUltima();
-        EdicoesPage.validarToastSucesso();
-        EdicoesPage.clicarBotaoStatusUltima();
+        criarEdicaoValida();
+        try {
+            EdicoesPage.clicarBotaoStatusUltima();
+            EdicoesPage.validarToastSucesso();
+            EdicoesPage.clicarBotaoStatusUltima();
+        } finally {
+            EdicoesPage.clicarBotaoExcluirUltima();
+        }
     }
     @Test
     @Owner("Kevin Aryel")

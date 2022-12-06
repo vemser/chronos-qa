@@ -13,7 +13,7 @@ public class TestePerfilSteps extends BaseSteps {
     }
     private static String novaSenhaValida(){
         return Utils.faker.internet()
-                .password(8, 10, false, false, false);
+                .password(8, 10, true, true, true);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class TestePerfilSteps extends BaseSteps {
         fazerLoginGestor();
         entrarNaPaginaDeEditarPerfil();
         EditarPerfilPage.preencherNome(Utils.faker.lorem().characters(10));
-        String novaSenha = Utils.faker.internet().password(8, 10, true, true, true);
+        String novaSenha = novaSenhaValida();
         EditarPerfilPage.preencherNovaSenha(novaSenha);
         EditarPerfilPage.preencherConfirmarNovaSenha(novaSenha);
         EditarPerfilPage.clicarBotaoSubmit();
@@ -44,7 +44,7 @@ public class TestePerfilSteps extends BaseSteps {
         entrarNaPaginaDeEditarPerfil();
         EditarPerfilPage.preencherNome(Utils.faker.lorem().characters(10));
         EditarPerfilPage.preencherSenhaAtual(ConfigManipulation.getProp().getProperty("senhaGestao"));
-        String novaSenha = novaSenhaValida();
+        String novaSenha = Utils.faker.internet().password(8,10,false);
         EditarPerfilPage.preencherNovaSenha(novaSenha);
         EditarPerfilPage.preencherConfirmarNovaSenha(novaSenha);
         EditarPerfilPage.clicarBotaoSubmit();
