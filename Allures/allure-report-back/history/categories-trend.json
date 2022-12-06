@@ -1,0 +1,47 @@
+[ {
+  "buildOrder" : 6,
+  "reportName" : "Allure report deploy #6",
+  "data" : {
+    "Testes Passados" : 137
+  }
+}, {
+  "buildOrder" : 5,
+  "reportName" : "Allure report deploy #5",
+  "data" : {
+    "Testes Passados" : 132,
+    "Testes Quebrados" : 3,
+    "Testes Falhados" : 2
+  }
+}, {
+  "buildOrder" : 4,
+  "reportName" : "Allure report deploy #4",
+  "data" : {
+    "Testes Passados" : 123,
+    "Testes Quebrados" : 12,
+    "Testes Falhados" : 2
+  }
+}, {
+  "buildOrder" : 3,
+  "reportName" : "Allure report deploy #3",
+  "data" : {
+    "Testes Passados" : 113,
+    "Testes Quebrados" : 12,
+    "Testes Falhados" : 3
+  }
+}, {
+  "buildOrder" : 2,
+  "reportName" : "Allure report deploy #2",
+  "data" : {
+    "Testes Passados" : 122,
+    "Testes Quebrados" : 5,
+    "Testes Falhados" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "reportName" : "Allure report deploy #1",
+  "data" : {
+    "Testes Passados" : 120,
+    "Testes Quebrados" : 7,
+    "Testes Falhados" : 2
+  }
+} ]

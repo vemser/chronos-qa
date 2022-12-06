@@ -1,0 +1,114 @@
+{
+  "total" : 40,
+  "items" : [ {
+    "uid" : "0bc02f4c973780c159e30f824a7bd391",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.edicao.EdicaoEditarTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
+    "uid" : "46183c0cb778ec7312119723c11153de",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.edicao.EdicaoCreateTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "2d464bd19d9c1c88dad89f590eda88f6",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.usuario.UsuarioCreateTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "dfd2c3880be152de642d4ddfb924af0d",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.usuario.UsuarioCadastroTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "f965648d3b07f78fec70fbd397c8a9db",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.usuario.UsuarioPerfilTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "d3d2e51bb74eca860c551f2df022e737",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.login.LoginTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "92389f7550691cef0aea5448cdd57c6d",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.processo.ProcessoCreateTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "9fe735942e99f53a7fbc441ec23ec6f6",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.dia.DiaNaoUtilEditarTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "490005d77e0f312bb6b152a4ac9fe007",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.etapa.EtapaEditarTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "ac1bf1b95fbd00ffcae7df6fec5d80be",
+    "name" : "br.com.dbccompany.chronos.testes.aceitacao.dia.DiaNaoUtilCreateTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ]
+}

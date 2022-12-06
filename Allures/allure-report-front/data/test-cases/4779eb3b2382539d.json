@@ -1,0 +1,113 @@
+{
+  "uid" : "4779eb3b2382539d",
+  "name" : "deveFalharEditarColaboradorSemNome",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps.deveFalharEditarColaboradorSemNome",
+  "historyId" : "4b52d40ba4ba68d3871db02227ab1ddd",
+  "time" : {
+    "start" : 1670299881587,
+    "stop" : 1670299889421,
+    "duration" : 7834
+  },
+  "description" : "Deve retornar erro ao tentar editar um colaborador com sucesso",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar editar um colaborador com sucesso</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharEditarColaboradorSemNome"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Colaborador"
+  }, {
+    "name" : "story",
+    "value" : "Editar Colaborador"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "23b10fa3b4b5b1a4",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-nome (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670291458191,
+          "stop" : 1670291483792,
+          "duration" : 25601
+        }
+      }, {
+        "uid" : "a1097876fa2b8f87",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-nome (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670287292042,
+          "stop" : 1670287315968,
+          "duration" : 23926
+        }
+      }, {
+        "uid" : "7c50321b9ec92830",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-nome (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670253143213,
+          "stop" : 1670253165864,
+          "duration" : 22651
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4779eb3b2382539d.json",
+  "parameterValues" : [ ]
+}

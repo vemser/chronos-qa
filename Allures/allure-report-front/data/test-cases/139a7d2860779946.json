@@ -1,0 +1,110 @@
+{
+  "uid" : "139a7d2860779946",
+  "name" : "deveMudarStatusColaboradorComSucesso",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps.deveMudarStatusColaboradorComSucesso",
+  "historyId" : "1494d20bf4e3bda6b4216b6231446ef1",
+  "time" : {
+    "start" : 1670299871541,
+    "stop" : 1670299881577,
+    "duration" : 10036
+  },
+  "description" : "Deve mudar o status de um colaborador com sucesso",
+  "descriptionHtml" : "<p>Deve mudar o status de um colaborador com sucesso</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveMudarStatusColaboradorComSucesso"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Colaborador"
+  }, {
+    "name" : "story",
+    "value" : "Editar Status Colaborador"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "2425f93e1578f87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291363552,
+          "stop" : 1670291375627,
+          "duration" : 12075
+        }
+      }, {
+        "uid" : "7b7c19be0207f0bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287204586,
+          "stop" : 1670287216284,
+          "duration" : 11698
+        }
+      }, {
+        "uid" : "7d5aa7472d3e2944",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253081127,
+          "stop" : 1670253094142,
+          "duration" : 13015
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "139a7d2860779946.json",
+  "parameterValues" : [ ]
+}

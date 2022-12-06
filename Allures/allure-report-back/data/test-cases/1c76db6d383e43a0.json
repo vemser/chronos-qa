@@ -1,0 +1,123 @@
+{
+  "uid" : "1c76db6d383e43a0",
+  "name" : "deveFalharCriarResponsavelSemAuth()",
+  "fullName" : "br.com.dbccompany.chronos.testes.aceitacao.responsavel.ResponsavelCreateTest.deveFalharCriarResponsavelSemAuth",
+  "historyId" : "d50384c2149008c527985394c1f5679f",
+  "time" : {
+    "start" : 1670217014616,
+    "stop" : 1670217014740,
+    "duration" : 124
+  },
+  "description" : "Deve falhar criar um responsável sem Auth",
+  "descriptionHtml" : "<p>Deve falhar criar um responsável sem Auth</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1670217014301,
+      "stop" : 1670217014301,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "todos"
+  }, {
+    "name" : "tag",
+    "value" : "responsavel"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "story",
+    "value" : "Criar Responsavel"
+  }, {
+    "name" : "feature",
+    "value" : "Responsavel"
+  }, {
+    "name" : "epic",
+    "value" : "Aceitação"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "9104@DBC-000482.ForkJoinPool-1-worker-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.responsavel.ResponsavelCreateTest"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.responsavel.ResponsavelCreateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharCriarResponsavelSemAuth"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.responsavel.ResponsavelCreateTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "ae4e677ffc7d40f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670216003859,
+          "stop" : 1670216003982,
+          "duration" : 123
+        }
+      }, {
+        "uid" : "5c107ec45ca473e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670210074055,
+          "stop" : 1670210074183,
+          "duration" : 128
+        }
+      } ]
+    },
+    "tags" : [ "todos", "responsavel" ]
+  },
+  "source" : "1c76db6d383e43a0.json",
+  "parameterValues" : [ ]
+}

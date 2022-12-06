@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d",
+    "name" : "Product defects",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "8c76621784d24824106c08b5c38e7e6f",
+    "name" : "Testes Quebrados",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "355ce845189a9df9da11bb9bac8c3b34",
+    "name" : "Testes Passados",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 51,
+      "unknown" : 0,
+      "total" : 51
+    }
+  } ]
+}

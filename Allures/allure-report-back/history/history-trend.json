@@ -1,0 +1,67 @@
+[ {
+  "buildOrder" : 6,
+  "reportName" : "Allure report deploy #6",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 137,
+    "unknown" : 0,
+    "total" : 137
+  }
+}, {
+  "buildOrder" : 5,
+  "reportName" : "Allure report deploy #5",
+  "data" : {
+    "failed" : 2,
+    "broken" : 3,
+    "skipped" : 0,
+    "passed" : 132,
+    "unknown" : 0,
+    "total" : 137
+  }
+}, {
+  "buildOrder" : 4,
+  "reportName" : "Allure report deploy #4",
+  "data" : {
+    "failed" : 2,
+    "broken" : 12,
+    "skipped" : 0,
+    "passed" : 123,
+    "unknown" : 0,
+    "total" : 137
+  }
+}, {
+  "buildOrder" : 3,
+  "reportName" : "Allure report deploy #3",
+  "data" : {
+    "failed" : 3,
+    "broken" : 12,
+    "skipped" : 0,
+    "passed" : 113,
+    "unknown" : 0,
+    "total" : 128
+  }
+}, {
+  "buildOrder" : 2,
+  "reportName" : "Allure report deploy #2",
+  "data" : {
+    "failed" : 1,
+    "broken" : 5,
+    "skipped" : 0,
+    "passed" : 122,
+    "unknown" : 0,
+    "total" : 128
+  }
+}, {
+  "buildOrder" : 1,
+  "reportName" : "Allure report deploy #1",
+  "data" : {
+    "failed" : 2,
+    "broken" : 7,
+    "skipped" : 0,
+    "passed" : 120,
+    "unknown" : 0,
+    "total" : 129
+  }
+} ]

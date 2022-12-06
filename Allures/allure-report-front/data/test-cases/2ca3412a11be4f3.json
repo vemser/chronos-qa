@@ -1,0 +1,110 @@
+{
+  "uid" : "2ca3412a11be4f3",
+  "name" : "deveFalharFazerLoginComDadosInvalidos",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteLoginSteps.deveFalharFazerLoginComDadosInvalidos",
+  "historyId" : "f4d8441162c5435bb0cf1062293dbd2b",
+  "time" : {
+    "start" : 1670300206596,
+    "stop" : 1670300212163,
+    "duration" : 5567
+  },
+  "description" : "Deve falhar fazer login com dados inválidos",
+  "descriptionHtml" : "<p>Deve falhar fazer login com dados inválidos</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteLoginSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharFazerLoginComDadosInvalidos"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteLoginSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "story",
+    "value" : "Fazer Login"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "cdf8c51bf89c0b8f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291900776,
+          "stop" : 1670291906858,
+          "duration" : 6082
+        }
+      }, {
+        "uid" : "6b2d0c24dc682477",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287692835,
+          "stop" : 1670287698337,
+          "duration" : 5502
+        }
+      }, {
+        "uid" : "2a14caa71da1e1a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253564100,
+          "stop" : 1670253568009,
+          "duration" : 3909
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2ca3412a11be4f3.json",
+  "parameterValues" : [ ]
+}

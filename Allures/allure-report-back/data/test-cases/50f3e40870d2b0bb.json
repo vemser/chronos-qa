@@ -1,0 +1,123 @@
+{
+  "uid" : "50f3e40870d2b0bb",
+  "name" : "deveFalharAtualizarPerfilSemNovaSenha()",
+  "fullName" : "br.com.dbccompany.chronos.testes.aceitacao.usuario.UsuarioPerfilTest.deveFalharAtualizarPerfilSemNovaSenha",
+  "historyId" : "8e9a3d4cddac3a0bb84c61d7926ea49d",
+  "time" : {
+    "start" : 1670217033606,
+    "stop" : 1670217033732,
+    "duration" : 126
+  },
+  "description" : "Deve retornar erro ao tentar atualizar perfil sem novaSenha",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar atualizar perfil sem novaSenha</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1670217031419,
+      "stop" : 1670217031420,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "todos"
+  }, {
+    "name" : "tag",
+    "value" : "usuario"
+  }, {
+    "name" : "feature",
+    "value" : "Usuário"
+  }, {
+    "name" : "epic",
+    "value" : "Aceitação"
+  }, {
+    "name" : "story",
+    "value" : "Editar Perfil Usuário"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "9104@DBC-000482.ForkJoinPool-1-worker-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.usuario.UsuarioPerfilTest"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.usuario.UsuarioPerfilTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharAtualizarPerfilSemNovaSenha"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.usuario.UsuarioPerfilTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "7ee5baf8e1e900cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670216017354,
+          "stop" : 1670216017474,
+          "duration" : 120
+        }
+      }, {
+        "uid" : "2c5ff6b14105ad4a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670210087550,
+          "stop" : 1670210087672,
+          "duration" : 122
+        }
+      } ]
+    },
+    "tags" : [ "usuario", "todos" ]
+  },
+  "source" : "50f3e40870d2b0bb.json",
+  "parameterValues" : [ ]
+}

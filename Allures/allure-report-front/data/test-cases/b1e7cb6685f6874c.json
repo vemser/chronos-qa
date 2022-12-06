@@ -1,0 +1,110 @@
+{
+  "uid" : "b1e7cb6685f6874c",
+  "name" : "testarCriarEdicoesComDataInicialMaiorQueDataFinal",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps.testarCriarEdicoesComDataInicialMaiorQueDataFinal",
+  "historyId" : "2d096d987c20e16eb1ef07fb017f8e42",
+  "time" : {
+    "start" : 1670299996733,
+    "stop" : 1670300003192,
+    "duration" : 6459
+  },
+  "description" : "Deve retornar erro ao tentar criar uma edição com data inicial inválida",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar criar uma edição com data inicial inválida</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testarCriarEdicoesComDataInicialMaiorQueDataFinal"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "story",
+    "value" : "Criar edição"
+  }, {
+    "name" : "feature",
+    "value" : "Edição"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "2053a91a4d89cfa3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291586998,
+          "stop" : 1670291594770,
+          "duration" : 7772
+        }
+      }, {
+        "uid" : "121d36dc6fd6da94",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287403720,
+          "stop" : 1670287411770,
+          "duration" : 8050
+        }
+      }, {
+        "uid" : "46d73240686feea8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253270578,
+          "stop" : 1670253276413,
+          "duration" : 5835
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b1e7cb6685f6874c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,108 @@
+{
+  "uid" : "cd8475a0c0c69656",
+  "name" : "testarCriarProcessoComSucesso",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteProcessoSteps.testarCriarProcessoComSucesso",
+  "historyId" : "4dd7987587c1373ada4c1a4f13166485",
+  "time" : {
+    "start" : 1670300299146,
+    "stop" : 1670300310985,
+    "duration" : 11839
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteProcessoSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testarCriarProcessoComSucesso"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteProcessoSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Criar Processo"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Processo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "7f5534011ab221a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670292031677,
+          "stop" : 1670292045415,
+          "duration" : 13738
+        }
+      }, {
+        "uid" : "df5818b87cc94429",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287857669,
+          "stop" : 1670287871049,
+          "duration" : 13380
+        }
+      }, {
+        "uid" : "b5650fa05cd1482b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253819491,
+          "stop" : 1670253832011,
+          "duration" : 12520
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cd8475a0c0c69656.json",
+  "parameterValues" : [ ]
+}

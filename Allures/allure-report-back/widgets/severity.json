@@ -1,0 +1,1371 @@
+[ {
+  "uid" : "6588608c77f565e1",
+  "name" : "deveFalharListarTodosOsDiasNaoUteisSemAuth()",
+  "time" : {
+    "start" : 1670216985620,
+    "stop" : 1670216985738,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "c2af073d6ed3757c",
+  "name" : "deveFalharCriarUsuarioSemAuth()",
+  "time" : {
+    "start" : 1670217028421,
+    "stop" : 1670217028538,
+    "duration" : 117
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cdef9086fef16222",
+  "name" : "deveListarTodasAsAreasEnvolvidasComSucesso()",
+  "time" : {
+    "start" : 1670216977670,
+    "stop" : 1670216977972,
+    "duration" : 302
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "65a71454e099185c",
+  "name" : "deveListarEtapaPorIdComSucesso()",
+  "time" : {
+    "start" : 1670217008015,
+    "stop" : 1670217008729,
+    "duration" : 714
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4bfd319cc7f3eebc",
+  "name" : "deveFalharAoCriarUmaEdicaoComDataInicialMaiorQueDataFinal()",
+  "time" : {
+    "start" : 1670216989700,
+    "stop" : 1670216989842,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc918e71caadcdce",
+  "name" : "deveFalharEditarEtapaSemAuth()",
+  "time" : {
+    "start" : 1670217004079,
+    "stop" : 1670217004207,
+    "duration" : 128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1044ec7a3b10c667",
+  "name" : "deveFalharAoEditarUmaEdicaoComDataFinalMenorQueDataInicial()",
+  "time" : {
+    "start" : 1670216995193,
+    "stop" : 1670216995731,
+    "duration" : 538
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63985cd51f8aaaa5",
+  "name" : "deveFalharDeletarUmDiaNaoUtilComIdInvalido()",
+  "time" : {
+    "start" : 1670216980828,
+    "stop" : 1670216982074,
+    "duration" : 1246
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ee12a1462ce67986",
+  "name" : "deveFalharAoTentarDeletarEdicaoComIdInvalido()",
+  "time" : {
+    "start" : 1670216990823,
+    "stop" : 1670216990967,
+    "duration" : 144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8cc3e8bc4b998e0c",
+  "name" : "deveFalharAtualizarPerfilSemConfirmacaoNovaSenha()",
+  "time" : {
+    "start" : 1670217032423,
+    "stop" : 1670217032547,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed43e4881248758b",
+  "name" : "deveCriarUmaEdicaoComSucesso()",
+  "time" : {
+    "start" : 1670216990041,
+    "stop" : 1670216990318,
+    "duration" : 277
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4da3f3494cc81d5a",
+  "name" : "deveDeletarEtapaComSucesso()",
+  "time" : {
+    "start" : 1670217003332,
+    "stop" : 1670217003904,
+    "duration" : 572
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c87955ac76d228c",
+  "name" : "deveFalharEditarEtapaSemOrdemExecucao()",
+  "time" : {
+    "start" : 1670217005701,
+    "stop" : 1670217007876,
+    "duration" : 2175
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff95f963215867bb",
+  "name" : "deveFalharCriarUsuarioSemEmail()",
+  "time" : {
+    "start" : 1670217027932,
+    "stop" : 1670217028067,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63caaa73be7d2643",
+  "name" : "deveListarEtapasDeAcordoAoSchema()",
+  "time" : {
+    "start" : 1670217038944,
+    "stop" : 1670217039281,
+    "duration" : 337
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "811ef04603b19523",
+  "name" : "deveFalharAoAlterarStatusDeUmaEdicaoComIdInvalido()",
+  "time" : {
+    "start" : 1670217000089,
+    "stop" : 1670217000280,
+    "duration" : 191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65c020a73132a617",
+  "name" : "deveFalharAoCriarUmaEdicaoComDataInicialComTipoInvalido()",
+  "time" : {
+    "start" : 1670216990691,
+    "stop" : 1670216990811,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73f00ea3fafce5f1",
+  "name" : "deveFalharAoEditarUmaEdicaoSemDataFinal()",
+  "time" : {
+    "start" : 1670216997340,
+    "stop" : 1670216997835,
+    "duration" : 495
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9094bd8b7fa64107",
+  "name" : "deveFalharFazerLoginSemEmail()",
+  "time" : {
+    "start" : 1670217009819,
+    "stop" : 1670217009942,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cca2dedaf780238b",
+  "name" : "deveFalharCriarUsuarioCargosInvalido()",
+  "time" : {
+    "start" : 1670217028212,
+    "stop" : 1670217028416,
+    "duration" : 204
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb1094ae8f726889",
+  "name" : "deveFalharCriarEtapaSemOrdemExecucao()",
+  "time" : {
+    "start" : 1670217002798,
+    "stop" : 1670217003193,
+    "duration" : 395
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b52c87601c2237",
+  "name" : "deletarAreaEnvolvidaComSucesso()",
+  "time" : {
+    "start" : 1670216976840,
+    "stop" : 1670216977242,
+    "duration" : 402
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9656914794898ae5",
+  "name" : "deveDeletarUmDiaNaoUtilComSucesso()",
+  "time" : {
+    "start" : 1670216980249,
+    "stop" : 1670216980662,
+    "duration" : 413
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1e7c4c31f50f98cc",
+  "name" : "deveFalharFazerLoginComEmailValidoSenhaInvalida()",
+  "time" : {
+    "start" : 1670217010358,
+    "stop" : 1670217010611,
+    "duration" : 253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a676b366ac72381",
+  "name" : "deveFalharAoCriarUmaEdicaoComDataInicialNoFormatoInvalido()",
+  "time" : {
+    "start" : 1670216989399,
+    "stop" : 1670216989521,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "801600af11fee119",
+  "name" : "criarAreaEnvolvidaSemNome()",
+  "time" : {
+    "start" : 1670216976625,
+    "stop" : 1670216976806,
+    "duration" : 181
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "22e2d583d5c6f3bc",
+  "name" : "deveFalharAtualizarCadastroComCargoVazio()",
+  "time" : {
+    "start" : 1670217023372,
+    "stop" : 1670217024639,
+    "duration" : 1267
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50f3e40870d2b0bb",
+  "name" : "deveFalharAtualizarPerfilSemNovaSenha()",
+  "time" : {
+    "start" : 1670217033606,
+    "stop" : 1670217033732,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d750e54749342ba",
+  "name" : "deveFalharAtualizarPerfilSemNome()",
+  "time" : {
+    "start" : 1670217032682,
+    "stop" : 1670217032963,
+    "duration" : 281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd5519e2e9a8bf99",
+  "name" : "deveFalharAtualizarCadastroComCargosInvalidos()",
+  "time" : {
+    "start" : 1670217019111,
+    "stop" : 1670217021970,
+    "duration" : 2859
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ba902c54def362c",
+  "name" : "deveFalharMudarStatusSemAuth()",
+  "time" : {
+    "start" : 1670217033744,
+    "stop" : 1670217033853,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f167f9a5792f1b9",
+  "name" : "deveClonarUmaEdicaoComSucesso()",
+  "time" : {
+    "start" : 1670216988135,
+    "stop" : 1670216988763,
+    "duration" : 628
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c11f86ca317d7fcc",
+  "name" : "deveFalharAoCriarUmaEdicaoComDataFinalComTipoInvalido()",
+  "time" : {
+    "start" : 1670216990452,
+    "stop" : 1670216990685,
+    "duration" : 233
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "364ed342021f3aa8",
+  "name" : "deveListarEtapasComSucesso()",
+  "time" : {
+    "start" : 1670217008885,
+    "stop" : 1670217009193,
+    "duration" : 308
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "671f2e8f359803bd",
+  "name" : "deveFalharAtualizarPerfilComSenhasDiferentes()",
+  "time" : {
+    "start" : 1670217032980,
+    "stop" : 1670217033579,
+    "duration" : 599
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "968a25cb8f782f",
+  "name" : "deveFalharAoAlterarStatusDeUmaEdicaoSemAuth()",
+  "time" : {
+    "start" : 1670216999940,
+    "stop" : 1670217000074,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9be8a30d537c48b",
+  "name" : "deveFalharAoCriarUmaEdicaoSemDataFinal()",
+  "time" : {
+    "start" : 1670216989263,
+    "stop" : 1670216989383,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e206cc6a5eaaf066",
+  "name" : "deveFalharAoCriarUmaEdicaoComDataFinalNoFormatoInvalido()",
+  "time" : {
+    "start" : 1670216989536,
+    "stop" : 1670216989663,
+    "duration" : 127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7812e07a659a91da",
+  "name" : "deveListarCalendarioGeralDeAcordoAoSchema()",
+  "time" : {
+    "start" : 1670217038192,
+    "stop" : 1670217038417,
+    "duration" : 225
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b25bd25579828b7a",
+  "name" : "deveFalharAoDeletarUmaEdicaoSemAuth()",
+  "time" : {
+    "start" : 1670216991008,
+    "stop" : 1670216991521,
+    "duration" : 513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2341c599e344ea6",
+  "name" : "deveFalharCriarUsuarioEmailDuplicado()",
+  "time" : {
+    "start" : 1670217027519,
+    "stop" : 1670217027733,
+    "duration" : 214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc8190dec917bbbc",
+  "name" : "deveFalharAtualizarCadastroSemAuth()",
+  "time" : {
+    "start" : 1670217021975,
+    "stop" : 1670217022095,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49391bf236610f05",
+  "name" : "deveEditarUmDiaNaoUtilComSucesso()",
+  "time" : {
+    "start" : 1670216984676,
+    "stop" : 1670216985129,
+    "duration" : 453
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "453877ce2bef021d",
+  "name" : "deveFalharAoEditarUmaEdicaoComDataInicialTipoInvalido()",
+  "time" : {
+    "start" : 1670216992549,
+    "stop" : 1670216994120,
+    "duration" : 1571
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2832075d69e645d4",
+  "name" : "deveListarCalendarioDaEdicaoComSucesso()",
+  "time" : {
+    "start" : 1670216985750,
+    "stop" : 1670216987001,
+    "duration" : 1251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bb0f8b83f34a2f6",
+  "name" : "deveMudarStatusComSucesso()",
+  "time" : {
+    "start" : 1670217034013,
+    "stop" : 1670217035179,
+    "duration" : 1166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f595d37912bd888",
+  "name" : "deveFalharCriarUsuarioCargoVazio()",
+  "time" : {
+    "start" : 1670217028076,
+    "stop" : 1670217028198,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a03cb92152a0e87",
+  "name" : "deveListarTodosOsResponsaveisComSucesso()",
+  "time" : {
+    "start" : 1670217015664,
+    "stop" : 1670217015814,
+    "duration" : 150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c51d0f3589016e39",
+  "name" : "deveFalharAoCriarUmaEdicaoComDataInicialIgualADataFinal()",
+  "time" : {
+    "start" : 1670216989850,
+    "stop" : 1670216990033,
+    "duration" : 183
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45fe64a9be064ba3",
+  "name" : "deveFalharAoEditarUmaEdicaoComDataFinalTipoInvalido()",
+  "time" : {
+    "start" : 1670216996850,
+    "stop" : 1670216997331,
+    "duration" : 481
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66cc2a0aff3a561a",
+  "name" : "deveFalharAoDeletarUmProcessoSemAuth()",
+  "time" : {
+    "start" : 1670217013417,
+    "stop" : 1670217013550,
+    "duration" : 133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b646a905e5ae5ebf",
+  "name" : "deveFalharCriarUmNovoProcessoSemDuracaoProcesso()",
+  "time" : {
+    "start" : 1670217010774,
+    "stop" : 1670217011321,
+    "duration" : 547
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44a547679070493f",
+  "name" : "criarAreaEnvolvidaSemAuth()",
+  "time" : {
+    "start" : 1670216976413,
+    "stop" : 1670216976604,
+    "duration" : 191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8531e8e19fdd5884",
+  "name" : "deveDeletarResponsavelComSucesso()",
+  "time" : {
+    "start" : 1670217015015,
+    "stop" : 1670217015298,
+    "duration" : 283
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28f8c382da580969",
+  "name" : "deveListarProcessosDeAcordoAoSchema()",
+  "time" : {
+    "start" : 1670217039305,
+    "stop" : 1670217039504,
+    "duration" : 199
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9e9e33883fd3431",
+  "name" : "deveListarEdicoesDeAcordoAoSchema()",
+  "time" : {
+    "start" : 1670217038781,
+    "stop" : 1670217038925,
+    "duration" : 144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9725c275b98866da",
+  "name" : "deveFalharCriarUmDiaNaoUtilSemDescricao()",
+  "time" : {
+    "start" : 1670216979705,
+    "stop" : 1670216979883,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "84c253b8fe6f8597",
+  "name" : "deveFalharEditarUmDiaNaoUtilSemDescricao()",
+  "time" : {
+    "start" : 1670216984238,
+    "stop" : 1670216984657,
+    "duration" : 419
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "6e6afc75968f47e0",
+  "name" : "deveFalharEditarEtapaComIdInvalido()",
+  "time" : {
+    "start" : 1670217004881,
+    "stop" : 1670217005009,
+    "duration" : 128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9935be2670e7d5bd",
+  "name" : "deveFalharClonarUmaEdicaoSemAuth()",
+  "time" : {
+    "start" : 1670216987974,
+    "stop" : 1670216988110,
+    "duration" : 136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2fef338f0ae24913",
+  "name" : "deveListarAreaEnvolvidaComSucesso()",
+  "time" : {
+    "start" : 1670217035218,
+    "stop" : 1670217038175,
+    "duration" : 2957
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "96e6cbfde3471be9",
+  "name" : "deveFalharAoEditarUmaEdicaoSemAuth()",
+  "time" : {
+    "start" : 1670216997841,
+    "stop" : 1670216997956,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b25904b21bf1118",
+  "name" : "deveFalharDeletarUsuarioComIdInvalido()",
+  "time" : {
+    "start" : 1670217030929,
+    "stop" : 1670217031049,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4d19729a925df42",
+  "name" : "deveCriarUmDiaNaoUtilComDataInicialIgualADataFinalComSucesso()",
+  "time" : {
+    "start" : 1670216978152,
+    "stop" : 1670216979426,
+    "duration" : 1274
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1a2403a8fb447afd",
+  "name" : "deveFalharEditarUmDiaNaoUtilSemDataInicial()",
+  "time" : {
+    "start" : 1670216983733,
+    "stop" : 1670216984233,
+    "duration" : 500
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "89c7f54ca9ee0276",
+  "name" : "criarAreaEnvolvidaComSucesso()",
+  "time" : {
+    "start" : 1670216967088,
+    "stop" : 1670216976187,
+    "duration" : 9099
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ec2e15b8d16deab1",
+  "name" : "deveDeletarUmaEdicaoComSucesso()",
+  "time" : {
+    "start" : 1670216991529,
+    "stop" : 1670216992012,
+    "duration" : 483
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a32ff846ed19389",
+  "name" : "deveFalharAoTentarCriarUmProcessoComIdEtapaInexistente()",
+  "time" : {
+    "start" : 1670217010625,
+    "stop" : 1670217010758,
+    "duration" : 133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f02a0f1f06264ac4",
+  "name" : "deveAtualizarPerfilComSucesso()",
+  "time" : {
+    "start" : 1670217031422,
+    "stop" : 1670217032252,
+    "duration" : 830
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "402d097446438233",
+  "name" : "deveFalharCriarEtapaSemNome()",
+  "time" : {
+    "start" : 1670217002197,
+    "stop" : 1670217002771,
+    "duration" : 574
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e0e6ac1f9f1283",
+  "name" : "deveFalharCriarUsuarioSemNome()",
+  "time" : {
+    "start" : 1670217028543,
+    "stop" : 1670217028658,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab16eac4031d9b09",
+  "name" : "deletarAreaEnvolvidaSemAuth()",
+  "time" : {
+    "start" : 1670216977505,
+    "stop" : 1670216977644,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "63d9b76ac103066e",
+  "name" : "deveListarUsuarioComSucesso()",
+  "time" : {
+    "start" : 1670217031207,
+    "stop" : 1670217031396,
+    "duration" : 189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "673e8eea74b7f5bd",
+  "name" : "deveAlterarStatusDeUmaEdicaoComSucesso()",
+  "time" : {
+    "start" : 1670217000293,
+    "stop" : 1670217000698,
+    "duration" : 405
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33a79ce40cffeb2e",
+  "name" : "deveFalharAtualizarPerfilSemSenhaAtual()",
+  "time" : {
+    "start" : 1670217032279,
+    "stop" : 1670217032413,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9e4c6cfa96ce7db",
+  "name" : "deveEditarUmDiaNaoUtilComDataInicialIgualADataFinalComSucesso()",
+  "time" : {
+    "start" : 1670216982096,
+    "stop" : 1670216983725,
+    "duration" : 1629
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "87ea72f4085807b",
+  "name" : "deveListarCalendarioGeralDaEdicaoComSucesso()",
+  "time" : {
+    "start" : 1670216987021,
+    "stop" : 1670216987621,
+    "duration" : 600
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b91a971d32f2af6",
+  "name" : "deveEditarEtapaComSucesso()",
+  "time" : {
+    "start" : 1670217005021,
+    "stop" : 1670217005687,
+    "duration" : 666
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4e78ecb3080d792",
+  "name" : "deveFalharAtualizarCadastroSemCargos()",
+  "time" : {
+    "start" : 1670217024872,
+    "stop" : 1670217025931,
+    "duration" : 1059
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7d77d8bc8d5004a",
+  "name" : "deveFalharCriarUsuarioSemCargo()",
+  "time" : {
+    "start" : 1670217027752,
+    "stop" : 1670217027899,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ade56a5dff87384",
+  "name" : "deveFalharAoEditarUmaEdicaoComDataFinalNoFormatoInvalido()",
+  "time" : {
+    "start" : 1670216994127,
+    "stop" : 1670216994643,
+    "duration" : 516
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6e0f9ee8279932b",
+  "name" : "deveFalharListarCalendarioGeralDaEdicaoSemAuth()",
+  "time" : {
+    "start" : 1670216987646,
+    "stop" : 1670216987790,
+    "duration" : 144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "343b1d9249091bb",
+  "name" : "deveFalharListarUsuarioSemAuth()",
+  "time" : {
+    "start" : 1670217031075,
+    "stop" : 1670217031189,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "601ac0fa04f659ba",
+  "name" : "deveFalharCriarUmNovoProcessoSemDiasUteis()",
+  "time" : {
+    "start" : 1670217011329,
+    "stop" : 1670217011992,
+    "duration" : 663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "164688c6205fe300",
+  "name" : "deveFalharListarEtapaPorIdInexistente()",
+  "time" : {
+    "start" : 1670217008736,
+    "stop" : 1670217008868,
+    "duration" : 132
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17b380e86b26e74b",
+  "name" : "deveFalharAoEditarUmaEdicaoComDataInicialNoFormatoInvalido()",
+  "time" : {
+    "start" : 1670216995744,
+    "stop" : 1670216996228,
+    "duration" : 484
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40430021412a4878",
+  "name" : "deveFalharCriarUmNovoProcessoSemNome()",
+  "time" : {
+    "start" : 1670217012805,
+    "stop" : 1670217013398,
+    "duration" : 593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "607bf547193cb953",
+  "name" : "deveFalharCriarEtapaSemAuth()",
+  "time" : {
+    "start" : 1670217001231,
+    "stop" : 1670217002119,
+    "duration" : 888
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94713bf006300836",
+  "name" : "deveFalharListarTodasAsAreasEnvolvidas()",
+  "time" : {
+    "start" : 1670216977991,
+    "stop" : 1670216978134,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "6c85c18f6ae9bfa",
+  "name" : "deveFalharFazerLoginComEmailFormatoInvalido()",
+  "time" : {
+    "start" : 1670217009334,
+    "stop" : 1670217009495,
+    "duration" : 161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4cb8d0a0fbb27a9",
+  "name" : "deveFalharAtualizarPerfilSemAuth()",
+  "time" : {
+    "start" : 1670217032560,
+    "stop" : 1670217032673,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca34ebf17c007287",
+  "name" : "deveFalharAoCriarUmaEdicaoSemDataInicial()",
+  "time" : {
+    "start" : 1670216990323,
+    "stop" : 1670216990443,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8f5318327e80625",
+  "name" : "deveFalharListarEdicoesSemAuth()",
+  "time" : {
+    "start" : 1670216999808,
+    "stop" : 1670216999927,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b7bdb070725d4e4",
+  "name" : "deveCriarUsuarioComSucesso()",
+  "time" : {
+    "start" : 1670217026607,
+    "stop" : 1670217027502,
+    "duration" : 895
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6dccfa16f26c0fb1",
+  "name" : "deveFalharListarTodosOsResponsaveisSemAuth()",
+  "time" : {
+    "start" : 1670217015823,
+    "stop" : 1670217015941,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "104d8bcb85cffa83",
+  "name" : "deveFazerLoginComSucesso()",
+  "time" : {
+    "start" : 1670217009528,
+    "stop" : 1670217009810,
+    "duration" : 282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a0e47714b5c14cc",
+  "name" : "deveEditarUmaEdicaoComSucesso()",
+  "time" : {
+    "start" : 1670216994647,
+    "stop" : 1670216995171,
+    "duration" : 524
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d162f27810909c9",
+  "name" : "deveFalharCriarUmDiaNaoUtilSemDataInicial()",
+  "time" : {
+    "start" : 1670216980081,
+    "stop" : 1670216980222,
+    "duration" : 141
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "9f7edce9d811cddc",
+  "name" : "deveListarResponsavelDeAcordoAoSchema()",
+  "time" : {
+    "start" : 1670217039515,
+    "stop" : 1670217039652,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7cd2b3700a45ade3",
+  "name" : "deveFalharAoEditarUmaEdicaoSemDataInicial()",
+  "time" : {
+    "start" : 1670216992021,
+    "stop" : 1670216992538,
+    "duration" : 517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98b589bdff5b47aa",
+  "name" : "deveListarDiaNaoUtilDeAcordoAoSchema()",
+  "time" : {
+    "start" : 1670217038451,
+    "stop" : 1670217038645,
+    "duration" : 194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8c31c1b38ab1e6c",
+  "name" : "deveCriarEtapaComSucesso()",
+  "time" : {
+    "start" : 1670217000713,
+    "stop" : 1670217001227,
+    "duration" : 514
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e133a01912849cac",
+  "name" : "criarResponsavelComSucesso()",
+  "time" : {
+    "start" : 1670217014308,
+    "stop" : 1670217014608,
+    "duration" : 300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5718d69c0c34160",
+  "name" : "deveFalharListarEtapaPorIdSemAutenticacao()",
+  "time" : {
+    "start" : 1670217007896,
+    "stop" : 1670217008006,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ddf8bfee406fef54",
+  "name" : "deveFalharDeletarResponsavelSemAuth()",
+  "time" : {
+    "start" : 1670217015314,
+    "stop" : 1670217015426,
+    "duration" : 112
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26d20d9ba3172efe",
+  "name" : "deveCriarUmDiaNaoUtilComSucesso()",
+  "time" : {
+    "start" : 1670216979898,
+    "stop" : 1670216980071,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ef30af5ce083ece8",
+  "name" : "deveFalharAoCriarUmaEdicaoSemAuth()",
+  "time" : {
+    "start" : 1670216988942,
+    "stop" : 1670216989064,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f95bb830f784ca72",
+  "name" : "deveDeletarUsuarioComSucesso()",
+  "time" : {
+    "start" : 1670217029951,
+    "stop" : 1670217030924,
+    "duration" : 973
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "609b9b2111adf4b8",
+  "name" : "deveFalharAoEditarUmaEdicaoComIdInvalido()",
+  "time" : {
+    "start" : 1670216996719,
+    "stop" : 1670216996839,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b2fb3e372325f1",
+  "name" : "deveFalharCriarResponsavelSemNome()",
+  "time" : {
+    "start" : 1670217014755,
+    "stop" : 1670217014998,
+    "duration" : 243
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e978c647bdbcd738",
+  "name" : "deveFalharCriarUsuarioEmailInvalido()",
+  "time" : {
+    "start" : 1670217028666,
+    "stop" : 1670217028791,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dba90f36f854ad15",
+  "name" : "deveFalharClonarUmaEdicaoComIdInvalido()",
+  "time" : {
+    "start" : 1670216988775,
+    "stop" : 1670216988914,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49378490ad581e55",
+  "name" : "deveListarTodosOsDiasNaoUteisComSucesso()",
+  "time" : {
+    "start" : 1670216985290,
+    "stop" : 1670216985602,
+    "duration" : 312
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "85bcbe123b57256b",
+  "name" : "deveFalharDeletarUsuarioSemAuth()",
+  "time" : {
+    "start" : 1670217028818,
+    "stop" : 1670217029944,
+    "duration" : 1126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "705e873d3ec40326",
+  "name" : "deletarAreaEnvolvidaComIdInvalido()",
+  "time" : {
+    "start" : 1670216977297,
+    "stop" : 1670216977481,
+    "duration" : 184
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "fdb4c83557b928a6",
+  "name" : "deveFalharFazerLoginSemSenha()",
+  "time" : {
+    "start" : 1670217009950,
+    "stop" : 1670217010064,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26f6189324ee442a",
+  "name" : "deveFalharEditarUmDiaNaoUtilComIdInvalido()",
+  "time" : {
+    "start" : 1670216985144,
+    "stop" : 1670216985281,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "a6b3a7dbb8b5d3c3",
+  "name" : "deveFalharDeletarEtapaInexistente()",
+  "time" : {
+    "start" : 1670217003909,
+    "stop" : 1670217004048,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6be47ac9b0afaf9",
+  "name" : "deveFalharAoEditarUmaEdicaoSemNome()",
+  "time" : {
+    "start" : 1670216997969,
+    "stop" : 1670216999572,
+    "duration" : 1603
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccd803d9dd34ed06",
+  "name" : "deveFalharDeletarResponsavelComIdInvalido()",
+  "time" : {
+    "start" : 1670217015437,
+    "stop" : 1670217015643,
+    "duration" : 206
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab5fb9ccdea0b982",
+  "name" : "deveFalharAoCriarUmaEdicaoSemNome()",
+  "time" : {
+    "start" : 1670216989089,
+    "stop" : 1670216989257,
+    "duration" : 168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e23669d429efe76",
+  "name" : "deveDeletarUmProcessoComSucesso()",
+  "time" : {
+    "start" : 1670217013556,
+    "stop" : 1670217014278,
+    "duration" : 722
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fa15088b8fcb036",
+  "name" : "deveCriarUmNovoProcessoComSucesso()",
+  "time" : {
+    "start" : 1670217012001,
+    "stop" : 1670217012678,
+    "duration" : 677
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "608d6166f1ecefd2",
+  "name" : "deveFalharEditarEtapaSemNome()",
+  "time" : {
+    "start" : 1670217004232,
+    "stop" : 1670217004873,
+    "duration" : 641
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40e59adde3adaf26",
+  "name" : "deveFalharCriarUmNovoProcessoSemAuth()",
+  "time" : {
+    "start" : 1670217012683,
+    "stop" : 1670217012799,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "890cbed5de92336c",
+  "name" : "deveFalharAtualizarCadastroSemNome()",
+  "time" : {
+    "start" : 1670217022110,
+    "stop" : 1670217023363,
+    "duration" : 1253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "463dee2925efa398",
+  "name" : "deveFalharAoEditarUmaEdicaoComDataFinalIgualADataInicial()",
+  "time" : {
+    "start" : 1670216996233,
+    "stop" : 1670216996715,
+    "duration" : 482
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63838f005660ed48",
+  "name" : "deveFalharDeletarEtapaSemAuth()",
+  "time" : {
+    "start" : 1670217003204,
+    "stop" : 1670217003314,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c76db6d383e43a0",
+  "name" : "deveFalharCriarResponsavelSemAuth()",
+  "time" : {
+    "start" : 1670217014616,
+    "stop" : 1670217014740,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e7f297ed31c7b90",
+  "name" : "deveAtualizarCadastroComSucesso()",
+  "time" : {
+    "start" : 1670217015963,
+    "stop" : 1670217019099,
+    "duration" : 3136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51362bc50c7b713c",
+  "name" : "deveFalharAtualizarCadastroComIdInvalido()",
+  "time" : {
+    "start" : 1670217026031,
+    "stop" : 1670217026163,
+    "duration" : 132
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bab547c513a095b",
+  "name" : "deveFalharDeletarUmDiaNaoUtilSemAuth()",
+  "time" : {
+    "start" : 1670216980671,
+    "stop" : 1670216980795,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "e695f3a7552b142d",
+  "name" : "deveFalharMudarStatusComIdInvalido()",
+  "time" : {
+    "start" : 1670217033865,
+    "stop" : 1670217033996,
+    "duration" : 131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d0a3fee09229e313",
+  "name" : "deveFalharFazerLoginComDadosInvalidos()",
+  "time" : {
+    "start" : 1670217010073,
+    "stop" : 1670217010350,
+    "duration" : 277
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a30f8206557979c2",
+  "name" : "deveFalharListarEtapasSemAuth()",
+  "time" : {
+    "start" : 1670217009211,
+    "stop" : 1670217009322,
+    "duration" : 111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88583acc192e0323",
+  "name" : "deveListarUsuarioDeAcordoAoSchema()",
+  "time" : {
+    "start" : 1670217039665,
+    "stop" : 1670217040113,
+    "duration" : 448
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60ae829b4cc3b6a2",
+  "name" : "deveListarEdicoesComSucesso()",
+  "time" : {
+    "start" : 1670216999605,
+    "stop" : 1670216999778,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

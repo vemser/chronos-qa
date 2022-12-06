@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "355ce845189a9df9da11bb9bac8c3b34",
+    "name" : "Testes Passados",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 137,
+      "unknown" : 0,
+      "total" : 137
+    }
+  } ]
+}

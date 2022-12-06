@@ -1,0 +1,123 @@
+{
+  "uid" : "d0a3fee09229e313",
+  "name" : "deveFalharFazerLoginComDadosInvalidos()",
+  "fullName" : "br.com.dbccompany.chronos.testes.aceitacao.login.LoginTest.deveFalharFazerLoginComDadosInvalidos",
+  "historyId" : "51e54a8ca72568b599b3189972f745a2",
+  "time" : {
+    "start" : 1670217010073,
+    "stop" : 1670217010350,
+    "duration" : 277
+  },
+  "description" : "Deve falhar fazer login com dados inválidos",
+  "descriptionHtml" : "<p>Deve falhar fazer login com dados inválidos</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1670217009331,
+      "stop" : 1670217009332,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "todos"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "epic",
+    "value" : "Aceitação"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "story",
+    "value" : "Fazer Login"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "9104@DBC-000482.ForkJoinPool-1-worker-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.login.LoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.login.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharFazerLoginComDadosInvalidos"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.login.LoginTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "7b925886b3bb7c38",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670215999380,
+          "stop" : 1670215999618,
+          "duration" : 238
+        }
+      }, {
+        "uid" : "97fd3d22f04c6ffd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670210068936,
+          "stop" : 1670210069186,
+          "duration" : 250
+        }
+      } ]
+    },
+    "tags" : [ "todos", "login" ]
+  },
+  "source" : "d0a3fee09229e313.json",
+  "parameterValues" : [ ]
+}

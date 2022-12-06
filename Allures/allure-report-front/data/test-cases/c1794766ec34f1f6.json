@@ -1,0 +1,113 @@
+{
+  "uid" : "c1794766ec34f1f6",
+  "name" : "deveCriarColaboradorComCargoDuplo",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps.deveCriarColaboradorComCargoDuplo",
+  "historyId" : "1dd580016cde2387844e2ac1f55b073f",
+  "time" : {
+    "start" : 1670299856876,
+    "stop" : 1670299864363,
+    "duration" : 7487
+  },
+  "description" : "Criar um colaborador com mais de um cargo",
+  "descriptionHtml" : "<p>Criar um colaborador com mais de um cargo</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveCriarColaboradorComCargoDuplo"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Colaborador"
+  }, {
+    "name" : "story",
+    "value" : "Criar Colaborador"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "8f6cb8f00687ae28",
+        "status" : "failed",
+        "statusDetails" : "java.lang.AssertionError",
+        "time" : {
+          "start" : 1670291427204,
+          "stop" : 1670291434762,
+          "duration" : 7558
+        }
+      }, {
+        "uid" : "89abde0ed29373e8",
+        "status" : "failed",
+        "statusDetails" : "java.lang.AssertionError",
+        "time" : {
+          "start" : 1670287285025,
+          "stop" : 1670287292036,
+          "duration" : 7011
+        }
+      }, {
+        "uid" : "60776ea123f0dd90",
+        "status" : "failed",
+        "statusDetails" : "java.lang.AssertionError",
+        "time" : {
+          "start" : 1670253136254,
+          "stop" : 1670253143196,
+          "duration" : 6942
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c1794766ec34f1f6.json",
+  "parameterValues" : [ ]
+}

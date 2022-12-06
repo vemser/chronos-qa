@@ -1,0 +1,112 @@
+{
+  "uid" : "90e6ca8d574aa140",
+  "name" : "testarEditarEdicaoSemDataInicio",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps.testarEditarEdicaoSemDataInicio",
+  "historyId" : "1a32104a0fb87d2fb06df6f5ddd5fb67",
+  "time" : {
+    "start" : 1670300069918,
+    "stop" : 1670300079645,
+    "duration" : 9727
+  },
+  "description" : "Deve retornar erro ao tentar editar uma edição sem data inicial",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar editar uma edição sem data inicial</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testarEditarEdicaoSemDataInicio"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Edição"
+  }, {
+    "name" : "story",
+    "value" : "Editar edição"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "229c29722eefe73d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291682946,
+          "stop" : 1670291695197,
+          "duration" : 12251
+        }
+      }, {
+        "uid" : "33b07ba1fedffc82",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-data-inicial (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670287575905,
+          "stop" : 1670287602235,
+          "duration" : 26330
+        }
+      }, {
+        "uid" : "8698903fae22e1a3",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: erro-data-inicial (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670253433124,
+          "stop" : 1670253457454,
+          "duration" : 24330
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "90e6ca8d574aa140.json",
+  "parameterValues" : [ ]
+}

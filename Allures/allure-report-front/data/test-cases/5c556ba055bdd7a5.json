@@ -1,0 +1,110 @@
+{
+  "uid" : "5c556ba055bdd7a5",
+  "name" : "deveFalharCriarColaboradorSemNome",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps.deveFalharCriarColaboradorSemNome",
+  "historyId" : "845c3da4b30ee1f07c1abed9bf7b15f5",
+  "time" : {
+    "start" : 1670299829712,
+    "stop" : 1670299838716,
+    "duration" : 9004
+  },
+  "description" : "Deve retornar erro ao tentar criar um colaborador sem nome",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar criar um colaborador sem nome</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharCriarColaboradorSemNome"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Colaborador"
+  }, {
+    "name" : "story",
+    "value" : "Criar Colaborador"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "f652180800da8471",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291305032,
+          "stop" : 1670291315871,
+          "duration" : 10839
+        }
+      }, {
+        "uid" : "e233c5b9359ca38b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287144627,
+          "stop" : 1670287155376,
+          "duration" : 10749
+        }
+      }, {
+        "uid" : "68f06e283811c03e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253014727,
+          "stop" : 1670253028489,
+          "duration" : 13762
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5c556ba055bdd7a5.json",
+  "parameterValues" : [ ]
+}

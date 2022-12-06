@@ -1,0 +1,7 @@
+[ {
+  "name" : "Kevin Aryel",
+  "type" : "jenkins",
+  "buildOrder" : 4,
+  "buildName" : "allure-report_deploy#4",
+  "reportName" : "Allure report deploy #4"
+} ]

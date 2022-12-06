@@ -69,7 +69,7 @@ public class TesteProcessoSteps extends BaseSteps {
         }
     }
 
-    @Test
+//    @Test
     @Owner("Kevin Aryel")
     @Epic("Frontend")
     @Feature("Processo")
@@ -93,7 +93,7 @@ public class TesteProcessoSteps extends BaseSteps {
             EdicoesPage.clicarBotaoExcluirUltima();
         }
     }
-    @Test
+//    @Test
     @Owner("Kevin Aryel")
     @Epic("Frontend")
     @Feature("Processo")

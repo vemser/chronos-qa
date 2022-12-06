@@ -1,0 +1,126 @@
+{
+  "uid" : "9725c275b98866da",
+  "name" : "deveFalharCriarUmDiaNaoUtilSemDescricao()",
+  "fullName" : "br.com.dbccompany.chronos.testes.aceitacao.dia.DiaNaoUtilCreateTest.deveFalharCriarUmDiaNaoUtilSemDescricao",
+  "historyId" : "7f3802adbd271d54ff59e61587779cf8",
+  "time" : {
+    "start" : 1670216979705,
+    "stop" : 1670216979883,
+    "duration" : 178
+  },
+  "description" : "Deve retornar erro ao criar um dia não útil sem descrição",
+  "descriptionHtml" : "<p>Deve retornar erro ao criar um dia não útil sem descrição</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1670216978146,
+      "stop" : 1670216978146,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "todos"
+  }, {
+    "name" : "tag",
+    "value" : "dia-nao-util"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Aceitação"
+  }, {
+    "name" : "feature",
+    "value" : "Dia não útil"
+  }, {
+    "name" : "story",
+    "value" : "Criar dia não útil"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "9104@DBC-000482.ForkJoinPool-1-worker-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.dia.DiaNaoUtilCreateTest"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.dia.DiaNaoUtilCreateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharCriarUmDiaNaoUtilSemDescricao"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.dia.DiaNaoUtilCreateTest"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "5aa907df4cea2f6f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670215976723,
+          "stop" : 1670215976905,
+          "duration" : 182
+        }
+      }, {
+        "uid" : "ce59b1771d2ea641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670210039749,
+          "stop" : 1670210039979,
+          "duration" : 230
+        }
+      } ]
+    },
+    "tags" : [ "dia-nao-util", "todos" ]
+  },
+  "source" : "9725c275b98866da.json",
+  "parameterValues" : [ ]
+}

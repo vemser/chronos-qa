@@ -1,0 +1,123 @@
+{
+  "uid" : "7812e07a659a91da",
+  "name" : "deveListarCalendarioGeralDeAcordoAoSchema()",
+  "fullName" : "br.com.dbccompany.chronos.testes.contrato.CalendarioGeralContratoTest.deveListarCalendarioGeralDeAcordoAoSchema",
+  "historyId" : "c4d866cb3a17df091ba02bc1d7e7ba9",
+  "time" : {
+    "start" : 1670217038192,
+    "stop" : 1670217038417,
+    "duration" : 225
+  },
+  "description" : "Deve listar os itens do calendário geral de acordo com o schema",
+  "descriptionHtml" : "<p>Deve listar os itens do calendário geral de acordo com o schema</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1670217038187,
+      "stop" : 1670217038187,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "todos"
+  }, {
+    "name" : "tag",
+    "value" : "contrato"
+  }, {
+    "name" : "feature",
+    "value" : "Calendário"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Contrato"
+  }, {
+    "name" : "story",
+    "value" : "Listar Calendário Geral"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "9104@DBC-000482.ForkJoinPool-1-worker-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.testes.contrato.CalendarioGeralContratoTest"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.testes.contrato.CalendarioGeralContratoTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveListarCalendarioGeralDeAcordoAoSchema"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.testes.contrato.CalendarioGeralContratoTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "67a0675b92e56c56",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670216019868,
+          "stop" : 1670216020111,
+          "duration" : 243
+        }
+      }, {
+        "uid" : "123cfc7f49f0f610",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670210090049,
+          "stop" : 1670210090210,
+          "duration" : 161
+        }
+      } ]
+    },
+    "tags" : [ "contrato", "todos" ]
+  },
+  "source" : "7812e07a659a91da.json",
+  "parameterValues" : [ ]
+}

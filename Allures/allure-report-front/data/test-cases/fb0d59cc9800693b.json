@@ -1,0 +1,117 @@
+{
+  "uid" : "fb0d59cc9800693b",
+  "name" : "testarCriarProcessoComNovoResponsavelAreaEnvolvida",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteProcessoSteps.testarCriarProcessoComNovoResponsavelAreaEnvolvida",
+  "historyId" : "37fc325ad97720daedb861a1625304f1",
+  "time" : {
+    "start" : 1670300321600,
+    "stop" : 1670300334072,
+    "duration" : 12472
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteProcessoSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testarCriarProcessoComNovoResponsavelAreaEnvolvida"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteProcessoSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Criar Processo"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Processo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ {
+      "uid" : "a9f7d5e36c454f8b",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.73)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DBC-000482', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\KEVIN~1.SIL\\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:50891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1648674f827d7439246ade276b1305db",
+      "time" : {
+        "start" : 1670300311196,
+        "stop" : 1670300321457,
+        "duration" : 10261
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "bd731b33a8ae0292",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670292045422,
+          "stop" : 1670292060143,
+          "duration" : 14721
+        }
+      }, {
+        "uid" : "8031d5600e0135cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287871056,
+          "stop" : 1670287885666,
+          "duration" : 14610
+        }
+      }, {
+        "uid" : "50be33b4046476fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253808157,
+          "stop" : 1670253819487,
+          "duration" : 11330
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fb0d59cc9800693b.json",
+  "parameterValues" : [ ]
+}

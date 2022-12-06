@@ -1,0 +1,110 @@
+{
+  "uid" : "2d48f663a31218b2",
+  "name" : "testarEditarPerfilComNovaSenhaDiferenteDaConfirmada",
+  "fullName" : "br.com.dbccompany.chronos.steps.TestePerfilSteps.testarEditarPerfilComNovaSenhaDiferenteDaConfirmada",
+  "historyId" : "fd63c1b13cff339cca842d7578325afc",
+  "time" : {
+    "start" : 1670300248093,
+    "stop" : 1670300254854,
+    "duration" : 6761
+  },
+  "description" : "Deve retornar erro ao tentar editar Perfil com nova senha diferente da confirmada",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar editar Perfil com nova senha diferente da confirmada</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TestePerfilSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testarEditarPerfilComNovaSenhaDiferenteDaConfirmada"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TestePerfilSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Perfil"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "story",
+    "value" : "Editar Perfil"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "8c3cba67b5053416",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291949890,
+          "stop" : 1670291957423,
+          "duration" : 7533
+        }
+      }, {
+        "uid" : "48edffec88c0e881",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287754510,
+          "stop" : 1670287762155,
+          "duration" : 7645
+        }
+      }, {
+        "uid" : "b495772350d58b23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253648660,
+          "stop" : 1670253655754,
+          "duration" : 7094
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2d48f663a31218b2.json",
+  "parameterValues" : [ ]
+}

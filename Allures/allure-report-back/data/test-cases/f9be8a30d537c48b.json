@@ -1,0 +1,123 @@
+{
+  "uid" : "f9be8a30d537c48b",
+  "name" : "deveFalharAoCriarUmaEdicaoSemDataFinal()",
+  "fullName" : "br.com.dbccompany.chronos.testes.aceitacao.edicao.EdicaoCreateTest.deveFalharAoCriarUmaEdicaoSemDataFinal",
+  "historyId" : "8f723c289bc86eff77e3cfe9f7a2f29a",
+  "time" : {
+    "start" : 1670216989263,
+    "stop" : 1670216989383,
+    "duration" : 120
+  },
+  "description" : "Deve retornar erro ao criar uma edição sem dataFinal",
+  "descriptionHtml" : "<p>Deve retornar erro ao criar uma edição sem dataFinal</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1670216988938,
+      "stop" : 1670216988938,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "todos"
+  }, {
+    "name" : "tag",
+    "value" : "edicao"
+  }, {
+    "name" : "feature",
+    "value" : "Edição"
+  }, {
+    "name" : "story",
+    "value" : "Criar Edição"
+  }, {
+    "name" : "epic",
+    "value" : "Aceitação"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "9104@DBC-000482.ForkJoinPool-1-worker-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.edicao.EdicaoCreateTest"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.edicao.EdicaoCreateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharAoCriarUmaEdicaoSemDataFinal"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.edicao.EdicaoCreateTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "c9fd17d6c3761b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670215983863,
+          "stop" : 1670215983997,
+          "duration" : 134
+        }
+      }, {
+        "uid" : "5bf10fbb9256a908",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670210047600,
+          "stop" : 1670210047727,
+          "duration" : 127
+        }
+      } ]
+    },
+    "tags" : [ "todos", "edicao" ]
+  },
+  "source" : "f9be8a30d537c48b.json",
+  "parameterValues" : [ ]
+}

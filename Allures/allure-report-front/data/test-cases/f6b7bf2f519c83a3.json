@@ -1,0 +1,110 @@
+{
+  "uid" : "f6b7bf2f519c83a3",
+  "name" : "testeCriarEtapaSemNome",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteEtapaSteps.testeCriarEtapaSemNome",
+  "historyId" : "9474aedfce1c2672be2c4d7def3f9658",
+  "time" : {
+    "start" : 1670300151282,
+    "stop" : 1670300161705,
+    "duration" : 10423
+  },
+  "description" : "Deve retornar erro ao tentar criar uma etapa sem nome",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar criar uma etapa sem nome</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEtapaSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testeCriarEtapaSemNome"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEtapaSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Criar Etapa"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Etape"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "b6a445ab74318bc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291835174,
+          "stop" : 1670291847630,
+          "duration" : 12456
+        }
+      }, {
+        "uid" : "30e0de549509a46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287645109,
+          "stop" : 1670287654807,
+          "duration" : 9698
+        }
+      }, {
+        "uid" : "3cda66245c2a5598",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253512872,
+          "stop" : 1670253526073,
+          "duration" : 13201
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f6b7bf2f519c83a3.json",
+  "parameterValues" : [ ]
+}

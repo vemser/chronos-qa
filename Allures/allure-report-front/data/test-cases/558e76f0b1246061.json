@@ -1,0 +1,110 @@
+{
+  "uid" : "558e76f0b1246061",
+  "name" : "testeCriarEdicoesComSucesso",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps.testeCriarEdicoesComSucesso",
+  "historyId" : "bcaa73f0ce70ea314b27a7884b60cfa6",
+  "time" : {
+    "start" : 1670300014341,
+    "stop" : 1670300024055,
+    "duration" : 9714
+  },
+  "description" : "Deve criar uma edição com sucesso",
+  "descriptionHtml" : "<p>Deve criar uma edição com sucesso</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testeCriarEdicoesComSucesso"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "story",
+    "value" : "Criar edição"
+  }, {
+    "name" : "feature",
+    "value" : "Edição"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "857acab3e2573fa0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291606353,
+          "stop" : 1670291617251,
+          "duration" : 10898
+        }
+      }, {
+        "uid" : "a1da137eae95a593",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287437694,
+          "stop" : 1670287446225,
+          "duration" : 8531
+        }
+      }, {
+        "uid" : "9af7a646ab6efd84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253300933,
+          "stop" : 1670253309331,
+          "duration" : 8398
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "558e76f0b1246061.json",
+  "parameterValues" : [ ]
+}

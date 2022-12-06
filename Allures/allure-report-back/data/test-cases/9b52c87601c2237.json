@@ -1,0 +1,130 @@
+{
+  "uid" : "9b52c87601c2237",
+  "name" : "deletarAreaEnvolvidaComSucesso()",
+  "fullName" : "br.com.dbccompany.chronos.testes.aceitacao.area.AreaEnvolvidaDeleteTest.deletarAreaEnvolvidaComSucesso",
+  "historyId" : "ca175a4b51bbebaaa542051fd033b477",
+  "time" : {
+    "start" : 1670216976840,
+    "stop" : 1670216977242,
+    "duration" : 402
+  },
+  "description" : "Deve deletar uma área envolvida com sucesso",
+  "descriptionHtml" : "<p>Deve deletar uma área envolvida com sucesso</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1670216976836,
+      "stop" : 1670216976836,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "todos"
+  }, {
+    "name" : "tag",
+    "value" : "area-envolvida"
+  }, {
+    "name" : "tag",
+    "value" : "atual"
+  }, {
+    "name" : "story",
+    "value" : "Deletar Area Envolvida"
+  }, {
+    "name" : "epic",
+    "value" : "Aceitação"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "feature",
+    "value" : "Area Envolvida"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "9104@DBC-000482.ForkJoinPool-1-worker-1(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.area.AreaEnvolvidaDeleteTest"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.area.AreaEnvolvidaDeleteTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deletarAreaEnvolvidaComSucesso"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.testes.aceitacao.area.AreaEnvolvidaDeleteTest"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "d6bcaa4d97b7e66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670215974854,
+          "stop" : 1670215975212,
+          "duration" : 358
+        }
+      }, {
+        "uid" : "30fbf2332a0a1871",
+        "status" : "broken",
+        "statusDetails" : "Unrecognized field \"timestamp\" (class br.com.dbccompany.chronos.dto.AreaEnvolvidaDTO), not marked as ignorable (2 known properties: \"nome\", \"idAreaEnvolvida\"])\n at [Source: (String)\"{\"timestamp\":\"2022-12-05T03:10:21.023+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/area-envolvida\"}\"; line: 1, column: 15] (through reference chain: br.com.dbccompany.chronos.dto.AreaEnvolvidaDTO[\"timestamp\"])",
+        "time" : {
+          "start" : 1670210037730,
+          "stop" : 1670210038012,
+          "duration" : 282
+        }
+      } ]
+    },
+    "tags" : [ "atual", "area-envolvida", "todos" ]
+  },
+  "source" : "9b52c87601c2237.json",
+  "parameterValues" : [ ]
+}

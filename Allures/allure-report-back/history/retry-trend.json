@@ -1,0 +1,43 @@
+[ {
+  "buildOrder" : 6,
+  "reportName" : "Allure report deploy #6",
+  "data" : {
+    "run" : 137,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 5,
+  "reportName" : "Allure report deploy #5",
+  "data" : {
+    "run" : 137,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 4,
+  "reportName" : "Allure report deploy #4",
+  "data" : {
+    "run" : 137,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 3,
+  "reportName" : "Allure report deploy #3",
+  "data" : {
+    "run" : 128,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 2,
+  "reportName" : "Allure report deploy #2",
+  "data" : {
+    "run" : 128,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 1,
+  "reportName" : "Allure report deploy #1",
+  "data" : {
+    "run" : 129,
+    "retry" : 0
+  }
+} ]

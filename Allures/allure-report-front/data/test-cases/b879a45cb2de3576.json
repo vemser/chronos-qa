@@ -1,0 +1,110 @@
+{
+  "uid" : "b879a45cb2de3576",
+  "name" : "deveFazerLoginComoGestorComSucesso",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteLoginSteps.deveFazerLoginComoGestorComSucesso",
+  "historyId" : "df124a2570b0161f12ed25a1aab5ec2b",
+  "time" : {
+    "start" : 1670300173080,
+    "stop" : 1670300179164,
+    "duration" : 6084
+  },
+  "description" : "Deve fazer login como gestor com sucesso",
+  "descriptionHtml" : "<p>Deve fazer login como gestor com sucesso</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteLoginSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFazerLoginComoGestorComSucesso"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteLoginSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "story",
+    "value" : "Fazer Login"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "dfc26b07ee6bcbda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291861084,
+          "stop" : 1670291868626,
+          "duration" : 7542
+        }
+      }, {
+        "uid" : "2fcca317a705c7c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287654814,
+          "stop" : 1670287662053,
+          "duration" : 7239
+        }
+      }, {
+        "uid" : "4628e5cae69a262a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253533658,
+          "stop" : 1670253539263,
+          "duration" : 5605
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b879a45cb2de3576.json",
+  "parameterValues" : [ ]
+}

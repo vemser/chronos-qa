@@ -1,0 +1,110 @@
+{
+  "uid" : "520c2a2d8851b684",
+  "name" : "deveCriarDiaNaoUtilSemDataFinalComSucesso",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteDiaNaoUtilSteps.deveCriarDiaNaoUtilSemDataFinalComSucesso",
+  "historyId" : "67682c2f86d355a219e863e6c7d2bead",
+  "time" : {
+    "start" : 1670299935647,
+    "stop" : 1670299944886,
+    "duration" : 9239
+  },
+  "description" : "Deve criar um dia não útil sem data final com sucesso",
+  "descriptionHtml" : "<p>Deve criar um dia não útil sem data final com sucesso</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteDiaNaoUtilSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveCriarDiaNaoUtilSemDataFinalComSucesso"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteDiaNaoUtilSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Dia não útil"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "story",
+    "value" : "Criar dia não útil"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "92b2c5f2ec6c0b4e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291504652,
+          "stop" : 1670291516373,
+          "duration" : 11721
+        }
+      }, {
+        "uid" : "3a3e053242819794",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287335752,
+          "stop" : 1670287346086,
+          "duration" : 10334
+        }
+      }, {
+        "uid" : "492f7f6abd14e5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253208811,
+          "stop" : 1670253219352,
+          "duration" : 10541
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "520c2a2d8851b684.json",
+  "parameterValues" : [ ]
+}

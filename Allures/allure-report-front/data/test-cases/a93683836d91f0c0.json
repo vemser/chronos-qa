@@ -1,0 +1,113 @@
+{
+  "uid" : "a93683836d91f0c0",
+  "name" : "deveFalharCriarColaboradorComEmailInvalido",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps.deveFalharCriarColaboradorComEmailInvalido",
+  "historyId" : "dc8e9a7f1e3cc638b9a9b77a884e8bd4",
+  "time" : {
+    "start" : 1670299864698,
+    "stop" : 1670299871120,
+    "duration" : 6422
+  },
+  "description" : "Deve retornar erro ao tentar criar um colaborador com email inválido",
+  "descriptionHtml" : "<p>Deve retornar erro ao tentar criar um colaborador com email inválido</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "deveFalharCriarColaboradorComEmailInvalido"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "feature",
+    "value" : "Colaborador"
+  }, {
+    "name" : "story",
+    "value" : "Criar Colaborador"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "fb617b49f3c988e8",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-email (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670291434772,
+          "stop" : 1670291458182,
+          "duration" : 23410
+        }
+      }, {
+        "uid" : "8f1d09e474253a50",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-email (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670287262855,
+          "stop" : 1670287285019,
+          "duration" : 22164
+        }
+      }, {
+        "uid" : "5bf5a748f9a3f4ba",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.id: colab-error-email (tried for 15 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1670253165876,
+          "stop" : 1670253186311,
+          "duration" : 20435
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a93683836d91f0c0.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,81 @@
+{
+  "total" : 7,
+  "items" : [ {
+    "uid" : "7207f765e80f25b54b5a9967caba2963",
+    "name" : "br.com.dbccompany.chronos.steps.TesteColaboradorSteps",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "4fdb4da825bfbc5c52834482e8a27b4b",
+    "name" : "br.com.dbccompany.chronos.steps.TestePerfilSteps",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "fc7f3fa2ce0e741ce18a491276abe425",
+    "name" : "br.com.dbccompany.chronos.steps.TesteEdicoesSteps",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
+    "uid" : "0de1635bcdaab3c586f8cc77b87fea23",
+    "name" : "br.com.dbccompany.chronos.steps.TesteDiaNaoUtilSteps",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "e28cdc7e56bca153742b3b5e9befc880",
+    "name" : "br.com.dbccompany.chronos.steps.TesteLoginSteps",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "2ea92ae0af2c6ab372a6ac6c94f2f5a9",
+    "name" : "br.com.dbccompany.chronos.steps.TesteEtapaSteps",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "d706ce43ca77c639a1f850924afb9cb9",
+    "name" : "br.com.dbccompany.chronos.steps.TesteProcessoSteps",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

@@ -1,0 +1,110 @@
+{
+  "uid" : "60bd79920eb2c6db",
+  "name" : "testarExcluirEtapaComSucesso",
+  "fullName" : "br.com.dbccompany.chronos.steps.TesteEtapaSteps.testarExcluirEtapaComSucesso",
+  "historyId" : "2b2b5673eb4ed0860f7074532129b454",
+  "time" : {
+    "start" : 1670300141302,
+    "stop" : 1670300151271,
+    "duration" : 9969
+  },
+  "description" : "Deve excluir uma etapa sem nome",
+  "descriptionHtml" : "<p>Deve excluir uma etapa sem nome</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.com.dbccompany.chronos.steps"
+  }, {
+    "name" : "testClass",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEtapaSteps"
+  }, {
+    "name" : "testMethod",
+    "value" : "testarExcluirEtapaComSucesso"
+  }, {
+    "name" : "suite",
+    "value" : "br.com.dbccompany.chronos.steps.TesteEtapaSteps"
+  }, {
+    "name" : "host",
+    "value" : "DBC-000482"
+  }, {
+    "name" : "thread",
+    "value" : "16408@DBC-000482.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Kevin Aryel"
+  }, {
+    "name" : "epic",
+    "value" : "Frontend"
+  }, {
+    "name" : "story",
+    "value" : "Editar Etapa"
+  }, {
+    "name" : "feature",
+    "value" : "Etape"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Kevin Aryel",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Testes Passados",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "c9706822e4693129",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670291823283,
+          "stop" : 1670291835169,
+          "duration" : 11886
+        }
+      }, {
+        "uid" : "3dc68a32eba62e13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670287634730,
+          "stop" : 1670287645106,
+          "duration" : 10376
+        }
+      }, {
+        "uid" : "bbd6102edfbf5634",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670253502672,
+          "stop" : 1670253512866,
+          "duration" : 10194
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "60bd79920eb2c6db.json",
+  "parameterValues" : [ ]
+}

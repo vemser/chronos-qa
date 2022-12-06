@@ -1,0 +1,2018 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Aceitação",
+    "children" : [ {
+      "name" : "Area Envolvida",
+      "children" : [ {
+        "name" : "Criar Area Envolvida",
+        "children" : [ {
+          "name" : "criarAreaEnvolvidaComSucesso()",
+          "uid" : "89c7f54ca9ee0276",
+          "parentUid" : "f476bd0e2fce331abca1a184c1d46b9a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216967088,
+            "stop" : 1670216976187,
+            "duration" : 9099
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "criarAreaEnvolvidaSemAuth()",
+          "uid" : "44a547679070493f",
+          "parentUid" : "f476bd0e2fce331abca1a184c1d46b9a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216976413,
+            "stop" : 1670216976604,
+            "duration" : 191
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "criarAreaEnvolvidaSemNome()",
+          "uid" : "801600af11fee119",
+          "parentUid" : "f476bd0e2fce331abca1a184c1d46b9a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216976625,
+            "stop" : 1670216976806,
+            "duration" : 181
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f476bd0e2fce331abca1a184c1d46b9a"
+      }, {
+        "name" : "Deletar Area Envolvida",
+        "children" : [ {
+          "name" : "deletarAreaEnvolvidaComSucesso()",
+          "uid" : "9b52c87601c2237",
+          "parentUid" : "a819acc9cd4e2139d822b5465a778de5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216976840,
+            "stop" : 1670216977242,
+            "duration" : 402
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deletarAreaEnvolvidaComIdInvalido()",
+          "uid" : "705e873d3ec40326",
+          "parentUid" : "a819acc9cd4e2139d822b5465a778de5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216977297,
+            "stop" : 1670216977481,
+            "duration" : 184
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deletarAreaEnvolvidaSemAuth()",
+          "uid" : "ab16eac4031d9b09",
+          "parentUid" : "a819acc9cd4e2139d822b5465a778de5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216977505,
+            "stop" : 1670216977644,
+            "duration" : 139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a819acc9cd4e2139d822b5465a778de5"
+      }, {
+        "name" : "Listar Area Envolvida",
+        "children" : [ {
+          "name" : "deveListarTodasAsAreasEnvolvidasComSucesso()",
+          "uid" : "cdef9086fef16222",
+          "parentUid" : "0e3e95ae55f6dd9684bde1f7c2a7c9c9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216977670,
+            "stop" : 1670216977972,
+            "duration" : 302
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharListarTodasAsAreasEnvolvidas()",
+          "uid" : "94713bf006300836",
+          "parentUid" : "0e3e95ae55f6dd9684bde1f7c2a7c9c9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216977991,
+            "stop" : 1670216978134,
+            "duration" : 143
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0e3e95ae55f6dd9684bde1f7c2a7c9c9"
+      } ],
+      "uid" : "8fc7cdd7cd852d6189ac85aa6486fecc"
+    }, {
+      "name" : "Dia não útil",
+      "children" : [ {
+        "name" : "Criar dia não útil",
+        "children" : [ {
+          "name" : "deveCriarUmDiaNaoUtilComDataInicialIgualADataFinalComSucesso()",
+          "uid" : "f4d19729a925df42",
+          "parentUid" : "2cbc724a26e822d13c091aa8a96f6f5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216978152,
+            "stop" : 1670216979426,
+            "duration" : 1274
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUmDiaNaoUtilSemDescricao()",
+          "uid" : "9725c275b98866da",
+          "parentUid" : "2cbc724a26e822d13c091aa8a96f6f5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216979705,
+            "stop" : 1670216979883,
+            "duration" : 178
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveCriarUmDiaNaoUtilComSucesso()",
+          "uid" : "26d20d9ba3172efe",
+          "parentUid" : "2cbc724a26e822d13c091aa8a96f6f5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216979898,
+            "stop" : 1670216980071,
+            "duration" : 173
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUmDiaNaoUtilSemDataInicial()",
+          "uid" : "5d162f27810909c9",
+          "parentUid" : "2cbc724a26e822d13c091aa8a96f6f5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216980081,
+            "stop" : 1670216980222,
+            "duration" : 141
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2cbc724a26e822d13c091aa8a96f6f5f"
+      }, {
+        "name" : "Deletar dia não útil",
+        "children" : [ {
+          "name" : "deveDeletarUmDiaNaoUtilComSucesso()",
+          "uid" : "9656914794898ae5",
+          "parentUid" : "316461f6d162073d6daa9d5ca7171a4a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216980249,
+            "stop" : 1670216980662,
+            "duration" : 413
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharDeletarUmDiaNaoUtilSemAuth()",
+          "uid" : "5bab547c513a095b",
+          "parentUid" : "316461f6d162073d6daa9d5ca7171a4a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216980671,
+            "stop" : 1670216980795,
+            "duration" : 124
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharDeletarUmDiaNaoUtilComIdInvalido()",
+          "uid" : "63985cd51f8aaaa5",
+          "parentUid" : "316461f6d162073d6daa9d5ca7171a4a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216980828,
+            "stop" : 1670216982074,
+            "duration" : 1246
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "316461f6d162073d6daa9d5ca7171a4a"
+      }, {
+        "name" : "Editar dia não útil",
+        "children" : [ {
+          "name" : "deveEditarUmDiaNaoUtilComDataInicialIgualADataFinalComSucesso()",
+          "uid" : "d9e4c6cfa96ce7db",
+          "parentUid" : "ffe9fe00444abb738780c7e875f4b0d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216982096,
+            "stop" : 1670216983725,
+            "duration" : 1629
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharEditarUmDiaNaoUtilSemDataInicial()",
+          "uid" : "1a2403a8fb447afd",
+          "parentUid" : "ffe9fe00444abb738780c7e875f4b0d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216983733,
+            "stop" : 1670216984233,
+            "duration" : 500
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharEditarUmDiaNaoUtilSemDescricao()",
+          "uid" : "84c253b8fe6f8597",
+          "parentUid" : "ffe9fe00444abb738780c7e875f4b0d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216984238,
+            "stop" : 1670216984657,
+            "duration" : 419
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveEditarUmDiaNaoUtilComSucesso()",
+          "uid" : "49391bf236610f05",
+          "parentUid" : "ffe9fe00444abb738780c7e875f4b0d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216984676,
+            "stop" : 1670216985129,
+            "duration" : 453
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharEditarUmDiaNaoUtilComIdInvalido()",
+          "uid" : "26f6189324ee442a",
+          "parentUid" : "ffe9fe00444abb738780c7e875f4b0d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216985144,
+            "stop" : 1670216985281,
+            "duration" : 137
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ffe9fe00444abb738780c7e875f4b0d9"
+      }, {
+        "name" : "Listar dia não útil",
+        "children" : [ {
+          "name" : "deveListarTodosOsDiasNaoUteisComSucesso()",
+          "uid" : "49378490ad581e55",
+          "parentUid" : "4a6973a45fe7f6e2b7c351aea72129d8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216985290,
+            "stop" : 1670216985602,
+            "duration" : 312
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharListarTodosOsDiasNaoUteisSemAuth()",
+          "uid" : "6588608c77f565e1",
+          "parentUid" : "4a6973a45fe7f6e2b7c351aea72129d8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216985620,
+            "stop" : 1670216985738,
+            "duration" : 118
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4a6973a45fe7f6e2b7c351aea72129d8"
+      } ],
+      "uid" : "382dd1bb4640779c7e9e021d657bfd2f"
+    }, {
+      "name" : "Calendário",
+      "children" : [ {
+        "name" : "Listar Calendario Geral Edição",
+        "children" : [ {
+          "name" : "deveListarCalendarioDaEdicaoComSucesso()",
+          "uid" : "2832075d69e645d4",
+          "parentUid" : "3058d16159ac468a4471534bceffd96b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216985750,
+            "stop" : 1670216987001,
+            "duration" : 1251
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveListarCalendarioGeralDaEdicaoComSucesso()",
+          "uid" : "87ea72f4085807b",
+          "parentUid" : "3058d16159ac468a4471534bceffd96b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216987021,
+            "stop" : 1670216987621,
+            "duration" : 600
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharListarCalendarioGeralDaEdicaoSemAuth()",
+          "uid" : "b6e0f9ee8279932b",
+          "parentUid" : "3058d16159ac468a4471534bceffd96b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216987646,
+            "stop" : 1670216987790,
+            "duration" : 144
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3058d16159ac468a4471534bceffd96b"
+      } ],
+      "uid" : "db663048a5713ad6532138b040f28b21"
+    }, {
+      "name" : "Edição",
+      "children" : [ {
+        "name" : "Clonar Edição",
+        "children" : [ {
+          "name" : "deveFalharClonarUmaEdicaoSemAuth()",
+          "uid" : "9935be2670e7d5bd",
+          "parentUid" : "1bf741efcf7a8176c1652bba73d9cea6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216987974,
+            "stop" : 1670216988110,
+            "duration" : 136
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveClonarUmaEdicaoComSucesso()",
+          "uid" : "5f167f9a5792f1b9",
+          "parentUid" : "1bf741efcf7a8176c1652bba73d9cea6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216988135,
+            "stop" : 1670216988763,
+            "duration" : 628
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharClonarUmaEdicaoComIdInvalido()",
+          "uid" : "dba90f36f854ad15",
+          "parentUid" : "1bf741efcf7a8176c1652bba73d9cea6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216988775,
+            "stop" : 1670216988914,
+            "duration" : 139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1bf741efcf7a8176c1652bba73d9cea6"
+      }, {
+        "name" : "Criar Edição",
+        "children" : [ {
+          "name" : "deveFalharAoCriarUmaEdicaoSemAuth()",
+          "uid" : "ef30af5ce083ece8",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216988942,
+            "stop" : 1670216989064,
+            "duration" : 122
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoSemNome()",
+          "uid" : "ab5fb9ccdea0b982",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216989089,
+            "stop" : 1670216989257,
+            "duration" : 168
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoSemDataFinal()",
+          "uid" : "f9be8a30d537c48b",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216989263,
+            "stop" : 1670216989383,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoComDataInicialNoFormatoInvalido()",
+          "uid" : "5a676b366ac72381",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216989399,
+            "stop" : 1670216989521,
+            "duration" : 122
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoComDataFinalNoFormatoInvalido()",
+          "uid" : "e206cc6a5eaaf066",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216989536,
+            "stop" : 1670216989663,
+            "duration" : 127
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoComDataInicialMaiorQueDataFinal()",
+          "uid" : "4bfd319cc7f3eebc",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216989700,
+            "stop" : 1670216989842,
+            "duration" : 142
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoComDataInicialIgualADataFinal()",
+          "uid" : "c51d0f3589016e39",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216989850,
+            "stop" : 1670216990033,
+            "duration" : 183
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveCriarUmaEdicaoComSucesso()",
+          "uid" : "ed43e4881248758b",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216990041,
+            "stop" : 1670216990318,
+            "duration" : 277
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoSemDataInicial()",
+          "uid" : "ca34ebf17c007287",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216990323,
+            "stop" : 1670216990443,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoComDataFinalComTipoInvalido()",
+          "uid" : "c11f86ca317d7fcc",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216990452,
+            "stop" : 1670216990685,
+            "duration" : 233
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoCriarUmaEdicaoComDataInicialComTipoInvalido()",
+          "uid" : "65c020a73132a617",
+          "parentUid" : "15e8da556927c103cbb3495927ac0135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216990691,
+            "stop" : 1670216990811,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "15e8da556927c103cbb3495927ac0135"
+      }, {
+        "name" : "Deletar Edição",
+        "children" : [ {
+          "name" : "deveFalharAoTentarDeletarEdicaoComIdInvalido()",
+          "uid" : "ee12a1462ce67986",
+          "parentUid" : "cc4fbc16fbe3d17f4319ba4760775d2c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216990823,
+            "stop" : 1670216990967,
+            "duration" : 144
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoDeletarUmaEdicaoSemAuth()",
+          "uid" : "b25bd25579828b7a",
+          "parentUid" : "cc4fbc16fbe3d17f4319ba4760775d2c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216991008,
+            "stop" : 1670216991521,
+            "duration" : 513
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveDeletarUmaEdicaoComSucesso()",
+          "uid" : "ec2e15b8d16deab1",
+          "parentUid" : "cc4fbc16fbe3d17f4319ba4760775d2c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216991529,
+            "stop" : 1670216992012,
+            "duration" : 483
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "cc4fbc16fbe3d17f4319ba4760775d2c"
+      }, {
+        "name" : "Editar Edição",
+        "children" : [ {
+          "name" : "deveFalharAoEditarUmaEdicaoSemDataInicial()",
+          "uid" : "7cd2b3700a45ade3",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216992021,
+            "stop" : 1670216992538,
+            "duration" : 517
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoComDataInicialTipoInvalido()",
+          "uid" : "453877ce2bef021d",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216992549,
+            "stop" : 1670216994120,
+            "duration" : 1571
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoComDataFinalNoFormatoInvalido()",
+          "uid" : "7ade56a5dff87384",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216994127,
+            "stop" : 1670216994643,
+            "duration" : 516
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveEditarUmaEdicaoComSucesso()",
+          "uid" : "5a0e47714b5c14cc",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216994647,
+            "stop" : 1670216995171,
+            "duration" : 524
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoComDataFinalMenorQueDataInicial()",
+          "uid" : "1044ec7a3b10c667",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216995193,
+            "stop" : 1670216995731,
+            "duration" : 538
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoComDataInicialNoFormatoInvalido()",
+          "uid" : "17b380e86b26e74b",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216995744,
+            "stop" : 1670216996228,
+            "duration" : 484
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoComDataFinalIgualADataInicial()",
+          "uid" : "463dee2925efa398",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216996233,
+            "stop" : 1670216996715,
+            "duration" : 482
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoComIdInvalido()",
+          "uid" : "609b9b2111adf4b8",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216996719,
+            "stop" : 1670216996839,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoComDataFinalTipoInvalido()",
+          "uid" : "45fe64a9be064ba3",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216996850,
+            "stop" : 1670216997331,
+            "duration" : 481
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoSemDataFinal()",
+          "uid" : "73f00ea3fafce5f1",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216997340,
+            "stop" : 1670216997835,
+            "duration" : 495
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoSemAuth()",
+          "uid" : "96e6cbfde3471be9",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216997841,
+            "stop" : 1670216997956,
+            "duration" : 115
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoEditarUmaEdicaoSemNome()",
+          "uid" : "c6be47ac9b0afaf9",
+          "parentUid" : "34f34faa3c6842022d5690f493f7012c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216997969,
+            "stop" : 1670216999572,
+            "duration" : 1603
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "34f34faa3c6842022d5690f493f7012c"
+      }, {
+        "name" : "Listar Edição",
+        "children" : [ {
+          "name" : "deveListarEdicoesComSucesso()",
+          "uid" : "60ae829b4cc3b6a2",
+          "parentUid" : "ec105c04064d107804c7ed0edcb4cb54",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216999605,
+            "stop" : 1670216999778,
+            "duration" : 173
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharListarEdicoesSemAuth()",
+          "uid" : "e8f5318327e80625",
+          "parentUid" : "ec105c04064d107804c7ed0edcb4cb54",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216999808,
+            "stop" : 1670216999927,
+            "duration" : 119
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ec105c04064d107804c7ed0edcb4cb54"
+      }, {
+        "name" : "Editar Status Edição",
+        "children" : [ {
+          "name" : "deveFalharAoAlterarStatusDeUmaEdicaoSemAuth()",
+          "uid" : "968a25cb8f782f",
+          "parentUid" : "4d93c40d0a7ac25194a80790bb29d749",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670216999940,
+            "stop" : 1670217000074,
+            "duration" : 134
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAoAlterarStatusDeUmaEdicaoComIdInvalido()",
+          "uid" : "811ef04603b19523",
+          "parentUid" : "4d93c40d0a7ac25194a80790bb29d749",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217000089,
+            "stop" : 1670217000280,
+            "duration" : 191
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveAlterarStatusDeUmaEdicaoComSucesso()",
+          "uid" : "673e8eea74b7f5bd",
+          "parentUid" : "4d93c40d0a7ac25194a80790bb29d749",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217000293,
+            "stop" : 1670217000698,
+            "duration" : 405
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4d93c40d0a7ac25194a80790bb29d749"
+      } ],
+      "uid" : "e680fb3f98eb1090547b0bf112f27780"
+    }, {
+      "name" : "Etapa",
+      "children" : [ {
+        "name" : "Criar Etapa",
+        "children" : [ {
+          "name" : "deveCriarEtapaComSucesso()",
+          "uid" : "a8c31c1b38ab1e6c",
+          "parentUid" : "22b8ecfa8f090c59bc2f9a1bf3d0f29e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217000713,
+            "stop" : 1670217001227,
+            "duration" : 514
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarEtapaSemAuth()",
+          "uid" : "607bf547193cb953",
+          "parentUid" : "22b8ecfa8f090c59bc2f9a1bf3d0f29e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217001231,
+            "stop" : 1670217002119,
+            "duration" : 888
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarEtapaSemNome()",
+          "uid" : "402d097446438233",
+          "parentUid" : "22b8ecfa8f090c59bc2f9a1bf3d0f29e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217002197,
+            "stop" : 1670217002771,
+            "duration" : 574
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarEtapaSemOrdemExecucao()",
+          "uid" : "eb1094ae8f726889",
+          "parentUid" : "22b8ecfa8f090c59bc2f9a1bf3d0f29e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217002798,
+            "stop" : 1670217003193,
+            "duration" : 395
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "22b8ecfa8f090c59bc2f9a1bf3d0f29e"
+      }, {
+        "name" : "Deletar Etapa",
+        "children" : [ {
+          "name" : "deveFalharDeletarEtapaSemAuth()",
+          "uid" : "63838f005660ed48",
+          "parentUid" : "320683e881e10f13ccb15823508bf9d8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217003204,
+            "stop" : 1670217003314,
+            "duration" : 110
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveDeletarEtapaComSucesso()",
+          "uid" : "4da3f3494cc81d5a",
+          "parentUid" : "320683e881e10f13ccb15823508bf9d8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217003332,
+            "stop" : 1670217003904,
+            "duration" : 572
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharDeletarEtapaInexistente()",
+          "uid" : "a6b3a7dbb8b5d3c3",
+          "parentUid" : "320683e881e10f13ccb15823508bf9d8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217003909,
+            "stop" : 1670217004048,
+            "duration" : 139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "320683e881e10f13ccb15823508bf9d8"
+      }, {
+        "name" : "Editar Etapa",
+        "children" : [ {
+          "name" : "deveFalharEditarEtapaSemAuth()",
+          "uid" : "fc918e71caadcdce",
+          "parentUid" : "38222165a7230e42ab8784793bd849f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217004079,
+            "stop" : 1670217004207,
+            "duration" : 128
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharEditarEtapaSemNome()",
+          "uid" : "608d6166f1ecefd2",
+          "parentUid" : "38222165a7230e42ab8784793bd849f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217004232,
+            "stop" : 1670217004873,
+            "duration" : 641
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharEditarEtapaComIdInvalido()",
+          "uid" : "6e6afc75968f47e0",
+          "parentUid" : "38222165a7230e42ab8784793bd849f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217004881,
+            "stop" : 1670217005009,
+            "duration" : 128
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveEditarEtapaComSucesso()",
+          "uid" : "9b91a971d32f2af6",
+          "parentUid" : "38222165a7230e42ab8784793bd849f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217005021,
+            "stop" : 1670217005687,
+            "duration" : 666
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharEditarEtapaSemOrdemExecucao()",
+          "uid" : "2c87955ac76d228c",
+          "parentUid" : "38222165a7230e42ab8784793bd849f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217005701,
+            "stop" : 1670217007876,
+            "duration" : 2175
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "38222165a7230e42ab8784793bd849f2"
+      }, {
+        "name" : "Listar Etapa por Id",
+        "children" : [ {
+          "name" : "deveFalharListarEtapaPorIdSemAutenticacao()",
+          "uid" : "a5718d69c0c34160",
+          "parentUid" : "f94ff9e9aa9df579d570c432d4e6514e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217007896,
+            "stop" : 1670217008006,
+            "duration" : 110
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveListarEtapaPorIdComSucesso()",
+          "uid" : "65a71454e099185c",
+          "parentUid" : "f94ff9e9aa9df579d570c432d4e6514e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217008015,
+            "stop" : 1670217008729,
+            "duration" : 714
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharListarEtapaPorIdInexistente()",
+          "uid" : "164688c6205fe300",
+          "parentUid" : "f94ff9e9aa9df579d570c432d4e6514e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217008736,
+            "stop" : 1670217008868,
+            "duration" : 132
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f94ff9e9aa9df579d570c432d4e6514e"
+      }, {
+        "name" : "Listar Etapa",
+        "children" : [ {
+          "name" : "deveListarEtapasComSucesso()",
+          "uid" : "364ed342021f3aa8",
+          "parentUid" : "edcac71693adfef534ebb593bd493381",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217008885,
+            "stop" : 1670217009193,
+            "duration" : 308
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharListarEtapasSemAuth()",
+          "uid" : "a30f8206557979c2",
+          "parentUid" : "edcac71693adfef534ebb593bd493381",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217009211,
+            "stop" : 1670217009322,
+            "duration" : 111
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "edcac71693adfef534ebb593bd493381"
+      } ],
+      "uid" : "6ddfc4ab7615fdb82e1c9b13032598ae"
+    }, {
+      "name" : "Login",
+      "children" : [ {
+        "name" : "Fazer Login",
+        "children" : [ {
+          "name" : "deveFalharFazerLoginComEmailFormatoInvalido()",
+          "uid" : "6c85c18f6ae9bfa",
+          "parentUid" : "91005f04678ba5c2662a8d65c4b444db",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217009334,
+            "stop" : 1670217009495,
+            "duration" : 161
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFazerLoginComSucesso()",
+          "uid" : "104d8bcb85cffa83",
+          "parentUid" : "91005f04678ba5c2662a8d65c4b444db",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217009528,
+            "stop" : 1670217009810,
+            "duration" : 282
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharFazerLoginSemEmail()",
+          "uid" : "9094bd8b7fa64107",
+          "parentUid" : "91005f04678ba5c2662a8d65c4b444db",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217009819,
+            "stop" : 1670217009942,
+            "duration" : 123
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharFazerLoginSemSenha()",
+          "uid" : "fdb4c83557b928a6",
+          "parentUid" : "91005f04678ba5c2662a8d65c4b444db",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217009950,
+            "stop" : 1670217010064,
+            "duration" : 114
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharFazerLoginComDadosInvalidos()",
+          "uid" : "d0a3fee09229e313",
+          "parentUid" : "91005f04678ba5c2662a8d65c4b444db",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217010073,
+            "stop" : 1670217010350,
+            "duration" : 277
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharFazerLoginComEmailValidoSenhaInvalida()",
+          "uid" : "1e7c4c31f50f98cc",
+          "parentUid" : "91005f04678ba5c2662a8d65c4b444db",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217010358,
+            "stop" : 1670217010611,
+            "duration" : 253
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "91005f04678ba5c2662a8d65c4b444db"
+      } ],
+      "uid" : "64fe6d8743f0368e4a7219a50634fc02"
+    }, {
+      "name" : "Processo",
+      "children" : [ {
+        "name" : "Criar Processo",
+        "children" : [ {
+          "name" : "deveFalharAoTentarCriarUmProcessoComIdEtapaInexistente()",
+          "uid" : "2a32ff846ed19389",
+          "parentUid" : "cb9a6271c9e08f4b2699a860f0831ffd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217010625,
+            "stop" : 1670217010758,
+            "duration" : 133
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUmNovoProcessoSemDuracaoProcesso()",
+          "uid" : "b646a905e5ae5ebf",
+          "parentUid" : "cb9a6271c9e08f4b2699a860f0831ffd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217010774,
+            "stop" : 1670217011321,
+            "duration" : 547
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUmNovoProcessoSemDiasUteis()",
+          "uid" : "601ac0fa04f659ba",
+          "parentUid" : "cb9a6271c9e08f4b2699a860f0831ffd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217011329,
+            "stop" : 1670217011992,
+            "duration" : 663
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveCriarUmNovoProcessoComSucesso()",
+          "uid" : "7fa15088b8fcb036",
+          "parentUid" : "cb9a6271c9e08f4b2699a860f0831ffd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217012001,
+            "stop" : 1670217012678,
+            "duration" : 677
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUmNovoProcessoSemAuth()",
+          "uid" : "40e59adde3adaf26",
+          "parentUid" : "cb9a6271c9e08f4b2699a860f0831ffd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217012683,
+            "stop" : 1670217012799,
+            "duration" : 116
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUmNovoProcessoSemNome()",
+          "uid" : "40430021412a4878",
+          "parentUid" : "cb9a6271c9e08f4b2699a860f0831ffd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217012805,
+            "stop" : 1670217013398,
+            "duration" : 593
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "cb9a6271c9e08f4b2699a860f0831ffd"
+      }, {
+        "name" : "Deletar Processo",
+        "children" : [ {
+          "name" : "deveFalharAoDeletarUmProcessoSemAuth()",
+          "uid" : "66cc2a0aff3a561a",
+          "parentUid" : "1f9a7676c847406785df73c6e02c2c66",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217013417,
+            "stop" : 1670217013550,
+            "duration" : 133
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveDeletarUmProcessoComSucesso()",
+          "uid" : "7e23669d429efe76",
+          "parentUid" : "1f9a7676c847406785df73c6e02c2c66",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217013556,
+            "stop" : 1670217014278,
+            "duration" : 722
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1f9a7676c847406785df73c6e02c2c66"
+      } ],
+      "uid" : "84c9bd13e2df04caa84366858a5ab88d"
+    }, {
+      "name" : "Responsavel",
+      "children" : [ {
+        "name" : "Criar Responsavel",
+        "children" : [ {
+          "name" : "criarResponsavelComSucesso()",
+          "uid" : "e133a01912849cac",
+          "parentUid" : "ef462de6d320daff097c68a10ca89eae",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217014308,
+            "stop" : 1670217014608,
+            "duration" : 300
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarResponsavelSemAuth()",
+          "uid" : "1c76db6d383e43a0",
+          "parentUid" : "ef462de6d320daff097c68a10ca89eae",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217014616,
+            "stop" : 1670217014740,
+            "duration" : 124
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarResponsavelSemNome()",
+          "uid" : "7b2fb3e372325f1",
+          "parentUid" : "ef462de6d320daff097c68a10ca89eae",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217014755,
+            "stop" : 1670217014998,
+            "duration" : 243
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ef462de6d320daff097c68a10ca89eae"
+      }, {
+        "name" : "Deletar Responsavel",
+        "children" : [ {
+          "name" : "deveDeletarResponsavelComSucesso()",
+          "uid" : "8531e8e19fdd5884",
+          "parentUid" : "7ee0cdb56ce9828dfd2794d1770c0a12",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217015015,
+            "stop" : 1670217015298,
+            "duration" : 283
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharDeletarResponsavelSemAuth()",
+          "uid" : "ddf8bfee406fef54",
+          "parentUid" : "7ee0cdb56ce9828dfd2794d1770c0a12",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217015314,
+            "stop" : 1670217015426,
+            "duration" : 112
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharDeletarResponsavelComIdInvalido()",
+          "uid" : "ccd803d9dd34ed06",
+          "parentUid" : "7ee0cdb56ce9828dfd2794d1770c0a12",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217015437,
+            "stop" : 1670217015643,
+            "duration" : 206
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7ee0cdb56ce9828dfd2794d1770c0a12"
+      }, {
+        "name" : "Listar Responsaveis",
+        "children" : [ {
+          "name" : "deveListarTodosOsResponsaveisComSucesso()",
+          "uid" : "a03cb92152a0e87",
+          "parentUid" : "91142ef08b6c1f68b3726ff09aad673b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217015664,
+            "stop" : 1670217015814,
+            "duration" : 150
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharListarTodosOsResponsaveisSemAuth()",
+          "uid" : "6dccfa16f26c0fb1",
+          "parentUid" : "91142ef08b6c1f68b3726ff09aad673b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217015823,
+            "stop" : 1670217015941,
+            "duration" : 118
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "91142ef08b6c1f68b3726ff09aad673b"
+      } ],
+      "uid" : "38345293062887de272be8a23863a133"
+    }, {
+      "name" : "Usuário",
+      "children" : [ {
+        "name" : "Editar Cadastro Usuário",
+        "children" : [ {
+          "name" : "deveAtualizarCadastroComSucesso()",
+          "uid" : "5e7f297ed31c7b90",
+          "parentUid" : "4a0288f2f949334d3cfcb207b5219ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217015963,
+            "stop" : 1670217019099,
+            "duration" : 3136
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarCadastroComCargosInvalidos()",
+          "uid" : "fd5519e2e9a8bf99",
+          "parentUid" : "4a0288f2f949334d3cfcb207b5219ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217019111,
+            "stop" : 1670217021970,
+            "duration" : 2859
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarCadastroSemAuth()",
+          "uid" : "dc8190dec917bbbc",
+          "parentUid" : "4a0288f2f949334d3cfcb207b5219ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217021975,
+            "stop" : 1670217022095,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarCadastroSemNome()",
+          "uid" : "890cbed5de92336c",
+          "parentUid" : "4a0288f2f949334d3cfcb207b5219ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217022110,
+            "stop" : 1670217023363,
+            "duration" : 1253
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarCadastroComCargoVazio()",
+          "uid" : "22e2d583d5c6f3bc",
+          "parentUid" : "4a0288f2f949334d3cfcb207b5219ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217023372,
+            "stop" : 1670217024639,
+            "duration" : 1267
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarCadastroSemCargos()",
+          "uid" : "e4e78ecb3080d792",
+          "parentUid" : "4a0288f2f949334d3cfcb207b5219ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217024872,
+            "stop" : 1670217025931,
+            "duration" : 1059
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarCadastroComIdInvalido()",
+          "uid" : "51362bc50c7b713c",
+          "parentUid" : "4a0288f2f949334d3cfcb207b5219ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217026031,
+            "stop" : 1670217026163,
+            "duration" : 132
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4a0288f2f949334d3cfcb207b5219ed4"
+      }, {
+        "name" : "Criar Usuário",
+        "children" : [ {
+          "name" : "deveCriarUsuarioComSucesso()",
+          "uid" : "7b7bdb070725d4e4",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217026607,
+            "stop" : 1670217027502,
+            "duration" : 895
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioEmailDuplicado()",
+          "uid" : "b2341c599e344ea6",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217027519,
+            "stop" : 1670217027733,
+            "duration" : 214
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioSemCargo()",
+          "uid" : "d7d77d8bc8d5004a",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217027752,
+            "stop" : 1670217027899,
+            "duration" : 147
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioSemEmail()",
+          "uid" : "ff95f963215867bb",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217027932,
+            "stop" : 1670217028067,
+            "duration" : 135
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioCargoVazio()",
+          "uid" : "4f595d37912bd888",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217028076,
+            "stop" : 1670217028198,
+            "duration" : 122
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioCargosInvalido()",
+          "uid" : "cca2dedaf780238b",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217028212,
+            "stop" : 1670217028416,
+            "duration" : 204
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioSemAuth()",
+          "uid" : "c2af073d6ed3757c",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217028421,
+            "stop" : 1670217028538,
+            "duration" : 117
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioSemNome()",
+          "uid" : "2e0e6ac1f9f1283",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217028543,
+            "stop" : 1670217028658,
+            "duration" : 115
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharCriarUsuarioEmailInvalido()",
+          "uid" : "e978c647bdbcd738",
+          "parentUid" : "f5a11df193affc188d87587f3e6a12b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217028666,
+            "stop" : 1670217028791,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f5a11df193affc188d87587f3e6a12b8"
+      }, {
+        "name" : "Deletar Usuário",
+        "children" : [ {
+          "name" : "deveFalharDeletarUsuarioSemAuth()",
+          "uid" : "85bcbe123b57256b",
+          "parentUid" : "37f1628f9b65de5a5af4f620f81c675c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217028818,
+            "stop" : 1670217029944,
+            "duration" : 1126
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveDeletarUsuarioComSucesso()",
+          "uid" : "f95bb830f784ca72",
+          "parentUid" : "37f1628f9b65de5a5af4f620f81c675c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217029951,
+            "stop" : 1670217030924,
+            "duration" : 973
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharDeletarUsuarioComIdInvalido()",
+          "uid" : "5b25904b21bf1118",
+          "parentUid" : "37f1628f9b65de5a5af4f620f81c675c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217030929,
+            "stop" : 1670217031049,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "37f1628f9b65de5a5af4f620f81c675c"
+      }, {
+        "name" : "Listar Usuários",
+        "children" : [ {
+          "name" : "deveFalharListarUsuarioSemAuth()",
+          "uid" : "343b1d9249091bb",
+          "parentUid" : "847bb03523437c4509104f3b737754dd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217031075,
+            "stop" : 1670217031189,
+            "duration" : 114
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveListarUsuarioComSucesso()",
+          "uid" : "63d9b76ac103066e",
+          "parentUid" : "847bb03523437c4509104f3b737754dd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217031207,
+            "stop" : 1670217031396,
+            "duration" : 189
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "847bb03523437c4509104f3b737754dd"
+      }, {
+        "name" : "Editar Perfil Usuário",
+        "children" : [ {
+          "name" : "deveAtualizarPerfilComSucesso()",
+          "uid" : "f02a0f1f06264ac4",
+          "parentUid" : "24a5fdda011c02b9c2052357c14178f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217031422,
+            "stop" : 1670217032252,
+            "duration" : 830
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarPerfilSemSenhaAtual()",
+          "uid" : "33a79ce40cffeb2e",
+          "parentUid" : "24a5fdda011c02b9c2052357c14178f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217032279,
+            "stop" : 1670217032413,
+            "duration" : 134
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarPerfilSemConfirmacaoNovaSenha()",
+          "uid" : "8cc3e8bc4b998e0c",
+          "parentUid" : "24a5fdda011c02b9c2052357c14178f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217032423,
+            "stop" : 1670217032547,
+            "duration" : 124
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarPerfilSemAuth()",
+          "uid" : "f4cb8d0a0fbb27a9",
+          "parentUid" : "24a5fdda011c02b9c2052357c14178f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217032560,
+            "stop" : 1670217032673,
+            "duration" : 113
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarPerfilSemNome()",
+          "uid" : "d750e54749342ba",
+          "parentUid" : "24a5fdda011c02b9c2052357c14178f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217032682,
+            "stop" : 1670217032963,
+            "duration" : 281
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarPerfilComSenhasDiferentes()",
+          "uid" : "671f2e8f359803bd",
+          "parentUid" : "24a5fdda011c02b9c2052357c14178f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217032980,
+            "stop" : 1670217033579,
+            "duration" : 599
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharAtualizarPerfilSemNovaSenha()",
+          "uid" : "50f3e40870d2b0bb",
+          "parentUid" : "24a5fdda011c02b9c2052357c14178f1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217033606,
+            "stop" : 1670217033732,
+            "duration" : 126
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "24a5fdda011c02b9c2052357c14178f1"
+      }, {
+        "name" : "Editar Status Usuário",
+        "children" : [ {
+          "name" : "deveFalharMudarStatusSemAuth()",
+          "uid" : "9ba902c54def362c",
+          "parentUid" : "1555f6724fab0192f16f9caaac27c084",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217033744,
+            "stop" : 1670217033853,
+            "duration" : 109
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveFalharMudarStatusComIdInvalido()",
+          "uid" : "e695f3a7552b142d",
+          "parentUid" : "1555f6724fab0192f16f9caaac27c084",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217033865,
+            "stop" : 1670217033996,
+            "duration" : 131
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deveMudarStatusComSucesso()",
+          "uid" : "9bb0f8b83f34a2f6",
+          "parentUid" : "1555f6724fab0192f16f9caaac27c084",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217034013,
+            "stop" : 1670217035179,
+            "duration" : 1166
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1555f6724fab0192f16f9caaac27c084"
+      } ],
+      "uid" : "c8cc2719588f9c50057fd8638107f103"
+    } ],
+    "uid" : "5cbaeac59f2e53ac9f5c92990c438ff2"
+  }, {
+    "name" : "Contrato",
+    "children" : [ {
+      "name" : "Area Envolvida",
+      "children" : [ {
+        "name" : "Listar Areas Envolvidas",
+        "children" : [ {
+          "name" : "deveListarAreaEnvolvidaComSucesso()",
+          "uid" : "2fef338f0ae24913",
+          "parentUid" : "631dd60668851bd096e8f7f5f6a9c9ba",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217035218,
+            "stop" : 1670217038175,
+            "duration" : 2957
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "631dd60668851bd096e8f7f5f6a9c9ba"
+      } ],
+      "uid" : "3ff5509509af281a5c4278ad45fa21e8"
+    }, {
+      "name" : "Calendário",
+      "children" : [ {
+        "name" : "Listar Calendário Geral",
+        "children" : [ {
+          "name" : "deveListarCalendarioGeralDeAcordoAoSchema()",
+          "uid" : "7812e07a659a91da",
+          "parentUid" : "c33fdee252cfb22b78bdae5e6bd7f7d4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217038192,
+            "stop" : 1670217038417,
+            "duration" : 225
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c33fdee252cfb22b78bdae5e6bd7f7d4"
+      } ],
+      "uid" : "a3cd7786824f369671329002d47f4dec"
+    }, {
+      "name" : "Dia não útil",
+      "children" : [ {
+        "name" : "Listar Dias não úteis",
+        "children" : [ {
+          "name" : "deveListarDiaNaoUtilDeAcordoAoSchema()",
+          "uid" : "98b589bdff5b47aa",
+          "parentUid" : "a3a9213c0727002f58ff57a99169f6bc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217038451,
+            "stop" : 1670217038645,
+            "duration" : 194
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a3a9213c0727002f58ff57a99169f6bc"
+      } ],
+      "uid" : "dec3a0de31d81b94072c4aaa2f431b8a"
+    }, {
+      "name" : "Edição",
+      "children" : [ {
+        "name" : "Listar Edição",
+        "children" : [ {
+          "name" : "deveListarEdicoesDeAcordoAoSchema()",
+          "uid" : "c9e9e33883fd3431",
+          "parentUid" : "4e5ea5786113c0acdc6c7a307804e63b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217038781,
+            "stop" : 1670217038925,
+            "duration" : 144
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4e5ea5786113c0acdc6c7a307804e63b"
+      } ],
+      "uid" : "4793be87485112b0a7deb5977b587bdd"
+    }, {
+      "name" : "Etapa",
+      "children" : [ {
+        "name" : "Listar Etapas",
+        "children" : [ {
+          "name" : "deveListarEtapasDeAcordoAoSchema()",
+          "uid" : "63caaa73be7d2643",
+          "parentUid" : "314985dec90800e2b0c9e9a6ce7a93c3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217038944,
+            "stop" : 1670217039281,
+            "duration" : 337
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "314985dec90800e2b0c9e9a6ce7a93c3"
+      } ],
+      "uid" : "69e583b117268d6366bf7b5b8880f9d7"
+    }, {
+      "name" : "Processo",
+      "children" : [ {
+        "name" : "Listar Processos",
+        "children" : [ {
+          "name" : "deveListarProcessosDeAcordoAoSchema()",
+          "uid" : "28f8c382da580969",
+          "parentUid" : "4057b73bb1b1c5c7784976fd9b196985",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217039305,
+            "stop" : 1670217039504,
+            "duration" : 199
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4057b73bb1b1c5c7784976fd9b196985"
+      } ],
+      "uid" : "ac7d156ebb9c172d230a53541b61a77c"
+    }, {
+      "name" : "Responsavel",
+      "children" : [ {
+        "name" : "Listar Responsáveis",
+        "children" : [ {
+          "name" : "deveListarResponsavelDeAcordoAoSchema()",
+          "uid" : "9f7edce9d811cddc",
+          "parentUid" : "214e02c4fcaf8eefe679eb224c7208d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217039515,
+            "stop" : 1670217039652,
+            "duration" : 137
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "214e02c4fcaf8eefe679eb224c7208d9"
+      } ],
+      "uid" : "df2f09864e734e6b83dab123a3eb4256"
+    }, {
+      "name" : "Usuário",
+      "children" : [ {
+        "name" : "Listar Usuários",
+        "children" : [ {
+          "name" : "deveListarUsuarioDeAcordoAoSchema()",
+          "uid" : "88583acc192e0323",
+          "parentUid" : "17ce8a85c256267f6fb7ec56df64a941",
+          "status" : "passed",
+          "time" : {
+            "start" : 1670217039665,
+            "stop" : 1670217040113,
+            "duration" : 448
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "17ce8a85c256267f6fb7ec56df64a941"
+      } ],
+      "uid" : "8fb91488c85c83504abf252f97415211"
+    } ],
+    "uid" : "2f5382fdab39704492ac7e0536def116"
+  } ]
+}
