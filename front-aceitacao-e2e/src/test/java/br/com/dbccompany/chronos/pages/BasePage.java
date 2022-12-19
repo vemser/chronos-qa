@@ -64,8 +64,6 @@ public class BasePage extends Elements {
         waitElement(by);
         return element(by).isDisplayed();
     }
-
-
     public static boolean checkElementExist(By by){
         return Browser.driver.findElements(by).size() > 0;
     }
@@ -100,5 +98,4 @@ public class BasePage extends Elements {
     public static boolean validarToastErro() {
         return checkElementTextContains(toastMessage,"erro");
     }
-
 }

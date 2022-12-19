@@ -13,7 +13,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class ProcessoListarPorIdTeste extends BaseTest {
+public class ProcessoListarPorIdTest extends BaseTest {
     @Test
     @Tag("todos")
     @Tag("processo")
@@ -30,7 +30,7 @@ public class ProcessoListarPorIdTeste extends BaseTest {
             String idEtapa = etapa.getIdEtapa().toString();
             ProcessoDTO processo = PreloadData.processo(idEtapa);
             String idProcesso = processo.getIdProcesso().toString();
-            ProcessoDTO response = ProcessoClient.listarProcessoPorId(idProcesso,true)
+            ProcessoDTO response = ProcessoClient.listarProcessoPorId(idEtapa,true)
                     .then()
                     .log().all()
                     .extract().as(ProcessoDTO.class);

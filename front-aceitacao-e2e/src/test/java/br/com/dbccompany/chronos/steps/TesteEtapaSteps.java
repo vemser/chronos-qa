@@ -15,7 +15,7 @@ public class TesteEtapaSteps extends BaseSteps {
         CadastrarEditarEtapaPage.clicarBotaoSubmitEtapa();
     }
 
-    private static void rotinaCriarEdicaoValida() throws InterruptedException {
+    private static void rotinaCriarEdicaoValida(){
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         TesteEdicoesSteps.criarEdicaoValida();

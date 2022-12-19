@@ -17,7 +17,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class ProcessoEditarTeste extends BaseTest {
+public class ProcessoEditarTest extends BaseTest {
 
     @Test
     @Tag("todos")
@@ -88,32 +88,6 @@ public class ProcessoEditarTeste extends BaseTest {
             ProcessoDTO processo = PreloadData.processo(idEtapa);
             String idProcesso = processo.getIdProcesso().toString();
             Processo processoEditar = ProcessoDataFactory.processoSemOrdemExecucao();
-            ResponseErrorBadDTO response = ProcessoClient.atualizarProcesso(Utils.converterParaJson(processoEditar),idProcesso,true)
-                    .then()
-                    .log().all()
-                    .extract().as(ResponseErrorBadDTO.class);
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
-        } finally {
-            EdicaoClient.deletarEdicao(idEdicao,true);
-        }
-    }
-    @Test
-    @Tag("todos")
-    @Tag("processo")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Processo")
-    @Story("Editar Processo")
-    @Description("Deve falhar editar processo sem responsável")
-    public void deveFalharEditarProcessoSemResponsavel() {
-        EdicaoDTO edicao = PreloadData.edicao();
-        String idEdicao = edicao.getIdEdicao().toString();
-        try {
-            EtapaDTO etapa = PreloadData.etapa(idEdicao);
-            String idEtapa = etapa.getIdEtapa().toString();
-            ProcessoDTO processo = PreloadData.processo(idEtapa);
-            String idProcesso = processo.getIdProcesso().toString();
-            Processo processoEditar = ProcessoDataFactory.processoSemResponsavel();
             ResponseErrorBadDTO response = ProcessoClient.atualizarProcesso(Utils.converterParaJson(processoEditar),idProcesso,true)
                     .then()
                     .log().all()

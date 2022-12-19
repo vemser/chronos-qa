@@ -39,10 +39,10 @@ public class TesteProcessoSteps extends BaseSteps {
             CadastrarEditarProcessoPage.validarToastSucesso();
         } finally {
             entrarNaPaginaDeEdicoes();
-            EdicoesPage.clicarBotaoExcluirUltima();
+//            EdicoesPage.clicarBotaoExcluirUltima();
         }
     }
-    @Test
+//    @Test
     @Owner("Kevin Aryel")
     @Epic("Frontend")
     @Feature("Processo")
@@ -65,7 +65,7 @@ public class TesteProcessoSteps extends BaseSteps {
             CadastrarEditarProcessoPage.validarToastSucesso();
         } finally {
             entrarNaPaginaDeEdicoes();
-            EdicoesPage.clicarBotaoExcluirUltima();
+//            EdicoesPage.clicarBotaoExcluirUltima();
         }
     }
 

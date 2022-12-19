@@ -26,12 +26,6 @@ public class RequestSpec {
             .setContentType(ContentType.JSON)
             .build();
     }
-    public static RequestSpecification testeMultipart(){
-        return new RequestSpecBuilder()
-            .addHeader("Authorization", tokenTeste)
-            .setContentType(ContentType.MULTIPART)
-            .build();
-    }
     public static RequestSpecification gestao(){
         return new RequestSpecBuilder()
             .addHeader("Authorization",tokenGestao)

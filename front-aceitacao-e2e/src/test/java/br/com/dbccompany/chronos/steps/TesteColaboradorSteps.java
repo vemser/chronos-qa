@@ -51,7 +51,7 @@ public class TesteColaboradorSteps extends BaseSteps {
         fazerLoginAdm();
         entrarNaPaginaDeColaborador();
         criarColaboradorValido();
-        boolean sucesso =ColaboradoresPage.validarToastSucesso();
+        boolean sucesso = ColaboradoresPage.validarToastSucesso();
         if(sucesso){
             entrarNaPaginaDeColaborador();
 //            ColaboradoresPage.clicarBotaoExcluirUltimo();
