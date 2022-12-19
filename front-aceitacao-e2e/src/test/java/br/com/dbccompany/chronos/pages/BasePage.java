@@ -83,19 +83,12 @@ public class BasePage extends Elements {
         waitElement(by);
         return element(by).getAttribute("value");
     }
-    public static String getPageUrl(){
-        return Browser.driver.getCurrentUrl();
-    }
-
     public static boolean checkElementTextContains(By by, String text){
         waitElement(by);
         return element(by).getText().contains(text);
     }
 
-    public static boolean validarToastSucesso() {
-        return checkElementTextContains(toastMessage,"sucesso");
-    }
-    public static boolean validarToastErro() {
-        return checkElementTextContains(toastMessage,"erro");
+    public static boolean validarToast(String message) {
+        return checkElementTextContains(toastMessage,message);
     }
 }

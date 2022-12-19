@@ -49,7 +49,4 @@ public class EditarPerfilPage extends BasePage{
     public static boolean validarErroConfirmarNovaSenha(){
         return checkElementDisplayStatus(spanErroConfirmarNovaSenha);
     }
-    public static boolean validarToastErroSenha(){
-        return checkElementTextContains(toastMessage, "Senha");
-    }
 }
