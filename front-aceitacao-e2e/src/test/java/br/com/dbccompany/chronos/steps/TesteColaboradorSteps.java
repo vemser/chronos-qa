@@ -51,7 +51,7 @@ public class TesteColaboradorSteps extends BaseSteps {
         fazerLoginAdm();
         entrarNaPaginaDeColaborador();
         criarColaboradorValido();
-        boolean sucesso = ColaboradoresPage.validarToastSucesso();
+        boolean sucesso = ColaboradoresPage.validarToast("Usuário criado com sucesso!");
         if(sucesso){
             entrarNaPaginaDeColaborador();
 //            ColaboradoresPage.clicarBotaoExcluirUltimo();
@@ -72,7 +72,7 @@ public class TesteColaboradorSteps extends BaseSteps {
         ColaboradorCreateEditPage.clicarCheckboxAdmin();
         ColaboradorCreateEditPage.clicarCheckboxInstrutor();
         ColaboradorCreateEditPage.clicarBotaoEnviar();
-        boolean sucesso = ColaboradoresPage.validarToastSucesso();
+        boolean sucesso = ColaboradoresPage.validarToast("Usuário criado com sucesso!");
         if(sucesso){
             entrarNaPaginaDeColaborador();
 //            ColaboradoresPage.clicarBotaoExcluirUltimo();
@@ -122,7 +122,7 @@ public class TesteColaboradorSteps extends BaseSteps {
         ColaboradorCreateEditPage.preencherNome(nomeValido());
         ColaboradorCreateEditPage.preencherEmail(emailValido());
         ColaboradorCreateEditPage.clicarBotaoEnviar();
-        boolean erro = ColaboradoresPage.validarToastErro();
+        boolean erro = ColaboradoresPage.validarToast("cargo: não deve estar vazio");
         Assert.assertTrue(erro);
     }
     @Test
@@ -139,7 +139,7 @@ public class TesteColaboradorSteps extends BaseSteps {
         ColaboradorCreateEditPage.preencherEmail(Utils.faker.internet().emailAddress());
         selecionarCheckBoxAleatoria();
         ColaboradorCreateEditPage.clicarBotaoEnviar();
-        ColaboradorCreateEditPage.checarErroEmail();
+        Assert.assertTrue(ColaboradorCreateEditPage.checarErroEmail())
     }
     @Test
     @Owner("Kevin Aryel")
@@ -150,10 +150,14 @@ public class TesteColaboradorSteps extends BaseSteps {
     public void deveMudarStatusColaboradorComSucesso() throws InterruptedException {
         fazerLoginAdm();
         entrarNaPaginaDeColaborador();
-        ColaboradoresPage.clicarBotaoStatusUltimo();
-        ColaboradoresPage.validarToastSucesso();
-        ColaboradoresPage.clicarBotaoStatusUltimo();
-        Thread.sleep(1000);
+        try {
+            ColaboradoresPage.clicarBotaoStatusUltimo();
+            ColaboradoresPage.validarToastSucesso();
+            ColaboradoresPage.clicarBotaoStatusUltimo();
+        }
+        finally {
+            Thread.sleep(1000);
+        }
     }
     @Test
     @Owner("Kevin Aryel")
@@ -180,7 +184,7 @@ public class TesteColaboradorSteps extends BaseSteps {
     @Epic("Frontend")
     @Feature("Colaborador")
     @Story("Editar Colaborador")
-    @Description("Deve retornar erro ao tentar editar um colaborador com sucesso")
+    @Description("Deve retornar erro ao tentar editar um colaborador sem nome")
     public void deveFalharEditarColaboradorSemNome() throws InterruptedException {
         fazerLoginAdm();
         entrarNaPaginaDeColaborador();
@@ -189,7 +193,7 @@ public class TesteColaboradorSteps extends BaseSteps {
             ColaboradoresPage.clicarBotaoEditarUltimo();
             ColaboradorCreateEditPage.clearInputNome();
             ColaboradorCreateEditPage.clicarBotaoEnviar();
-            ColaboradorCreateEditPage.checarErroNome("nome");
+            ColaboradorCreateEditPage.checarErroNome("Por favor, digite o nome do colaborador");
         } finally {
             entrarNaPaginaDeColaborador();
 //            ColaboradoresPage.clicarBotaoExcluirUltimo();
@@ -212,13 +216,14 @@ public class TesteColaboradorSteps extends BaseSteps {
             boolean gestao = ColaboradorCreateEditPage.checarCheckboxGestao();
             if (admin) {
                 ColaboradorCreateEditPage.clicarCheckboxAdmin();
-            } if (instrutor) {
+            }
+            if (instrutor) {
                 ColaboradorCreateEditPage.clicarCheckboxInstrutor();
             } if (gestao) {
                 ColaboradorCreateEditPage.clicarCheckboxGestao();
             }
             ColaboradorCreateEditPage.clicarBotaoEnviar();
-            ColaboradoresPage.validarToastErro();
+            ColaboradoresPage.validarToast("cargo: não deve estar vazio");
         } finally {
             entrarNaPaginaDeColaborador();
 //            ColaboradoresPage.clicarBotaoExcluirUltimo();
