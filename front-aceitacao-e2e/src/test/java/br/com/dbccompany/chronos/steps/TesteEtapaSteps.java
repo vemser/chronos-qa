@@ -31,7 +31,7 @@ public class TesteEtapaSteps extends BaseSteps {
         rotinaCriarEdicaoValida();
         EdicoesPage.clicarBotaoDetalhesUltima();
         criarEtapaValida();
-        if(VerificarEdicaoPage.validarToastSucesso()){
+        if(VerificarEdicaoPage.validarToast("cadastrada com sucesso")){
             entrarNaPaginaDeEdicoes();
             EdicoesPage.clicarBotaoExcluirUltima();
         }
@@ -74,7 +74,7 @@ public class TesteEtapaSteps extends BaseSteps {
             CadastrarEditarEtapaPage.preencherNome(Utils.faker.lorem().characters(10));
             CadastrarEditarEtapaPage.preencherOrdemExecucao("1");
             CadastrarEditarEtapaPage.clicarBotaoSubmitEtapa();
-            VerificarEdicaoPage.validarToastSucesso();
+            VerificarEdicaoPage.validarToast("Etapa foi editada com sucesso");
         } finally {
             entrarNaPaginaDeEdicoes();
             EdicoesPage.clicarBotaoExcluirUltima();
@@ -94,7 +94,7 @@ public class TesteEtapaSteps extends BaseSteps {
         criarEtapaValida();
         try{
             VerificarEdicaoPage.clicarBotaoExcluirEtapa();
-            VerificarEdicaoPage.validarToastSucesso();
+            VerificarEdicaoPage.validarToast("Etapa foi excluída com sucesso");
         } finally {
             entrarNaPaginaDeEdicoes();
             EdicoesPage.clicarBotaoExcluirUltima();

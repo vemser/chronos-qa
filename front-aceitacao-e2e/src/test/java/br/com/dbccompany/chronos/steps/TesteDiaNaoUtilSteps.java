@@ -28,7 +28,7 @@ public class TesteDiaNaoUtilSteps extends BaseSteps {
         fazerLoginGestor();
         entrarNaPaginaDeDiasNaoUteis();
         criarDiaNaoUtilValido();
-        DiaNaoUtilPage.validarToastSucesso();
+        DiaNaoUtilPage.validarToast("Dia Não Útil cadastrado com sucesso");
         DiaNaoUtilPage.clicarBotaoExcluirUltimoDiaNaoUtil();
     }
     @Test
@@ -77,7 +77,7 @@ public class TesteDiaNaoUtilSteps extends BaseSteps {
         CadastrarEditarDiaNaoUtilPage.enviarDataInicial("10102023");
         CadastrarEditarDiaNaoUtilPage.clicarCheckBoxRepeticaoAnual();
         CadastrarEditarDiaNaoUtilPage.clicarBotaoSubmit();
-        DiaNaoUtilPage.validarToastSucesso();
+        DiaNaoUtilPage.validarToast("Dia Não Útil cadastrado com sucesso");
         DiaNaoUtilPage.clicarBotaoExcluirUltimoDiaNaoUtil();
     }
     @Test
@@ -95,7 +95,7 @@ public class TesteDiaNaoUtilSteps extends BaseSteps {
         CadastrarEditarDiaNaoUtilPage.clicarCheckBoxRepeticaoAnual();
         CadastrarEditarDiaNaoUtilPage.enviarDataFinal("10102022");
         CadastrarEditarDiaNaoUtilPage.clicarBotaoSubmit();
-        DiaNaoUtilPage.validarToastErro();
+        DiaNaoUtilPage.validarToast("A data final antecede a data inicial");
     }
     @Test
     @Owner("Kevin Aryel")
@@ -111,7 +111,7 @@ public class TesteDiaNaoUtilSteps extends BaseSteps {
         CadastrarEditarDiaNaoUtilPage.enviarDataInicial("10102023");
         CadastrarEditarDiaNaoUtilPage.enviarDataFinal("10112023");
         CadastrarEditarDiaNaoUtilPage.clicarBotaoSubmit();
-        DiaNaoUtilPage.validarToastSucesso();
+        DiaNaoUtilPage.validarToast("Dia Não Útil cadastrado com sucesso");
         DiaNaoUtilPage.clicarBotaoExcluirUltimoDiaNaoUtil();
     }
     @Test
@@ -128,7 +128,7 @@ public class TesteDiaNaoUtilSteps extends BaseSteps {
             DiaNaoUtilPage.clicarBotaoEditarUltimoDiaNaoUtil();
             CadastrarEditarDiaNaoUtilPage.enviarDescricao(Utils.faker.lorem().characters(10));
             CadastrarEditarDiaNaoUtilPage.clicarBotaoSubmit();
-            DiaNaoUtilPage.validarToastSucesso();
+            DiaNaoUtilPage.validarToast("Dia Não Útil atualizado com sucesso");
         } finally {
             DiaNaoUtilPage.clicarBotaoExcluirUltimoDiaNaoUtil();
         }
@@ -147,7 +147,7 @@ public class TesteDiaNaoUtilSteps extends BaseSteps {
             DiaNaoUtilPage.clicarBotaoEditarUltimoDiaNaoUtil();
             CadastrarEditarDiaNaoUtilPage.enviarDataInicial("05102023");
             CadastrarEditarDiaNaoUtilPage.clicarBotaoSubmit();
-            DiaNaoUtilPage.validarToastSucesso();
+            DiaNaoUtilPage.validarToast("Dia Não Útil atualizado com sucesso");
         } finally {
             DiaNaoUtilPage.clicarBotaoExcluirUltimoDiaNaoUtil();
         }
@@ -166,7 +166,7 @@ public class TesteDiaNaoUtilSteps extends BaseSteps {
             DiaNaoUtilPage.clicarBotaoEditarUltimoDiaNaoUtil();
             CadastrarEditarDiaNaoUtilPage.enviarDataFinal("20112023");
             CadastrarEditarDiaNaoUtilPage.clicarBotaoSubmit();
-            DiaNaoUtilPage.validarToastSucesso();
+            DiaNaoUtilPage.validarToast("Dia Não Útil atualizado com sucesso");
         } finally {
             DiaNaoUtilPage.clicarBotaoExcluirUltimoDiaNaoUtil();
         }

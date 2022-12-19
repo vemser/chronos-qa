@@ -36,13 +36,13 @@ public class TesteProcessoSteps extends BaseSteps {
         try{
             EdicoesPage.clicarBotaoDetalhesUltima();
             criarProcessoValido();
-            CadastrarEditarProcessoPage.validarToastSucesso();
+            CadastrarEditarProcessoPage.validarToast("Processo cadastrado com sucesso");
         } finally {
             entrarNaPaginaDeEdicoes();
 //            EdicoesPage.clicarBotaoExcluirUltima();
         }
     }
-//    @Test
+    @Test
     @Owner("Kevin Aryel")
     @Epic("Frontend")
     @Feature("Processo")
@@ -62,14 +62,14 @@ public class TesteProcessoSteps extends BaseSteps {
             CadastrarEditarProcessoPage.preencherDiasUteis("5");
             CadastrarEditarProcessoPage.preencherOrdem("1");
             CadastrarEditarProcessoPage.clicarBotaoSubmit();
-            CadastrarEditarProcessoPage.validarToastSucesso();
+            CadastrarEditarProcessoPage.validarToast("Processo cadastrado com sucesso");
         } finally {
             entrarNaPaginaDeEdicoes();
 //            EdicoesPage.clicarBotaoExcluirUltima();
         }
     }
 
-//    @Test
+    @Test
     @Owner("Kevin Aryel")
     @Epic("Frontend")
     @Feature("Processo")
@@ -87,13 +87,13 @@ public class TesteProcessoSteps extends BaseSteps {
             CadastrarEditarProcessoPage.preencherDiasUteis("5");
             CadastrarEditarProcessoPage.preencherOrdem(Utils.faker.number().digits(2));
             CadastrarEditarProcessoPage.clicarBotaoSubmit();
-            CadastrarEditarProcessoPage.validarToastSucesso();
+            CadastrarEditarProcessoPage.validarToast("Processo editado com sucesso");
         } finally {
             entrarNaPaginaDeEdicoes();
             EdicoesPage.clicarBotaoExcluirUltima();
         }
     }
-//    @Test
+    @Test
     @Owner("Kevin Aryel")
     @Epic("Frontend")
     @Feature("Processo")
@@ -106,7 +106,7 @@ public class TesteProcessoSteps extends BaseSteps {
             EdicoesPage.clicarBotaoDetalhesUltima();
             criarProcessoValido();
             VerificarEdicaoPage.clicarBotaoExcluirProcesso();
-            CadastrarEditarProcessoPage.validarToastSucesso();
+            CadastrarEditarProcessoPage.validarToast("Processo removido com sucesso");
         } finally {
             entrarNaPaginaDeEdicoes();
             EdicoesPage.clicarBotaoExcluirUltima();

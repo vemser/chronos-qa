@@ -42,7 +42,6 @@ public class TesteLoginSteps extends BaseSteps {
         LoginPage.preencherEmail(faker.internet().emailAddress());
         LoginPage.preencherSenha(faker.internet().password(8,15,true,true,true));
         LoginPage.clicarEntrar();
-
     }
     @Test
     @Owner("Kevin Aryel")

@@ -26,7 +26,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
         criarEdicaoValida();
-        EdicoesPage.validarToastSucesso();
+        EdicoesPage.validarToast("Edição criada com sucesso");
         EdicoesPage.clicarBotaoExcluirUltima();
     }
 
@@ -90,7 +90,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         CadastrarEdicaoPage.enviarDataInicio("12122022");
         CadastrarEdicaoPage.enviarDataFim("10122022");
         CadastrarEdicaoPage.clicarBotaoSubmit();
-        EdicoesPage.validarToastErro();
+        EdicoesPage.validarToast("Houve um erro ao criar");
     }
     @Test
     @Owner("Kevin Aryel")
@@ -106,7 +106,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         CadastrarEdicaoPage.enviarDataInicio("10122023");
         CadastrarEdicaoPage.enviarDataFim("10122023");
         CadastrarEdicaoPage.clicarBotaoSubmit();
-        EdicoesPage.validarToastErro();
+        EdicoesPage.validarToast("Houve um erro ao criar");
     }
     @Test
     @Owner("Kevin Aryel")
@@ -121,7 +121,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         try{
             String nomeEdicao = EdicoesPage.nomeUltimaEdicao();
             EdicoesPage.clicarBotaoClonarUltima();
-            EdicoesPage.validarToastSucesso();
+            EdicoesPage.validarToast("criado com sucesso");
             EdicoesPage.validarNomeUltimaEdicao(nomeEdicao);
             EdicoesPage.clicarBotaoExcluirUltima();
         }finally {
@@ -140,7 +140,7 @@ public class TesteEdicoesSteps extends BaseSteps{
         criarEdicaoValida();
         try {
             EdicoesPage.clicarBotaoStatusUltima();
-            EdicoesPage.validarToastSucesso();
+            EdicoesPage.validarToast("alterado para");
             EdicoesPage.clicarBotaoStatusUltima();
         } finally {
             EdicoesPage.clicarBotaoExcluirUltima();
@@ -162,7 +162,7 @@ public class TesteEdicoesSteps extends BaseSteps{
             CadastrarEdicaoPage.enviarDataInicio("20122023");
             CadastrarEdicaoPage.enviarDataFim("30122023");
             CadastrarEdicaoPage.clicarBotaoSubmit();
-            EdicoesPage.validarToastSucesso();
+            EdicoesPage.validarToast("Edicao editada com sucesso");
         } finally {
             entrarNaPaginaDeEdicoes();
             EdicoesPage.clicarBotaoExcluirUltima();

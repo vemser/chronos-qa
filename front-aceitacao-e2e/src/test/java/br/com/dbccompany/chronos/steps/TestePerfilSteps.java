@@ -113,7 +113,7 @@ public class TestePerfilSteps extends BaseSteps {
         EditarPerfilPage.preencherNovaSenha(novaSenha);
         EditarPerfilPage.preencherConfirmarNovaSenha(novaSenha);
         EditarPerfilPage.clicarBotaoSubmit();
-        EditarPerfilPage.validarToastErroSenha();
+        EditarPerfilPage.validarToast("Senha atual inválida");
     }
 
 }
