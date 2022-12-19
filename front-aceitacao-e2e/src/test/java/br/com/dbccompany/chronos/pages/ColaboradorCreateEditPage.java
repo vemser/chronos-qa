@@ -40,8 +40,8 @@ public class ColaboradorCreateEditPage extends BasePage {
     public static void clearInputNome(){
         clearElement(inputNome);
     }
-    public static void checarErroEmail(){
-        checkElementDisplayStatus(spanErroEmail);
+    public static boolean checarErroEmail(){
+        return checkElementDisplayStatus(spanErroEmail);
     }
     public static void checarErroNome(String erro){
         checkElementTextContains(spanErroNome, erro);
