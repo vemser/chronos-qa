@@ -74,6 +74,7 @@ public class TesteProcessoSteps extends BaseSteps {
     @Epic("Frontend")
     @Feature("Processo")
     @Story("Editar Processo")
+    @Description("Deve editar processo com sucesso")
     public void testarEditarProcessoComSucesso() throws InterruptedException{
         fazerLoginGestor();
         entrarNaPaginaDeEdicoes();
