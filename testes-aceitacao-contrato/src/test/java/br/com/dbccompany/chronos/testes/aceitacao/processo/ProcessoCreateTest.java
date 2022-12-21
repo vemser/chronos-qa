@@ -148,4 +148,53 @@ public class ProcessoCreateTest extends BaseTest {
             EdicaoClient.deletarEdicao(idEdicao,true);
         }
     }
+    @Test
+    @Tag("todos")
+    @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Aceitação")
+    @Feature("Processo")
+    @Story("Criar Processo")
+    @Description("Deve falhar criar um novo processo sem processo critico")
+    public void deveFalharCriarUmNovoProcessoSemProcessoCritico() {
+        EdicaoDTO edicao = PreloadData.edicao();
+        String idEdicao = edicao.getIdEdicao().toString();
+        try{
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
+            String idEtapa = etapa.getIdEtapa().toString();
+            Processo processo = ProcessoDataFactory.processoSemProcessoCritico();
+            ResponseErrorBadDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
+                    .then()
+                    .log().all()
+                    .extract().as(ResponseErrorBadDTO.class);
+            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
+        } finally {
+            EdicaoClient.deletarEdicao(idEdicao,true);
+        }
+    }
+
+    @Test
+    @Tag("todos")
+    @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Aceitação")
+    @Feature("Processo")
+    @Story("Criar Processo")
+    @Description("Deve falhar criar um novo processo com proceso critico invalido")
+    public void deveFalharCriarUmNovoProcessoComProcessoCriticoInvalido() {
+        EdicaoDTO edicao = PreloadData.edicao();
+        String idEdicao = edicao.getIdEdicao().toString();
+        try{
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
+            String idEtapa = etapa.getIdEtapa().toString();
+            Processo processo = ProcessoDataFactory.processoComProcessoCriticoInvalido();
+            ResponseErrorBadDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
+                    .then()
+                    .log().all()
+                    .extract().as(ResponseErrorBadDTO.class);
+            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
+        } finally {
+            EdicaoClient.deletarEdicao(idEdicao,true);
+        }
+    }
 }
