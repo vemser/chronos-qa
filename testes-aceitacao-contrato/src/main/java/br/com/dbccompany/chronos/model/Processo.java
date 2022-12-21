@@ -10,13 +10,15 @@ public class Processo {
     private String duracaoProcesso;
     private Integer diasUteis;
     private Integer ordemExecucao;
+    private String processoCritico;
 
-    public Processo(String nome, AreaEnvolvida[] areasEnvolvidas, Responsavel[] responsaveis, String duracaoProcesso, Integer diasUteis, Integer ordemExecucao) {
+    public Processo(String nome, AreaEnvolvida[] areasEnvolvidas, Responsavel[] responsaveis, String duracaoProcesso, Integer diasUteis, Integer ordemExecucao, String processoCritico) {
         this.nome = nome;
         this.areasEnvolvidas = areasEnvolvidas;
         this.responsaveis = responsaveis;
         this.duracaoProcesso = duracaoProcesso;
         this.diasUteis = diasUteis;
         this.ordemExecucao = ordemExecucao;
+        this.processoCritico = processoCritico;
     }
 }

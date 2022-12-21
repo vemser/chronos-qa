@@ -13,4 +13,5 @@ public class ProcessoDTO {
     Integer ordemExecucao;
     AreaEnvolvidaDTO[] areasEnvolvidas;
     ResponsavelDTO[] responsaveis;
+    String processoCritico;
 }

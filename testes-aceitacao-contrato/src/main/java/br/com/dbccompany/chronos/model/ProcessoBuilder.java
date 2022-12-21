@@ -7,6 +7,7 @@ public class ProcessoBuilder {
     private String duracaoProcesso;
     private Integer diasUteis;
     private Integer ordemExecucao;
+    private String processoCritico;
 
     public ProcessoBuilder nome(String nome) {
         this.nome = nome;
@@ -34,7 +35,11 @@ public class ProcessoBuilder {
         this.ordemExecucao = ordemExecucao;
         return this;
     }
+    public ProcessoBuilder processoCritico(String processoCritico) {
+        this.processoCritico = processoCritico;
+        return this;
+    }
     public Processo build() {
-        return new Processo(nome, areasEnvolvidas, responsaveis, duracaoProcesso, diasUteis, ordemExecucao);
+        return new Processo(nome, areasEnvolvidas, responsaveis, duracaoProcesso, diasUteis, ordemExecucao,processoCritico);
     }
 }

@@ -14,4 +14,5 @@ public class CalendarioGeralItemDTO {
     private String processo;
     private String cor;
     private String feriado;
+    private String critico;
 }

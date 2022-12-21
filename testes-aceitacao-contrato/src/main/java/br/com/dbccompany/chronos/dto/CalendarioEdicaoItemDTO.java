@@ -14,4 +14,5 @@ public class CalendarioEdicaoItemDTO {
     private String cor;
     private String[] areas;
     private String feriado;
+    private String critico;
 }

@@ -13,6 +13,8 @@ public class ProcessoDataFactory {
     private static Integer ordemExecucaoValido = Utils.faker.number().numberBetween(1,50);
     private static AreaEnvolvida[] areaEnvolvidaVazia = new AreaEnvolvida[0];
     private static Responsavel[] responsavelVazio = new Responsavel[0];
+    private static String processoCriticoValido = "ATIVO";
+    private static String processoCriticoInvalido = "teste1";
     private static Processo novoProcesso(){
      return new ProcessoBuilder()
             .nome(nomeValido)
@@ -21,6 +23,7 @@ public class ProcessoDataFactory {
             .areasEnvolvidas(areaEnvolvidaVazia)
             .responsaveis(responsavelVazio)
             .ordemExecucao(ordemExecucaoValido)
+            .processoCritico(processoCriticoValido)
             .build();
     }
 
@@ -51,5 +54,15 @@ public class ProcessoDataFactory {
         Processo processoSemResponsavel = novoProcesso();
         processoSemResponsavel.setResponsaveis(responsavelVazio);
         return processoSemResponsavel;
+    }
+    public static Processo processoSemProcessoCritico(){
+        Processo processoSemProcessoCritico = novoProcesso();
+        processoSemProcessoCritico.setProcessoCritico(null);
+        return processoSemProcessoCritico;
+    }
+    public static Processo processoComProcessoCriticoInvalido(){
+        Processo processoComProcessoCriticoInvalido = novoProcesso();
+        processoComProcessoCriticoInvalido.setProcessoCritico(processoCriticoInvalido);
+        return processoComProcessoCriticoInvalido;
     }
 }
