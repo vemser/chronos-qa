@@ -1,4 +1,4 @@
-package runners;
+package br.com.dbccompany.chronos.testes.runners;
 
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.IncludeTags;
@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages("br.com.dbccompany.chronos.testes")
-@IncludeTags("foto")
-public class TestesFotoRunner {
+@IncludeTags("dia-nao-util")
+public class TestesDiaNaoUtilRunner {
 }
