@@ -25,19 +25,34 @@ public class UsuarioCreateTest extends BaseTest {
     @Epic("Aceitação")
     @Feature("Usuário")
     @Story("Criar Usuário")
-    @Tag("atual")
-    @Description("Deve criar usuario com sucesso")
-    public void deveCriarUsuarioComSucesso(){
-        User user = UserDataFactory.usuarioValido();
+    @Description("Deve criar usuario utilizando email dbc com sucesso")
+    public void deveCriarUsuarioComSucessoUtilizandoEmail(){
+        User user = UserDataFactory.usuarioValidoComEmail();
         UsuarioDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
-                .then()
+            .then()
                 .log().all()
                 .statusCode(HttpStatus.SC_OK).extract().as(UsuarioDTO.class)
-                ;
-        assertAll("Usuario",
-                () -> Assert.assertEquals(response.getStatus(), "ATIVO"),
-                () -> Assert.assertEquals(response.getNome(), user.getNome())
-        );
+            ;
+        Assert.assertEquals(response.getLogin(), user.getLogin());
+        UsuarioClient.deletarUsuario(response.getIdUsuario().toString(),true);
+    }
+    @Test
+    @Tag("todos")
+    @Tag("usuario")
+    @Owner("Kevin Aryel")
+    @Epic("Aceitação")
+    @Feature("Usuário")
+    @Story("Criar Usuário")
+    @Description("Deve criar usuario com mais de um cargo com sucesso")
+    public void deveCriarUsuarioComCargoDuploComSucesso(){
+        User user = UserDataFactory.usuarioValidoComCargoDuplo();
+        UsuarioDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
+            .then()
+                .log().all()
+                .statusCode(HttpStatus.SC_OK)
+                .extract().as(UsuarioDTO.class)
+            ;
+        Assert.assertEquals(response.getLogin(),user.getLogin());
         UsuarioClient.deletarUsuario(response.getIdUsuario().toString(),true);
     }
 
@@ -48,16 +63,17 @@ public class UsuarioCreateTest extends BaseTest {
     @Epic("Aceitação")
     @Feature("Usuário")
     @Story("Criar Usuário")
-    @Description("Deve retornar erro ao tentar criar usuario sem nome")
-    public void deveFalharCriarUsuarioSemNome(){
-        User user = UserDataFactory.userSemNome();
-        ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
-                .then()
+    @Description("Deve criar usuario utilizando username com sucesso")
+    public void deveCriarUsuarioComSucessoUtilizandoUsername(){
+        User user = UserDataFactory.usuarioValidoComUsername();
+        UsuarioDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
+            .then()
                 .log().all()
-                .statusCode(HttpStatus.SC_BAD_REQUEST).extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST);
+                .statusCode(HttpStatus.SC_OK).extract().as(UsuarioDTO.class)
+            ;
+        Assert.assertEquals(response.getLogin(), user.getLogin());
+        UsuarioClient.deletarUsuario(response.getIdUsuario().toString(),true);
     }
-
 
     @Test
     @Tag("todos")
@@ -66,9 +82,9 @@ public class UsuarioCreateTest extends BaseTest {
     @Epic("Aceitação")
     @Feature("Usuário")
     @Story("Criar Usuário")
-    @Description("Deve retornar erro ao tentar criar usuario sem email")
-    public void deveFalharCriarUsuarioSemEmail(){
-        User user = UserDataFactory.userSemEmail();
+    @Description("Deve retornar erro ao tentar criar usuario sem login")
+    public void deveFalharCriarUsuarioSemLogin(){
+        User user = UserDataFactory.userSemLogin();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
                 .then()
                 .log().all()
@@ -137,7 +153,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario com email invalido")
     public void deveFalharCriarUsuarioEmailInvalido(){
-        User user = UserDataFactory.userComEmailInvalido();
+        User user = UserDataFactory.userComLoginInvalido();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
                 .then()
                 .log().all()
@@ -154,7 +170,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario sem auth")
     public void deveFalharCriarUsuarioSemAuth() {
-        User user = UserDataFactory.usuarioValido();
+        User user = UserDataFactory.usuarioValidoComEmail();
         Response response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),false)
                 .then()
                 .log().all()
@@ -171,7 +187,7 @@ public class UsuarioCreateTest extends BaseTest {
     @Story("Criar Usuário")
     @Description("Deve retornar erro ao tentar criar usuario com email duplicado")
     public void deveFalharCriarUsuarioEmailDuplicado(){
-        User user = UserDataFactory.userComEmailDuplicado();
+        User user = UserDataFactory.userComLoginDuplicado();
         ResponseErrorBadDTO response = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(user),true)
                 .then()
                 .log().all()
