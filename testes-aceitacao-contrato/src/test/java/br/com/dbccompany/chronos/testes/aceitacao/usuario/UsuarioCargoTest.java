@@ -1,10 +1,12 @@
 package br.com.dbccompany.chronos.testes.aceitacao.usuario;
 import br.com.dbccompany.chronos.client.UsuarioClient;
 import br.com.dbccompany.chronos.data.factory.CargoDataFactory;
+import br.com.dbccompany.chronos.data.factory.CargoEditDataFactory;
 import br.com.dbccompany.chronos.data.factory.UserDataFactory;
 import br.com.dbccompany.chronos.dto.ResponseErrorBadDTO;
 import br.com.dbccompany.chronos.dto.UsuarioDTO;
 import br.com.dbccompany.chronos.model.Cargo;
+import br.com.dbccompany.chronos.model.CargoEdit;
 import br.com.dbccompany.chronos.model.User;
 import br.com.dbccompany.chronos.testes.BaseTest;
 import br.com.dbccompany.chronos.utils.PreloadData;
@@ -32,7 +34,7 @@ public class UsuarioCargoTest extends BaseTest {
         UsuarioDTO usuario = PreloadData.userAdmin();
         String idUsuario = usuario.getIdUsuario().toString();
         try{
-            Cargo[] cargos = CargoDataFactory.cargoUnico();
+            CargoEdit cargos = CargoEditDataFactory.cargoEditValido();
             UsuarioDTO response = UsuarioClient.atualizarCargo(Utils.converterParaJson(cargos),idUsuario,true)
                     .then()
                     .log().all()
@@ -54,7 +56,7 @@ public class UsuarioCargoTest extends BaseTest {
         UsuarioDTO usuario = PreloadData.userAdmin();
         String idUsuario = usuario.getIdUsuario().toString();
         try{
-            Cargo[] cargos = CargoDataFactory.cargoDuplo();
+            CargoEdit cargos = CargoEditDataFactory.cargoEditValidoDuplo();
             UsuarioDTO response = UsuarioClient.atualizarCargo(Utils.converterParaJson(cargos),idUsuario,true)
                     .then()
                     .log().all()
@@ -73,7 +75,7 @@ public class UsuarioCargoTest extends BaseTest {
     @Story("Editar Cargos Usuário")
     @Description("Deve retornar erro ao editar cargos sem auth")
     public void deveFalharEditarCargosSemAuth(){
-        Cargo[] cargos = CargoDataFactory.cargoUnico();
+        CargoEdit cargos = CargoEditDataFactory.cargoEditValido();
         Response response = UsuarioClient.atualizarCargo(Utils.converterParaJson(cargos),"2",false)
             .then()
                 .log().all()
@@ -89,7 +91,7 @@ public class UsuarioCargoTest extends BaseTest {
     @Story("Editar Cargos Usuário")
     @Description("Deve retornar erro ao editar cargos com id inválido")
     public void deveFalharEditarCargosComIdInvalido(){
-        Cargo[] cargos = CargoDataFactory.cargoUnico();
+        CargoEdit cargos = CargoEditDataFactory.cargoEditValido();
         ResponseErrorBadDTO response = UsuarioClient.atualizarCargo(Utils.converterParaJson(cargos),"0",true)
             .then()
                 .log().all()
@@ -109,9 +111,9 @@ public class UsuarioCargoTest extends BaseTest {
         UsuarioDTO usuario = PreloadData.userAdmin();
         String idUsuario = usuario.getIdUsuario().toString();
         try{
-            Cargo[] cargos = CargoDataFactory.cargosInvalido();
+            CargoEdit cargos = CargoEditDataFactory.cargoEditInvalido();
             ResponseErrorBadDTO response = UsuarioClient.atualizarCargo(Utils.converterParaJson(cargos),idUsuario,true)
-                    .then()
+                .then()
                     .log().all()
                     .statusCode(HttpStatus.SC_BAD_REQUEST).extract().as(ResponseErrorBadDTO.class);
            Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST);
@@ -132,14 +134,13 @@ public class UsuarioCargoTest extends BaseTest {
         UsuarioDTO usuario = PreloadData.userAdmin();
         String idUsuario = usuario.getIdUsuario().toString();
         try{
-            Cargo[] cargos = CargoDataFactory.cargosVazio();
+            CargoEdit cargos = CargoEditDataFactory.cargoEditVazio();
             ResponseErrorBadDTO response = UsuarioClient.atualizarCargo(Utils.converterParaJson(cargos),idUsuario,true)
-                    .then()
+                .then()
                     .log().all()
-                    .statusCode(HttpStatus.SC_BAD_REQUEST).extract().as(ResponseErrorBadDTO.class);
-            assertAll("response",
-                    () ->Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST)
-            );
+                    .statusCode(HttpStatus.SC_BAD_REQUEST)
+                    .extract().as(ResponseErrorBadDTO.class);
+            Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST);
         } finally {
             UsuarioClient.deletarUsuario(idUsuario,true);
         }

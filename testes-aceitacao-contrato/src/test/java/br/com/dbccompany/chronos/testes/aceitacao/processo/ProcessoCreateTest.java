@@ -50,6 +50,31 @@ public class ProcessoCreateTest extends BaseTest {
     @Epic("Aceitação")
     @Feature("Processo")
     @Story("Criar Processo")
+    @Description("Deve criar um novo processo critico com sucesso")
+    public void deveCriarUmNovoProcessoCriticoComSucesso() {
+        EdicaoDTO edicao = PreloadData.edicao();
+        String idEdicao = edicao.getIdEdicao().toString();
+        try{
+            EtapaDTO etapa = PreloadData.etapa(idEdicao);
+            String idEtapa = etapa.getIdEtapa().toString();
+            Processo processo = ProcessoDataFactory.processoValidoCritico();
+            ProcessoDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
+                    .then()
+                    .log().all()
+                    .extract().as(ProcessoDTO.class);
+            Assert.assertEquals(processo.getNome(), response.getNome());
+        } finally {
+            EdicaoClient.deletarEdicao(idEdicao,true);
+        }
+    }
+
+    @Test
+    @Tag("todos")
+    @Tag("processo")
+    @Owner("Kevin Aryel")
+    @Epic("Aceitação")
+    @Feature("Processo")
+    @Story("Criar Processo")
     @Description("Deve falhar ao tentar criar um processo com idEtapa inexistente")
     public void deveFalharAoTentarCriarUmProcessoComIdEtapaInexistente() {
         Processo processo = ProcessoDataFactory.processoValido();
