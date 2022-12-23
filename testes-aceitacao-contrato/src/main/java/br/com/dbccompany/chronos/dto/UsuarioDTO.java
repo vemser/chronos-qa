@@ -6,9 +6,7 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties
 public class UsuarioDTO<T> {
-    String nome;
-    String email;
-    String status;
+    String login;
     Integer idUsuario;
     T imagem;
     CargoDTO[] cargos;

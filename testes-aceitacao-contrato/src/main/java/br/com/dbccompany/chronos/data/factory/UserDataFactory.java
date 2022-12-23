@@ -1,107 +1,76 @@
 package br.com.dbccompany.chronos.data.factory;
 
-import br.com.dbccompany.chronos.model.Cargo;
-import br.com.dbccompany.chronos.model.CargoBuilder;
 import br.com.dbccompany.chronos.model.User;
 import br.com.dbccompany.chronos.model.UserBuilder;
 import br.com.dbccompany.chronos.utils.ConfigManipulation;
 import br.com.dbccompany.chronos.utils.Utils;
 
+
 public class UserDataFactory {
 
-        private UserDataFactory() {}
-        private static Cargo[] cargosVazio = new Cargo[0];
-        private static String emailValido() {
-            return nomeValido().toLowerCase().replaceAll("[^a-z]", "")+"@dbccompany.com.br";
-        }
-        private static String emailInvalido() {
-            return Utils.faker.internet().emailAddress();
-        }
-        private static String nomeValido(){
-            return Utils.faker.name().fullName();
-        }
-        private static Cargo[] cargosInvalidos(){
-            return new Cargo[]{new CargoBuilder().idCargo(10).descricao("Cargo 1").nome("Teste").build()};
-        }
-        private static Cargo[] cargosValidos(){
-            return new Cargo[]{new CargoBuilder().idCargo(1).descricao("Administrador").nome("ROLE_ADMIN").build()};
-        }
+    private UserDataFactory() {}
+    private static String nomeValido(){
+        return Utils.faker.name().firstName().toLowerCase().replaceAll("[^a-z]", "");
+    }
+    private static String usernameValido(){
+        return "teste."+nomeValido();
+    }
 
-        private static User novoUsuario() {
-            return new UserBuilder()
-                .email(emailValido())
-                .nome(nomeValido())
-                .cargos(cargosValidos())
-                .build();
-        }
+    private static String loginEmailValido() {
+        return usernameValido()+"@dbccompany.com.br";
+    }
+    private static String loginEmailInvalido() {
+        return Utils.faker.internet().emailAddress();
+    }
 
-        private static User novoCadastro(){
-            return new UserBuilder()
-                    .nome(nomeValido())
-                    .cargos(cargosValidos())
-                    .build();
-        }
-        public static User cadastroValido(){
-            return novoCadastro();
-        }
+    private static User novoUsuario() {
+        return new UserBuilder()
+            .login(loginEmailValido())
+            .cargos(CargoDataFactory.cargoUnico())
+            .build();
+    }
+    public static User usuarioValidoComEmail() {
+        return novoUsuario();
+    }
+    public static User usuarioValidoComUsername() {
+        User usuarioValidoComUsername = novoUsuario();
+        usuarioValidoComUsername.setLogin(usernameValido());
+        return usuarioValidoComUsername;
+    }
+    public static User usuarioValidoComCargoDuplo(){
+        User usuarioValidoComCargoDuplo = novoUsuario();
+        usuarioValidoComCargoDuplo.setCargos(CargoDataFactory.cargoDuplo());
+        return usuarioValidoComCargoDuplo;
+    }
 
-        public static User cadastroSemNome(){
-            User cadastroSemNome = novoCadastro();
-            cadastroSemNome.setNome(null);
-            return cadastroSemNome;
-        }
-        public static User cadastroComCargoVazio(){
-            User cadastroComCargoVazio = novoCadastro();
-            cadastroComCargoVazio.setCargos(cargosVazio);
-            return cadastroComCargoVazio;
-        }
-        public static User cadastroSemCargo(){
-            User cadastroSemCargo = novoCadastro();
-            cadastroSemCargo.setCargos(null);
-            return cadastroSemCargo;
-        }
-        public static User cadastroComCargoInvalido(){
-            User cadastroComCargoInvalido = novoCadastro();
-            cadastroComCargoInvalido.setCargos(cargosInvalidos());
-            return cadastroComCargoInvalido;
-        }
-
-        public static User usuarioValido() {
-            return novoUsuario();
-        }
-        public static User userSemNome() {
-            User userSemNome = novoUsuario();
-            userSemNome.setNome(null);
-            return userSemNome;
-        }
-        public static User userSemEmail() {
-            User userSemEmail = novoUsuario();
-            userSemEmail.setEmail(null);
-            return userSemEmail;
-        }
-        public static User userSemCargo(){
-            User userSemCargo = novoUsuario();
-            userSemCargo.setCargos(null);
-            return userSemCargo;
-        }
-        public static User userComCargoVazio(){
-            User userComCargoVazio = novoUsuario();
-            userComCargoVazio.setCargos(cargosVazio);
-            return userComCargoVazio;
-        }
-        public static User userComEmailInvalido(){
-            User userComEmailInvalido = novoUsuario();
-            userComEmailInvalido.setEmail(emailInvalido());
-            return userComEmailInvalido;
-        }
-        public static User userComCargoInvalido(){
-            User userComCargoInvalido = novoUsuario();
-            userComCargoInvalido.setCargos(cargosInvalidos());
-            return userComCargoInvalido;
-        }
-        public static User userComEmailDuplicado() {
-            User userComEmailDuplicado = novoUsuario();
-            userComEmailDuplicado.setEmail(ConfigManipulation.getProp().getProperty("emailAdm"));
-            return userComEmailDuplicado;
-        }
+    public static User userSemLogin() {
+        User userSemLogin = novoUsuario();
+        userSemLogin.setLogin(null);
+        return userSemLogin;
+    }
+    public static User userSemCargo(){
+        User userSemCargo = novoUsuario();
+        userSemCargo.setCargos(null);
+        return userSemCargo;
+    }
+    public static User userComCargoVazio(){
+        User userComCargoVazio = novoUsuario();
+        userComCargoVazio.setCargos(CargoDataFactory.cargosVazio());
+        return userComCargoVazio;
+    }
+    public static User userComLoginInvalido(){
+        User userComLoginInvalido = novoUsuario();
+        userComLoginInvalido.setLogin(loginEmailInvalido());
+        return userComLoginInvalido;
+    }
+    public static User userComCargoInvalido(){
+        User userComCargoInvalido = novoUsuario();
+        userComCargoInvalido.setCargos(CargoDataFactory.cargosInvalido());
+        return userComCargoInvalido;
+    }
+    public static User userComLoginDuplicado() {
+        User userComLoginDuplicado = novoUsuario();
+        userComLoginDuplicado.setLogin(ConfigManipulation.getProp().getProperty("emailAdm"));
+        return userComLoginDuplicado;
+    }
 }

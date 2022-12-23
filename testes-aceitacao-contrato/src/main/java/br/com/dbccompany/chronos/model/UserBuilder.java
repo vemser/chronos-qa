@@ -1,25 +1,19 @@
 package br.com.dbccompany.chronos.model;
 
 public class UserBuilder {
-    private String email;
-    private String nome;
+    private String login;
     private Cargo[] cargos;
 
-    public UserBuilder email(String email) {
-        this.email = email;
-        return this;
-    }
-    public UserBuilder nome(String nome) {
-        this.nome = nome;
+    public UserBuilder login(String login) {
+        this.login = login;
         return this;
     }
     public UserBuilder cargos(Cargo[] cargos) {
         this.cargos = cargos;
         return this;
     }
-
     public User build() {
-        return new User(email, nome, cargos);
+        return new User(login, cargos);
     }
 
 }
