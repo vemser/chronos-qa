@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class ProcessoClient {
 
     public static Response listarProcessos (boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -18,7 +18,7 @@ public class ProcessoClient {
             ;
     }
     public static Response deletarProcesso (String idProcesso, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -26,7 +26,7 @@ public class ProcessoClient {
             ;
     }
     public static Response listarProcessoPorId (String idProcesso, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -34,7 +34,7 @@ public class ProcessoClient {
             ;
     }
     public static Response cadastrarProcesso (String json,String idEtapa, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .log().all()
                 .spec(spec)
@@ -44,7 +44,7 @@ public class ProcessoClient {
             ;
     }
     public static Response atualizarProcesso (String json, String idProcesso, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)

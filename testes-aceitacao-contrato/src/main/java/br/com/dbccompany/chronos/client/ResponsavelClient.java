@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class ResponsavelClient {
     public static Response listarResponsavel(boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -17,7 +17,7 @@ public class ResponsavelClient {
             ;
     }
     public static Response criarResponsavel(String json, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -26,7 +26,7 @@ public class ResponsavelClient {
             ;
     }
     public static Response deletarResponsavel(String id, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
