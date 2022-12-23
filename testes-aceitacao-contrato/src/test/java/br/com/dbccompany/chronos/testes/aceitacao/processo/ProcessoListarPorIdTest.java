@@ -29,12 +29,11 @@ public class ProcessoListarPorIdTest extends BaseTest {
             EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             ProcessoDTO processo = PreloadData.processo(idEtapa);
-            String idProcesso = processo.getIdProcesso().toString();
-            ProcessoDTO response = ProcessoClient.listarProcessoPorId(idEtapa,true)
+            ProcessoDTO[] response = ProcessoClient.listarProcessoPorId(idEtapa,true)
                     .then()
                     .log().all()
-                    .extract().as(ProcessoDTO.class);
-            Assert.assertEquals(processo.getNome(), response.getNome());
+                    .extract().as(ProcessoDTO[].class);
+            Assert.assertEquals(processo.getNome(), response[0].getNome());
         }finally {
             EdicaoClient.deletarEdicao(idEdicao,true);
         }

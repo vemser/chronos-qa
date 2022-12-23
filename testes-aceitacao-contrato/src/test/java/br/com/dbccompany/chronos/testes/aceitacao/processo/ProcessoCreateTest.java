@@ -213,11 +213,11 @@ public class ProcessoCreateTest extends BaseTest {
             EtapaDTO etapa = PreloadData.etapa(idEdicao);
             String idEtapa = etapa.getIdEtapa().toString();
             Processo processo = ProcessoDataFactory.processoComProcessoCriticoInvalido();
-            ResponseErrorBadDTO response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
+            Response response = ProcessoClient.cadastrarProcesso(Utils.converterParaJson(processo),idEtapa ,true)
                     .then()
                     .log().all()
-                    .extract().as(ResponseErrorBadDTO.class);
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
+                    .extract().response();
+            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatusCode());
         } finally {
             EdicaoClient.deletarEdicao(idEdicao,true);
         }
