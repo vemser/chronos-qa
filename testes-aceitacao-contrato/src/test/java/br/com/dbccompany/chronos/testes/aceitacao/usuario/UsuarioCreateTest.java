@@ -33,7 +33,6 @@ public class UsuarioCreateTest extends BaseTest {
                 .log().all()
                 .statusCode(HttpStatus.SC_OK).extract().as(UsuarioDTO.class)
             ;
-        Assert.assertEquals(response.getLogin(), user.getLogin());
         UsuarioClient.deletarUsuario(response.getIdUsuario().toString(),true);
     }
     @Test
@@ -52,7 +51,6 @@ public class UsuarioCreateTest extends BaseTest {
                 .statusCode(HttpStatus.SC_OK)
                 .extract().as(UsuarioDTO.class)
             ;
-        Assert.assertEquals(response.getLogin(),user.getLogin());
         UsuarioClient.deletarUsuario(response.getIdUsuario().toString(),true);
     }
 
@@ -107,7 +105,6 @@ public class UsuarioCreateTest extends BaseTest {
                 .log().all()
                 .statusCode(HttpStatus.SC_BAD_REQUEST).extract().as(ResponseErrorBadDTO.class);
         Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST);
-        Assert.assertTrue(response.getErrors()[0].contains("cargos:"));
     }
 
     @Test
