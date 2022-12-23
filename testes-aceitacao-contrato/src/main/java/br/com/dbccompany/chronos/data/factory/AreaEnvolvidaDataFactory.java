@@ -15,6 +15,11 @@ public class AreaEnvolvidaDataFactory {
     public static AreaEnvolvida areaEnvolvidaValida(){
         return novaAreaEnvolvida();
     }
+    public static AreaEnvolvida areaEnvolvidaTeste(){
+        return new AreaEnvolvidaBuilder()
+                .nome("teste")
+                .build();
+    }
     public static AreaEnvolvida areaEnvolvidaSemNome(){
         AreaEnvolvida areaEnvolvidaSemNome = novaAreaEnvolvida();
         areaEnvolvidaSemNome.setNome(null);
