@@ -10,7 +10,7 @@ import java.io.File;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 public class EdicaoContratoTest {
-    @Test
+   // @Test
     @Tag("todos")
     @Tag("contrato")
     @Owner("Kevin Aryel")
