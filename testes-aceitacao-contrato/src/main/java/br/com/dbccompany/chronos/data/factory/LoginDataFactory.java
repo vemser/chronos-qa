@@ -9,7 +9,10 @@ public class LoginDataFactory {
 
         private LoginDataFactory() {}
 
-        private static String emailInexistente() {
+        private static String emailInexistente(){
+            return Utils.faker.name().fullName().replaceAll("[^a-z]", "").toLowerCase().replaceAll("[^a-z]", "")+"@dbccompany.com.br";
+        }
+        private static String emailInvalido() {
             return Utils.faker.internet().emailAddress();
         }
         private static String senhaInexistente() {
@@ -18,8 +21,8 @@ public class LoginDataFactory {
 
         private static Login novoLogin(){
         return new LoginBuilder()
-                .email(emailInexistente())
-                .senha(senhaInexistente())
+                .username(emailInexistente())
+                .password(senhaInexistente())
                 .build();
         }
 
@@ -29,32 +32,38 @@ public class LoginDataFactory {
 
         public static Login loginSemEmail(){
             Login loginSemEmail = novoLogin();
-            loginSemEmail.setEmail(null);
+            loginSemEmail.setUsername(null);
             return  loginSemEmail;
         }
 
         public static Login loginSemSenha(){
             Login loginSemSenha = novoLogin();
-            loginSemSenha.setSenha(null);
+            loginSemSenha.setPassword(null);
             return  loginSemSenha;
         }
 
         public static Login loginEmailFormatoInvalido(){
             Login loginFormatoInvalido = novoLogin();
-            loginFormatoInvalido.setEmail("teste121213");
+            loginFormatoInvalido.setUsername(emailInvalido());
             return  loginFormatoInvalido;
         }
 
         public static Login loginEmailValidoSenhaInvalida(){
             Login loginEmailValidoSenhaInvalida = novoLogin();
-            loginEmailValidoSenhaInvalida.setEmail(ConfigManipulation.getProp().getProperty("emailAdm"));
+            loginEmailValidoSenhaInvalida.setUsername(ConfigManipulation.getProp().getProperty("emailQa"));
             return loginEmailValidoSenhaInvalida;
         }
-
-        public static Login loginValido() {
+        public static Login loginValidoComUsername(){
             return new LoginBuilder()
-                .email(ConfigManipulation.getProp().getProperty("emailAdm"))
-                .senha(ConfigManipulation.getProp().getProperty("senhaAdm"))
+                .username(ConfigManipulation.getProp().getProperty("userQa"))
+                .password(ConfigManipulation.getProp().getProperty("senhaQa"))
+                .build();
+        }
+
+        public static Login loginValidoComEmail() {
+            return new LoginBuilder()
+                .username(ConfigManipulation.getProp().getProperty("emailQa"))
+                .password(ConfigManipulation.getProp().getProperty("senhaQa"))
                 .build();
     }
 }
