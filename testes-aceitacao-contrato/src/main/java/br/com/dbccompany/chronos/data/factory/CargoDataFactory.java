@@ -8,20 +8,20 @@ import br.com.dbccompany.chronos.utils.Utils;
 public class CargoDataFactory {
     private static Cargo cargoAdmin(){
         return new CargoBuilder()
-                .nome(CargoValido.Administrador.getDescricao())
+                .nome(CargoValido.Administrador.getNome())
                 .descricao("Administrador")
                 .build();
     }
 
     private static Cargo cargoInstrutor(){
         return new CargoBuilder()
-                .nome(CargoValido.Instrutor.getDescricao())
+                .nome(CargoValido.Instrutor.getNome())
                 .descricao("Instrutor")
                 .build();
     }
     private static Cargo cargoGestaoDePessoas(){
         return new CargoBuilder()
-                .nome(CargoValido.GestaoDePessoas.getDescricao())
+                .nome(CargoValido.GestaoDePessoas.getNome())
                 .descricao("Gestão de Pessoas")
                 .build();
     }
@@ -43,21 +43,17 @@ public class CargoDataFactory {
     public static Cargo[] cargoUnico(){
         Integer num = Utils.faker.number().numberBetween(1,3);
         switch (num){
-            case 1:{
-                return new Cargo[]{cargoAdmin()};
-            }
             case 2:{
                 return new Cargo[]{cargoInstrutor()};
             }
             case 3:{
                 return new Cargo[]{cargoGestaoDePessoas()};
             }
-            default: return new Cargo[]{
-                cargoAdmin()
-            };
+            default: {
+                return new Cargo[]{cargoAdmin()};
+            }
         }
     }
-
 
     public static Cargo[] cargoDuplo(){
         return new Cargo[]{cargoAdmin(),cargoGestaoDePessoas()};

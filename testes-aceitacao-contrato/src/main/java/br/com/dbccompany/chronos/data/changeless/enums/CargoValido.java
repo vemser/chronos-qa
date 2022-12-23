@@ -12,7 +12,7 @@ public enum CargoValido {
     CargoValido(String nome){
         this.nome = nome;
     }
-    public String getDescricao(){
+    public String getNome(){
         return nome;
     }
 }
