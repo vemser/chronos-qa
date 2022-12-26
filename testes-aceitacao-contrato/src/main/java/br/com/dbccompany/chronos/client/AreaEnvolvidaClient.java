@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class AreaEnvolvidaClient {
     public static Response listarAreaEnvolvida(boolean auth){
-        RequestSpecification spec = auth? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -18,7 +18,7 @@ public class AreaEnvolvidaClient {
     }
 
     public static Response criarAreaEnvolvida(String json, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .log().all()
@@ -28,7 +28,7 @@ public class AreaEnvolvidaClient {
             ;
     }
     public static Response deletarAreaEnvolvida(String id, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .log().all()

@@ -25,9 +25,26 @@ public class LoginTest extends BaseTest {
     @Epic("Aceitação")
     @Feature("Login")
     @Story("Fazer Login")
-    @Description("Deve fazer login com sucesso")
-    public void deveFazerLoginComSucesso() {
-        Login login = LoginDataFactory.loginValido();
+    @Description("Deve fazer login com email com sucesso")
+    public void deveFazerLoginComEmailComSucesso() {
+        Login login = LoginDataFactory.loginValidoComEmail();
+        String response = LoginClient.fazerLogin(Utils.converterParaJson(login))
+                .then()
+                .log().all()
+                .statusCode(HttpStatus.SC_OK).extract().asString();
+        Assert.assertNotNull(response);
+        Assert.assertFalse(response.isEmpty());
+    }
+    @Test
+    @Tag("todos")
+    @Tag("login")
+    @Owner("Kevin Aryel")
+    @Epic("Aceitação")
+    @Feature("Login")
+    @Story("Fazer Login")
+    @Description("Deve fazer login com username com sucesso")
+    public void deveFazerLoginComUsernameComSucesso() {
+        Login login = LoginDataFactory.loginValidoComUsername();
         String response = LoginClient.fazerLogin(Utils.converterParaJson(login))
                 .then()
                 .log().all()
@@ -52,8 +69,7 @@ public class LoginTest extends BaseTest {
             .extract().as(ResponseErrorBadDTO.class);
         assertAll("response",
                 () -> Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST),
-                () -> Assert.assertEquals(1, response.getErrors().length),
-                () -> Assert.assertTrue(Arrays.stream(response.getErrors()).anyMatch(item -> item.contains("email: must be a well-formed email address")))
+                () -> Assert.assertEquals(1, response.getErrors().length)
         );
     }
 
@@ -71,7 +87,7 @@ public class LoginTest extends BaseTest {
                 .then()
                 .log().all()
                 .extract().response();
-        Assert.assertEquals(response.statusCode(), HttpStatus.SC_FORBIDDEN);
+        Assert.assertEquals(response.statusCode(), HttpStatus.SC_BAD_REQUEST);
     }
 
     @Test
@@ -88,7 +104,7 @@ public class LoginTest extends BaseTest {
             .then()
             .log().all()
             .extract().response();
-        Assert.assertEquals(response.statusCode(), HttpStatus.SC_FORBIDDEN);
+        Assert.assertEquals(response.statusCode(), HttpStatus.SC_BAD_REQUEST);
     }
 
     @Test
@@ -109,8 +125,7 @@ public class LoginTest extends BaseTest {
             .extract().as(ResponseErrorBadDTO.class);
         assertAll("response",
                 () -> Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST),
-                () -> Assert.assertEquals(1, response.getErrors().length),
-                () -> Assert.assertTrue(Arrays.stream(response.getErrors()).anyMatch(item -> item.contains("senha: must not be null")))
+                () -> Assert.assertEquals(1, response.getErrors().length)
         );
     }
 
@@ -131,8 +146,7 @@ public class LoginTest extends BaseTest {
             .extract().as(ResponseErrorBadDTO.class);
         assertAll("response",
                 () -> Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST),
-                () -> Assert.assertEquals(1, response.getErrors().length),
-                () -> Assert.assertTrue(Arrays.stream(response.getErrors()).anyMatch(item -> item.contains("email: must not be null")))
+                () -> Assert.assertEquals(1, response.getErrors().length)
         );
     }
 

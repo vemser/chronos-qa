@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 
 public class PreloadData {
     public static UsuarioDTO userAdmin(){
-        User usuario = UserDataFactory.usuarioValido();
+        User usuario = UserDataFactory.usuarioValidoComUsername();
         UsuarioDTO userAdmin = UsuarioClient.cadastrarUsuario(Utils.converterParaJson(usuario),true)
             .then()
                 .log().all()
@@ -52,9 +52,5 @@ public class PreloadData {
         return DiaNaoUtilClient.criarDiaNaoUtil(Utils.converterParaJson(diaNaoUtil),true)
                 .then()
                 .extract().as(DiaNaoUtilDTO.class);
-    }
-    public static Response restaurarPerfil(String senhaAtual){
-        Perfil perfil = PerfilDataFactory.perfilRestore(senhaAtual);
-        return UsuarioClient.atualizarPerfil(Utils.converterParaJson(perfil),true);
     }
 }

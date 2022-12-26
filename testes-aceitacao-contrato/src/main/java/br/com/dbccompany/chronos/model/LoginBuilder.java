@@ -2,20 +2,20 @@ package br.com.dbccompany.chronos.model;
 
 public class LoginBuilder {
 
-        private String email;
-        private String senha;
+        private String username;
+        private String password;
 
-        public LoginBuilder email(String email) {
-            this.email = email;
+        public LoginBuilder username(String username) {
+            this.username = username;
             return this;
         }
 
-        public LoginBuilder senha(String senha) {
-            this.senha = senha;
+        public LoginBuilder password(String password) {
+            this.password = password;
             return this;
         }
 
         public Login build() {
-            return new Login(email, senha);
+            return new Login(username, password);
         }
 }

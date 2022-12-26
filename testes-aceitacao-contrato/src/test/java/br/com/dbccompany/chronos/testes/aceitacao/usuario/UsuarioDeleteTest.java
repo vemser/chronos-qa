@@ -21,24 +21,6 @@ public class UsuarioDeleteTest extends BaseTest {;
     @Epic("Aceitação")
     @Feature("Usuário")
     @Story("Deletar Usuário")
-    @Tag("atual")
-    @Description("Deve deletar usuario com sucesso")
-    public void deveDeletarUsuarioComSucesso(){
-        UsuarioDTO usuario = PreloadData.userAdmin();
-        Response response = UsuarioClient.deletarUsuario(usuario.getIdUsuario().toString(),true)
-                .then()
-                .log().all()
-                .extract().response();
-        Assert.assertEquals(response.statusCode(), HttpStatus.SC_NO_CONTENT);
-    }
-
-    @Test
-    @Tag("todos")
-    @Tag("usuario")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Usuário")
-    @Story("Deletar Usuário")
     @Description("Deve retornar erro ao tentar deletar usuario sem auth")
     public void deveFalharDeletarUsuarioSemAuth(){
         Response response = UsuarioClient.deletarUsuario("1",false)
@@ -63,6 +45,4 @@ public class UsuarioDeleteTest extends BaseTest {;
                 .statusCode(HttpStatus.SC_BAD_REQUEST).extract().as(ResponseErrorBadDTO.class);
         Assert.assertEquals(response.getStatus().intValue(), HttpStatus.SC_BAD_REQUEST);
     }
-
-
 }

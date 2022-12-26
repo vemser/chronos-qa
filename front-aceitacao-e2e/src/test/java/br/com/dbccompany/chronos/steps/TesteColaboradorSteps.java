@@ -13,7 +13,7 @@ public class TesteColaboradorSteps extends BaseSteps {
         AdminPage.clicarBotaoColaboradores();
     }
     private static String nomeValido(){
-        return Utils.faker.name().fullName().replaceAll("[^A-Z a-z]", "");
+        return Utils.faker.name().fullName().replaceAll("[^A-Za-z]", "");
     }
     private static String emailValido(){
         return nomeValido().toLowerCase().replaceAll("[^a-z]", "")+"@dbccompany.com.br";

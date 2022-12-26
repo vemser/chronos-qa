@@ -21,24 +21,6 @@ public class UsuarioGetTest extends BaseTest {
     @Epic("Aceitação")
     @Feature("Usuário")
     @Story("Listar Usuários")
-    @Description("Deve listar todos usuarios com sucesso")
-    public void deveListarUsuarioComSucesso() {
-        ResponseListUserDTO response = UsuarioClient.listarUsuarios(true)
-                .then()
-                .extract().as(ResponseListUserDTO.class);
-        assertAll("response",
-                () -> Assert.assertEquals(0, response.getPagina().intValue()),
-                () -> Assert.assertTrue(response.getTotalElementos().intValue() > 3)
-        );
-    }
-
-    @Test
-    @Tag("todos")
-    @Tag("usuario")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Usuário")
-    @Story("Listar Usuários")
     @Description("Deve retornar erro ao tentar listar todos usuarios sem auth")
     public void deveFalharListarUsuarioSemAuth() {
         Response response = UsuarioClient.listarUsuarios(false)

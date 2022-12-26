@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class EdicaoClient {
 
     public static Response clonarEdicao(String idEdicao, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .when()
@@ -19,7 +19,7 @@ public class EdicaoClient {
     }
 
     public static Response listarEdicoes (boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -28,7 +28,7 @@ public class EdicaoClient {
     }
 
     public static Response deletarEdicao (String id, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -36,7 +36,7 @@ public class EdicaoClient {
             ;
     }
     public static Response alterarStatusEdicao (String id, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -44,7 +44,7 @@ public class EdicaoClient {
             ;
     }
     public static Response cadastrarEdicao (String json, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .log().all()
                 .spec(spec)
@@ -54,7 +54,7 @@ public class EdicaoClient {
             ;
     }
     public static Response atualizarEdicao (String json, String id, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -63,7 +63,7 @@ public class EdicaoClient {
             ;
     }
     public static Response listarCalendarioGeral (boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -71,7 +71,7 @@ public class EdicaoClient {
             ;
     }
     public static Response listarCalendarioEdicao (String id, boolean auth) {
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()

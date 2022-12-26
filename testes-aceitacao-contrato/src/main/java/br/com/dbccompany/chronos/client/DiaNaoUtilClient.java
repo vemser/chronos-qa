@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class DiaNaoUtilClient {
     public static Response criarDiaNaoUtil(String json, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -18,7 +18,7 @@ public class DiaNaoUtilClient {
             ;
     }
     public static Response deletarDiaNaoUtil(String id, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -26,7 +26,7 @@ public class DiaNaoUtilClient {
             ;
     }
     public static Response listarDiaNaoUtil(boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .log().all()
@@ -35,7 +35,7 @@ public class DiaNaoUtilClient {
             ;
     }
     public static Response editarDiaNaoUtil(String json, String id, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .log().all()

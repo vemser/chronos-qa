@@ -12,7 +12,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 public class UsuarioContratoTest extends BaseTest {
 
-    @Test
+    //@Test
     @Tag("todos")
     @Tag("contrato")
     @Owner("Kevin Aryel")

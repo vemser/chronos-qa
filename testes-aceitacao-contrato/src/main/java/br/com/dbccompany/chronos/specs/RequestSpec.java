@@ -6,30 +6,16 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
 public class RequestSpec {
-    private static String tokenAdm = new Auth().autenticacaoAdmin();
-    private static String tokenTeste = new Auth().autenticacaoUserTeste();
-    private static String tokenGestao = new Auth().autenticacaoGestaoDePessoas();
+    private static String tokenGeral = new Auth().autenticacaoQa();
     public static RequestSpecification noAuth() {
         return new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .build();
     }
-    public static RequestSpecification adm() {
+    public static RequestSpecification geral() {
         return new RequestSpecBuilder()
-                .addHeader("Authorization", tokenAdm)
+                .addHeader("Authorization", tokenGeral)
                 .setContentType(ContentType.JSON)
                 .build();
-    }
-    public static  RequestSpecification teste(){
-        return new RequestSpecBuilder()
-            .addHeader("Authorization", tokenTeste)
-            .setContentType(ContentType.JSON)
-            .build();
-    }
-    public static RequestSpecification gestao(){
-        return new RequestSpecBuilder()
-            .addHeader("Authorization",tokenGestao)
-            .setContentType(ContentType.JSON)
-            .build();
     }
 }

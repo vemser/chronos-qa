@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class EtapaClient {
 
     public static Response listarEtapa(boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -19,7 +19,7 @@ public class EtapaClient {
     }
 
     public static Response deletarEtapa (String id, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()
@@ -28,7 +28,7 @@ public class EtapaClient {
     }
 
     public static Response criarEtapa (String json,String idEdicao, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -37,7 +37,7 @@ public class EtapaClient {
             ;
     }
     public static Response atualizarEtapa (String json,String id, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
                 .body(json)
@@ -47,7 +47,7 @@ public class EtapaClient {
     }
 
     public static Response listarEtapaPorId(String idEtapa, boolean auth){
-        RequestSpecification spec = auth ? RequestSpec.gestao() : RequestSpec.noAuth();
+        RequestSpecification spec = auth ? RequestSpec.geral() : RequestSpec.noAuth();
         return given()
                 .spec(spec)
             .when()

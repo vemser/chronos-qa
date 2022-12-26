@@ -4,15 +4,13 @@ import lombok.Data;
 
 @Data
 public class User {
-    private String email;
-    private String nome;
+    private String login;
     private Cargo[] cargos;
 
     public User() {
     }
-    public User(String email, String nome, Cargo[] cargos) {
-        this.email = email;
-        this.nome = nome;
+    public User(String login, Cargo[] cargos) {
+        this.login = login;
         this.cargos = cargos;
     }
 }
