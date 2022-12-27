@@ -5,6 +5,7 @@ import br.com.dbccompany.chronos.utils.ConfigManipulation;
 import io.qameta.allure.*;
 import org.junit.Assert;
 import org.junit.Test;
+import cucumber.api.java.pt.*;
 import static br.com.dbccompany.chronos.utils.Utils.faker;
 
 public class TesteLoginSteps extends BaseSteps {
