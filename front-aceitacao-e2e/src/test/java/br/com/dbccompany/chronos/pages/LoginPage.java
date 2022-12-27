@@ -13,9 +13,6 @@ public class LoginPage extends BasePage {
             By.id("login-error-email");
     public static final  By spanErroSenha =
             By.id("login-error-senha");
-    public static final By botaoEsqueciSenha =
-            By.id("#login-btn-esqueci-senha");
-
     public static void preencherEmail(String email){
         sendKeys(campoEmail, email);
     }
@@ -25,23 +22,11 @@ public class LoginPage extends BasePage {
     public static void clicarEntrar(){
         click(botaoEntrar);
     }
-    public static void clicarEsqueciSenha(){
-        click(botaoEsqueciSenha);
-    }
 
-    public static boolean validarMensagemErroEmail(String text) {
-        return getText(spanErroEmail).contains(text);
+    public static boolean validarMensagemErroEmail() {
+        return checkElementDisplayStatus(spanErroEmail);
     }
-    public static boolean validarMensagemErroSenha(String text) {
-        return getText(spanErroSenha).contains(text);
-    }
-    public static boolean validarUrlAdmin(){
-        return getUrl().contains("admin");
-    }
-    public static boolean validarUrlInstrutor(){
-        return getUrl().contains("instrutor");
-    }
-    public static boolean validarUrlGestao(){
-        return getUrl().contains("gestao");
+    public static boolean validarMensagemErroSenha() {
+        return checkElementDisplayStatus(spanErroSenha);
     }
 }
