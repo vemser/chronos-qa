@@ -12,4 +12,12 @@ public class VerificarEdicaoSteps {
     public void clicarBtnEditarEtapa(){
         VerificarEdicaoPage.clicarBotaoEditarEtapa();
     }
+    @E("clique em criar processo")
+    public void clicarBtnCriarProcesso(){
+        VerificarEdicaoPage.clicarBotaoAdicionarProcesso();
+    }
+    @E("clique no botao de editar processo")
+    public void clicarBtnEditarProcesso(){
+        VerificarEdicaoPage.clicarBotaoEditarProcesso();
+    }
 }

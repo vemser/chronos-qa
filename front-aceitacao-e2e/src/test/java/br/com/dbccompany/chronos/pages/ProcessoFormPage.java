@@ -2,7 +2,7 @@ package br.com.dbccompany.chronos.pages;
 
 import org.openqa.selenium.By;
 
-public class CadastrarEditarProcessoPage extends BasePage {
+public class ProcessoFormPage extends BasePage {
     private static final By inputNome =
             By.id("nome");
     private static final By inputAreaEnvolvida =
@@ -19,10 +19,15 @@ public class CadastrarEditarProcessoPage extends BasePage {
             By.id("diasUteis");
     private static final By inputOrdem =
             By.id("ordemExecucao");
+    private static final By checkboxProcessoCritico =
+            By.cssSelector("[name='processoCritico']");
     private static final By btnSubmit =
             By.cssSelector("[type='submit']");
     public static void preencherNome(String nome) {
         sendKeys(inputNome,nome);
+    }
+    public static void marcarCheckboxProcessoCritico(){
+        click(checkboxProcessoCritico);
     }
     public static void preencherAreaEnvolvida(String areaEnvolvida) {
         sendKeys(inputAreaEnvolvida,areaEnvolvida);
