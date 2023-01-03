@@ -6,11 +6,9 @@ import lombok.Data;
 public class Edicao {
     String nome;
     String dataInicial;
-    String dataFinal;
 
-    public Edicao(String nome, String dataInicial, String dataFinal) {
+    public Edicao(String nome, String dataInicial) {
         this.nome = nome;
         this.dataInicial = dataInicial;
-        this.dataFinal = dataFinal;
     }
 }

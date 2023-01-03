@@ -86,56 +86,6 @@ public class EdicaoCreateTest extends BaseTest {
             .extract().as(ResponseErrorBadDTO.class);
         Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
     }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Criar Edição")
-    @Description("Deve retornar erro ao criar uma edição sem dataFinal")
-    public void deveFalharAoCriarUmaEdicaoSemDataFinal() {
-        Edicao edicao = EdicaoDataFactory.edicaoSemDataFinal();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
-            .then()
-            .log().all()
-            .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
-    }
-
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Criar Edição")
-    @Description("Deve retornar erro ao criar uma edição com dataFinal menor que Inicial")
-    public void deveFalharAoCriarUmaEdicaoComDataInicialMaiorQueDataFinal() {
-        Edicao edicao = EdicaoDataFactory.edicaoComDataFinalMenorQueDataInicial();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
-            .then()
-            .log().all()
-            .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
-    }
-
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Criar Edição")
-    @Description("Deve retornar erro ao criar uma edição com dataFinal igual a Inicial")
-    public void deveFalharAoCriarUmaEdicaoComDataInicialIgualADataFinal() {
-        Edicao edicao = EdicaoDataFactory.edicaoComDataFinalIgualADataInicial();
-        ResponseErrorBadDTO response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
-            .then()
-            .log().all()
-            .extract().as(ResponseErrorBadDTO.class);
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatus().intValue());
-    }
 
     @Test
     @Tag("todos")
@@ -153,22 +103,7 @@ public class EdicaoCreateTest extends BaseTest {
                 .extract().response();
         Assert.assertEquals(HttpStatus.SC_BAD_REQUEST,response.statusCode());
     }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Criar Edição")
-    @Description("Deve retornar erro ao criar uma edição com dataFinal no formato invalido")
-    public void deveFalharAoCriarUmaEdicaoComDataFinalNoFormatoInvalido() {
-        Edicao edicao = EdicaoDataFactory.edicaoComDataFinalFormatoInvalido();
-        Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
-            .then()
-            .log().all()
-            .extract().response();
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.statusCode() );
-    }
+
     @Test
     @Tag("todos")
     @Tag("edicao")
@@ -179,22 +114,6 @@ public class EdicaoCreateTest extends BaseTest {
     @Description("Deve retornar erro ao criar uma edição com dataInicial com tipo inválido")
     public void deveFalharAoCriarUmaEdicaoComDataInicialComTipoInvalido() {
         Edicao edicao = EdicaoDataFactory.edicaoComDataInicialTipoInvalido();
-        Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
-            .then()
-            .log().all()
-            .extract().response();
-        Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.statusCode());
-    }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Criar Edição")
-    @Description("Deve retornar erro ao criar uma edição com dataFinal com tipo inválido")
-    public void deveFalharAoCriarUmaEdicaoComDataFinalComTipoInvalido() {
-        Edicao edicao = EdicaoDataFactory.edicaoComDataFinalTipoInvalido();
         Response response = EdicaoClient.cadastrarEdicao(Utils.converterParaJson(edicao),true)
             .then()
             .log().all()

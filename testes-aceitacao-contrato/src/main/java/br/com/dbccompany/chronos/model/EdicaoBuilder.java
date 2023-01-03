@@ -3,7 +3,6 @@ package br.com.dbccompany.chronos.model;
 public class EdicaoBuilder {
     private String nome;
     private String dataInicial;
-    private String dataFinal;
 
     public EdicaoBuilder() {
     }
@@ -18,13 +17,9 @@ public class EdicaoBuilder {
         return this;
     }
 
-    public EdicaoBuilder dataFinal(String dataFinal) {
-        this.dataFinal = dataFinal;
-        return this;
-    }
 
     public Edicao build() {
-        return new Edicao(nome, dataInicial, dataFinal);
+        return new Edicao(nome, dataInicial);
     }
 
 }
