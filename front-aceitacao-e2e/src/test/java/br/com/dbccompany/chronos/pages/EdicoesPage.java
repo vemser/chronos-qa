@@ -5,13 +5,10 @@ import org.openqa.selenium.By;
 public class EdicoesPage extends BasePage {
     private static final By btnAdicionarEdicoes =
             By.cssSelector("[href='/vemser/chronos-front/gestao/cadastrar-edicao']");
-
     private static final By nomeUltimaEdicao =
             By.cssSelector("tbody > tr:last-child > th");
-
     private static final By btnExcluirUltima =
             By.cssSelector("tbody > tr:last-child >td:last-child");
-
     private static final By btnClonarEdicaoUltima =
             By.cssSelector("tbody > tr:last-child >td:nth-child(5)");
     private static final By btnEditarUltima =

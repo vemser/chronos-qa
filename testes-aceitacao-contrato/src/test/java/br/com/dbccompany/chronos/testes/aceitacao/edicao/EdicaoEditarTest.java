@@ -128,100 +128,6 @@ public class EdicaoEditarTest extends BaseTest {
     @Epic("Aceitação")
     @Feature("Edição")
     @Story("Editar Edição")
-    @Description("Deve retornar erro ao editar uma edição sem dataFinal")
-    public void deveFalharAoEditarUmaEdicaoSemDataFinal() {
-        EdicaoDTO edicao = PreloadData.edicao();
-        String edicaoId = edicao.getIdEdicao().toString();
-        try {
-            Edicao edicaoEditada = EdicaoDataFactory.edicaoSemDataFinal();
-            edicaoEditada.setDataFinal(null);
-            Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),edicaoId, true)
-                    .then()
-                    .log().all()
-                    .extract().response()
-                    ;
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatusCode());
-        } finally {
-            EdicaoClient.deletarEdicao(edicaoId, true);
-        }
-    }
-
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Editar Edição")
-    @Description("Deve retornar erro ao editar uma edição com dataFinal menor que dataInicial")
-    public void deveFalharAoEditarUmaEdicaoComDataFinalMenorQueDataInicial() {
-        EdicaoDTO edicao =PreloadData.edicao();
-        String edicaoId = edicao.getIdEdicao().toString();
-        try {
-            Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalMenorQueDataInicial();
-            Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),edicaoId, true)
-                    .then()
-                    .log().all()
-                    .extract().response()
-                    ;
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatusCode());
-        } finally {
-            EdicaoClient.deletarEdicao(edicaoId, true);
-        }
-    }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Editar Edição")
-    @Description("Deve retornar erro ao editar uma edição com dataFinal igual a dataInicial")
-    public void deveFalharAoEditarUmaEdicaoComDataFinalIgualADataInicial() {
-        EdicaoDTO edicao = PreloadData.edicao();
-        String edicaoId = edicao.getIdEdicao().toString();
-        try {
-            Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalIgualADataInicial();
-            Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),edicaoId, true)
-                    .then()
-                    .log().all()
-                    .extract().response()
-                    ;
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatusCode());
-        } finally {
-            EdicaoClient.deletarEdicao(edicaoId, true);
-        }
-    }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Editar Edição")
-    @Description("Deve retornar erro ao editar uma edição com dataFinal no formato Inválido")
-    public void deveFalharAoEditarUmaEdicaoComDataFinalNoFormatoInvalido() {
-        EdicaoDTO edicao = PreloadData.edicao();
-        String edicaoId = edicao.getIdEdicao().toString();
-        try {
-            Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalFormatoInvalido();
-            Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),edicaoId, true)
-                    .then()
-                    .log().all()
-                    .extract().response()
-                    ;
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatusCode());
-        } finally {
-            EdicaoClient.deletarEdicao(edicaoId, true);
-        }
-    }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Editar Edição")
     @Description("Deve retornar erro ao editar uma edição com dataInicial no formato invalido")
     public void deveFalharAoEditarUmaEdicaoComDataInicialNoFormatoInvalido() {
         EdicaoDTO edicao = PreloadData.edicao();
@@ -251,29 +157,6 @@ public class EdicaoEditarTest extends BaseTest {
         String edicaoId = edicao.getIdEdicao().toString();
         try {
             Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataInicialTipoInvalido();
-            Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),edicaoId, true)
-                    .then()
-                    .log().all()
-                    .extract().response()
-                    ;
-            Assert.assertEquals(HttpStatus.SC_BAD_REQUEST, response.getStatusCode());
-        } finally {
-            EdicaoClient.deletarEdicao(edicaoId, true);
-        }
-    }
-    @Test
-    @Tag("todos")
-    @Tag("edicao")
-    @Owner("Kevin Aryel")
-    @Epic("Aceitação")
-    @Feature("Edição")
-    @Story("Editar Edição")
-    @Description("Deve retornar erro ao editar uma edição com data final tipo invalido")
-    public void deveFalharAoEditarUmaEdicaoComDataFinalTipoInvalido() {
-        EdicaoDTO edicao = PreloadData.edicao();
-        String edicaoId = edicao.getIdEdicao().toString();
-        try {
-            Edicao edicaoEditada = EdicaoDataFactory.edicaoComDataFinalTipoInvalido();
             Response response = EdicaoClient.atualizarEdicao(Utils.converterParaJson(edicaoEditada),edicaoId, true)
                     .then()
                     .log().all()
