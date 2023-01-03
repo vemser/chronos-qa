@@ -2,28 +2,23 @@ package br.com.dbccompany.chronos.pages;
 
 import org.openqa.selenium.By;
 
-public class ColaboradorCreateEditPage extends BasePage {
-    private static final By inputNome =
-            By.id("nome");
-    private static final By inputEmail =
-            By.cssSelector("[name=email]");
+public class ColaboradorFormPage extends BasePage {
+    private static final By inputLogin =
+            By.id("login");
     private static final By checkboxAdmin =
             By.id("Administrador");
     private static final By checkboxGestao =
             By.id("GestaoDePessoas");
     private static final By checkboxInstrutor =
             By.id("Instrutor");
+    private static final By checkboxGestor =
+            By.id("Gestor");
     private static final By btnEnviar =
             By.cssSelector("[type=submit]");
-    private static final By spanErroNome =
-            By.id("colab-error-nome");
-    private static final By spanErroEmail =
-            By.id("colab-error-email");
-    public static void preencherNome(String nome){
-        sendKeys(inputNome, nome);
-    }
-    public static void preencherEmail(String email){
-        sendKeys(inputEmail, email);
+    private static final By spanErroLogin =
+            By.id("colab-error-login");
+    public static void preencherLogin(String login){
+        sendKeys(inputLogin, login);
     }
     public static void clicarCheckboxAdmin(){
         click(checkboxAdmin);
@@ -34,17 +29,17 @@ public class ColaboradorCreateEditPage extends BasePage {
     public static void clicarCheckboxInstrutor(){
         click(checkboxInstrutor);
     }
+    public static void clicarCheckboxGestor(){
+        click(checkboxGestor);
+    }
     public static void clicarBotaoEnviar(){
         click(btnEnviar);
     }
-    public static void clearInputNome(){
-        clearElement(inputNome);
+    public static void clearInputLogin(){
+        clearElement(inputLogin);
     }
-    public static boolean checarErroEmail(){
-        return checkElementDisplayStatus(spanErroEmail);
-    }
-    public static void checarErroNome(String erro){
-        checkElementTextContains(spanErroNome, erro);
+    public static void checarErroLogin(){
+        checkElementDisplayStatus(spanErroLogin);
     }
     public static boolean checarCheckboxAdmin(){
         return checkElementIsEnable(checkboxAdmin);
